@@ -1,0 +1,356 @@
+{
+  "totalValor": 98903605138.0,
+  "totalPeso": 177776000520.0,
+  "municipios": [
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "valor": 36276896482.0,
+      "peso": 68666481218.0,
+      "percentual": 36.679043631809904
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "valor": 16272248303.0,
+      "peso": 40560983243.0,
+      "percentual": 16.4526341383566
+    },
+    {
+      "codigo": 4119905,
+      "nome": "Ponta Grossa",
+      "valor": 7342907186.0,
+      "peso": 15103859279.0,
+      "percentual": 7.42430690545047
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "valor": 3726796137.0,
+      "peso": 7709643599.0,
+      "percentual": 3.7681094959076655
+    },
+    {
+      "codigo": 4117909,
+      "nome": "Palotina",
+      "valor": 2890973761.0,
+      "peso": 1961666747.0,
+      "percentual": 2.923021619855242
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "valor": 2681615729.0,
+      "peso": 2698599707.0,
+      "percentual": 2.711342751619971
+    },
+    {
+      "codigo": 4122404,
+      "nome": "Rolândia",
+      "valor": 2414535884.0,
+      "peso": 4135251784.0,
+      "percentual": 2.4413021958410948
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "valor": 2026939008.0,
+      "peso": 3814793723.0,
+      "percentual": 2.0494086187978855
+    },
+    {
+      "codigo": 4104303,
+      "nome": "Campo Mourão",
+      "valor": 1848326520.0,
+      "peso": 4653626765.0,
+      "percentual": 1.8688161239633616
+    },
+    {
+      "codigo": 4114807,
+      "nome": "Marialva",
+      "valor": 1611346678.0,
+      "peso": 4055079194.0,
+      "percentual": 1.6292092444473498
+    },
+    {
+      "codigo": 4126504,
+      "nome": "Sertanópolis",
+      "valor": 1527920283.0,
+      "peso": 4020959917.0,
+      "percentual": 1.5448580270335908
+    },
+    {
+      "codigo": 4103453,
+      "nome": "Cafelândia",
+      "valor": 1508128283.0,
+      "peso": 1149922398.0,
+      "percentual": 1.5248466230282622
+    },
+    {
+      "codigo": 4115606,
+      "nome": "Matelândia",
+      "valor": 1503971941.0,
+      "peso": 730068208.0,
+      "percentual": 1.5206442059432626
+    },
+    {
+      "codigo": 4128005,
+      "nome": "Ubiratã",
+      "valor": 1276564206.0,
+      "peso": 867492316.0,
+      "percentual": 1.290715544917511
+    },
+    {
+      "codigo": 4115804,
+      "nome": "Medianeira",
+      "valor": 1024874679.0,
+      "peso": 427279336.0,
+      "percentual": 1.0362359163450052
+    },
+    {
+      "codigo": 4111902,
+      "nome": "Jaguapitã",
+      "valor": 927247535.0,
+      "peso": 509252926.0,
+      "percentual": 0.9375265276793635
+    },
+    {
+      "codigo": 4124509,
+      "nome": "Santo Inácio",
+      "valor": 835299248.0,
+      "peso": 1839141872.0,
+      "percentual": 0.8445589489225479
+    },
+    {
+      "codigo": 4106407,
+      "nome": "Cornélio Procópio",
+      "valor": 831248816.0,
+      "peso": 126198425.0,
+      "percentual": 0.8404636159017259
+    },
+    {
+      "codigo": 4109401,
+      "nome": "Guarapuava",
+      "valor": 701464469.0,
+      "peso": 1113761809.0,
+      "percentual": 0.7092405459045179
+    },
+    {
+      "codigo": 4111209,
+      "nome": "Itapejara d'Oeste",
+      "valor": 697967249.0,
+      "peso": 422864528.0,
+      "percentual": 0.7057045575094333
+    },
+    {
+      "codigo": 4114609,
+      "nome": "Marechal Cândido Rondon",
+      "valor": 697114756.0,
+      "peso": 393513107.0,
+      "percentual": 0.7048426142073559
+    },
+    {
+      "codigo": 4106605,
+      "nome": "Cruzeiro do Oeste",
+      "valor": 622315964.0,
+      "peso": 126896754.0,
+      "percentual": 0.6292146409948189
+    },
+    {
+      "codigo": 4118501,
+      "nome": "Pato Branco",
+      "valor": 530126847.0,
+      "peso": 369761179.0,
+      "percentual": 0.5360035625196019
+    },
+    {
+      "codigo": 4108007,
+      "nome": "Florestópolis",
+      "valor": 498084374.0,
+      "peso": 1264905205.0,
+      "percentual": 0.5036058830262293
+    },
+    {
+      "codigo": 4124806,
+      "nome": "São João",
+      "valor": 429584658.0,
+      "peso": 251631590.0,
+      "percentual": 0.43434681415364124
+    },
+    {
+      "codigo": 4124608,
+      "nome": "São Carlos do Ivaí",
+      "valor": 424291499.0,
+      "peso": 1037447743.0,
+      "percentual": 0.4289949778958886
+    },
+    {
+      "codigo": 4111803,
+      "nome": "Jacarezinho",
+      "valor": 420817326.0,
+      "peso": 944058186.0,
+      "percentual": 0.42548229198807713
+    },
+    {
+      "codigo": 4118402,
+      "nome": "Paranavaí",
+      "valor": 395401345.0,
+      "peso": 180630194.0,
+      "percentual": 0.39978456240123633
+    },
+    {
+      "codigo": 4104907,
+      "nome": "Castro",
+      "valor": 393189719.0,
+      "peso": 430195336.0,
+      "percentual": 0.39754841944475455
+    },
+    {
+      "codigo": 4102802,
+      "nome": "Bela Vista do Paraíso",
+      "valor": 348606404.0,
+      "peso": 856908102.0,
+      "percentual": 0.3524708765808791
+    },
+    {
+      "codigo": 4105904,
+      "nome": "Colorado",
+      "valor": 338716413.0,
+      "peso": 704393065.0,
+      "percentual": 0.3424712501909204
+    },
+    {
+      "codigo": 4105300,
+      "nome": "Céu Azul",
+      "valor": 327381293.0,
+      "peso": 638213520.0,
+      "percentual": 0.3310104748388146
+    },
+    {
+      "codigo": 4112801,
+      "nome": "Joaquim Távora",
+      "valor": 289803430.0,
+      "peso": 151018364.0,
+      "percentual": 0.29301604283851723
+    },
+    {
+      "codigo": 4105508,
+      "nome": "Cianorte",
+      "valor": 283972469.0,
+      "peso": 162305514.0,
+      "percentual": 0.28712044278241805
+    },
+    {
+      "codigo": 4104501,
+      "nome": "Capanema",
+      "valor": 283343247.0,
+      "peso": 141395419.0,
+      "percentual": 0.28648424554863466
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "valor": 265780335.0,
+      "peso": 513110062.0,
+      "percentual": 0.2687266400746032
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "valor": 264312429.0,
+      "peso": 222020900.0,
+      "percentual": 0.267242461618265
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "valor": 253023503.0,
+      "peso": 205063453.0,
+      "percentual": 0.2558283923492544
+    },
+    {
+      "codigo": 4125803,
+      "nome": "São Pedro do Ivaí",
+      "valor": 231856052.0,
+      "peso": 116232719.0,
+      "percentual": 0.23442628979650615
+    },
+    {
+      "codigo": 4128104,
+      "nome": "Umuarama",
+      "valor": 225494027.0,
+      "peso": 133913954.0,
+      "percentual": 0.2279937386360878
+    },
+    {
+      "codigo": 4105607,
+      "nome": "Cidade Gaúcha",
+      "valor": 210193823.0,
+      "peso": 173983218.0,
+      "percentual": 0.2125239243875054
+    },
+    {
+      "codigo": 4117602,
+      "nome": "Palmas",
+      "valor": 202738024.0,
+      "peso": 121297967.0,
+      "percentual": 0.20498547420705246
+    },
+    {
+      "codigo": 4102000,
+      "nome": "Assis Chateaubriand",
+      "valor": 183504955.0,
+      "peso": 154199250.0,
+      "percentual": 0.18553919722537507
+    },
+    {
+      "codigo": 4110706,
+      "nome": "Irati",
+      "valor": 155319229.0,
+      "peso": 384057825.0,
+      "percentual": 0.1570410186598187
+    },
+    {
+      "codigo": 4112108,
+      "nome": "Jandaia do Sul",
+      "valor": 155064677.0,
+      "peso": 381595080.0,
+      "percentual": 0.15678364482633222
+    },
+    {
+      "codigo": 4103701,
+      "nome": "Cambé",
+      "valor": 134225370.0,
+      "peso": 80041276.0,
+      "percentual": 0.13571332391040308
+    },
+    {
+      "codigo": 4107207,
+      "nome": "Dois Vizinhos",
+      "valor": 114990752.0,
+      "peso": 27078081.0,
+      "percentual": 0.11626548075730267
+    },
+    {
+      "codigo": 4125506,
+      "nome": "São José dos Pinhais",
+      "valor": 111723976.0,
+      "peso": 58204075.0,
+      "percentual": 0.11296249094672713
+    },
+    {
+      "codigo": 4114401,
+      "nome": "Mangueirinha",
+      "valor": 106883591.0,
+      "peso": 138707649.0,
+      "percentual": 0.10806844791033203
+    },
+    {
+      "codigo": 4110607,
+      "nome": "Iporã",
+      "valor": 92412564.0,
+      "peso": 44688781.0,
+      "percentual": 0.09343700249455714
+    }
+  ]
+}

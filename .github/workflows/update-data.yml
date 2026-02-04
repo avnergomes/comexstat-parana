@@ -1,0 +1,153 @@
+name: Update Data and Deploy
+
+on:
+  # Executa semanalmente (segunda-feira às 6h UTC)
+  schedule:
+    - cron: '0 6 * * 1'
+
+  # Permite execução manual
+  workflow_dispatch:
+    inputs:
+      skip_download:
+        description: 'Skip download (use cached data)'
+        required: false
+        default: 'false'
+        type: boolean
+      force_rebuild:
+        description: 'Force rebuild all data'
+        required: false
+        default: 'false'
+        type: boolean
+
+# Permissões necessárias para GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Evitar execuções concorrentes
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    outputs:
+      data_changed: ${{ steps.check_changes.outputs.changed }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install pandas pyarrow requests numpy
+          pip install statsmodels || echo "statsmodels optional, continuing..."
+
+      - name: Cache data files
+        id: cache-data
+        uses: actions/cache@v4
+        with:
+          path: |
+            data/raw
+            data/auxiliary
+          key: comexstat-data-${{ github.run_number }}
+          restore-keys: |
+            comexstat-data-
+
+      - name: Download data
+        if: ${{ github.event.inputs.skip_download != 'true' }}
+        run: |
+          echo "Downloading ComexStat MUN data..."
+          python download_unified.py
+
+      - name: Process unified data
+        run: |
+          echo "Processing unified data with cadeia classification..."
+          python process_unified.py
+
+      - name: Generate forecasts
+        run: |
+          echo "Generating forecasts..."
+          python forecasting.py
+
+      - name: Prepare dashboard data
+        run: |
+          echo "Preparing dashboard JSON files..."
+          python prepare_dashboard_data.py
+
+      - name: Check for data changes
+        id: check_changes
+        run: |
+          if git diff --quiet dashboard/public/data/; then
+            echo "No data changes detected"
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "Data changes detected"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit data changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add dashboard/public/data/
+          git commit -m "chore: update data $(date +'%Y-%m-%d')" || exit 0
+          git push
+
+  build-deploy:
+    needs: update-data
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Pull latest changes
+        run: git pull origin ${{ github.ref_name }} || true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: dashboard/package-lock.json
+
+      - name: Install dependencies
+        working-directory: dashboard
+        run: npm ci
+
+      - name: Build dashboard
+        working-directory: dashboard
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'dashboard/dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Summary
+        run: |
+          echo "## Deployment Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Data updated:** ${{ needs.update-data.outputs.data_changed }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Site URL:** https://${{ github.repository_owner }}.github.io/comexstat-parana/" >> $GITHUB_STEP_SUMMARY
+          echo "- **Timestamp:** $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
