@@ -19,7 +19,8 @@ export default function ProductTable({ data, tipo = 'exportacoes', limit = 50 })
       result = result.filter(item =>
         item.ncm?.toString().includes(searchLower) ||
         item.descricao?.toLowerCase().includes(searchLower) ||
-        item.categoria?.toLowerCase().includes(searchLower)
+        item.cadeia?.toLowerCase().includes(searchLower) ||
+        item.capitulo?.toLowerCase().includes(searchLower)
       );
     }
 
@@ -118,11 +119,11 @@ export default function ProductTable({ data, tipo = 'exportacoes', limit = 50 })
                   <span
                     className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium"
                     style={{
-                      backgroundColor: `${getCategoryColor(item.categoria)}20`,
-                      color: getCategoryColor(item.categoria)
+                      backgroundColor: `${getCategoryColor(item.cadeia)}20`,
+                      color: getCategoryColor(item.cadeia)
                     }}
                   >
-                    {item.categoria}
+                    {item.cadeia}
                   </span>
                 </td>
                 <td className="px-4 py-3 text-right font-medium text-dark-800">

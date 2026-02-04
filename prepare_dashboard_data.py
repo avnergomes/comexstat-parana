@@ -50,8 +50,8 @@ CATEGORIAS_NCM = {
     24: "Tabaco"
 }
 
-# Importar mapeamento de cadeias
-from ncm_cadeias_map import classificar_cadeia, CADEIAS, CADEIA_CORES
+# Importar mapeamento de cadeias e descrições
+from ncm_cadeias_map import classificar_cadeia, CADEIAS, CADEIA_CORES, SH4_DESCRICAO
 
 
 def carregar_dados():
@@ -89,7 +89,8 @@ def carregar_dados():
         if 'PAIS' not in df_exp.columns and 'NO_PAIS' in df_exp.columns:
             df_exp['PAIS'] = df_exp['NO_PAIS']
         if 'DESC_NCM' not in df_exp.columns:
-            df_exp['DESC_NCM'] = df_exp['SH4'].astype(str) if 'SH4' in df_exp.columns else ''
+            # Usar o dicionário de descrições SH4
+            df_exp['DESC_NCM'] = df_exp['SH4'].apply(lambda x: SH4_DESCRICAO.get(str(x), str(x)))
 
         if df_imp is not None:
             if 'CADEIA' not in df_imp.columns:
@@ -106,7 +107,8 @@ def carregar_dados():
             if 'PAIS' not in df_imp.columns and 'NO_PAIS' in df_imp.columns:
                 df_imp['PAIS'] = df_imp['NO_PAIS']
             if 'DESC_NCM' not in df_imp.columns:
-                df_imp['DESC_NCM'] = df_imp['SH4'].astype(str) if 'SH4' in df_imp.columns else ''
+                # Usar o dicionário de descrições SH4
+                df_imp['DESC_NCM'] = df_imp['SH4'].apply(lambda x: SH4_DESCRICAO.get(str(x), str(x)))
         else:
             # Criar DataFrame vazio para importações se não existir
             df_imp = pd.DataFrame(columns=df_exp.columns)
