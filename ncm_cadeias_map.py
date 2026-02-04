@@ -540,3 +540,253 @@ CADEIA_CORES = {
     "Tabaco": "#78716c",            # Gray
     "Outros": "#64748b",            # Slate
 }
+
+# Mapeamento SH4 para descrições de produtos (português)
+SH4_DESCRICAO = {
+    # Capítulo 01 - Animais vivos
+    "0101": "Cavalos, asininos e muares vivos",
+    "0102": "Bovinos vivos",
+    "0103": "Suínos vivos",
+    "0104": "Ovinos e caprinos vivos",
+    "0105": "Aves domésticas vivas",
+
+    # Capítulo 02 - Carnes
+    "0201": "Carne bovina fresca ou refrigerada",
+    "0202": "Carne bovina congelada",
+    "0203": "Carne suína fresca, refrigerada ou congelada",
+    "0204": "Carne ovina ou caprina",
+    "0205": "Carne de cavalo, asinino ou muar",
+    "0206": "Miudezas comestíveis",
+    "0207": "Carne e miudezas de aves",
+    "0208": "Outras carnes e miudezas",
+    "0209": "Toucinho e gordura de porco",
+    "0210": "Carnes salgadas, secas ou defumadas",
+
+    # Capítulo 03 - Peixes e crustáceos
+    "0301": "Peixes vivos",
+    "0302": "Peixes frescos ou refrigerados",
+    "0303": "Peixes congelados",
+    "0304": "Filés de peixe e outras carnes de peixe",
+    "0305": "Peixes secos, salgados ou defumados",
+    "0306": "Crustáceos",
+    "0307": "Moluscos",
+    "0308": "Invertebrados aquáticos",
+
+    # Capítulo 04 - Laticínios e ovos
+    "0401": "Leite e creme de leite",
+    "0402": "Leite concentrado ou adoçado",
+    "0403": "Iogurte e leite fermentado",
+    "0404": "Soro de leite",
+    "0405": "Manteiga e gorduras lácteas",
+    "0406": "Queijos e requeijão",
+    "0407": "Ovos de aves com casca",
+    "0408": "Ovos sem casca e gemas",
+    "0409": "Mel natural",
+    "0410": "Produtos comestíveis de origem animal",
+
+    # Capítulo 06 - Plantas vivas
+    "0601": "Bulbos, tubérculos e rizomas",
+    "0602": "Plantas vivas e mudas",
+    "0603": "Flores e botões de flores cortados",
+    "0604": "Folhagem e ramos para ornamentação",
+
+    # Capítulo 07 - Hortícolas
+    "0701": "Batatas frescas ou refrigeradas",
+    "0702": "Tomates frescos ou refrigerados",
+    "0703": "Cebolas, alhos e alhos-porros",
+    "0704": "Couves, couve-flor e repolhos",
+    "0705": "Alfaces e chicórias",
+    "0706": "Cenouras, nabos e raízes comestíveis",
+    "0707": "Pepinos e pepininhos",
+    "0708": "Leguminosas (ervilhas e feijões)",
+    "0709": "Outros produtos hortícolas frescos",
+    "0710": "Produtos hortícolas congelados",
+    "0711": "Produtos hortícolas conservados",
+    "0712": "Produtos hortícolas secos",
+    "0713": "Legumes de vagem secos",
+    "0714": "Mandioca e raízes amiláceas",
+
+    # Capítulo 08 - Frutas
+    "0801": "Cocos, castanhas e nozes",
+    "0802": "Outras frutas de casca rija",
+    "0803": "Bananas frescas ou secas",
+    "0804": "Tâmaras, figos, abacates e mangas",
+    "0805": "Frutas cítricas (laranjas, limões)",
+    "0806": "Uvas frescas ou secas",
+    "0807": "Melões e melancias",
+    "0808": "Maçãs, peras e marmelos",
+    "0809": "Damascos, cerejas e pêssegos",
+    "0810": "Outras frutas frescas",
+    "0811": "Frutas congeladas",
+    "0812": "Frutas conservadas provisoriamente",
+    "0813": "Frutas secas",
+    "0814": "Cascas de frutas cítricas",
+
+    # Capítulo 09 - Café, chá e especiarias
+    "0901": "Café (grão ou torrado)",
+    "0902": "Chá",
+    "0903": "Mate (erva-mate)",
+    "0904": "Pimenta e pimentão",
+    "0905": "Baunilha",
+    "0906": "Canela",
+    "0907": "Cravo-da-índia",
+    "0908": "Noz-moscada e cardamomo",
+    "0909": "Sementes de anis, cominho e funcho",
+    "0910": "Gengibre e outras especiarias",
+
+    # Capítulo 10 - Cereais
+    "1001": "Trigo e mistura de trigo com centeio",
+    "1002": "Centeio",
+    "1003": "Cevada",
+    "1004": "Aveia",
+    "1005": "Milho",
+    "1006": "Arroz",
+    "1007": "Sorgo de grão",
+    "1008": "Trigo mourisco e outros cereais",
+
+    # Capítulo 11 - Produtos de moagem
+    "1101": "Farinhas de trigo",
+    "1102": "Farinhas de outros cereais",
+    "1103": "Grumos, sêmolas e pellets de cereais",
+    "1104": "Grãos de cereais trabalhados",
+    "1105": "Farinha e flocos de batata",
+    "1106": "Farinhas de leguminosas",
+    "1107": "Malte",
+    "1108": "Amidos e féculas",
+    "1109": "Glúten de trigo",
+
+    # Capítulo 12 - Sementes e oleaginosas
+    "1201": "Soja em grãos",
+    "1202": "Amendoim",
+    "1203": "Copra",
+    "1204": "Sementes de linhaça",
+    "1205": "Sementes de colza ou canola",
+    "1206": "Sementes de girassol",
+    "1207": "Outras sementes oleaginosas",
+    "1208": "Farinhas de sementes oleaginosas",
+    "1209": "Sementes para semeadura",
+    "1210": "Cones de lúpulo",
+    "1211": "Plantas aromáticas e medicinais",
+    "1212": "Alfarroba e algas",
+    "1213": "Palhas e cascas de cereais",
+    "1214": "Nabo forrageiro e feno",
+
+    # Capítulo 13 - Gomas e resinas
+    "1301": "Goma-laca e resinas naturais",
+    "1302": "Sucos e extratos vegetais",
+
+    # Capítulo 14 - Matérias para entrançar
+    "1401": "Matérias vegetais para entrançar",
+    "1404": "Produtos vegetais diversos",
+
+    # Capítulo 15 - Gorduras e óleos
+    "1501": "Gordura de porco e de aves",
+    "1502": "Gorduras de bovinos, ovinos ou caprinos",
+    "1503": "Estearina e óleo de banha",
+    "1504": "Gorduras e óleos de peixes",
+    "1505": "Suarda e gorduras derivadas",
+    "1506": "Outras gorduras animais",
+    "1507": "Óleo de soja",
+    "1508": "Óleo de amendoim",
+    "1509": "Azeite de oliva",
+    "1510": "Outros óleos de oliva",
+    "1511": "Óleo de dendê (palma)",
+    "1512": "Óleos de girassol, cártamo ou algodão",
+    "1513": "Óleos de coco ou palmiste",
+    "1514": "Óleos de colza, mostarda ou canola",
+    "1515": "Outras gorduras e óleos vegetais",
+    "1516": "Gorduras e óleos hidrogenados",
+    "1517": "Margarina e misturas",
+    "1518": "Gorduras e óleos modificados",
+    "1520": "Glicerol em bruto",
+    "1521": "Ceras vegetais e de abelhas",
+    "1522": "Dégras e resíduos de gorduras",
+
+    # Capítulo 16 - Preparações de carnes
+    "1601": "Enchidos e produtos semelhantes de carne",
+    "1602": "Outras preparações de carne",
+    "1603": "Extratos e sucos de carne",
+    "1604": "Preparações de peixes",
+    "1605": "Preparações de crustáceos e moluscos",
+
+    # Capítulo 17 - Açúcares
+    "1701": "Açúcar de cana ou beterraba",
+    "1702": "Outros açúcares (lactose, glicose)",
+    "1703": "Melaços",
+    "1704": "Produtos de confeitaria sem cacau",
+
+    # Capítulo 18 - Cacau e preparações
+    "1801": "Cacau em grãos",
+    "1802": "Cascas e resíduos de cacau",
+    "1803": "Pasta de cacau",
+    "1804": "Manteiga e gordura de cacau",
+    "1805": "Cacau em pó sem açúcar",
+    "1806": "Chocolate e preparações com cacau",
+
+    # Capítulo 19 - Preparações de cereais
+    "1901": "Extratos de malte e preparações lácteas",
+    "1902": "Massas alimentícias",
+    "1903": "Tapioca e seus sucedâneos",
+    "1904": "Cereais expandidos ou em flocos",
+    "1905": "Pães, bolachas e produtos de padaria",
+
+    # Capítulo 20 - Preparações de hortícolas e frutas
+    "2001": "Hortícolas e frutas em vinagre",
+    "2002": "Tomates preparados ou conservados",
+    "2003": "Cogumelos e trufas preparados",
+    "2004": "Outros hortícolas congelados",
+    "2005": "Outros hortícolas preparados",
+    "2006": "Hortícolas e frutas cristalizados",
+    "2007": "Doces, geleias e purês de frutas",
+    "2008": "Frutas e partes de plantas preparadas",
+    "2009": "Sucos de frutas ou hortícolas",
+
+    # Capítulo 21 - Preparações alimentícias diversas
+    "2101": "Extratos de café, chá e mate",
+    "2102": "Leveduras e fermentos",
+    "2103": "Molhos e condimentos",
+    "2104": "Preparações para sopas",
+    "2105": "Sorvetes",
+    "2106": "Outras preparações alimentícias",
+
+    # Capítulo 22 - Bebidas
+    "2201": "Águas (mineral e gaseificada)",
+    "2202": "Águas e bebidas não alcoólicas",
+    "2203": "Cervejas de malte",
+    "2204": "Vinhos de uvas frescas",
+    "2205": "Vermutes e vinhos aromatizados",
+    "2206": "Outras bebidas fermentadas",
+    "2207": "Álcool etílico não desnaturado",
+    "2208": "Álcool etílico e aguardentes",
+    "2209": "Vinagres",
+
+    # Capítulo 23 - Resíduos alimentares
+    "2301": "Farinhas de carnes e peixes",
+    "2302": "Farelos e resíduos de cereais",
+    "2303": "Resíduos de amido e açúcar",
+    "2304": "Farelo e torta de soja",
+    "2305": "Farelo e torta de amendoim",
+    "2306": "Farelos de outras oleaginosas",
+    "2307": "Borras de vinho e tártaro",
+    "2308": "Matérias vegetais para ração",
+    "2309": "Preparações para alimentação animal",
+
+    # Capítulo 24 - Tabaco
+    "2401": "Tabaco não manufaturado",
+    "2402": "Charutos e cigarros",
+    "2403": "Outros produtos de tabaco",
+}
+
+
+def get_descricao_sh4(sh4_code):
+    """
+    Retorna a descrição do produto pelo código SH4.
+
+    Args:
+        sh4_code: Código SH4 (string de 4 dígitos)
+
+    Returns:
+        str: Descrição do produto ou o próprio código se não encontrado
+    """
+    sh4_str = str(sh4_code).zfill(4)
+    return SH4_DESCRICAO.get(sh4_str, f"Produto {sh4_str}")
