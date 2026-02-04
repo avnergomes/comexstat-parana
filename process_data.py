@@ -62,19 +62,41 @@ def carregar_tabela_vias() -> pd.DataFrame:
     return df_vias
 
 
-def eh_produto_agricola(ncm: str) -> bool:
+def eh_produto_agricola(ncm: str, incluir_insumos: bool = None) -> bool:
     """
-    Verifica se um código NCM é de produto agrícola (capítulos 01-24).
+    Verifica se um código NCM é de produto agrícola ou insumo agrícola.
 
     Args:
         ncm: Código NCM (8 dígitos)
+        incluir_insumos: Se deve incluir insumos agrícolas (fertilizantes, defensivos).
+                        Se None, usa config.INCLUIR_INSUMOS.
 
     Returns:
-        True se for produto agrícola
+        True se for produto agrícola ou insumo agrícola (se habilitado)
     """
+    if incluir_insumos is None:
+        incluir_insumos = getattr(config, 'INCLUIR_INSUMOS', True)
+
     try:
-        capitulo = int(str(ncm)[:2])
-        return capitulo in config.CAPITULOS_AGRICULTURA
+        ncm_str = str(ncm).zfill(8)
+        capitulo = int(ncm_str[:2])
+        posicao = ncm_str[:4]
+
+        # Produtos agrícolas (capítulos 1-24)
+        if capitulo in config.CAPITULOS_AGRICULTURA:
+            return True
+
+        # Insumos agrícolas (se habilitado)
+        if incluir_insumos:
+            # Capítulo 31 - Fertilizantes (capítulo completo)
+            if capitulo == 31:
+                return True
+            # Capítulo 38 - Apenas posição 3808 (defensivos agrícolas)
+            posicao_defensivos = getattr(config, 'POSICAO_DEFENSIVOS', '3808')
+            if capitulo == 38 and posicao == posicao_defensivos:
+                return True
+
+        return False
     except (ValueError, TypeError):
         return False
 

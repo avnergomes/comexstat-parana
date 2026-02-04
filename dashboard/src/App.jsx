@@ -32,6 +32,7 @@ export default function App() {
     anoMin: null,
     anoMax: null,
     tipo: 'todos',
+    tipoCategoria: 'todos',  // 'todos', 'produtos', 'insumos'
     cadeias: null,
   });
 
@@ -186,12 +187,13 @@ export default function App() {
             <div className="space-y-6">
               {/* PR Map */}
               <PRMap
-                data={data?.municipios}
+                data={filteredData?.municipios || data?.municipios}
                 title="Mapa dos Municípios Exportadores do Paraná"
+                filterNote={filters.cadeias?.length > 0 ? `Filtrado por: ${filters.cadeias.join(', ')}` : null}
               />
 
               <MunicipalityChart
-                data={data?.municipios}
+                data={filteredData?.municipios || data?.municipios}
                 title="Ranking dos Municípios Exportadores"
                 limit={20}
               />

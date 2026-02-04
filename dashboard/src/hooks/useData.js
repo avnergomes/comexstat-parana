@@ -43,6 +43,7 @@ export function useData() {
           timeseriesByCadeia: aggregated.timeseriesByCadeia || [],
           byCategoria: aggregated.byCategoria,
           byPais: aggregated.byPais,
+          byPaisByCadeia: aggregated.byPaisByCadeia || null,
           topProdutos: aggregated.topProdutos,
           detailed,
           forecasts: forecasts?.previsoes || null,
@@ -121,8 +122,45 @@ export function useFilteredData(data, filters) {
       };
     }
 
-    // Filtrar por país
+    // Filtrar por país (com suporte a filtro por cadeia)
     let byPais = data.byPais || { exportacoes: [], importacoes: [] };
+
+    // Se há filtro de cadeias E temos dados por país-cadeia, recalcular byPais
+    if (cadeias && cadeias.length > 0 && data.byPaisByCadeia) {
+      // Filtrar por cadeias selecionadas
+      const expFiltered = data.byPaisByCadeia.exportacoes.filter(item =>
+        cadeias.includes(item.cadeia)
+      );
+      const impFiltered = data.byPaisByCadeia.importacoes.filter(item =>
+        cadeias.includes(item.cadeia)
+      );
+
+      // Reagregar por país
+      const expByPais = {};
+      expFiltered.forEach(item => {
+        const key = `${item.codigo}|${item.pais}`;
+        if (!expByPais[key]) {
+          expByPais[key] = { codigo: item.codigo, pais: item.pais, valor: 0, peso: 0 };
+        }
+        expByPais[key].valor += item.valor || 0;
+        expByPais[key].peso += item.peso || 0;
+      });
+
+      const impByPais = {};
+      impFiltered.forEach(item => {
+        const key = `${item.codigo}|${item.pais}`;
+        if (!impByPais[key]) {
+          impByPais[key] = { codigo: item.codigo, pais: item.pais, valor: 0, peso: 0 };
+        }
+        impByPais[key].valor += item.valor || 0;
+        impByPais[key].peso += item.peso || 0;
+      });
+
+      byPais = {
+        exportacoes: Object.values(expByPais).sort((a, b) => b.valor - a.valor).slice(0, 50),
+        importacoes: Object.values(impByPais).sort((a, b) => b.valor - a.valor).slice(0, 50)
+      };
+    }
 
     // Filtrar top produtos
     let topProdutos = data.topProdutos || { exportacoes: [], importacoes: [] };
@@ -199,6 +237,46 @@ export function useFilteredData(data, filters) {
       }
     }
 
+    // Filtrar dados de municípios por cadeia
+    let municipios = data.municipios || null;
+
+    if (municipios && cadeias && cadeias.length > 0 && municipios.municipiosByCadeia) {
+      // Filtrar por cadeias selecionadas
+      const filteredMunCadeia = municipios.municipiosByCadeia.filter(item =>
+        cadeias.includes(item.cadeia)
+      );
+
+      // Reagregar por município
+      const munByCode = {};
+      filteredMunCadeia.forEach(item => {
+        if (!munByCode[item.codigo]) {
+          munByCode[item.codigo] = { codigo: item.codigo, nome: item.nome, valor: 0, peso: 0 };
+        }
+        munByCode[item.codigo].valor += item.valor || 0;
+        munByCode[item.codigo].peso += item.peso || 0;
+      });
+
+      // Calcular totais e percentuais
+      const filteredMunicipios = Object.values(munByCode)
+        .sort((a, b) => b.valor - a.valor)
+        .slice(0, 50);
+
+      const totalValor = filteredMunicipios.reduce((sum, m) => sum + m.valor, 0);
+      const totalPeso = filteredMunicipios.reduce((sum, m) => sum + m.peso, 0);
+
+      // Adicionar percentual
+      filteredMunicipios.forEach(m => {
+        m.percentual = totalValor > 0 ? (m.valor / totalValor) * 100 : 0;
+      });
+
+      municipios = {
+        ...municipios,
+        totalValor,
+        totalPeso,
+        municipios: filteredMunicipios
+      };
+    }
+
     return {
       timeseries,
       byCategoria,
@@ -208,6 +286,7 @@ export function useFilteredData(data, filters) {
       tipo,
       sankey,
       filteredSankeyLinks,
+      municipios,
     };
 
   }, [data, filters]);

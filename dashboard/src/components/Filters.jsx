@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Filter, RotateCcw, ChevronDown, ChevronUp, X, TrendingUp, TrendingDown, ArrowLeftRight } from 'lucide-react';
+import { Filter, RotateCcw, ChevronDown, ChevronUp, X, TrendingUp, TrendingDown, ArrowLeftRight, Leaf, FlaskConical } from 'lucide-react';
 
 export default function Filters({ filters, onChange, metadata, cadeias }) {
   const [expanded, setExpanded] = useState(false);
@@ -7,6 +7,14 @@ export default function Filters({ filters, onChange, metadata, cadeias }) {
   if (!metadata) return null;
 
   const anos = metadata.anos || [];
+
+  // Filtrar cadeias por tipoCategoria
+  const filteredCadeias = cadeias?.filter(c => {
+    if (!filters.tipoCategoria || filters.tipoCategoria === 'todos') return true;
+    if (filters.tipoCategoria === 'produtos') return c.tipo === 'produto';
+    if (filters.tipoCategoria === 'insumos') return c.tipo === 'insumo';
+    return true;
+  }) || [];
 
   const handleChange = (key, value) => {
     onChange({ ...filters, [key]: value });
@@ -25,6 +33,7 @@ export default function Filters({ filters, onChange, metadata, cadeias }) {
       anoMin: metadata.anoMin,
       anoMax: metadata.anoMax,
       tipo: 'todos',
+      tipoCategoria: 'todos',
       cadeias: null,
     });
   };
@@ -33,11 +42,13 @@ export default function Filters({ filters, onChange, metadata, cadeias }) {
     (filters.anoMin && filters.anoMin !== metadata.anoMin) ||
     (filters.anoMax && filters.anoMax !== metadata.anoMax) ||
     filters.tipo !== 'todos' ||
+    filters.tipoCategoria !== 'todos' ||
     (filters.cadeias && filters.cadeias.length > 0);
 
   const activeFiltersCount = [
     filters.anoMin !== metadata.anoMin || filters.anoMax !== metadata.anoMax,
     filters.tipo !== 'todos',
+    filters.tipoCategoria && filters.tipoCategoria !== 'todos',
     filters.cadeias && filters.cadeias.length > 0,
   ].filter(Boolean).length;
 
@@ -90,6 +101,42 @@ export default function Filters({ filters, onChange, metadata, cadeias }) {
             >
               <TrendingDown className="w-3.5 h-3.5" />
               Importações
+            </button>
+          </div>
+
+          {/* Toggle Categoria - Produtos vs Insumos */}
+          <div className="hidden sm:flex items-center bg-dark-100 rounded-lg p-1">
+            <button
+              onClick={() => handleChange('tipoCategoria', 'todos')}
+              className={`px-3 py-1.5 text-xs font-medium rounded-md transition-all ${
+                (!filters.tipoCategoria || filters.tipoCategoria === 'todos')
+                  ? 'bg-white text-dark-800 shadow-sm'
+                  : 'text-dark-500 hover:text-dark-700'
+              }`}
+            >
+              Todas Cadeias
+            </button>
+            <button
+              onClick={() => handleChange('tipoCategoria', 'produtos')}
+              className={`px-3 py-1.5 text-xs font-medium rounded-md transition-all flex items-center gap-1.5 ${
+                filters.tipoCategoria === 'produtos'
+                  ? 'bg-primary-600 text-white shadow-sm'
+                  : 'text-dark-500 hover:text-dark-700'
+              }`}
+            >
+              <Leaf className="w-3.5 h-3.5" />
+              Produtos
+            </button>
+            <button
+              onClick={() => handleChange('tipoCategoria', 'insumos')}
+              className={`px-3 py-1.5 text-xs font-medium rounded-md transition-all flex items-center gap-1.5 ${
+                filters.tipoCategoria === 'insumos'
+                  ? 'bg-emerald-600 text-white shadow-sm'
+                  : 'text-dark-500 hover:text-dark-700'
+              }`}
+            >
+              <FlaskConical className="w-3.5 h-3.5" />
+              Insumos
             </button>
           </div>
         </div>
@@ -235,11 +282,16 @@ export default function Filters({ filters, onChange, metadata, cadeias }) {
           </div>
 
           {/* Cadeias Produtivas */}
-          {cadeias && cadeias.length > 0 && (
+          {filteredCadeias && filteredCadeias.length > 0 && (
             <div>
               <div className="flex items-center justify-between mb-2">
                 <label className="text-xs font-medium text-dark-600">
                   Cadeias Produtivas
+                  {filters.tipoCategoria && filters.tipoCategoria !== 'todos' && (
+                    <span className="ml-2 text-dark-400">
+                      ({filters.tipoCategoria === 'produtos' ? 'Produtos Agrícolas' : 'Insumos Agrícolas'})
+                    </span>
+                  )}
                 </label>
                 {filters.cadeias && filters.cadeias.length > 0 && (
                   <button
@@ -251,7 +303,7 @@ export default function Filters({ filters, onChange, metadata, cadeias }) {
                 )}
               </div>
               <div className="flex flex-wrap gap-1.5">
-                {cadeias.map(cadeia => {
+                {filteredCadeias.map(cadeia => {
                   const isSelected = filters.cadeias?.includes(cadeia.nome);
                   return (
                     <button

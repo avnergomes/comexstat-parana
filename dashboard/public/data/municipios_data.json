@@ -1,356 +1,2052 @@
 {
-  "totalValor": 98903605138.0,
-  "totalPeso": 177776000520.0,
+  "totalValor": 99693218148.0,
+  "totalPeso": 179191358305.0,
   "municipios": [
     {
       "codigo": 4118204,
       "nome": "Paranaguá",
-      "valor": 36276896482.0,
-      "peso": 68666481218.0,
-      "percentual": 36.679043631809904
+      "valor": 36572501071.0,
+      "peso": 69418309715.0,
+      "percentual": 36.68504412878531
     },
     {
       "codigo": 4115200,
       "nome": "Maringá",
-      "valor": 16272248303.0,
-      "peso": 40560983243.0,
-      "percentual": 16.4526341383566
+      "valor": 16296934130.0,
+      "peso": 40567998493.0,
+      "percentual": 16.347084017095643
     },
     {
       "codigo": 4119905,
       "nome": "Ponta Grossa",
-      "valor": 7342907186.0,
-      "peso": 15103859279.0,
-      "percentual": 7.42430690545047
+      "valor": 7379990236.0,
+      "peso": 15131778280.0,
+      "percentual": 7.402700377315539
     },
     {
       "codigo": 4113700,
       "nome": "Londrina",
-      "valor": 3726796137.0,
-      "peso": 7709643599.0,
-      "percentual": 3.7681094959076655
+      "valor": 3804132535.0,
+      "peso": 7720848731.0,
+      "percentual": 3.815838836050571
     },
     {
       "codigo": 4117909,
       "nome": "Palotina",
       "valor": 2890973761.0,
       "peso": 1961666747.0,
-      "percentual": 2.923021619855242
+      "percentual": 2.89987003600204
     },
     {
       "codigo": 4104808,
       "nome": "Cascavel",
-      "valor": 2681615729.0,
-      "peso": 2698599707.0,
-      "percentual": 2.711342751619971
+      "valor": 2880503671.0,
+      "peso": 3159947766.0,
+      "percentual": 2.8893677268234392
     },
     {
       "codigo": 4122404,
       "nome": "Rolândia",
-      "valor": 2414535884.0,
-      "peso": 4135251784.0,
-      "percentual": 2.4413021958410948
+      "valor": 2414577363.0,
+      "peso": 4135280114.0,
+      "percentual": 2.4220076429024777
     },
     {
       "codigo": 4106902,
       "nome": "Curitiba",
-      "valor": 2026939008.0,
-      "peso": 3814793723.0,
-      "percentual": 2.0494086187978855
+      "valor": 2043856394.0,
+      "peso": 3822575868.0,
+      "percentual": 2.0501458694670527
     },
     {
       "codigo": 4104303,
       "nome": "Campo Mourão",
-      "valor": 1848326520.0,
-      "peso": 4653626765.0,
-      "percentual": 1.8688161239633616
+      "valor": 1848338952.0,
+      "peso": 4653627209.0,
+      "percentual": 1.8540267696605404
     },
     {
       "codigo": 4114807,
       "nome": "Marialva",
       "valor": 1611346678.0,
       "peso": 4055079194.0,
-      "percentual": 1.6292092444473498
+      "percentual": 1.6163052090543095
     },
     {
       "codigo": 4126504,
       "nome": "Sertanópolis",
       "valor": 1527920283.0,
       "peso": 4020959917.0,
-      "percentual": 1.5448580270335908
+      "percentual": 1.5326220894301148
     },
     {
       "codigo": 4103453,
       "nome": "Cafelândia",
       "valor": 1508128283.0,
       "peso": 1149922398.0,
-      "percentual": 1.5248466230282622
+      "percentual": 1.5127691843201425
     },
     {
       "codigo": 4115606,
       "nome": "Matelândia",
       "valor": 1503971941.0,
       "peso": 730068208.0,
-      "percentual": 1.5206442059432626
+      "percentual": 1.5086000521793488
     },
     {
       "codigo": 4128005,
       "nome": "Ubiratã",
       "valor": 1276564206.0,
       "peso": 867492316.0,
-      "percentual": 1.290715544917511
+      "percentual": 1.280492524681941
     },
     {
       "codigo": 4115804,
       "nome": "Medianeira",
       "valor": 1024874679.0,
       "peso": 427279336.0,
-      "percentual": 1.0362359163450052
+      "percentual": 1.028028483821756
     },
     {
       "codigo": 4111902,
       "nome": "Jaguapitã",
       "valor": 927247535.0,
       "peso": 509252926.0,
-      "percentual": 0.9375265276793635
+      "percentual": 0.9301009158150063
     },
     {
       "codigo": 4124509,
       "nome": "Santo Inácio",
       "valor": 835299248.0,
       "peso": 1839141872.0,
-      "percentual": 0.8445589489225479
+      "percentual": 0.8378696801220248
     },
     {
       "codigo": 4106407,
       "nome": "Cornélio Procópio",
-      "valor": 831248816.0,
-      "peso": 126198425.0,
-      "percentual": 0.8404636159017259
+      "valor": 831248891.0,
+      "peso": 126198493.0,
+      "percentual": 0.8338068591245253
     },
     {
       "codigo": 4109401,
       "nome": "Guarapuava",
       "valor": 701464469.0,
       "peso": 1113761809.0,
-      "percentual": 0.7092405459045179
+      "percentual": 0.7036230568448878
     },
     {
       "codigo": 4111209,
       "nome": "Itapejara d'Oeste",
-      "valor": 697967249.0,
-      "peso": 422864528.0,
-      "percentual": 0.7057045575094333
+      "valor": 697997336.0,
+      "peso": 422954528.0,
+      "percentual": 0.7001452545786866
     },
     {
       "codigo": 4114609,
       "nome": "Marechal Cândido Rondon",
       "valor": 697114756.0,
       "peso": 393513107.0,
-      "percentual": 0.7048426142073559
+      "percentual": 0.6992599586514454
     },
     {
       "codigo": 4106605,
       "nome": "Cruzeiro do Oeste",
       "valor": 622315964.0,
       "peso": 126896754.0,
-      "percentual": 0.6292146409948189
+      "percentual": 0.6242309913961631
     },
     {
       "codigo": 4118501,
       "nome": "Pato Branco",
-      "valor": 530126847.0,
-      "peso": 369761179.0,
-      "percentual": 0.5360035625196019
+      "valor": 530869481.0,
+      "peso": 371957351.0,
+      "percentual": 0.532503103884053
     },
     {
       "codigo": 4108007,
       "nome": "Florestópolis",
       "valor": 498084374.0,
       "peso": 1264905205.0,
-      "percentual": 0.5036058830262293
+      "percentual": 0.49961710861872943
     },
     {
       "codigo": 4124806,
       "nome": "São João",
       "valor": 429584658.0,
       "peso": 251631590.0,
-      "percentual": 0.43434681415364124
+      "percentual": 0.4309066012517102
     },
     {
       "codigo": 4124608,
       "nome": "São Carlos do Ivaí",
       "valor": 424291499.0,
       "peso": 1037447743.0,
-      "percentual": 0.4289949778958886
+      "percentual": 0.4255971538305808
     },
     {
       "codigo": 4111803,
       "nome": "Jacarezinho",
       "valor": 420817326.0,
       "peso": 944058186.0,
-      "percentual": 0.42548229198807713
+      "percentual": 0.4221122899004763
     },
     {
       "codigo": 4118402,
       "nome": "Paranavaí",
-      "valor": 395401345.0,
-      "peso": 180630194.0,
-      "percentual": 0.39978456240123633
+      "valor": 395401393.0,
+      "peso": 180630195.0,
+      "percentual": 0.3966181454921088
     },
     {
       "codigo": 4104907,
       "nome": "Castro",
       "valor": 393189719.0,
       "peso": 430195336.0,
-      "percentual": 0.39754841944475455
+      "percentual": 0.39439966559840456
     },
     {
       "codigo": 4102802,
       "nome": "Bela Vista do Paraíso",
       "valor": 348606404.0,
       "peso": 856908102.0,
-      "percentual": 0.3524708765808791
+      "percentual": 0.349679156191422
     },
     {
       "codigo": 4105904,
       "nome": "Colorado",
       "valor": 338716413.0,
       "peso": 704393065.0,
-      "percentual": 0.3424712501909204
+      "percentual": 0.3397587311276852
     },
     {
       "codigo": 4105300,
       "nome": "Céu Azul",
       "valor": 327381293.0,
       "peso": 638213520.0,
-      "percentual": 0.3310104748388146
+      "percentual": 0.3283887300277384
     },
     {
       "codigo": 4112801,
       "nome": "Joaquim Távora",
       "valor": 289803430.0,
       "peso": 151018364.0,
-      "percentual": 0.29301604283851723
+      "percentual": 0.2906952302109167
     },
     {
       "codigo": 4105508,
       "nome": "Cianorte",
       "valor": 283972469.0,
       "peso": 162305514.0,
-      "percentual": 0.28712044278241805
+      "percentual": 0.2848463258337467
     },
     {
       "codigo": 4104501,
       "nome": "Capanema",
       "valor": 283343247.0,
       "peso": 141395419.0,
-      "percentual": 0.28648424554863466
-    },
-    {
-      "codigo": 4109807,
-      "nome": "Ibiporã",
-      "valor": 265780335.0,
-      "peso": 513110062.0,
-      "percentual": 0.2687266400746032
+      "percentual": 0.2842151675546892
     },
     {
       "codigo": 4108304,
       "nome": "Foz do Iguaçu",
-      "valor": 264312429.0,
-      "peso": 222020900.0,
-      "percentual": 0.267242461618265
+      "valor": 271411439.0,
+      "peso": 226853199.0,
+      "percentual": 0.27224664229122886
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "valor": 268541582.0,
+      "peso": 513562469.0,
+      "percentual": 0.2693679539979695
     },
     {
       "codigo": 4127700,
       "nome": "Toledo",
-      "valor": 253023503.0,
-      "peso": 205063453.0,
-      "percentual": 0.2558283923492544
+      "valor": 260777294.0,
+      "peso": 209680291.0,
+      "percentual": 0.26157977327290405
     },
     {
       "codigo": 4125803,
       "nome": "São Pedro do Ivaí",
       "valor": 231856052.0,
       "peso": 116232719.0,
-      "percentual": 0.23442628979650615
+      "percentual": 0.23256953312089604
     },
     {
       "codigo": 4128104,
       "nome": "Umuarama",
       "valor": 225494027.0,
       "peso": 133913954.0,
-      "percentual": 0.2279937386360878
+      "percentual": 0.22618793052225664
     },
     {
       "codigo": 4105607,
       "nome": "Cidade Gaúcha",
       "valor": 210193823.0,
       "peso": 173983218.0,
-      "percentual": 0.2125239243875054
+      "percentual": 0.21084064383191628
     },
     {
       "codigo": 4117602,
       "nome": "Palmas",
-      "valor": 202738024.0,
-      "peso": 121297967.0,
-      "percentual": 0.20498547420705246
+      "valor": 203053851.0,
+      "peso": 121535794.0,
+      "percentual": 0.20367870028887575
     },
     {
       "codigo": 4102000,
       "nome": "Assis Chateaubriand",
       "valor": 183504955.0,
       "peso": 154199250.0,
-      "percentual": 0.18553919722537507
+      "percentual": 0.1840696472728736
+    },
+    {
+      "codigo": 4112108,
+      "nome": "Jandaia do Sul",
+      "valor": 156546709.0,
+      "peso": 381801238.0,
+      "percentual": 0.15702844376795813
     },
     {
       "codigo": 4110706,
       "nome": "Irati",
       "valor": 155319229.0,
       "peso": 384057825.0,
-      "percentual": 0.1570410186598187
-    },
-    {
-      "codigo": 4112108,
-      "nome": "Jandaia do Sul",
-      "valor": 155064677.0,
-      "peso": 381595080.0,
-      "percentual": 0.15678364482633222
+      "percentual": 0.15579718649409047
     },
     {
       "codigo": 4103701,
       "nome": "Cambé",
-      "valor": 134225370.0,
-      "peso": 80041276.0,
-      "percentual": 0.13571332391040308
+      "valor": 145743088.0,
+      "peso": 83362729.0,
+      "percentual": 0.14619157722808834
     },
     {
       "codigo": 4107207,
       "nome": "Dois Vizinhos",
       "valor": 114990752.0,
       "peso": 27078081.0,
-      "percentual": 0.11626548075730267
+      "percentual": 0.11534460832560342
     },
     {
       "codigo": 4125506,
       "nome": "São José dos Pinhais",
-      "valor": 111723976.0,
-      "peso": 58204075.0,
-      "percentual": 0.11296249094672713
+      "valor": 112680892.0,
+      "peso": 58292894.0,
+      "percentual": 0.11302764028814788
     },
     {
       "codigo": 4114401,
       "nome": "Mangueirinha",
       "valor": 106883591.0,
       "peso": 138707649.0,
-      "percentual": 0.10806844791033203
+      "percentual": 0.10721249949151557
+    },
+    {
+      "codigo": 4101804,
+      "nome": "Araucária",
+      "valor": 101978990.0,
+      "peso": 157921366.0,
+      "percentual": 0.10229280576398551
+    }
+  ],
+  "municipiosByCadeia": [
+    {
+      "codigo": 4100400,
+      "nome": "Almirante Tamandaré",
+      "cadeia": "Outros",
+      "valor": 2427458.0,
+      "peso": 8126640.0
+    },
+    {
+      "codigo": 4100459,
+      "nome": "Altamira do Paraná",
+      "cadeia": "Outros",
+      "valor": 19.0,
+      "peso": 0.0
+    },
+    {
+      "codigo": 4100608,
+      "nome": "Alto Paraná",
+      "cadeia": "Outros",
+      "valor": 8000618.0,
+      "peso": 370780.0
+    },
+    {
+      "codigo": 4100707,
+      "nome": "Alto Piquiri",
+      "cadeia": "Outros",
+      "valor": 15183754.0,
+      "peso": 29275966.0
+    },
+    {
+      "codigo": 4100806,
+      "nome": "Alvorada do Sul",
+      "cadeia": "Outros",
+      "valor": 178362.0,
+      "peso": 900000.0
+    },
+    {
+      "codigo": 4100905,
+      "nome": "Amaporã",
+      "cadeia": "Outros",
+      "valor": 11385.0,
+      "peso": 24750.0
+    },
+    {
+      "codigo": 4101002,
+      "nome": "Ampére",
+      "cadeia": "Outros",
+      "valor": 1206125.0,
+      "peso": 1707000.0
+    },
+    {
+      "codigo": 4101101,
+      "nome": "Andirá",
+      "cadeia": "Outros",
+      "valor": 51960670.0,
+      "peso": 155824873.0
+    },
+    {
+      "codigo": 4101150,
+      "nome": "Ângulo",
+      "cadeia": "Outros",
+      "valor": 1012.0,
+      "peso": 18.0
+    },
+    {
+      "codigo": 4101408,
+      "nome": "Apucarana",
+      "cadeia": "Outros",
+      "valor": 43682099.0,
+      "peso": 90912204.0
+    },
+    {
+      "codigo": 4101507,
+      "nome": "Arapongas",
+      "cadeia": "Outros",
+      "valor": 94261704.0,
+      "peso": 51006905.0
+    },
+    {
+      "codigo": 4101705,
+      "nome": "Araruna",
+      "cadeia": "Outros",
+      "valor": 2722071.0,
+      "peso": 1923569.0
+    },
+    {
+      "codigo": 4101804,
+      "nome": "Araucária",
+      "cadeia": "Outros",
+      "valor": 101978990.0,
+      "peso": 157921366.0
+    },
+    {
+      "codigo": 4101903,
+      "nome": "Assaí",
+      "cadeia": "Outros",
+      "valor": 2306966.0,
+      "peso": 5300150.0
+    },
+    {
+      "codigo": 4102000,
+      "nome": "Assis Chateaubriand",
+      "cadeia": "Outros",
+      "valor": 183504955.0,
+      "peso": 154199250.0
+    },
+    {
+      "codigo": 4102109,
+      "nome": "Astorga",
+      "cadeia": "Outros",
+      "valor": 4016009.0,
+      "peso": 7370029.0
+    },
+    {
+      "codigo": 4102208,
+      "nome": "Atalaia",
+      "cadeia": "Outros",
+      "valor": 93.0,
+      "peso": 930.0
+    },
+    {
+      "codigo": 4102307,
+      "nome": "Balsa Nova",
+      "cadeia": "Outros",
+      "valor": 42984682.0,
+      "peso": 51585794.0
+    },
+    {
+      "codigo": 4102406,
+      "nome": "Bandeirantes",
+      "cadeia": "Outros",
+      "valor": 9433432.0,
+      "peso": 21133117.0
+    },
+    {
+      "codigo": 4102604,
+      "nome": "Barracão",
+      "cadeia": "Outros",
+      "valor": 35098786.0,
+      "peso": 61115855.0
+    },
+    {
+      "codigo": 4102703,
+      "nome": "Barra do Jacaré",
+      "cadeia": "Outros",
+      "valor": 400.0,
+      "peso": 1245.0
+    },
+    {
+      "codigo": 4102802,
+      "nome": "Bela Vista do Paraíso",
+      "cadeia": "Outros",
+      "valor": 348606404.0,
+      "peso": 856908102.0
+    },
+    {
+      "codigo": 4102901,
+      "nome": "Bituruna",
+      "cadeia": "Outros",
+      "valor": 123281.0,
+      "peso": 91894.0
+    },
+    {
+      "codigo": 4103008,
+      "nome": "Boa Esperança",
+      "cadeia": "Outros",
+      "valor": 8386639.0,
+      "peso": 15640183.0
+    },
+    {
+      "codigo": 4103040,
+      "nome": "Boa Ventura de São Roque",
+      "cadeia": "Outros",
+      "valor": 442538.0,
+      "peso": 885471.0
+    },
+    {
+      "codigo": 4103107,
+      "nome": "Bocaiúva do Sul",
+      "cadeia": "Outros",
+      "valor": 431872.0,
+      "peso": 368630.0
+    },
+    {
+      "codigo": 4103156,
+      "nome": "Bom Jesus do Sul",
+      "cadeia": "Outros",
+      "valor": 9126.0,
+      "peso": 54000.0
+    },
+    {
+      "codigo": 4103222,
+      "nome": "Bom Sucesso do Sul",
+      "cadeia": "Outros",
+      "valor": 2042190.0,
+      "peso": 6000000.0
+    },
+    {
+      "codigo": 4103305,
+      "nome": "Borrazópolis",
+      "cadeia": "Outros",
+      "valor": 715864.0,
+      "peso": 784000.0
+    },
+    {
+      "codigo": 4103370,
+      "nome": "Brasilândia do Sul",
+      "cadeia": "Outros",
+      "valor": 18212482.0,
+      "peso": 43691727.0
+    },
+    {
+      "codigo": 4103453,
+      "nome": "Cafelândia",
+      "cadeia": "Outros",
+      "valor": 1508128283.0,
+      "peso": 1149922398.0
+    },
+    {
+      "codigo": 4103602,
+      "nome": "Cambará",
+      "cadeia": "Outros",
+      "valor": 25601886.0,
+      "peso": 19147186.0
+    },
+    {
+      "codigo": 4103701,
+      "nome": "Cambé",
+      "cadeia": "Outros",
+      "valor": 145743088.0,
+      "peso": 83362729.0
+    },
+    {
+      "codigo": 4103800,
+      "nome": "Cambira",
+      "cadeia": "Outros",
+      "valor": 10180512.0,
+      "peso": 2307033.0
+    },
+    {
+      "codigo": 4103909,
+      "nome": "Campina da Lagoa",
+      "cadeia": "Outros",
+      "valor": 4890168.0,
+      "peso": 15631816.0
+    },
+    {
+      "codigo": 4104006,
+      "nome": "Campina Grande do Sul",
+      "cadeia": "Outros",
+      "valor": 2118767.0,
+      "peso": 947165.0
+    },
+    {
+      "codigo": 4104204,
+      "nome": "Campo Largo",
+      "cadeia": "Outros",
+      "valor": 34412750.0,
+      "peso": 38760594.0
+    },
+    {
+      "codigo": 4104253,
+      "nome": "Campo Magro",
+      "cadeia": "Outros",
+      "valor": 4194652.0,
+      "peso": 1323375.0
+    },
+    {
+      "codigo": 4104303,
+      "nome": "Campo Mourão",
+      "cadeia": "Outros",
+      "valor": 1848338952.0,
+      "peso": 4653627209.0
+    },
+    {
+      "codigo": 4104402,
+      "nome": "Cândido de Abreu",
+      "cadeia": "Outros",
+      "valor": 188517.0,
+      "peso": 48655.0
+    },
+    {
+      "codigo": 4104428,
+      "nome": "Candói",
+      "cadeia": "Outros",
+      "valor": 881191.0,
+      "peso": 1507032.0
+    },
+    {
+      "codigo": 4104501,
+      "nome": "Capanema",
+      "cadeia": "Outros",
+      "valor": 283343247.0,
+      "peso": 141395419.0
+    },
+    {
+      "codigo": 4104659,
+      "nome": "Carambeí",
+      "cadeia": "Outros",
+      "valor": 53639015.0,
+      "peso": 37237525.0
+    },
+    {
+      "codigo": 4104709,
+      "nome": "Carlópolis",
+      "cadeia": "Outros",
+      "valor": 603623.0,
+      "peso": 523589.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Outros",
+      "valor": 2880503671.0,
+      "peso": 3159947766.0
+    },
+    {
+      "codigo": 4104907,
+      "nome": "Castro",
+      "cadeia": "Outros",
+      "valor": 393189719.0,
+      "peso": 430195336.0
+    },
+    {
+      "codigo": 4105003,
+      "nome": "Catanduvas",
+      "cadeia": "Outros",
+      "valor": 132000.0,
+      "peso": 120000.0
+    },
+    {
+      "codigo": 4105300,
+      "nome": "Céu Azul",
+      "cadeia": "Outros",
+      "valor": 327381293.0,
+      "peso": 638213520.0
+    },
+    {
+      "codigo": 4105409,
+      "nome": "Chopinzinho",
+      "cadeia": "Outros",
+      "valor": 201159.0,
+      "peso": 299413.0
+    },
+    {
+      "codigo": 4105508,
+      "nome": "Cianorte",
+      "cadeia": "Outros",
+      "valor": 283972469.0,
+      "peso": 162305514.0
+    },
+    {
+      "codigo": 4105607,
+      "nome": "Cidade Gaúcha",
+      "cadeia": "Outros",
+      "valor": 210193823.0,
+      "peso": 173983218.0
+    },
+    {
+      "codigo": 4105706,
+      "nome": "Clevelândia",
+      "cadeia": "Outros",
+      "valor": 26519312.0,
+      "peso": 43390252.0
+    },
+    {
+      "codigo": 4105805,
+      "nome": "Colombo",
+      "cadeia": "Outros",
+      "valor": 77362945.0,
+      "peso": 25940558.0
+    },
+    {
+      "codigo": 4105904,
+      "nome": "Colorado",
+      "cadeia": "Outros",
+      "valor": 338716413.0,
+      "peso": 704393065.0
+    },
+    {
+      "codigo": 4106001,
+      "nome": "Congonhinhas",
+      "cadeia": "Outros",
+      "valor": 2416906.0,
+      "peso": 4900509.0
+    },
+    {
+      "codigo": 4106209,
+      "nome": "Contenda",
+      "cadeia": "Outros",
+      "valor": 4066150.0,
+      "peso": 6342550.0
+    },
+    {
+      "codigo": 4106308,
+      "nome": "Corbélia",
+      "cadeia": "Outros",
+      "valor": 24176.0,
+      "peso": 20560.0
+    },
+    {
+      "codigo": 4106407,
+      "nome": "Cornélio Procópio",
+      "cadeia": "Outros",
+      "valor": 831248891.0,
+      "peso": 126198493.0
+    },
+    {
+      "codigo": 4106456,
+      "nome": "Coronel Domingos Soares",
+      "cadeia": "Outros",
+      "valor": 2574712.0,
+      "peso": 4849285.0
+    },
+    {
+      "codigo": 4106506,
+      "nome": "Coronel Vivida",
+      "cadeia": "Outros",
+      "valor": 9367574.0,
+      "peso": 18101285.0
+    },
+    {
+      "codigo": 4106605,
+      "nome": "Cruzeiro do Oeste",
+      "cadeia": "Outros",
+      "valor": 622315964.0,
+      "peso": 126896754.0
+    },
+    {
+      "codigo": 4106704,
+      "nome": "Cruzeiro do Sul",
+      "cadeia": "Outros",
+      "valor": 1795977.0,
+      "peso": 412800.0
+    },
+    {
+      "codigo": 4106803,
+      "nome": "Cruz Machado",
+      "cadeia": "Outros",
+      "valor": 7573801.0,
+      "peso": 4925286.0
+    },
+    {
+      "codigo": 4106852,
+      "nome": "Cruzmaltina",
+      "cadeia": "Outros",
+      "valor": 221597.0,
+      "peso": 803509.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Outros",
+      "valor": 2043856394.0,
+      "peso": 3822575868.0
+    },
+    {
+      "codigo": 4107157,
+      "nome": "Diamante d'Oeste",
+      "cadeia": "Outros",
+      "valor": 848422.0,
+      "peso": 847000.0
+    },
+    {
+      "codigo": 4107207,
+      "nome": "Dois Vizinhos",
+      "cadeia": "Outros",
+      "valor": 114990752.0,
+      "peso": 27078081.0
+    },
+    {
+      "codigo": 4107306,
+      "nome": "Doutor Camargo",
+      "cadeia": "Outros",
+      "valor": 1122.0,
+      "peso": 3491.0
+    },
+    {
+      "codigo": 4107405,
+      "nome": "Enéas Marques",
+      "cadeia": "Outros",
+      "valor": 12129287.0,
+      "peso": 21146107.0
+    },
+    {
+      "codigo": 4107504,
+      "nome": "Engenheiro Beltrão",
+      "cadeia": "Outros",
+      "valor": 89100.0,
+      "peso": 415574.0
+    },
+    {
+      "codigo": 4107546,
+      "nome": "Espigão Alto do Iguaçu",
+      "cadeia": "Outros",
+      "valor": 69285.0,
+      "peso": 43120.0
+    },
+    {
+      "codigo": 4107553,
+      "nome": "Farol",
+      "cadeia": "Outros",
+      "valor": 90267.0,
+      "peso": 187030.0
+    },
+    {
+      "codigo": 4107603,
+      "nome": "Faxinal",
+      "cadeia": "Outros",
+      "valor": 376015.0,
+      "peso": 577700.0
+    },
+    {
+      "codigo": 4107652,
+      "nome": "Fazenda Rio Grande",
+      "cadeia": "Outros",
+      "valor": 1722080.0,
+      "peso": 584987.0
+    },
+    {
+      "codigo": 4107702,
+      "nome": "Fênix",
+      "cadeia": "Outros",
+      "valor": 10643.0,
+      "peso": 35092.0
+    },
+    {
+      "codigo": 4107736,
+      "nome": "Fernandes Pinheiro",
+      "cadeia": "Outros",
+      "valor": 840736.0,
+      "peso": 608611.0
+    },
+    {
+      "codigo": 4107801,
+      "nome": "Floraí",
+      "cadeia": "Outros",
+      "valor": 181208.0,
+      "peso": 452116.0
+    },
+    {
+      "codigo": 4107900,
+      "nome": "Floresta",
+      "cadeia": "Outros",
+      "valor": 18002855.0,
+      "peso": 46652280.0
+    },
+    {
+      "codigo": 4108007,
+      "nome": "Florestópolis",
+      "cadeia": "Outros",
+      "valor": 498084374.0,
+      "peso": 1264905205.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Outros",
+      "valor": 271411439.0,
+      "peso": 226853199.0
+    },
+    {
+      "codigo": 4108320,
+      "nome": "Francisco Alves",
+      "cadeia": "Outros",
+      "valor": 19968235.0,
+      "peso": 45072156.0
+    },
+    {
+      "codigo": 4108403,
+      "nome": "Francisco Beltrão",
+      "cadeia": "Outros",
+      "valor": 34979860.0,
+      "peso": 21798215.0
+    },
+    {
+      "codigo": 4108601,
+      "nome": "Goioerê",
+      "cadeia": "Outros",
+      "valor": 10851837.0,
+      "peso": 21154799.0
+    },
+    {
+      "codigo": 4108650,
+      "nome": "Goioxim",
+      "cadeia": "Outros",
+      "valor": 178351.0,
+      "peso": 347091.0
+    },
+    {
+      "codigo": 4108809,
+      "nome": "Guaíra",
+      "cadeia": "Outros",
+      "valor": 23862702.0,
+      "peso": 157054984.0
+    },
+    {
+      "codigo": 4109005,
+      "nome": "Guapirama",
+      "cadeia": "Outros",
+      "valor": 1104.0,
+      "peso": 3433.0
+    },
+    {
+      "codigo": 4109203,
+      "nome": "Guaraci",
+      "cadeia": "Outros",
+      "valor": 41132.0,
+      "peso": 13720.0
+    },
+    {
+      "codigo": 4109302,
+      "nome": "Guaraniaçu",
+      "cadeia": "Outros",
+      "valor": 127787.0,
+      "peso": 181374.0
+    },
+    {
+      "codigo": 4109401,
+      "nome": "Guarapuava",
+      "cadeia": "Outros",
+      "valor": 701464469.0,
+      "peso": 1113761809.0
+    },
+    {
+      "codigo": 4109500,
+      "nome": "Guaraqueçaba",
+      "cadeia": "Outros",
+      "valor": 340058.0,
+      "peso": 106839.0
+    },
+    {
+      "codigo": 4109658,
+      "nome": "Honório Serpa",
+      "cadeia": "Outros",
+      "valor": 5021161.0,
+      "peso": 9604491.0
+    },
+    {
+      "codigo": 4109708,
+      "nome": "Ibaiti",
+      "cadeia": "Outros",
+      "valor": 12946739.0,
+      "peso": 37794487.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Outros",
+      "valor": 268541582.0,
+      "peso": 513562469.0
+    },
+    {
+      "codigo": 4110102,
+      "nome": "Imbituva",
+      "cadeia": "Outros",
+      "valor": 15327.0,
+      "peso": 43665.0
+    },
+    {
+      "codigo": 4110508,
+      "nome": "Ipiranga",
+      "cadeia": "Outros",
+      "valor": 43026711.0,
+      "peso": 98800219.0
     },
     {
       "codigo": 4110607,
       "nome": "Iporã",
+      "cadeia": "Outros",
       "valor": 92412564.0,
-      "peso": 44688781.0,
-      "percentual": 0.09343700249455714
+      "peso": 44688781.0
+    },
+    {
+      "codigo": 4110706,
+      "nome": "Irati",
+      "cadeia": "Outros",
+      "valor": 155319229.0,
+      "peso": 384057825.0
+    },
+    {
+      "codigo": 4110953,
+      "nome": "Itaipulândia",
+      "cadeia": "Outros",
+      "valor": 68455595.0,
+      "peso": 30492232.0
+    },
+    {
+      "codigo": 4111001,
+      "nome": "Itambaracá",
+      "cadeia": "Outros",
+      "valor": 3212745.0,
+      "peso": 8039357.0
+    },
+    {
+      "codigo": 4111100,
+      "nome": "Itambé",
+      "cadeia": "Outros",
+      "valor": 1013920.0,
+      "peso": 2773479.0
+    },
+    {
+      "codigo": 4111209,
+      "nome": "Itapejara d'Oeste",
+      "cadeia": "Outros",
+      "valor": 697997336.0,
+      "peso": 422954528.0
+    },
+    {
+      "codigo": 4111258,
+      "nome": "Itaperuçu",
+      "cadeia": "Outros",
+      "valor": 13586.0,
+      "peso": 21600.0
+    },
+    {
+      "codigo": 4111308,
+      "nome": "Itaúna do Sul",
+      "cadeia": "Outros",
+      "valor": 5300.0,
+      "peso": 15000.0
+    },
+    {
+      "codigo": 4111407,
+      "nome": "Ivaí",
+      "cadeia": "Outros",
+      "valor": 2032499.0,
+      "peso": 664926.0
+    },
+    {
+      "codigo": 4111555,
+      "nome": "Ivaté",
+      "cadeia": "Outros",
+      "valor": 2121175.0,
+      "peso": 3454351.0
+    },
+    {
+      "codigo": 4111803,
+      "nome": "Jacarezinho",
+      "cadeia": "Outros",
+      "valor": 420817326.0,
+      "peso": 944058186.0
+    },
+    {
+      "codigo": 4111902,
+      "nome": "Jaguapitã",
+      "cadeia": "Outros",
+      "valor": 927247535.0,
+      "peso": 509252926.0
+    },
+    {
+      "codigo": 4112108,
+      "nome": "Jandaia do Sul",
+      "cadeia": "Outros",
+      "valor": 156546709.0,
+      "peso": 381801238.0
+    },
+    {
+      "codigo": 4112207,
+      "nome": "Janiópolis",
+      "cadeia": "Outros",
+      "valor": 7057549.0,
+      "peso": 13111738.0
+    },
+    {
+      "codigo": 4112405,
+      "nome": "Japurá",
+      "cadeia": "Outros",
+      "valor": 17706588.0,
+      "peso": 6753284.0
+    },
+    {
+      "codigo": 4112504,
+      "nome": "Jardim Alegre",
+      "cadeia": "Outros",
+      "valor": 39528363.0,
+      "peso": 38665401.0
+    },
+    {
+      "codigo": 4112801,
+      "nome": "Joaquim Távora",
+      "cadeia": "Outros",
+      "valor": 289803430.0,
+      "peso": 151018364.0
+    },
+    {
+      "codigo": 4112959,
+      "nome": "Juranda",
+      "cadeia": "Outros",
+      "valor": 22013.0,
+      "peso": 72578.0
+    },
+    {
+      "codigo": 4113106,
+      "nome": "Kaloré",
+      "cadeia": "Outros",
+      "valor": 2785.0,
+      "peso": 5252.0
+    },
+    {
+      "codigo": 4113205,
+      "nome": "Lapa",
+      "cadeia": "Outros",
+      "valor": 89445781.0,
+      "peso": 95950118.0
+    },
+    {
+      "codigo": 4113304,
+      "nome": "Laranjeiras do Sul",
+      "cadeia": "Outros",
+      "valor": 69566186.0,
+      "peso": 31797724.0
+    },
+    {
+      "codigo": 4113502,
+      "nome": "Loanda",
+      "cadeia": "Outros",
+      "valor": 1022059.0,
+      "peso": 1083001.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Outros",
+      "valor": 3804132535.0,
+      "peso": 7720848731.0
+    },
+    {
+      "codigo": 4113908,
+      "nome": "Mallet",
+      "cadeia": "Outros",
+      "valor": 66050.0,
+      "peso": 50000.0
+    },
+    {
+      "codigo": 4114005,
+      "nome": "Mamborê",
+      "cadeia": "Outros",
+      "valor": 10761798.0,
+      "peso": 24062314.0
+    },
+    {
+      "codigo": 4114104,
+      "nome": "Mandaguaçu",
+      "cadeia": "Outros",
+      "valor": 435233.0,
+      "peso": 576366.0
+    },
+    {
+      "codigo": 4114203,
+      "nome": "Mandaguari",
+      "cadeia": "Outros",
+      "valor": 33933527.0,
+      "peso": 73066267.0
+    },
+    {
+      "codigo": 4114302,
+      "nome": "Mandirituba",
+      "cadeia": "Outros",
+      "valor": 60.0,
+      "peso": 110.0
+    },
+    {
+      "codigo": 4114401,
+      "nome": "Mangueirinha",
+      "cadeia": "Outros",
+      "valor": 106883591.0,
+      "peso": 138707649.0
+    },
+    {
+      "codigo": 4114500,
+      "nome": "Manoel Ribas",
+      "cadeia": "Outros",
+      "valor": 17092379.0,
+      "peso": 38473611.0
+    },
+    {
+      "codigo": 4114609,
+      "nome": "Marechal Cândido Rondon",
+      "cadeia": "Outros",
+      "valor": 697114756.0,
+      "peso": 393513107.0
+    },
+    {
+      "codigo": 4114807,
+      "nome": "Marialva",
+      "cadeia": "Outros",
+      "valor": 1611346678.0,
+      "peso": 4055079194.0
+    },
+    {
+      "codigo": 4114906,
+      "nome": "Marilândia do Sul",
+      "cadeia": "Outros",
+      "valor": 279765.0,
+      "peso": 702909.0
+    },
+    {
+      "codigo": 4115101,
+      "nome": "Mariluz",
+      "cadeia": "Outros",
+      "valor": 5952552.0,
+      "peso": 14768713.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Outros",
+      "valor": 16296934130.0,
+      "peso": 40567998493.0
+    },
+    {
+      "codigo": 4115309,
+      "nome": "Mariópolis",
+      "cadeia": "Outros",
+      "valor": 47210.0,
+      "peso": 12470.0
+    },
+    {
+      "codigo": 4115358,
+      "nome": "Maripá",
+      "cadeia": "Outros",
+      "valor": 29786566.0,
+      "peso": 66582481.0
+    },
+    {
+      "codigo": 4115408,
+      "nome": "Marmeleiro",
+      "cadeia": "Outros",
+      "valor": 13592.0,
+      "peso": 24192.0
+    },
+    {
+      "codigo": 4115606,
+      "nome": "Matelândia",
+      "cadeia": "Outros",
+      "valor": 1503971941.0,
+      "peso": 730068208.0
+    },
+    {
+      "codigo": 4115754,
+      "nome": "Mauá da Serra",
+      "cadeia": "Outros",
+      "valor": 10696363.0,
+      "peso": 19338116.0
+    },
+    {
+      "codigo": 4115804,
+      "nome": "Medianeira",
+      "cadeia": "Outros",
+      "valor": 1024874679.0,
+      "peso": 427279336.0
+    },
+    {
+      "codigo": 4115853,
+      "nome": "Mercedes",
+      "cadeia": "Outros",
+      "valor": 1947107.0,
+      "peso": 6267000.0
+    },
+    {
+      "codigo": 4115903,
+      "nome": "Mirador",
+      "cadeia": "Outros",
+      "valor": 297593.0,
+      "peso": 174115.0
+    },
+    {
+      "codigo": 4116059,
+      "nome": "Missal",
+      "cadeia": "Outros",
+      "valor": 33150.0,
+      "peso": 88000.0
+    },
+    {
+      "codigo": 4116109,
+      "nome": "Moreira Sales",
+      "cadeia": "Outros",
+      "valor": 507222.0,
+      "peso": 864018.0
+    },
+    {
+      "codigo": 4116208,
+      "nome": "Morretes",
+      "cadeia": "Outros",
+      "valor": 6091334.0,
+      "peso": 3223496.0
+    },
+    {
+      "codigo": 4116703,
+      "nome": "Nova Aurora",
+      "cadeia": "Outros",
+      "valor": 18391465.0,
+      "peso": 8927066.0
+    },
+    {
+      "codigo": 4116802,
+      "nome": "Nova Cantú",
+      "cadeia": "Outros",
+      "valor": 591657.0,
+      "peso": 1437989.0
+    },
+    {
+      "codigo": 4116901,
+      "nome": "Nova Esperança",
+      "cadeia": "Outros",
+      "valor": 4159379.0,
+      "peso": 3765667.0
+    },
+    {
+      "codigo": 4117008,
+      "nome": "Nova Fátima",
+      "cadeia": "Outros",
+      "valor": 449159.0,
+      "peso": 1111226.0
+    },
+    {
+      "codigo": 4117107,
+      "nome": "Nova Londrina",
+      "cadeia": "Outros",
+      "valor": 6575628.0,
+      "peso": 6128251.0
+    },
+    {
+      "codigo": 4117222,
+      "nome": "Nova Santa Rosa",
+      "cadeia": "Outros",
+      "valor": 7799335.0,
+      "peso": 20025588.0
+    },
+    {
+      "codigo": 4117255,
+      "nome": "Nova Prata do Iguaçu",
+      "cadeia": "Outros",
+      "valor": 1312691.0,
+      "peso": 1014840.0
+    },
+    {
+      "codigo": 4117503,
+      "nome": "Paiçandu",
+      "cadeia": "Outros",
+      "valor": 18107420.0,
+      "peso": 3935221.0
+    },
+    {
+      "codigo": 4117602,
+      "nome": "Palmas",
+      "cadeia": "Outros",
+      "valor": 203053851.0,
+      "peso": 121535794.0
+    },
+    {
+      "codigo": 4117701,
+      "nome": "Palmeira",
+      "cadeia": "Outros",
+      "valor": 86018186.0,
+      "peso": 176641946.0
+    },
+    {
+      "codigo": 4117800,
+      "nome": "Palmital",
+      "cadeia": "Outros",
+      "valor": 80933.0,
+      "peso": 151008.0
+    },
+    {
+      "codigo": 4117909,
+      "nome": "Palotina",
+      "cadeia": "Outros",
+      "valor": 2890973761.0,
+      "peso": 1961666747.0
+    },
+    {
+      "codigo": 4118105,
+      "nome": "Paranacity",
+      "cadeia": "Outros",
+      "valor": 12862196.0,
+      "peso": 21802079.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Outros",
+      "valor": 36572501071.0,
+      "peso": 69418309715.0
+    },
+    {
+      "codigo": 4118402,
+      "nome": "Paranavaí",
+      "cadeia": "Outros",
+      "valor": 395401393.0,
+      "peso": 180630195.0
+    },
+    {
+      "codigo": 4118451,
+      "nome": "Pato Bragado",
+      "cadeia": "Outros",
+      "valor": 89971.0,
+      "peso": 42220.0
+    },
+    {
+      "codigo": 4118501,
+      "nome": "Pato Branco",
+      "cadeia": "Outros",
+      "valor": 530869481.0,
+      "peso": 371957351.0
+    },
+    {
+      "codigo": 4118709,
+      "nome": "Paulo Frontin",
+      "cadeia": "Outros",
+      "valor": 176581.0,
+      "peso": 74136.0
+    },
+    {
+      "codigo": 4119152,
+      "nome": "Pinhais",
+      "cadeia": "Outros",
+      "valor": 26266473.0,
+      "peso": 11649765.0
+    },
+    {
+      "codigo": 4119202,
+      "nome": "Pinhalão",
+      "cadeia": "Outros",
+      "valor": 14772023.0,
+      "peso": 2028425.0
+    },
+    {
+      "codigo": 4119301,
+      "nome": "Pinhão",
+      "cadeia": "Outros",
+      "valor": 391008.0,
+      "peso": 759182.0
+    },
+    {
+      "codigo": 4119400,
+      "nome": "Piraí do Sul",
+      "cadeia": "Outros",
+      "valor": 18753173.0,
+      "peso": 23208412.0
+    },
+    {
+      "codigo": 4119608,
+      "nome": "Pitanga",
+      "cadeia": "Outros",
+      "valor": 6695659.0,
+      "peso": 14003922.0
+    },
+    {
+      "codigo": 4119707,
+      "nome": "Planaltina do Paraná",
+      "cadeia": "Outros",
+      "valor": 455000.0,
+      "peso": 700000.0
+    },
+    {
+      "codigo": 4119806,
+      "nome": "Planalto",
+      "cadeia": "Outros",
+      "valor": 292156.0,
+      "peso": 286000.0
+    },
+    {
+      "codigo": 4119905,
+      "nome": "Ponta Grossa",
+      "cadeia": "Outros",
+      "valor": 7379990236.0,
+      "peso": 15131778280.0
+    },
+    {
+      "codigo": 4119954,
+      "nome": "Pontal do Paraná",
+      "cadeia": "Outros",
+      "valor": 547.0,
+      "peso": 155.0
+    },
+    {
+      "codigo": 4120101,
+      "nome": "Porto Amazonas",
+      "cadeia": "Outros",
+      "valor": 945584.0,
+      "peso": 415952.0
+    },
+    {
+      "codigo": 4120333,
+      "nome": "Prado Ferreira",
+      "cadeia": "Outros",
+      "valor": 326189.0,
+      "peso": 189869.0
+    },
+    {
+      "codigo": 4120358,
+      "nome": "Pranchita",
+      "cadeia": "Outros",
+      "valor": 89426.0,
+      "peso": 219028.0
+    },
+    {
+      "codigo": 4120606,
+      "nome": "Prudentópolis",
+      "cadeia": "Outros",
+      "valor": 4640958.0,
+      "peso": 8091117.0
+    },
+    {
+      "codigo": 4120655,
+      "nome": "Quarto Centenário",
+      "cadeia": "Outros",
+      "valor": 478645.0,
+      "peso": 1432621.0
+    },
+    {
+      "codigo": 4120705,
+      "nome": "Quatiguá",
+      "cadeia": "Outros",
+      "valor": 387514.0,
+      "peso": 409000.0
+    },
+    {
+      "codigo": 4120804,
+      "nome": "Quatro Barras",
+      "cadeia": "Outros",
+      "valor": 115181.0,
+      "peso": 100120.0
+    },
+    {
+      "codigo": 4120853,
+      "nome": "Quatro Pontes",
+      "cadeia": "Outros",
+      "valor": 11411017.0,
+      "peso": 7063959.0
+    },
+    {
+      "codigo": 4120903,
+      "nome": "Quedas do Iguaçu",
+      "cadeia": "Outros",
+      "valor": 510945.0,
+      "peso": 1500000.0
+    },
+    {
+      "codigo": 4121000,
+      "nome": "Querência do Norte",
+      "cadeia": "Outros",
+      "valor": 1726.0,
+      "peso": 7450.0
+    },
+    {
+      "codigo": 4121109,
+      "nome": "Quinta do Sol",
+      "cadeia": "Outros",
+      "valor": 11621448.0,
+      "peso": 30580283.0
+    },
+    {
+      "codigo": 4121208,
+      "nome": "Quitandinha",
+      "cadeia": "Outros",
+      "valor": 198347.0,
+      "peso": 108794.0
+    },
+    {
+      "codigo": 4121307,
+      "nome": "Rancho Alegre",
+      "cadeia": "Outros",
+      "valor": 2852.0,
+      "peso": 8871.0
+    },
+    {
+      "codigo": 4121356,
+      "nome": "Rancho Alegre D'Oeste",
+      "cadeia": "Outros",
+      "valor": 1452739.0,
+      "peso": 5133962.0
+    },
+    {
+      "codigo": 4121406,
+      "nome": "Realeza",
+      "cadeia": "Outros",
+      "valor": 11326932.0,
+      "peso": 11282682.0
+    },
+    {
+      "codigo": 4121505,
+      "nome": "Rebouças",
+      "cadeia": "Outros",
+      "valor": 39245.0,
+      "peso": 9000.0
+    },
+    {
+      "codigo": 4121802,
+      "nome": "Ribeirão Claro",
+      "cadeia": "Outros",
+      "valor": 308552.0,
+      "peso": 238163.0
+    },
+    {
+      "codigo": 4122008,
+      "nome": "Rio Azul",
+      "cadeia": "Outros",
+      "valor": 23992712.0,
+      "peso": 5375086.0
+    },
+    {
+      "codigo": 4122206,
+      "nome": "Rio Branco do Sul",
+      "cadeia": "Outros",
+      "valor": 545230.0,
+      "peso": 3096000.0
+    },
+    {
+      "codigo": 4122305,
+      "nome": "Rio Negro",
+      "cadeia": "Outros",
+      "valor": 47695974.0,
+      "peso": 19058281.0
+    },
+    {
+      "codigo": 4122404,
+      "nome": "Rolândia",
+      "cadeia": "Outros",
+      "valor": 2414577363.0,
+      "peso": 4135280114.0
+    },
+    {
+      "codigo": 4122503,
+      "nome": "Roncador",
+      "cadeia": "Outros",
+      "valor": 6351763.0,
+      "peso": 13533602.0
+    },
+    {
+      "codigo": 4122602,
+      "nome": "Rondon",
+      "cadeia": "Outros",
+      "valor": 3829820.0,
+      "peso": 6429922.0
+    },
+    {
+      "codigo": 4122800,
+      "nome": "Salgado Filho",
+      "cadeia": "Outros",
+      "valor": 546458.0,
+      "peso": 1551000.0
+    },
+    {
+      "codigo": 4123105,
+      "nome": "Santa Amélia",
+      "cadeia": "Outros",
+      "valor": 2818441.0,
+      "peso": 7872103.0
+    },
+    {
+      "codigo": 4123204,
+      "nome": "Santa Cecília do Pavão",
+      "cadeia": "Outros",
+      "valor": 2621140.0,
+      "peso": 5719385.0
+    },
+    {
+      "codigo": 4123402,
+      "nome": "Santa Fé",
+      "cadeia": "Outros",
+      "valor": 3819361.0,
+      "peso": 2668903.0
+    },
+    {
+      "codigo": 4123501,
+      "nome": "Santa Helena",
+      "cadeia": "Outros",
+      "valor": 619780.0,
+      "peso": 598271.0
+    },
+    {
+      "codigo": 4123808,
+      "nome": "Santa Izabel do Oeste",
+      "cadeia": "Outros",
+      "valor": 7324533.0,
+      "peso": 17396890.0
+    },
+    {
+      "codigo": 4123857,
+      "nome": "Santa Maria do Oeste",
+      "cadeia": "Outros",
+      "valor": 1607434.0,
+      "peso": 2441008.0
+    },
+    {
+      "codigo": 4123907,
+      "nome": "Santa Mariana",
+      "cadeia": "Outros",
+      "valor": 5437997.0,
+      "peso": 12575698.0
+    },
+    {
+      "codigo": 4123956,
+      "nome": "Santa Mônica",
+      "cadeia": "Outros",
+      "valor": 3976785.0,
+      "peso": 2995738.0
+    },
+    {
+      "codigo": 4124020,
+      "nome": "Santa Tereza do Oeste",
+      "cadeia": "Outros",
+      "valor": 4781760.0,
+      "peso": 11980918.0
+    },
+    {
+      "codigo": 4124053,
+      "nome": "Santa Terezinha de Itaipu",
+      "cadeia": "Outros",
+      "valor": 44485754.0,
+      "peso": 96190112.0
+    },
+    {
+      "codigo": 4124103,
+      "nome": "Santo Antônio da Platina",
+      "cadeia": "Outros",
+      "valor": 2267256.0,
+      "peso": 689977.0
+    },
+    {
+      "codigo": 4124301,
+      "nome": "Santo Antônio do Paraíso",
+      "cadeia": "Outros",
+      "valor": 95547.0,
+      "peso": 106516.0
+    },
+    {
+      "codigo": 4124400,
+      "nome": "Santo Antônio do Sudoeste",
+      "cadeia": "Outros",
+      "valor": 14166449.0,
+      "peso": 4053869.0
+    },
+    {
+      "codigo": 4124509,
+      "nome": "Santo Inácio",
+      "cadeia": "Outros",
+      "valor": 835299248.0,
+      "peso": 1839141872.0
+    },
+    {
+      "codigo": 4124608,
+      "nome": "São Carlos do Ivaí",
+      "cadeia": "Outros",
+      "valor": 424291499.0,
+      "peso": 1037447743.0
+    },
+    {
+      "codigo": 4124707,
+      "nome": "São Jerônimo da Serra",
+      "cadeia": "Outros",
+      "valor": 319468.0,
+      "peso": 8525.0
+    },
+    {
+      "codigo": 4124806,
+      "nome": "São João",
+      "cadeia": "Outros",
+      "valor": 429584658.0,
+      "peso": 251631590.0
+    },
+    {
+      "codigo": 4125001,
+      "nome": "São João do Ivaí",
+      "cadeia": "Outros",
+      "valor": 10751210.0,
+      "peso": 24716796.0
+    },
+    {
+      "codigo": 4125100,
+      "nome": "São João do Triunfo",
+      "cadeia": "Outros",
+      "valor": 16524542.0,
+      "peso": 2639394.0
+    },
+    {
+      "codigo": 4125308,
+      "nome": "São Jorge do Ivaí",
+      "cadeia": "Outros",
+      "valor": 6276754.0,
+      "peso": 17382539.0
+    },
+    {
+      "codigo": 4125357,
+      "nome": "São Jorge do Patrocínio",
+      "cadeia": "Outros",
+      "valor": 54544.0,
+      "peso": 18744.0
+    },
+    {
+      "codigo": 4125506,
+      "nome": "São José dos Pinhais",
+      "cadeia": "Outros",
+      "valor": 112680892.0,
+      "peso": 58292894.0
+    },
+    {
+      "codigo": 4125555,
+      "nome": "São Manoel do Paraná",
+      "cadeia": "Outros",
+      "valor": 6695.0,
+      "peso": 49300.0
+    },
+    {
+      "codigo": 4125605,
+      "nome": "São Mateus do Sul",
+      "cadeia": "Outros",
+      "valor": 32139340.0,
+      "peso": 12177031.0
+    },
+    {
+      "codigo": 4125704,
+      "nome": "São Miguel do Iguaçu",
+      "cadeia": "Outros",
+      "valor": 14960688.0,
+      "peso": 35389706.0
+    },
+    {
+      "codigo": 4125803,
+      "nome": "São Pedro do Ivaí",
+      "cadeia": "Outros",
+      "valor": 231856052.0,
+      "peso": 116232719.0
+    },
+    {
+      "codigo": 4126108,
+      "nome": "São Tomé",
+      "cadeia": "Outros",
+      "valor": 171348.0,
+      "peso": 77491.0
+    },
+    {
+      "codigo": 4126306,
+      "nome": "Sengés",
+      "cadeia": "Outros",
+      "valor": 137484.0,
+      "peso": 116040.0
+    },
+    {
+      "codigo": 4126405,
+      "nome": "Sertaneja",
+      "cadeia": "Outros",
+      "valor": 4467260.0,
+      "peso": 18010983.0
+    },
+    {
+      "codigo": 4126504,
+      "nome": "Sertanópolis",
+      "cadeia": "Outros",
+      "valor": 1527920283.0,
+      "peso": 4020959917.0
+    },
+    {
+      "codigo": 4126603,
+      "nome": "Siqueira Campos",
+      "cadeia": "Outros",
+      "valor": 10699104.0,
+      "peso": 19409617.0
+    },
+    {
+      "codigo": 4126678,
+      "nome": "Tamarana",
+      "cadeia": "Outros",
+      "valor": 2870.0,
+      "peso": 8926.0
+    },
+    {
+      "codigo": 4126702,
+      "nome": "Tamboara",
+      "cadeia": "Outros",
+      "valor": 367471.0,
+      "peso": 589950.0
+    },
+    {
+      "codigo": 4126801,
+      "nome": "Tapejara",
+      "cadeia": "Outros",
+      "valor": 385.0,
+      "peso": 99.0
+    },
+    {
+      "codigo": 4127106,
+      "nome": "Telêmaco Borba",
+      "cadeia": "Outros",
+      "valor": 684988.0,
+      "peso": 1950786.0
+    },
+    {
+      "codigo": 4127205,
+      "nome": "Terra Boa",
+      "cadeia": "Outros",
+      "valor": 28521639.0,
+      "peso": 72449666.0
+    },
+    {
+      "codigo": 4127304,
+      "nome": "Terra Rica",
+      "cadeia": "Outros",
+      "valor": 6426.0,
+      "peso": 3157.0
+    },
+    {
+      "codigo": 4127403,
+      "nome": "Terra Roxa",
+      "cadeia": "Outros",
+      "valor": 30342112.0,
+      "peso": 71702909.0
+    },
+    {
+      "codigo": 4127502,
+      "nome": "Tibagi",
+      "cadeia": "Outros",
+      "valor": 42758956.0,
+      "peso": 97074146.0
+    },
+    {
+      "codigo": 4127601,
+      "nome": "Tijucas do Sul",
+      "cadeia": "Outros",
+      "valor": 785000.0,
+      "peso": 1450.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "cadeia": "Outros",
+      "valor": 260777294.0,
+      "peso": 209680291.0
+    },
+    {
+      "codigo": 4127957,
+      "nome": "Tupãssi",
+      "cadeia": "Outros",
+      "valor": 29667961.0,
+      "peso": 39949317.0
+    },
+    {
+      "codigo": 4127965,
+      "nome": "Turvo",
+      "cadeia": "Outros",
+      "valor": 5781457.0,
+      "peso": 2741297.0
+    },
+    {
+      "codigo": 4128005,
+      "nome": "Ubiratã",
+      "cadeia": "Outros",
+      "valor": 1276564206.0,
+      "peso": 867492316.0
+    },
+    {
+      "codigo": 4128104,
+      "nome": "Umuarama",
+      "cadeia": "Outros",
+      "valor": 225494027.0,
+      "peso": 133913954.0
+    },
+    {
+      "codigo": 4128203,
+      "nome": "União da Vitória",
+      "cadeia": "Outros",
+      "valor": 34679775.0,
+      "peso": 10178312.0
+    },
+    {
+      "codigo": 4128401,
+      "nome": "Uraí",
+      "cadeia": "Outros",
+      "valor": 50508999.0,
+      "peso": 23004929.0
+    },
+    {
+      "codigo": 4128500,
+      "nome": "Wenceslau Braz",
+      "cadeia": "Outros",
+      "valor": 5759360.0,
+      "peso": 18215404.0
+    },
+    {
+      "codigo": 4128708,
+      "nome": "Vitorino",
+      "cadeia": "Outros",
+      "valor": 1281284.0,
+      "peso": 2792042.0
+    },
+    {
+      "codigo": 4128807,
+      "nome": "Xambrê",
+      "cadeia": "Outros",
+      "valor": 49272.0,
+      "peso": 59166.0
     }
   ]
 }

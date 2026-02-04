@@ -1,6 +1,6 @@
 """
 Script para atualizar dados de municípios com nomes corretos
-e preparar dados para mapa e Sankey
+e preparar dados para mapa e Sankey (com suporte a filtro por cadeia)
 """
 
 import json
@@ -9,6 +9,15 @@ from pathlib import Path
 import numpy as np
 import sys
 import io
+
+# Importar mapeamento de cadeia
+try:
+    from ncm_cadeias_map import get_cadeia_from_sh4, CADEIAS, CADEIA_CORES
+except ImportError:
+    CADEIAS = {}
+    CADEIA_CORES = {}
+    def get_cadeia_from_sh4(sh4):
+        return "outros", "Outros"
 
 # Configurar encoding UTF-8 para Windows
 if sys.platform == 'win32':
@@ -66,6 +75,13 @@ def create_all_data():
     flow_df = pd.read_parquet(flow_file)
     print(f"Carregados {len(flow_df)} registros de fluxo")
 
+    # Carregar dados de fluxo por cadeia (para filtros)
+    flow_cadeia_file = Path("data/processed/fluxo_municipio_pais_cadeia.parquet")
+    flow_cadeia_df = None
+    if flow_cadeia_file.exists():
+        flow_cadeia_df = pd.read_parquet(flow_cadeia_file)
+        print(f"Carregados {len(flow_cadeia_df)} registros de fluxo por cadeia")
+
     # Atualizar nomes de municípios
     flow_df['NO_MUN'] = flow_df['CO_MUN'].map(MUNICIPIOS_PR).fillna(
         flow_df['CO_MUN'].astype(str)
@@ -115,12 +131,41 @@ def create_all_data():
             'value': float(row['VL_FOB'])
         })
 
-    sankey_data = {'nodes': nodes, 'links': links}
+    # Criar linksByCadeia se temos dados por cadeia
+    links_by_cadeia = []
+    if flow_cadeia_df is not None:
+        # Atualizar nomes de municípios no flow_cadeia_df
+        flow_cadeia_df['NO_MUN'] = flow_cadeia_df['CO_MUN'].map(MUNICIPIOS_PR).fillna(
+            flow_cadeia_df['CO_MUN'].astype(str)
+        )
+
+        # Filtrar pelos top municípios e países
+        sankey_flows_cadeia = flow_cadeia_df[
+            (flow_cadeia_df['CO_MUN'].isin(top_mun)) &
+            (flow_cadeia_df['CO_PAIS'].isin(top_pais))
+        ].copy()
+
+        # Agregar por município-país-cadeia
+        sankey_agg_cadeia = sankey_flows_cadeia.groupby(['NO_MUN', 'NO_PAIS', 'CADEIA']).agg({
+            'VL_FOB': 'sum'
+        }).reset_index()
+
+        # Criar links por cadeia
+        for _, row in sankey_agg_cadeia.iterrows():
+            links_by_cadeia.append({
+                'source': f"mun_{row['NO_MUN']}",
+                'target': f"pais_{row['NO_PAIS']}",
+                'value': float(row['VL_FOB']),
+                'cadeia': row['CADEIA']
+            })
+        print(f"   Criados {len(links_by_cadeia)} links por cadeia")
+
+    sankey_data = {'nodes': nodes, 'links': links, 'linksByCadeia': links_by_cadeia}
 
     sankey_file = Path("dashboard/public/data/sankey_data.json")
     with open(sankey_file, 'w', encoding='utf-8') as f:
         json.dump(sankey_data, f, cls=NumpyEncoder, ensure_ascii=False, indent=2)
-    print(f"   Salvo: {sankey_file} ({len(nodes)} nodes, {len(links)} links)")
+    print(f"   Salvo: {sankey_file} ({len(nodes)} nodes, {len(links)} links, {len(links_by_cadeia)} linksByCadeia)")
 
     # --- Criar dados para mapa de municípios ---
     print("\n2. Criando dados para mapa de municípios...")
@@ -144,16 +189,36 @@ def create_all_data():
             'percentual': float(row['VL_FOB'] / total_valor * 100)
         })
 
+    # Criar municipiosByCadeia se temos dados por cadeia
+    municipios_by_cadeia = []
+    if flow_cadeia_df is not None:
+        # Agregar por município e cadeia
+        mun_cadeia_totals = flow_cadeia_df.groupby(['CO_MUN', 'NO_MUN', 'CADEIA']).agg({
+            'VL_FOB': 'sum',
+            'KG_LIQUIDO': 'sum'
+        }).reset_index()
+
+        for _, row in mun_cadeia_totals.iterrows():
+            municipios_by_cadeia.append({
+                'codigo': int(row['CO_MUN']),
+                'nome': row['NO_MUN'],
+                'cadeia': row['CADEIA'],
+                'valor': float(row['VL_FOB']),
+                'peso': float(row['KG_LIQUIDO'])
+            })
+        print(f"   Criados {len(municipios_by_cadeia)} registros municipio-cadeia")
+
     output = {
         'totalValor': float(total_valor),
         'totalPeso': float(mun_totals['KG_LIQUIDO'].sum()),
-        'municipios': map_data
+        'municipios': map_data,
+        'municipiosByCadeia': municipios_by_cadeia
     }
 
     mun_file = Path("dashboard/public/data/municipios_data.json")
     with open(mun_file, 'w', encoding='utf-8') as f:
         json.dump(output, f, cls=NumpyEncoder, ensure_ascii=False, indent=2)
-    print(f"   Salvo: {mun_file} ({len(map_data)} municípios)")
+    print(f"   Salvo: {mun_file} ({len(map_data)} municípios, {len(municipios_by_cadeia)} por cadeia)")
 
     # --- Mostrar resumo ---
     print("\n=== Top 10 Municípios Exportadores ===")

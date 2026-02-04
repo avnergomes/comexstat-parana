@@ -43,6 +43,27 @@ UF_PARANA = "PR"
 # Capítulo 24: Tabaco e seus sucedâneos
 CAPITULOS_AGRICULTURA = list(range(1, 25))
 
+# Capítulos NCM para insumos agrícolas
+# Capítulo 31: Adubos (fertilizantes)
+#   - 3101: Adubos orgânicos (origem animal/vegetal)
+#   - 3102: Adubos minerais nitrogenados (ureia, nitrato de amônio)
+#   - 3103: Adubos minerais fosfatados (superfosfatos)
+#   - 3104: Adubos minerais potássicos (cloreto de potássio - KCl)
+#   - 3105: Adubos NPK e misturas (MAP, DAP)
+# Capítulo 38: Produtos químicos diversos (posição 3808 - defensivos agrícolas)
+#   - 380891: Inseticidas
+#   - 380892: Fungicidas
+#   - 380893: Herbicidas (glifosato, 2,4-D, atrazina)
+#   - 380899: Outros (acaricidas, nematicidas, reguladores)
+CAPITULOS_INSUMOS = [31]  # Cap. 38 filtrado por posição específica (3808)
+POSICAO_DEFENSIVOS = "3808"  # Posição específica dentro do cap. 38
+
+# Flag para incluir insumos no processamento
+INCLUIR_INSUMOS = True
+
+# Todos os capítulos relevantes (agricultura + insumos)
+CAPITULOS_TODOS = CAPITULOS_AGRICULTURA + CAPITULOS_INSUMOS
+
 # Anos para download (ajuste conforme necessário)
 ANO_INICIO = 2020
 ANO_FIM = 2025

@@ -47,7 +47,41 @@ CATEGORIAS_NCM = {
     21: "Prep. alimenticias",
     22: "Bebidas e vinagres",
     23: "Residuos alimentares",
-    24: "Tabaco"
+    24: "Tabaco",
+    # Insumos agrícolas
+    31: "Fertilizantes",
+    38: "Defensivos Agricolas",
+}
+
+# Mapeamento de cadeias para tipo (produto agrícola vs insumo)
+TIPO_CADEIA = {
+    # Produtos agrícolas (outputs - exportação)
+    "Sojicultura": "produto",
+    "Avicultura": "produto",
+    "Bovinocultura": "produto",
+    "Suinocultura": "produto",
+    "Cafeicultura": "produto",
+    "Cerealicultura": "produto",
+    "Canavicultura": "produto",
+    "Fruticultura": "produto",
+    "Olericultura": "produto",
+    "Aquicultura": "produto",
+    "Florestal": "produto",
+    "Floricultura": "produto",
+    "Apicultura": "produto",
+    "Laticínios": "produto",
+    "Oleaginosas": "produto",
+    "Agroind. Carnes": "produto",
+    "Agroind. Grãos": "produto",
+    "Bebidas": "produto",
+    "Tabaco": "produto",
+    "Outros": "produto",
+    # Insumos agrícolas (inputs - importação)
+    "Fertilizantes": "insumo",
+    "Herbicidas": "insumo",
+    "Fungicidas": "insumo",
+    "Inseticidas": "insumo",
+    "Outros Insumos": "insumo",
 }
 
 # Importar mapeamento de cadeias e descrições
@@ -165,7 +199,14 @@ def preparar_aggregated(df_exp, df_imp):
     cadeias = sorted(list(set(df_exp['CADEIA'].unique()) | set(df_imp['CADEIA'].unique())))
     filters = {
         "capitulos": [{"codigo": int(c), "nome": CATEGORIAS_NCM.get(c, f"Cap. {c}")} for c in capitulos],
-        "cadeias": [{"nome": c, "cor": CADEIA_CORES.get(c, "#64748b")} for c in cadeias],
+        "cadeias": [
+            {
+                "nome": c,
+                "cor": CADEIA_CORES.get(c, "#64748b"),
+                "tipo": TIPO_CADEIA.get(c, "produto")  # produto ou insumo
+            }
+            for c in cadeias
+        ],
         "paisesExp": sorted(df_exp['PAIS'].dropna().unique().tolist()),
         "paisesImp": sorted(df_imp['PAIS'].dropna().unique().tolist()),
     }
@@ -267,7 +308,7 @@ def preparar_aggregated(df_exp, df_imp):
         "importacoes": imp_cap.sort_values('valor', ascending=False).to_dict('records')
     }
 
-    # Por pais
+    # Por pais (agregado - sem cadeia, para compatibilidade)
     exp_pais = df_exp.groupby(['CO_PAIS', 'PAIS']).agg({
         'VL_FOB': 'sum',
         'KG_LIQUIDO': 'sum'
@@ -283,6 +324,30 @@ def preparar_aggregated(df_exp, df_imp):
     byPais = {
         "exportacoes": exp_pais.sort_values('valor', ascending=False).head(50).to_dict('records'),
         "importacoes": imp_pais.sort_values('valor', ascending=False).head(50).to_dict('records')
+    }
+
+    # Por país E cadeia (para filtros por cadeia funcionarem)
+    exp_pais_cadeia = df_exp.groupby(['CO_PAIS', 'PAIS', 'CADEIA']).agg({
+        'VL_FOB': 'sum',
+        'KG_LIQUIDO': 'sum'
+    }).reset_index()
+    exp_pais_cadeia = exp_pais_cadeia.rename(columns={
+        'CO_PAIS': 'codigo', 'PAIS': 'pais', 'CADEIA': 'cadeia',
+        'VL_FOB': 'valor', 'KG_LIQUIDO': 'peso'
+    })
+
+    imp_pais_cadeia = df_imp.groupby(['CO_PAIS', 'PAIS', 'CADEIA']).agg({
+        'VL_FOB': 'sum',
+        'KG_LIQUIDO': 'sum'
+    }).reset_index()
+    imp_pais_cadeia = imp_pais_cadeia.rename(columns={
+        'CO_PAIS': 'codigo', 'PAIS': 'pais', 'CADEIA': 'cadeia',
+        'VL_FOB': 'valor', 'KG_LIQUIDO': 'peso'
+    })
+
+    byPaisByCadeia = {
+        "exportacoes": exp_pais_cadeia.to_dict('records'),
+        "importacoes": imp_pais_cadeia.to_dict('records')
     }
 
     # Top produtos
@@ -313,6 +378,7 @@ def preparar_aggregated(df_exp, df_imp):
         "byCategoria": byCategoria,
         "byCapitulo": byCapitulo,
         "byPais": byPais,
+        "byPaisByCadeia": byPaisByCadeia,
         "topProdutos": topProdutos
     }
 

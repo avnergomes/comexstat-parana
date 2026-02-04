@@ -25,6 +25,12 @@ CADEIAS = {
     "bebidas": "Bebidas",
     "tabaco": "Tabaco",
     "outros": "Outros",
+    # Insumos agrícolas
+    "fertilizantes": "Fertilizantes",
+    "herbicidas": "Herbicidas",
+    "fungicidas": "Fungicidas",
+    "inseticidas": "Inseticidas",
+    "outros_insumos": "Outros Insumos",
 }
 
 # Mapeamento por capítulo NCM (default)
@@ -53,6 +59,9 @@ CAPITULO_TO_CADEIA = {
     22: "bebidas",        # Bebidas e vinagres
     23: "sojicultura",    # Resíduos alimentares (farelo)
     24: "tabaco",         # Tabaco
+    # Insumos agrícolas
+    31: "fertilizantes",  # Adubos e fertilizantes
+    38: "outros_insumos", # Produtos químicos diversos (default - refinado por NCM específico)
 }
 
 # Palavras-chave para refinamento por descrição
@@ -127,6 +136,33 @@ KEYWORDS_CADEIA = {
         "azeite de oliva", "óleo de coco", "margarina",
         "gordura vegetal", "gordura animal",
     ],
+    # Insumos agrícolas
+    "fertilizantes": [
+        "adubo", "fertilizante", "ureia", "nitrato", "fosfato", "potássio",
+        "npk", "superfosfato", "cloreto de potássio", "sulfato de amônio",
+        "fosfato de amônio", "map", "dap", "nitrato de amônio", "kcl",
+        "fosfato diamônico", "fosfato monoamônico", "nitrogênio", "fósforo",
+    ],
+    "herbicidas": [
+        "herbicida", "glifosato", "glyphosate", "2,4-d", "atrazina",
+        "paraquat", "dicamba", "mesotrione", "nicosulfuron", "imazetapir",
+        "matador de ervas", "inibidor de germinação",
+    ],
+    "fungicidas": [
+        "fungicida", "mancozeb", "azoxistrobina", "tebuconazol",
+        "carbendazim", "tiofanato", "trifloxistrobina", "propiconazol",
+        "cobre", "enxofre", "sulfato de cobre",
+    ],
+    "inseticidas": [
+        "inseticida", "imidacloprido", "fipronil", "lambda-cialotrina",
+        "clorpirifós", "tiametoxam", "acefato", "cipermetrina",
+        "permetrina", "piretróide", "organofosforado",
+    ],
+    "outros_insumos": [
+        "acaricida", "nematicida", "rodenticida", "formicida",
+        "regulador de crescimento", "desfolhante", "maturador",
+        "defensivo agrícola", "agroquímico", "agrotóxico",
+    ],
 }
 
 # Mapeamento específico por código NCM (8 dígitos) - casos especiais
@@ -198,6 +234,123 @@ NCM_ESPECIFICO = {
     # Frutas processadas
     "20091900": "fruticultura",  # Suco de laranja
     "20091100": "fruticultura",  # Suco de laranja congelado
+
+    # ===== INSUMOS AGRÍCOLAS =====
+
+    # Capítulo 31 - Fertilizantes (todos para cadeia fertilizantes)
+    "31010000": "fertilizantes",  # Adubos orgânicos
+    "31021010": "fertilizantes",  # Ureia com teor de N > 45%
+    "31021090": "fertilizantes",  # Outras ureias
+    "31022100": "fertilizantes",  # Sulfato de amônio
+    "31022910": "fertilizantes",  # Nitrato de amônio
+    "31022990": "fertilizantes",  # Outros sais de amônio
+    "31023000": "fertilizantes",  # Nitrato de amônio
+    "31024000": "fertilizantes",  # Misturas nitrato + carbonato de amônio
+    "31025011": "fertilizantes",  # Nitrato de sódio natural
+    "31025019": "fertilizantes",  # Outros nitratos de sódio
+    "31025090": "fertilizantes",  # Outros nitratos
+    "31026000": "fertilizantes",  # Sais duplos de nitrato de cálcio e amônio
+    "31028000": "fertilizantes",  # Misturas ureia + nitrato de amônio
+    "31029000": "fertilizantes",  # Outros adubos nitrogenados
+    "31031100": "fertilizantes",  # Superfosfatos >= 35% P2O5
+    "31031900": "fertilizantes",  # Outros superfosfatos
+    "31039011": "fertilizantes",  # Fosfato bicálcico
+    "31039019": "fertilizantes",  # Outros fosfatos de cálcio
+    "31039090": "fertilizantes",  # Outros adubos fosfatados
+    "31041000": "fertilizantes",  # Carnalita e silvita
+    "31042010": "fertilizantes",  # Cloreto de potássio com K2O <= 60%
+    "31042090": "fertilizantes",  # Outros cloretos de potássio
+    "31043010": "fertilizantes",  # Sulfato de potássio com K2O <= 52%
+    "31043090": "fertilizantes",  # Outros sulfatos de potássio
+    "31049010": "fertilizantes",  # Sulfato de magnésio e potássio
+    "31049090": "fertilizantes",  # Outros adubos potássicos
+    "31051000": "fertilizantes",  # Adubos em tabletes ou embalagens <= 10kg
+    "31052000": "fertilizantes",  # Adubos NPK
+    "31053010": "fertilizantes",  # Hidrogenoortofosfato de diamônio (DAP)
+    "31053090": "fertilizantes",  # Outros fosfatos de amônio
+    "31054000": "fertilizantes",  # Diidrogeno-ortofosfato de amônio (MAP)
+    "31055100": "fertilizantes",  # Adubos com nitrato e fosfato
+    "31055900": "fertilizantes",  # Outros adubos com N e P
+    "31056000": "fertilizantes",  # Adubos com P e K
+    "31059011": "fertilizantes",  # Adubos NPK 10-10-10
+    "31059019": "fertilizantes",  # Outros adubos NPK
+    "31059090": "fertilizantes",  # Outros adubos minerais
+
+    # Capítulo 38 - Posição 3808 - Inseticidas
+    "38085200": "inseticidas",    # DDT em embalagens <= 300g
+    "38085910": "inseticidas",    # Inseticidas para uso doméstico
+    "38085921": "inseticidas",    # À base de metamidofós ou monocrotofós
+    "38085922": "inseticidas",    # À base de endossulfan
+    "38085923": "inseticidas",    # À base de alaclor
+    "38085929": "inseticidas",    # Outros inseticidas
+    "38086100": "inseticidas",    # Em embalagens <= 300g
+    "38086210": "inseticidas",    # À base de alfa-cipermetrina
+    "38086290": "inseticidas",    # Outras formulações
+    "38086910": "inseticidas",    # À base de alfa-cipermetrina
+    "38086990": "inseticidas",    # Outras apresentações
+    "38089111": "inseticidas",    # Com bromometano para uso doméstico
+    "38089119": "inseticidas",    # Outros inseticidas domésticos
+    "38089120": "inseticidas",    # Inseticidas com bromometano
+    "38089191": "inseticidas",    # À base de acefato ou Bacillus thuringiensis
+    "38089192": "inseticidas",    # À base de cipermetrinas ou permetrina
+    "38089193": "inseticidas",    # À base de dicrotofós
+    "38089194": "inseticidas",    # À base de dissulfoton
+    "38089195": "inseticidas",    # À base de fosfeto de alumínio
+    "38089196": "inseticidas",    # À base de diclorvós ou triclorfon
+    "38089197": "inseticidas",    # À base de óleo mineral ou tiometon
+    "38089198": "inseticidas",    # À base de sulfluramida
+    "38089199": "inseticidas",    # Outros inseticidas
+
+    # Capítulo 38 - Posição 3808 - Fungicidas
+    "38089211": "fungicidas",     # Fungicidas com bromometano uso doméstico
+    "38089219": "fungicidas",     # Outros fungicidas domésticos
+    "38089220": "fungicidas",     # Fungicidas com bromometano
+    "38089291": "fungicidas",     # À base de hidróxido de cobre ou óxido cuproso
+    "38089292": "fungicidas",     # À base de enxofre ou ziram
+    "38089293": "fungicidas",     # À base de mancozeb ou maneb
+    "38089294": "fungicidas",     # À base de sulfiram
+    "38089295": "fungicidas",     # À base de compostos de arsênio, cobre ou cromo
+    "38089296": "fungicidas",     # À base de thiram
+    "38089297": "fungicidas",     # À base de propiconazol
+    "38089299": "fungicidas",     # Outros fungicidas
+
+    # Capítulo 38 - Posição 3808 - Herbicidas
+    "38089311": "herbicidas",     # Herbicidas com bromometano uso doméstico
+    "38089319": "herbicidas",     # Outros herbicidas domésticos
+    "38089321": "herbicidas",     # Herbicidas com bromometano
+    "38089322": "herbicidas",     # À base de 2,4-D e compostos relacionados
+    "38089323": "herbicidas",     # À base de atrazina ou diuron
+    "38089324": "herbicidas",     # À base de glifosato ou imazaquim
+    "38089325": "herbicidas",     # À base de paraquat, propanil ou simazina
+    "38089326": "herbicidas",     # À base de trifluralina
+    "38089327": "herbicidas",     # À base de imazetapir
+    "38089328": "herbicidas",     # À base de ametrina ou hexazinona
+    "38089329": "herbicidas",     # Outros herbicidas
+    "38089331": "herbicidas",     # Inibidores de germinação com bromometano
+    "38089332": "herbicidas",     # Inibidores de germinação uso doméstico
+    "38089333": "herbicidas",     # Outros inibidores de germinação
+    "38089341": "outros_insumos", # Reguladores de crescimento com bromometano
+    "38089349": "outros_insumos", # Outros reguladores uso doméstico
+    "38089351": "outros_insumos", # Reguladores com bromometano
+    "38089352": "outros_insumos", # À base de hidrazida maleica
+    "38089359": "outros_insumos", # Outros reguladores de crescimento
+
+    # Capítulo 38 - Posição 3808 - Outros (desinfetantes, acaricidas, etc.)
+    "38089411": "outros_insumos", # Desinfetantes com bromometano uso doméstico
+    "38089419": "outros_insumos", # Outros desinfetantes domésticos
+    "38089421": "outros_insumos", # Desinfetantes com bromometano
+    "38089422": "outros_insumos", # À base de 2-(tiocianometiltio) benzotiazol
+    "38089429": "outros_insumos", # Outros desinfetantes
+    "38089911": "outros_insumos", # Outros produtos uso doméstico
+    "38089919": "outros_insumos", # Outros produtos domésticos
+    "38089920": "outros_insumos", # Outros produtos com bromometano
+    "38089991": "outros_insumos", # Acaricidas à base de amitraz ou propargite
+    "38089992": "outros_insumos", # Acaricidas à base de ciexatin ou fenbutatin
+    "38089993": "outros_insumos", # Outros acaricidas
+    "38089994": "outros_insumos", # Nematicidas à base de metam sódio
+    "38089995": "outros_insumos", # Outros nematicidas
+    "38089996": "outros_insumos", # Rodenticidas
+    "38089999": "outros_insumos", # Outros produtos da posição 3808
 }
 
 
@@ -488,6 +641,18 @@ SH4_TO_CADEIA = {
     "2401": "tabaco",
     "2402": "tabaco",
     "2403": "tabaco",
+
+    # ===== INSUMOS AGRÍCOLAS =====
+
+    # Capítulo 31 - Fertilizantes (Adubos)
+    "3101": "fertilizantes",    # Adubos orgânicos
+    "3102": "fertilizantes",    # Adubos minerais nitrogenados
+    "3103": "fertilizantes",    # Adubos minerais fosfatados
+    "3104": "fertilizantes",    # Adubos minerais potássicos
+    "3105": "fertilizantes",    # Adubos NPK e misturas
+
+    # Capítulo 38 - Posição 3808 - Defensivos Agrícolas
+    "3808": "outros_insumos",   # Default - refinado por NCM específico
 }
 
 
@@ -539,6 +704,12 @@ CADEIA_CORES = {
     "Bebidas": "#8b5cf6",           # Purple
     "Tabaco": "#78716c",            # Gray
     "Outros": "#64748b",            # Slate
+    # Insumos agrícolas
+    "Fertilizantes": "#10b981",     # Emerald (verde)
+    "Herbicidas": "#f59e0b",        # Amber (laranja)
+    "Fungicidas": "#6366f1",        # Indigo (roxo)
+    "Inseticidas": "#ef4444",       # Red (vermelho)
+    "Outros Insumos": "#6b7280",    # Gray (cinza)
 }
 
 # Mapeamento SH4 para descrições de produtos (português)
@@ -775,6 +946,18 @@ SH4_DESCRICAO = {
     "2401": "Tabaco não manufaturado",
     "2402": "Charutos e cigarros",
     "2403": "Outros produtos de tabaco",
+
+    # ===== INSUMOS AGRÍCOLAS =====
+
+    # Capítulo 31 - Fertilizantes (Adubos)
+    "3101": "Adubos orgânicos (origem animal ou vegetal)",
+    "3102": "Adubos minerais nitrogenados (ureia, nitrato de amônio)",
+    "3103": "Adubos minerais fosfatados (superfosfatos)",
+    "3104": "Adubos minerais potássicos (cloreto de potássio)",
+    "3105": "Adubos NPK e misturas (MAP, DAP)",
+
+    # Capítulo 38 - Posição 3808 - Defensivos Agrícolas
+    "3808": "Inseticidas, fungicidas, herbicidas e similares",
 }
 
 

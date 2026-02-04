@@ -27,6 +27,16 @@ ANO_INICIO = 2020
 ANO_FIM = 2025
 UF_PARANA = "PR"
 CAPITULOS_AGRICULTURA = list(range(1, 25))
+CAPITULOS_INSUMOS = [31]  # Fertilizantes
+POSICAO_DEFENSIVOS = "3808"  # Defensivos agrícolas (cap. 38)
+
+# Importar mapeamento de cadeia
+try:
+    from ncm_cadeias_map import get_cadeia_from_sh4, CADEIAS
+except ImportError:
+    CADEIAS = {}
+    def get_cadeia_from_sh4(sh4):
+        return "outros", "Outros"
 
 # Colunas dos arquivos de exportação por município
 COLUNAS_EXP_MUN = [
@@ -152,30 +162,52 @@ def process_municipal_data():
             df = pd.read_csv(filepath, sep=';', encoding='latin-1')
             # Filtrar Paraná
             df = df[df['SG_UF_MUN'] == UF_PARANA]
-            # Filtrar agricultura (capítulos 01-24) - SH4 começa com 01-24
-            df['CAPITULO'] = df['SH4'].astype(str).str.zfill(4).str[:2].astype(int)
-            df = df[df['CAPITULO'].isin(CAPITULOS_AGRICULTURA)]
+            # Filtrar agricultura (capítulos 01-24) e insumos (cap 31 + posição 3808)
+            df['SH4_STR'] = df['SH4'].astype(str).str.zfill(4)
+            df['CAPITULO'] = df['SH4_STR'].str[:2].astype(int)
+
+            # Filtrar: caps agricultura + cap 31 + posição 3808
+            mask_agri = df['CAPITULO'].isin(CAPITULOS_AGRICULTURA)
+            mask_fertilizantes = df['CAPITULO'].isin(CAPITULOS_INSUMOS)
+            mask_defensivos = df['SH4_STR'] == POSICAO_DEFENSIVOS
+            df = df[mask_agri | mask_fertilizantes | mask_defensivos]
+
+            # Adicionar cadeia baseada no SH4
+            df['CADEIA'] = df['SH4_STR'].apply(lambda x: get_cadeia_from_sh4(x)[1])
+
             all_exp.append(df)
-            print(f"    {len(df)} registros agrícolas do PR")
+            print(f"    {len(df)} registros agrícolas/insumos do PR")
 
     if all_exp:
         exp_df = pd.concat(all_exp, ignore_index=True)
         print(f"\n  Total exportações por município: {len(exp_df)} registros")
 
-        # Agregar por município -> país
+        # Agregar por município -> país (totais)
         flow_exp = exp_df.groupby(['CO_MUN', 'CO_PAIS']).agg({
             'VL_FOB': 'sum',
             'KG_LIQUIDO': 'sum'
         }).reset_index()
 
-        # Adicionar nomes
+        # Agregar por município -> país -> cadeia (para filtros)
+        flow_exp_cadeia = exp_df.groupby(['CO_MUN', 'CO_PAIS', 'CADEIA']).agg({
+            'VL_FOB': 'sum',
+            'KG_LIQUIDO': 'sum'
+        }).reset_index()
+
+        # Adicionar nomes aos dados totais
         if paises_df is not None:
             flow_exp = flow_exp.merge(paises_df[['CO_PAIS', 'NO_PAIS']], on='CO_PAIS', how='left')
             flow_exp['NO_PAIS'] = flow_exp['NO_PAIS'].fillna('Desconhecido')
+            # Também adicionar nomes aos dados por cadeia
+            flow_exp_cadeia = flow_exp_cadeia.merge(paises_df[['CO_PAIS', 'NO_PAIS']], on='CO_PAIS', how='left')
+            flow_exp_cadeia['NO_PAIS'] = flow_exp_cadeia['NO_PAIS'].fillna('Desconhecido')
 
         if mun_df is not None and 'CO_MUN' in mun_df.columns:
             flow_exp = flow_exp.merge(mun_df[['CO_MUN', 'NO_MUN']], on='CO_MUN', how='left')
             flow_exp['NO_MUN'] = flow_exp['NO_MUN'].fillna(flow_exp['CO_MUN'].astype(str))
+            # Também adicionar nomes aos dados por cadeia
+            flow_exp_cadeia = flow_exp_cadeia.merge(mun_df[['CO_MUN', 'NO_MUN']], on='CO_MUN', how='left')
+            flow_exp_cadeia['NO_MUN'] = flow_exp_cadeia['NO_MUN'].fillna(flow_exp_cadeia['CO_MUN'].astype(str))
         else:
             # Criar dicionário de municípios do Paraná manualmente (principais)
             mun_pr = {
@@ -201,6 +233,7 @@ def process_municipal_data():
                 4128104: "União da Vitória"
             }
             flow_exp['NO_MUN'] = flow_exp['CO_MUN'].map(mun_pr).fillna(flow_exp['CO_MUN'].astype(str))
+            flow_exp_cadeia['NO_MUN'] = flow_exp_cadeia['CO_MUN'].map(mun_pr).fillna(flow_exp_cadeia['CO_MUN'].astype(str))
 
         # Ordenar por valor e pegar top fluxos
         flow_exp = flow_exp.sort_values('VL_FOB', ascending=False)
@@ -209,6 +242,10 @@ def process_municipal_data():
         PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
         flow_exp.to_parquet(PROCESSED_DIR / 'fluxo_municipio_pais.parquet', index=False)
         print(f"\n  Salvo: {PROCESSED_DIR / 'fluxo_municipio_pais.parquet'}")
+
+        # Salvar dados de fluxo por cadeia
+        flow_exp_cadeia.to_parquet(PROCESSED_DIR / 'fluxo_municipio_pais_cadeia.parquet', index=False)
+        print(f"  Salvo: {PROCESSED_DIR / 'fluxo_municipio_pais_cadeia.parquet'}")
 
         # Criar dados agregados para o Sankey (top 15 municípios -> top 15 países)
         top_mun = exp_df.groupby('CO_MUN')['VL_FOB'].sum().nlargest(15).index.tolist()
@@ -225,9 +262,9 @@ def process_municipal_data():
             nome = flow_exp[flow_exp['CO_MUN'] == cod]['NO_MUN'].iloc[0] if len(flow_exp[flow_exp['CO_MUN'] == cod]) > 0 else cod
             print(f"    {nome}: US$ {val/1e9:.2f} bi")
 
-        return sankey_data, flow_exp
+        return sankey_data, flow_exp, flow_exp_cadeia
 
-    return None, None
+    return None, None, None
 
 
 def create_sankey_json(sankey_data, flow_exp):
@@ -285,7 +322,7 @@ if __name__ == "__main__":
     print("=== Download de dados por município ===\n")
     download_municipal_data()
 
-    sankey_data, flow_exp = process_municipal_data()
+    sankey_data, flow_exp, flow_exp_cadeia = process_municipal_data()
 
     if sankey_data is not None:
         create_sankey_json(sankey_data, flow_exp)
