@@ -73,16 +73,45 @@ export function useFilteredData(data, filters) {
   return useMemo(() => {
     if (!data) return null;
 
-    const { anoMin, anoMax, cadeias, tipo } = filters;
+    const { anoMin, anoMax, cadeias, tipo, tipoCategoria } = filters;
+
+    // Determinar cadeias efetivas baseado no tipoCategoria
+    let cadeiasEfetivas = cadeias;
+
+    // Se não há cadeias selecionadas mas há filtro de tipoCategoria,
+    // filtrar automaticamente pelas cadeias do tipo
+    if ((!cadeias || cadeias.length === 0) && tipoCategoria && tipoCategoria !== 'todos') {
+      const allCadeias = data.filters?.cadeias || [];
+      cadeiasEfetivas = allCadeias
+        .filter(c => {
+          if (tipoCategoria === 'produtos') return c.tipo === 'produto';
+          if (tipoCategoria === 'insumos') return c.tipo === 'insumo';
+          return true;
+        })
+        .map(c => c.nome);
+    }
+
+    // Se há cadeias selecionadas, garantir que são do tipo correto
+    if (cadeias && cadeias.length > 0 && tipoCategoria && tipoCategoria !== 'todos') {
+      const allCadeias = data.filters?.cadeias || [];
+      const cadeiasDoTipo = allCadeias
+        .filter(c => {
+          if (tipoCategoria === 'produtos') return c.tipo === 'produto';
+          if (tipoCategoria === 'insumos') return c.tipo === 'insumo';
+          return true;
+        })
+        .map(c => c.nome);
+      cadeiasEfetivas = cadeias.filter(c => cadeiasDoTipo.includes(c));
+    }
 
     // Filtrar série temporal por ano e cadeia
     let timeseries = data.timeseries || [];
 
     // Se há filtro de cadeias, recalcular timeseries a partir de timeseriesByCadeia
-    if (cadeias && cadeias.length > 0 && data.timeseriesByCadeia) {
+    if (cadeiasEfetivas && cadeiasEfetivas.length > 0 && data.timeseriesByCadeia) {
       // Filtrar por cadeias selecionadas
       const filteredByCadeia = data.timeseriesByCadeia.filter(item =>
-        cadeias.includes(item.cadeia)
+        cadeiasEfetivas.includes(item.cadeia)
       );
 
       // Agrupar por ano
@@ -111,13 +140,13 @@ export function useFilteredData(data, filters) {
 
     // Filtrar por categoria (cadeia)
     let byCategoria = data.byCategoria || { exportacoes: [], importacoes: [] };
-    if (cadeias && cadeias.length > 0) {
+    if (cadeiasEfetivas && cadeiasEfetivas.length > 0) {
       byCategoria = {
         exportacoes: byCategoria.exportacoes.filter(item =>
-          cadeias.includes(item.categoria)
+          cadeiasEfetivas.includes(item.categoria)
         ),
         importacoes: byCategoria.importacoes.filter(item =>
-          cadeias.includes(item.categoria)
+          cadeiasEfetivas.includes(item.categoria)
         )
       };
     }
@@ -126,13 +155,13 @@ export function useFilteredData(data, filters) {
     let byPais = data.byPais || { exportacoes: [], importacoes: [] };
 
     // Se há filtro de cadeias E temos dados por país-cadeia, recalcular byPais
-    if (cadeias && cadeias.length > 0 && data.byPaisByCadeia) {
+    if (cadeiasEfetivas && cadeiasEfetivas.length > 0 && data.byPaisByCadeia) {
       // Filtrar por cadeias selecionadas
       const expFiltered = data.byPaisByCadeia.exportacoes.filter(item =>
-        cadeias.includes(item.cadeia)
+        cadeiasEfetivas.includes(item.cadeia)
       );
       const impFiltered = data.byPaisByCadeia.importacoes.filter(item =>
-        cadeias.includes(item.cadeia)
+        cadeiasEfetivas.includes(item.cadeia)
       );
 
       // Reagregar por país
@@ -164,13 +193,13 @@ export function useFilteredData(data, filters) {
 
     // Filtrar top produtos
     let topProdutos = data.topProdutos || { exportacoes: [], importacoes: [] };
-    if (cadeias && cadeias.length > 0) {
+    if (cadeiasEfetivas && cadeiasEfetivas.length > 0) {
       topProdutos = {
         exportacoes: topProdutos.exportacoes.filter(item =>
-          cadeias.includes(item.cadeia)
+          cadeiasEfetivas.includes(item.cadeia)
         ),
         importacoes: topProdutos.importacoes.filter(item =>
-          cadeias.includes(item.cadeia)
+          cadeiasEfetivas.includes(item.cadeia)
         )
       };
     }
@@ -194,15 +223,15 @@ export function useFilteredData(data, filters) {
     let sankey = data.sankey || null;
     let filteredSankeyLinks = null;
 
-    if (sankey && cadeias && cadeias.length > 0 && sankey.linksByCadeia) {
+    if (sankey && cadeiasEfetivas && cadeiasEfetivas.length > 0 && sankey.linksByCadeia) {
       // Debug: verificar dados
-      console.log('[Sankey Filter] Cadeias selecionadas:', cadeias);
+      console.log('[Sankey Filter] Cadeias selecionadas:', cadeiasEfetivas);
       console.log('[Sankey Filter] Total linksByCadeia:', sankey.linksByCadeia.length);
       console.log('[Sankey Filter] Cadeias disponíveis:', [...new Set(sankey.linksByCadeia.map(l => l.cadeia))]);
 
       // Filtrar links por cadeias selecionadas
       const filteredLinks = sankey.linksByCadeia.filter(link =>
-        cadeias.includes(link.cadeia)
+        cadeiasEfetivas.includes(link.cadeia)
       );
 
       console.log('[Sankey Filter] Links filtrados:', filteredLinks.length);
@@ -240,10 +269,10 @@ export function useFilteredData(data, filters) {
     // Filtrar dados de municípios por cadeia
     let municipios = data.municipios || null;
 
-    if (municipios && cadeias && cadeias.length > 0 && municipios.municipiosByCadeia) {
+    if (municipios && cadeiasEfetivas && cadeiasEfetivas.length > 0 && municipios.municipiosByCadeia) {
       // Filtrar por cadeias selecionadas
       const filteredMunCadeia = municipios.municipiosByCadeia.filter(item =>
-        cadeias.includes(item.cadeia)
+        cadeiasEfetivas.includes(item.cadeia)
       );
 
       // Reagregar por município
@@ -299,15 +328,41 @@ export function useAggregations(data, filters = {}) {
   return useMemo(() => {
     if (!data) return null;
 
-    const { anoMin, anoMax, cadeias } = filters;
+    const { anoMin, anoMax, cadeias, tipoCategoria } = filters;
+
+    // Determinar cadeias efetivas baseado no tipoCategoria (igual ao useFilteredData)
+    let cadeiasEfetivas = cadeias;
+
+    if ((!cadeias || cadeias.length === 0) && tipoCategoria && tipoCategoria !== 'todos') {
+      const allCadeias = data.filters?.cadeias || [];
+      cadeiasEfetivas = allCadeias
+        .filter(c => {
+          if (tipoCategoria === 'produtos') return c.tipo === 'produto';
+          if (tipoCategoria === 'insumos') return c.tipo === 'insumo';
+          return true;
+        })
+        .map(c => c.nome);
+    }
+
+    if (cadeias && cadeias.length > 0 && tipoCategoria && tipoCategoria !== 'todos') {
+      const allCadeias = data.filters?.cadeias || [];
+      const cadeiasDoTipo = allCadeias
+        .filter(c => {
+          if (tipoCategoria === 'produtos') return c.tipo === 'produto';
+          if (tipoCategoria === 'insumos') return c.tipo === 'insumo';
+          return true;
+        })
+        .map(c => c.nome);
+      cadeiasEfetivas = cadeias.filter(c => cadeiasDoTipo.includes(c));
+    }
 
     // Calcular timeseries filtrado (igual ao useFilteredData)
     let timeseries = data.timeseries || [];
 
     // Se há filtro de cadeias, recalcular timeseries a partir de timeseriesByCadeia
-    if (cadeias && cadeias.length > 0 && data.timeseriesByCadeia) {
+    if (cadeiasEfetivas && cadeiasEfetivas.length > 0 && data.timeseriesByCadeia) {
       const filteredByCadeia = data.timeseriesByCadeia.filter(item =>
-        cadeias.includes(item.cadeia)
+        cadeiasEfetivas.includes(item.cadeia)
       );
 
       const byYear = {};
