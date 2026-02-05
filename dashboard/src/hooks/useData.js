@@ -74,35 +74,37 @@ export function useFilteredData(data, filters) {
     if (!data) return null;
 
     const { anoMin, anoMax, cadeias, tipo, tipoCategoria } = filters;
+    const allCadeias = data.filters?.cadeias || [];
 
     // Determinar cadeias efetivas baseado no tipoCategoria
-    let cadeiasEfetivas = cadeias;
+    let cadeiasEfetivas = null;
 
-    // Se não há cadeias selecionadas mas há filtro de tipoCategoria,
-    // filtrar automaticamente pelas cadeias do tipo
-    if ((!cadeias || cadeias.length === 0) && tipoCategoria && tipoCategoria !== 'todos') {
-      const allCadeias = data.filters?.cadeias || [];
-      cadeiasEfetivas = allCadeias
-        .filter(c => {
-          if (tipoCategoria === 'produtos') return c.tipo === 'produto';
-          if (tipoCategoria === 'insumos') return c.tipo === 'insumo';
-          return true;
-        })
-        .map(c => c.nome);
-    }
-
-    // Se há cadeias selecionadas, garantir que são do tipo correto
-    if (cadeias && cadeias.length > 0 && tipoCategoria && tipoCategoria !== 'todos') {
-      const allCadeias = data.filters?.cadeias || [];
+    // Se tipoCategoria é 'todos' ou não definido, não filtrar por cadeias (a menos que cadeias específicas sejam selecionadas)
+    if (!tipoCategoria || tipoCategoria === 'todos') {
+      // Usa cadeias selecionadas manualmente, ou null para mostrar tudo
+      cadeiasEfetivas = (cadeias && cadeias.length > 0) ? cadeias : null;
+    } else {
+      // tipoCategoria é 'produtos' ou 'insumos'
+      // Filtrar cadeias pelo tipo
       const cadeiasDoTipo = allCadeias
-        .filter(c => {
-          if (tipoCategoria === 'produtos') return c.tipo === 'produto';
-          if (tipoCategoria === 'insumos') return c.tipo === 'insumo';
-          return true;
-        })
+        .filter(c => c.tipo === tipoCategoria.slice(0, -1)) // 'produtos' -> 'produto', 'insumos' -> 'insumo'
         .map(c => c.nome);
-      cadeiasEfetivas = cadeias.filter(c => cadeiasDoTipo.includes(c));
+
+      if (cadeias && cadeias.length > 0) {
+        // Se há cadeias selecionadas, manter apenas as do tipo correto
+        cadeiasEfetivas = cadeias.filter(c => cadeiasDoTipo.includes(c));
+        // Se nenhuma sobrou, usar todas do tipo
+        if (cadeiasEfetivas.length === 0) {
+          cadeiasEfetivas = cadeiasDoTipo;
+        }
+      } else {
+        // Se não há cadeias selecionadas, usar todas do tipo
+        cadeiasEfetivas = cadeiasDoTipo;
+      }
     }
+
+    // Debug log
+    console.log('[useFilteredData] tipoCategoria:', tipoCategoria, 'cadeiasEfetivas:', cadeiasEfetivas?.length || 'null');
 
     // Filtrar série temporal por ano e cadeia
     let timeseries = data.timeseries || [];
@@ -338,34 +340,39 @@ export function useAggregations(data, filters = {}) {
     if (!data) return null;
 
     const { anoMin, anoMax, cadeias, tipoCategoria } = filters;
+    const allCadeias = data.filters?.cadeias || [];
 
-    // Determinar cadeias efetivas baseado no tipoCategoria (igual ao useFilteredData)
-    let cadeiasEfetivas = cadeias;
+    // Determinar cadeias efetivas baseado no tipoCategoria
+    let cadeiasEfetivas = null;
 
-    if ((!cadeias || cadeias.length === 0) && tipoCategoria && tipoCategoria !== 'todos') {
-      const allCadeias = data.filters?.cadeias || [];
-      cadeiasEfetivas = allCadeias
-        .filter(c => {
-          if (tipoCategoria === 'produtos') return c.tipo === 'produto';
-          if (tipoCategoria === 'insumos') return c.tipo === 'insumo';
-          return true;
-        })
-        .map(c => c.nome);
-    }
-
-    if (cadeias && cadeias.length > 0 && tipoCategoria && tipoCategoria !== 'todos') {
-      const allCadeias = data.filters?.cadeias || [];
+    // Se tipoCategoria é 'todos' ou não definido, não filtrar por cadeias (a menos que cadeias específicas sejam selecionadas)
+    if (!tipoCategoria || tipoCategoria === 'todos') {
+      // Usa cadeias selecionadas manualmente, ou null para mostrar tudo
+      cadeiasEfetivas = (cadeias && cadeias.length > 0) ? cadeias : null;
+    } else {
+      // tipoCategoria é 'produtos' ou 'insumos'
+      // Filtrar cadeias pelo tipo
       const cadeiasDoTipo = allCadeias
-        .filter(c => {
-          if (tipoCategoria === 'produtos') return c.tipo === 'produto';
-          if (tipoCategoria === 'insumos') return c.tipo === 'insumo';
-          return true;
-        })
+        .filter(c => c.tipo === tipoCategoria.slice(0, -1)) // 'produtos' -> 'produto', 'insumos' -> 'insumo'
         .map(c => c.nome);
-      cadeiasEfetivas = cadeias.filter(c => cadeiasDoTipo.includes(c));
+
+      if (cadeias && cadeias.length > 0) {
+        // Se há cadeias selecionadas, manter apenas as do tipo correto
+        cadeiasEfetivas = cadeias.filter(c => cadeiasDoTipo.includes(c));
+        // Se nenhuma sobrou, usar todas do tipo
+        if (cadeiasEfetivas.length === 0) {
+          cadeiasEfetivas = cadeiasDoTipo;
+        }
+      } else {
+        // Se não há cadeias selecionadas, usar todas do tipo
+        cadeiasEfetivas = cadeiasDoTipo;
+      }
     }
 
-    // Calcular timeseries filtrado (igual ao useFilteredData)
+    // Debug log
+    console.log('[useAggregations] tipoCategoria:', tipoCategoria, 'cadeiasEfetivas:', cadeiasEfetivas?.length || 'null');
+
+    // Calcular timeseries filtrado
     let timeseries = data.timeseries || [];
 
     // Se há filtro de cadeias, recalcular timeseries a partir de timeseriesByCadeia
@@ -373,6 +380,8 @@ export function useAggregations(data, filters = {}) {
       const filteredByCadeia = data.timeseriesByCadeia.filter(item =>
         cadeiasEfetivas.includes(item.cadeia)
       );
+
+      console.log('[useAggregations] filteredByCadeia:', filteredByCadeia.length, 'records');
 
       const byYear = {};
       filteredByCadeia.forEach(item => {
