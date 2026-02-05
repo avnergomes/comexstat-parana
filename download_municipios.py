@@ -32,7 +32,9 @@ POSICAO_DEFENSIVOS = "3808"  # Defensivos agrícolas (cap. 38)
 
 # Importar mapeamento de cadeia
 try:
-    from ncm_cadeias_map import get_cadeia_from_sh4, CADEIAS
+    from ncm_cadeias_map import classificar_cadeia_sh4, CADEIAS
+    def get_cadeia_from_sh4(sh4):
+        return classificar_cadeia_sh4(sh4)
 except ImportError:
     CADEIAS = {}
     def get_cadeia_from_sh4(sh4):

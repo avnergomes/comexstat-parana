@@ -357,1283 +357,5392 @@
     {
       "codigo": 4100400,
       "nome": "Almirante Tamandaré",
-      "cadeia": "Outros",
-      "valor": 2427458.0,
-      "peso": 8126640.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 21848.0,
+      "peso": 7396.0
+    },
+    {
+      "codigo": 4100400,
+      "nome": "Almirante Tamandaré",
+      "cadeia": "Canavicultura",
+      "valor": 157087.0,
+      "peso": 134936.0
+    },
+    {
+      "codigo": 4100400,
+      "nome": "Almirante Tamandaré",
+      "cadeia": "Fertilizantes",
+      "valor": 1905228.0,
+      "peso": 7886000.0
+    },
+    {
+      "codigo": 4100400,
+      "nome": "Almirante Tamandaré",
+      "cadeia": "Florestal",
+      "valor": 282149.0,
+      "peso": 48308.0
+    },
+    {
+      "codigo": 4100400,
+      "nome": "Almirante Tamandaré",
+      "cadeia": "Olericultura",
+      "valor": 61146.0,
+      "peso": 50000.0
     },
     {
       "codigo": 4100459,
       "nome": "Altamira do Paraná",
-      "cadeia": "Outros",
+      "cadeia": "Agroind. Grãos",
       "valor": 19.0,
       "peso": 0.0
     },
     {
       "codigo": 4100608,
       "nome": "Alto Paraná",
-      "cadeia": "Outros",
+      "cadeia": "Suinocultura",
       "valor": 8000618.0,
       "peso": 370780.0
     },
     {
       "codigo": 4100707,
       "nome": "Alto Piquiri",
-      "cadeia": "Outros",
-      "valor": 15183754.0,
-      "peso": 29275966.0
+      "cadeia": "Cerealicultura",
+      "valor": 110395.0,
+      "peso": 393140.0
+    },
+    {
+      "codigo": 4100707,
+      "nome": "Alto Piquiri",
+      "cadeia": "Sojicultura",
+      "valor": 15073359.0,
+      "peso": 28882826.0
     },
     {
       "codigo": 4100806,
       "nome": "Alvorada do Sul",
-      "cadeia": "Outros",
+      "cadeia": "Cerealicultura",
       "valor": 178362.0,
       "peso": 900000.0
     },
     {
       "codigo": 4100905,
       "nome": "Amaporã",
-      "cadeia": "Outros",
+      "cadeia": "Agroind. Grãos",
       "valor": 11385.0,
       "peso": 24750.0
     },
     {
       "codigo": 4101002,
       "nome": "Ampére",
-      "cadeia": "Outros",
+      "cadeia": "Olericultura",
       "valor": 1206125.0,
       "peso": 1707000.0
     },
     {
       "codigo": 4101101,
       "nome": "Andirá",
-      "cadeia": "Outros",
-      "valor": 51960670.0,
-      "peso": 155824873.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 45928470.0,
+      "peso": 142282886.0
+    },
+    {
+      "codigo": 4101101,
+      "nome": "Andirá",
+      "cadeia": "Cerealicultura",
+      "valor": 133108.0,
+      "peso": 35657.0
+    },
+    {
+      "codigo": 4101101,
+      "nome": "Andirá",
+      "cadeia": "Sojicultura",
+      "valor": 5899092.0,
+      "peso": 13506330.0
     },
     {
       "codigo": 4101150,
       "nome": "Ângulo",
-      "cadeia": "Outros",
+      "cadeia": "Tabaco",
       "valor": 1012.0,
       "peso": 18.0
     },
     {
       "codigo": 4101408,
       "nome": "Apucarana",
+      "cadeia": "Agroind. Carnes",
+      "valor": 13803.0,
+      "peso": 14640.0
+    },
+    {
+      "codigo": 4101408,
+      "nome": "Apucarana",
+      "cadeia": "Agroind. Grãos",
+      "valor": 20102779.0,
+      "peso": 50894675.0
+    },
+    {
+      "codigo": 4101408,
+      "nome": "Apucarana",
+      "cadeia": "Avicultura",
+      "valor": 573591.0,
+      "peso": 189616.0
+    },
+    {
+      "codigo": 4101408,
+      "nome": "Apucarana",
+      "cadeia": "Cerealicultura",
+      "valor": 1213375.0,
+      "peso": 866364.0
+    },
+    {
+      "codigo": 4101408,
+      "nome": "Apucarana",
+      "cadeia": "Fertilizantes",
+      "valor": 10959790.0,
+      "peso": 29668165.0
+    },
+    {
+      "codigo": 4101408,
+      "nome": "Apucarana",
+      "cadeia": "Florestal",
+      "valor": 43.0,
+      "peso": 1.0
+    },
+    {
+      "codigo": 4101408,
+      "nome": "Apucarana",
+      "cadeia": "Fruticultura",
+      "valor": 3113.0,
+      "peso": 2124.0
+    },
+    {
+      "codigo": 4101408,
+      "nome": "Apucarana",
+      "cadeia": "Oleaginosas",
+      "valor": 7183731.0,
+      "peso": 6172370.0
+    },
+    {
+      "codigo": 4101408,
+      "nome": "Apucarana",
       "cadeia": "Outros",
-      "valor": 43682099.0,
-      "peso": 90912204.0
+      "valor": 2602908.0,
+      "peso": 1013532.0
+    },
+    {
+      "codigo": 4101408,
+      "nome": "Apucarana",
+      "cadeia": "Outros Insumos",
+      "valor": 4308.0,
+      "peso": 69.0
+    },
+    {
+      "codigo": 4101408,
+      "nome": "Apucarana",
+      "cadeia": "Sojicultura",
+      "valor": 1024504.0,
+      "peso": 2090642.0
+    },
+    {
+      "codigo": 4101408,
+      "nome": "Apucarana",
+      "cadeia": "Tabaco",
+      "valor": 154.0,
+      "peso": 6.0
+    },
+    {
+      "codigo": 4101507,
+      "nome": "Arapongas",
+      "cadeia": "Agroind. Carnes",
+      "valor": 5342239.0,
+      "peso": 1829098.0
+    },
+    {
+      "codigo": 4101507,
+      "nome": "Arapongas",
+      "cadeia": "Agroind. Grãos",
+      "valor": 6572619.0,
+      "peso": 2134823.0
+    },
+    {
+      "codigo": 4101507,
+      "nome": "Arapongas",
+      "cadeia": "Avicultura",
+      "valor": 14871750.0,
+      "peso": 13390459.0
+    },
+    {
+      "codigo": 4101507,
+      "nome": "Arapongas",
+      "cadeia": "Bebidas",
+      "valor": 11000.0,
+      "peso": 18171.0
+    },
+    {
+      "codigo": 4101507,
+      "nome": "Arapongas",
+      "cadeia": "Bovinocultura",
+      "valor": 8801891.0,
+      "peso": 2048333.0
+    },
+    {
+      "codigo": 4101507,
+      "nome": "Arapongas",
+      "cadeia": "Cafeicultura",
+      "valor": 300000.0,
+      "peso": 57525.0
+    },
+    {
+      "codigo": 4101507,
+      "nome": "Arapongas",
+      "cadeia": "Cerealicultura",
+      "valor": 608570.0,
+      "peso": 2549666.0
+    },
+    {
+      "codigo": 4101507,
+      "nome": "Arapongas",
+      "cadeia": "Fertilizantes",
+      "valor": 1749097.0,
+      "peso": 268114.0
+    },
+    {
+      "codigo": 4101507,
+      "nome": "Arapongas",
+      "cadeia": "Florestal",
+      "valor": 2956.0,
+      "peso": 426.0
     },
     {
       "codigo": 4101507,
       "nome": "Arapongas",
       "cadeia": "Outros",
-      "valor": 94261704.0,
-      "peso": 51006905.0
+      "valor": 31223616.0,
+      "peso": 6192204.0
+    },
+    {
+      "codigo": 4101507,
+      "nome": "Arapongas",
+      "cadeia": "Outros Insumos",
+      "valor": 14671689.0,
+      "peso": 2156765.0
+    },
+    {
+      "codigo": 4101507,
+      "nome": "Arapongas",
+      "cadeia": "Sojicultura",
+      "valor": 10106277.0,
+      "peso": 20361321.0
     },
     {
       "codigo": 4101705,
       "nome": "Araruna",
-      "cadeia": "Outros",
-      "valor": 2722071.0,
-      "peso": 1923569.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 1157309.0,
+      "peso": 1238439.0
+    },
+    {
+      "codigo": 4101705,
+      "nome": "Araruna",
+      "cadeia": "Avicultura",
+      "valor": 306762.0,
+      "peso": 101437.0
+    },
+    {
+      "codigo": 4101705,
+      "nome": "Araruna",
+      "cadeia": "Cerealicultura",
+      "valor": 187856.0,
+      "peso": 204650.0
+    },
+    {
+      "codigo": 4101705,
+      "nome": "Araruna",
+      "cadeia": "Fruticultura",
+      "valor": 592430.0,
+      "peso": 239018.0
+    },
+    {
+      "codigo": 4101705,
+      "nome": "Araruna",
+      "cadeia": "Oleaginosas",
+      "valor": 46270.0,
+      "peso": 16200.0
+    },
+    {
+      "codigo": 4101705,
+      "nome": "Araruna",
+      "cadeia": "Olericultura",
+      "valor": 431444.0,
+      "peso": 123825.0
+    },
+    {
+      "codigo": 4101804,
+      "nome": "Araucária",
+      "cadeia": "Agroind. Grãos",
+      "valor": 16479625.0,
+      "peso": 3534786.0
+    },
+    {
+      "codigo": 4101804,
+      "nome": "Araucária",
+      "cadeia": "Bebidas",
+      "valor": 5289964.0,
+      "peso": 482230.0
+    },
+    {
+      "codigo": 4101804,
+      "nome": "Araucária",
+      "cadeia": "Cafeicultura",
+      "valor": 2585001.0,
+      "peso": 597450.0
+    },
+    {
+      "codigo": 4101804,
+      "nome": "Araucária",
+      "cadeia": "Cerealicultura",
+      "valor": 211386.0,
+      "peso": 1395287.0
+    },
+    {
+      "codigo": 4101804,
+      "nome": "Araucária",
+      "cadeia": "Fertilizantes",
+      "valor": 25231693.0,
+      "peso": 54011858.0
+    },
+    {
+      "codigo": 4101804,
+      "nome": "Araucária",
+      "cadeia": "Florestal",
+      "valor": 1842.0,
+      "peso": 235.0
+    },
+    {
+      "codigo": 4101804,
+      "nome": "Araucária",
+      "cadeia": "Oleaginosas",
+      "valor": 135.0,
+      "peso": 2.0
     },
     {
       "codigo": 4101804,
       "nome": "Araucária",
       "cadeia": "Outros",
-      "valor": 101978990.0,
-      "peso": 157921366.0
+      "valor": 787010.0,
+      "peso": 1566994.0
+    },
+    {
+      "codigo": 4101804,
+      "nome": "Araucária",
+      "cadeia": "Outros Insumos",
+      "valor": 360929.0,
+      "peso": 64255.0
+    },
+    {
+      "codigo": 4101804,
+      "nome": "Araucária",
+      "cadeia": "Sojicultura",
+      "valor": 51031405.0,
+      "peso": 96268269.0
     },
     {
       "codigo": 4101903,
       "nome": "Assaí",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 2306966.0,
       "peso": 5300150.0
     },
     {
       "codigo": 4102000,
       "nome": "Assis Chateaubriand",
+      "cadeia": "Agroind. Carnes",
+      "valor": 2631359.0,
+      "peso": 3133455.0
+    },
+    {
+      "codigo": 4102000,
+      "nome": "Assis Chateaubriand",
+      "cadeia": "Agroind. Grãos",
+      "valor": 14040.0,
+      "peso": 27000.0
+    },
+    {
+      "codigo": 4102000,
+      "nome": "Assis Chateaubriand",
+      "cadeia": "Cerealicultura",
+      "valor": 1862176.0,
+      "peso": 7546714.0
+    },
+    {
+      "codigo": 4102000,
+      "nome": "Assis Chateaubriand",
+      "cadeia": "Oleaginosas",
+      "valor": 38016.0,
+      "peso": 23040.0
+    },
+    {
+      "codigo": 4102000,
+      "nome": "Assis Chateaubriand",
       "cadeia": "Outros",
-      "valor": 183504955.0,
-      "peso": 154199250.0
+      "valor": 579464.0,
+      "peso": 203970.0
+    },
+    {
+      "codigo": 4102000,
+      "nome": "Assis Chateaubriand",
+      "cadeia": "Sojicultura",
+      "valor": 40951020.0,
+      "peso": 89599189.0
+    },
+    {
+      "codigo": 4102000,
+      "nome": "Assis Chateaubriand",
+      "cadeia": "Suinocultura",
+      "valor": 137428880.0,
+      "peso": 53665882.0
     },
     {
       "codigo": 4102109,
       "nome": "Astorga",
-      "cadeia": "Outros",
-      "valor": 4016009.0,
-      "peso": 7370029.0
+      "cadeia": "Canavicultura",
+      "valor": 3776116.0,
+      "peso": 6628589.0
+    },
+    {
+      "codigo": 4102109,
+      "nome": "Astorga",
+      "cadeia": "Sojicultura",
+      "valor": 239893.0,
+      "peso": 741440.0
     },
     {
       "codigo": 4102208,
       "nome": "Atalaia",
-      "cadeia": "Outros",
+      "cadeia": "Fertilizantes",
       "valor": 93.0,
       "peso": 930.0
     },
     {
       "codigo": 4102307,
       "nome": "Balsa Nova",
-      "cadeia": "Outros",
-      "valor": 42984682.0,
-      "peso": 51585794.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 21290390.0,
+      "peso": 28962726.0
+    },
+    {
+      "codigo": 4102307,
+      "nome": "Balsa Nova",
+      "cadeia": "Canavicultura",
+      "valor": 17941.0,
+      "peso": 9640.0
+    },
+    {
+      "codigo": 4102307,
+      "nome": "Balsa Nova",
+      "cadeia": "Fertilizantes",
+      "valor": 23327.0,
+      "peso": 13200.0
+    },
+    {
+      "codigo": 4102307,
+      "nome": "Balsa Nova",
+      "cadeia": "Oleaginosas",
+      "valor": 4177135.0,
+      "peso": 3885800.0
+    },
+    {
+      "codigo": 4102307,
+      "nome": "Balsa Nova",
+      "cadeia": "Olericultura",
+      "valor": 17475889.0,
+      "peso": 18714428.0
     },
     {
       "codigo": 4102406,
       "nome": "Bandeirantes",
-      "cadeia": "Outros",
-      "valor": 9433432.0,
-      "peso": 21133117.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 30.0,
+      "peso": 5.0
+    },
+    {
+      "codigo": 4102406,
+      "nome": "Bandeirantes",
+      "cadeia": "Cerealicultura",
+      "valor": 235857.0,
+      "peso": 1091930.0
+    },
+    {
+      "codigo": 4102406,
+      "nome": "Bandeirantes",
+      "cadeia": "Fertilizantes",
+      "valor": 970103.0,
+      "peso": 120284.0
+    },
+    {
+      "codigo": 4102406,
+      "nome": "Bandeirantes",
+      "cadeia": "Oleaginosas",
+      "valor": 1.0,
+      "peso": 1.0
+    },
+    {
+      "codigo": 4102406,
+      "nome": "Bandeirantes",
+      "cadeia": "Sojicultura",
+      "valor": 8227441.0,
+      "peso": 19920897.0
+    },
+    {
+      "codigo": 4102604,
+      "nome": "Barracão",
+      "cadeia": "Cerealicultura",
+      "valor": 11970.0,
+      "peso": 57000.0
+    },
+    {
+      "codigo": 4102604,
+      "nome": "Barracão",
+      "cadeia": "Florestal",
+      "valor": 2054327.0,
+      "peso": 1558590.0
+    },
+    {
+      "codigo": 4102604,
+      "nome": "Barracão",
+      "cadeia": "Fruticultura",
+      "valor": 16847784.0,
+      "peso": 25157003.0
+    },
+    {
+      "codigo": 4102604,
+      "nome": "Barracão",
+      "cadeia": "Oleaginosas",
+      "valor": 7862.0,
+      "peso": 3825.0
+    },
+    {
+      "codigo": 4102604,
+      "nome": "Barracão",
+      "cadeia": "Olericultura",
+      "valor": 14067780.0,
+      "peso": 32217019.0
     },
     {
       "codigo": 4102604,
       "nome": "Barracão",
       "cadeia": "Outros",
-      "valor": 35098786.0,
-      "peso": 61115855.0
+      "valor": 2109063.0,
+      "peso": 2122418.0
     },
     {
       "codigo": 4102703,
       "nome": "Barra do Jacaré",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 400.0,
       "peso": 1245.0
     },
     {
       "codigo": 4102802,
       "nome": "Bela Vista do Paraíso",
-      "cadeia": "Outros",
-      "valor": 348606404.0,
-      "peso": 856908102.0
+      "cadeia": "Cafeicultura",
+      "valor": 6733.0,
+      "peso": 4140.0
+    },
+    {
+      "codigo": 4102802,
+      "nome": "Bela Vista do Paraíso",
+      "cadeia": "Cerealicultura",
+      "valor": 19571144.0,
+      "peso": 82691623.0
+    },
+    {
+      "codigo": 4102802,
+      "nome": "Bela Vista do Paraíso",
+      "cadeia": "Sojicultura",
+      "valor": 329028527.0,
+      "peso": 774212339.0
     },
     {
       "codigo": 4102901,
       "nome": "Bituruna",
-      "cadeia": "Outros",
+      "cadeia": "Florestal",
       "valor": 123281.0,
       "peso": 91894.0
     },
     {
       "codigo": 4103008,
       "nome": "Boa Esperança",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 8386639.0,
       "peso": 15640183.0
     },
     {
       "codigo": 4103040,
       "nome": "Boa Ventura de São Roque",
-      "cadeia": "Outros",
-      "valor": 442538.0,
-      "peso": 885471.0
+      "cadeia": "Cerealicultura",
+      "valor": 15291.0,
+      "peso": 50360.0
+    },
+    {
+      "codigo": 4103040,
+      "nome": "Boa Ventura de São Roque",
+      "cadeia": "Sojicultura",
+      "valor": 427247.0,
+      "peso": 835111.0
     },
     {
       "codigo": 4103107,
       "nome": "Bocaiúva do Sul",
-      "cadeia": "Outros",
+      "cadeia": "Agroind. Carnes",
       "valor": 431872.0,
       "peso": 368630.0
     },
     {
       "codigo": 4103156,
       "nome": "Bom Jesus do Sul",
-      "cadeia": "Outros",
+      "cadeia": "Olericultura",
       "valor": 9126.0,
       "peso": 54000.0
     },
     {
       "codigo": 4103222,
       "nome": "Bom Sucesso do Sul",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 2042190.0,
       "peso": 6000000.0
     },
     {
       "codigo": 4103305,
       "nome": "Borrazópolis",
-      "cadeia": "Outros",
+      "cadeia": "Oleaginosas",
       "valor": 715864.0,
       "peso": 784000.0
     },
     {
       "codigo": 4103370,
       "nome": "Brasilândia do Sul",
-      "cadeia": "Outros",
-      "valor": 18212482.0,
-      "peso": 43691727.0
+      "cadeia": "Cerealicultura",
+      "valor": 541563.0,
+      "peso": 2035841.0
+    },
+    {
+      "codigo": 4103370,
+      "nome": "Brasilândia do Sul",
+      "cadeia": "Sojicultura",
+      "valor": 17670919.0,
+      "peso": 41655886.0
+    },
+    {
+      "codigo": 4103453,
+      "nome": "Cafelândia",
+      "cadeia": "Agroind. Carnes",
+      "valor": 32279242.0,
+      "peso": 34681954.0
+    },
+    {
+      "codigo": 4103453,
+      "nome": "Cafelândia",
+      "cadeia": "Aquicultura",
+      "valor": 191.0,
+      "peso": 112.0
+    },
+    {
+      "codigo": 4103453,
+      "nome": "Cafelândia",
+      "cadeia": "Avicultura",
+      "valor": 1335357648.0,
+      "peso": 877716090.0
+    },
+    {
+      "codigo": 4103453,
+      "nome": "Cafelândia",
+      "cadeia": "Olericultura",
+      "valor": 3104.0,
+      "peso": 1050.0
     },
     {
       "codigo": 4103453,
       "nome": "Cafelândia",
       "cadeia": "Outros",
-      "valor": 1508128283.0,
-      "peso": 1149922398.0
+      "valor": 22807757.0,
+      "peso": 35411623.0
+    },
+    {
+      "codigo": 4103453,
+      "nome": "Cafelândia",
+      "cadeia": "Sojicultura",
+      "valor": 117111352.0,
+      "peso": 201277434.0
+    },
+    {
+      "codigo": 4103453,
+      "nome": "Cafelândia",
+      "cadeia": "Suinocultura",
+      "valor": 568989.0,
+      "peso": 834135.0
+    },
+    {
+      "codigo": 4103602,
+      "nome": "Cambará",
+      "cadeia": "Agroind. Grãos",
+      "valor": 17875909.0,
+      "peso": 9520447.0
+    },
+    {
+      "codigo": 4103602,
+      "nome": "Cambará",
+      "cadeia": "Bebidas",
+      "valor": 502628.0,
+      "peso": 77299.0
+    },
+    {
+      "codigo": 4103602,
+      "nome": "Cambará",
+      "cadeia": "Canavicultura",
+      "valor": 45191.0,
+      "peso": 56928.0
+    },
+    {
+      "codigo": 4103602,
+      "nome": "Cambará",
+      "cadeia": "Cerealicultura",
+      "valor": 140918.0,
+      "peso": 231324.0
+    },
+    {
+      "codigo": 4103602,
+      "nome": "Cambará",
+      "cadeia": "Florestal",
+      "valor": 401.0,
+      "peso": 23.0
+    },
+    {
+      "codigo": 4103602,
+      "nome": "Cambará",
+      "cadeia": "Fruticultura",
+      "valor": 682640.0,
+      "peso": 179821.0
+    },
+    {
+      "codigo": 4103602,
+      "nome": "Cambará",
+      "cadeia": "Oleaginosas",
+      "valor": 573.0,
+      "peso": 686.0
+    },
+    {
+      "codigo": 4103602,
+      "nome": "Cambará",
+      "cadeia": "Olericultura",
+      "valor": 2539865.0,
+      "peso": 354262.0
     },
     {
       "codigo": 4103602,
       "nome": "Cambará",
       "cadeia": "Outros",
-      "valor": 25601886.0,
-      "peso": 19147186.0
+      "valor": 27829.0,
+      "peso": 849.0
+    },
+    {
+      "codigo": 4103602,
+      "nome": "Cambará",
+      "cadeia": "Sojicultura",
+      "valor": 3785932.0,
+      "peso": 8725547.0
+    },
+    {
+      "codigo": 4103701,
+      "nome": "Cambé",
+      "cadeia": "Agroind. Carnes",
+      "valor": 2298717.0,
+      "peso": 1020742.0
+    },
+    {
+      "codigo": 4103701,
+      "nome": "Cambé",
+      "cadeia": "Agroind. Grãos",
+      "valor": 1590389.0,
+      "peso": 110710.0
+    },
+    {
+      "codigo": 4103701,
+      "nome": "Cambé",
+      "cadeia": "Avicultura",
+      "valor": 1170050.0,
+      "peso": 890360.0
+    },
+    {
+      "codigo": 4103701,
+      "nome": "Cambé",
+      "cadeia": "Bebidas",
+      "valor": 6741.0,
+      "peso": 28058.0
+    },
+    {
+      "codigo": 4103701,
+      "nome": "Cambé",
+      "cadeia": "Bovinocultura",
+      "valor": 106552777.0,
+      "peso": 21064036.0
+    },
+    {
+      "codigo": 4103701,
+      "nome": "Cambé",
+      "cadeia": "Cerealicultura",
+      "valor": 1019.0,
+      "peso": 81.0
+    },
+    {
+      "codigo": 4103701,
+      "nome": "Cambé",
+      "cadeia": "Fertilizantes",
+      "valor": 11034038.0,
+      "peso": 3260941.0
+    },
+    {
+      "codigo": 4103701,
+      "nome": "Cambé",
+      "cadeia": "Florestal",
+      "valor": 4443.0,
+      "peso": 1835.0
+    },
+    {
+      "codigo": 4103701,
+      "nome": "Cambé",
+      "cadeia": "Fruticultura",
+      "valor": 11539.0,
+      "peso": 42240.0
+    },
+    {
+      "codigo": 4103701,
+      "nome": "Cambé",
+      "cadeia": "Oleaginosas",
+      "valor": 109.0,
+      "peso": 81.0
+    },
+    {
+      "codigo": 4103701,
+      "nome": "Cambé",
+      "cadeia": "Olericultura",
+      "valor": 52541.0,
+      "peso": 105950.0
     },
     {
       "codigo": 4103701,
       "nome": "Cambé",
       "cadeia": "Outros",
-      "valor": 145743088.0,
-      "peso": 83362729.0
+      "valor": 2083041.0,
+      "peso": 747483.0
+    },
+    {
+      "codigo": 4103701,
+      "nome": "Cambé",
+      "cadeia": "Outros Insumos",
+      "valor": 483680.0,
+      "peso": 60512.0
+    },
+    {
+      "codigo": 4103701,
+      "nome": "Cambé",
+      "cadeia": "Sojicultura",
+      "valor": 20454004.0,
+      "peso": 56029700.0
     },
     {
       "codigo": 4103800,
       "nome": "Cambira",
-      "cadeia": "Outros",
-      "valor": 10180512.0,
-      "peso": 2307033.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 128832.0,
+      "peso": 25362.0
+    },
+    {
+      "codigo": 4103800,
+      "nome": "Cambira",
+      "cadeia": "Canavicultura",
+      "valor": 206.0,
+      "peso": 700.0
+    },
+    {
+      "codigo": 4103800,
+      "nome": "Cambira",
+      "cadeia": "Fertilizantes",
+      "valor": 9849309.0,
+      "peso": 2208586.0
+    },
+    {
+      "codigo": 4103800,
+      "nome": "Cambira",
+      "cadeia": "Outros Insumos",
+      "valor": 89158.0,
+      "peso": 14039.0
+    },
+    {
+      "codigo": 4103800,
+      "nome": "Cambira",
+      "cadeia": "Sojicultura",
+      "valor": 5400.0,
+      "peso": 4600.0
+    },
+    {
+      "codigo": 4103800,
+      "nome": "Cambira",
+      "cadeia": "Suinocultura",
+      "valor": 107607.0,
+      "peso": 53746.0
     },
     {
       "codigo": 4103909,
       "nome": "Campina da Lagoa",
-      "cadeia": "Outros",
-      "valor": 4890168.0,
-      "peso": 15631816.0
+      "cadeia": "Cerealicultura",
+      "valor": 44937.0,
+      "peso": 181984.0
+    },
+    {
+      "codigo": 4103909,
+      "nome": "Campina da Lagoa",
+      "cadeia": "Sojicultura",
+      "valor": 4845231.0,
+      "peso": 15449832.0
+    },
+    {
+      "codigo": 4104006,
+      "nome": "Campina Grande do Sul",
+      "cadeia": "Agroind. Grãos",
+      "valor": 629571.0,
+      "peso": 157090.0
+    },
+    {
+      "codigo": 4104006,
+      "nome": "Campina Grande do Sul",
+      "cadeia": "Fruticultura",
+      "valor": 1483064.0,
+      "peso": 788749.0
+    },
+    {
+      "codigo": 4104006,
+      "nome": "Campina Grande do Sul",
+      "cadeia": "Oleaginosas",
+      "valor": 3849.0,
+      "peso": 1207.0
     },
     {
       "codigo": 4104006,
       "nome": "Campina Grande do Sul",
       "cadeia": "Outros",
-      "valor": 2118767.0,
-      "peso": 947165.0
+      "valor": 2283.0,
+      "peso": 119.0
+    },
+    {
+      "codigo": 4104204,
+      "nome": "Campo Largo",
+      "cadeia": "Agroind. Grãos",
+      "valor": 225375.0,
+      "peso": 158675.0
+    },
+    {
+      "codigo": 4104204,
+      "nome": "Campo Largo",
+      "cadeia": "Bebidas",
+      "valor": 128508.0,
+      "peso": 147232.0
+    },
+    {
+      "codigo": 4104204,
+      "nome": "Campo Largo",
+      "cadeia": "Canavicultura",
+      "valor": 129948.0,
+      "peso": 72946.0
+    },
+    {
+      "codigo": 4104204,
+      "nome": "Campo Largo",
+      "cadeia": "Cerealicultura",
+      "valor": 118314.0,
+      "peso": 91963.0
+    },
+    {
+      "codigo": 4104204,
+      "nome": "Campo Largo",
+      "cadeia": "Fertilizantes",
+      "valor": 69031.0,
+      "peso": 147100.0
+    },
+    {
+      "codigo": 4104204,
+      "nome": "Campo Largo",
+      "cadeia": "Florestal",
+      "valor": 1725962.0,
+      "peso": 283185.0
+    },
+    {
+      "codigo": 4104204,
+      "nome": "Campo Largo",
+      "cadeia": "Fruticultura",
+      "valor": 192107.0,
+      "peso": 118465.0
+    },
+    {
+      "codigo": 4104204,
+      "nome": "Campo Largo",
+      "cadeia": "Oleaginosas",
+      "valor": 13913.0,
+      "peso": 5508.0
+    },
+    {
+      "codigo": 4104204,
+      "nome": "Campo Largo",
+      "cadeia": "Olericultura",
+      "valor": 371623.0,
+      "peso": 285613.0
     },
     {
       "codigo": 4104204,
       "nome": "Campo Largo",
       "cadeia": "Outros",
-      "valor": 34412750.0,
-      "peso": 38760594.0
+      "valor": 17125.0,
+      "peso": 1612.0
+    },
+    {
+      "codigo": 4104204,
+      "nome": "Campo Largo",
+      "cadeia": "Sojicultura",
+      "valor": 31420844.0,
+      "peso": 37448295.0
+    },
+    {
+      "codigo": 4104253,
+      "nome": "Campo Magro",
+      "cadeia": "Agroind. Grãos",
+      "valor": 16683.0,
+      "peso": 1118.0
+    },
+    {
+      "codigo": 4104253,
+      "nome": "Campo Magro",
+      "cadeia": "Bebidas",
+      "valor": 164.0,
+      "peso": 0.0
+    },
+    {
+      "codigo": 4104253,
+      "nome": "Campo Magro",
+      "cadeia": "Canavicultura",
+      "valor": 404.0,
+      "peso": 51.0
+    },
+    {
+      "codigo": 4104253,
+      "nome": "Campo Magro",
+      "cadeia": "Fertilizantes",
+      "valor": 23246.0,
+      "peso": 2852.0
+    },
+    {
+      "codigo": 4104253,
+      "nome": "Campo Magro",
+      "cadeia": "Florestal",
+      "valor": 240237.0,
+      "peso": 3514.0
+    },
+    {
+      "codigo": 4104253,
+      "nome": "Campo Magro",
+      "cadeia": "Oleaginosas",
+      "valor": 2633.0,
+      "peso": 55.0
     },
     {
       "codigo": 4104253,
       "nome": "Campo Magro",
       "cadeia": "Outros",
-      "valor": 4194652.0,
-      "peso": 1323375.0
+      "valor": 5218.0,
+      "peso": 283.0
+    },
+    {
+      "codigo": 4104253,
+      "nome": "Campo Magro",
+      "cadeia": "Outros Insumos",
+      "valor": 75.0,
+      "peso": 1.0
+    },
+    {
+      "codigo": 4104253,
+      "nome": "Campo Magro",
+      "cadeia": "Tabaco",
+      "valor": 3905992.0,
+      "peso": 1315501.0
+    },
+    {
+      "codigo": 4104303,
+      "nome": "Campo Mourão",
+      "cadeia": "Agroind. Grãos",
+      "valor": 265163.0,
+      "peso": 646760.0
+    },
+    {
+      "codigo": 4104303,
+      "nome": "Campo Mourão",
+      "cadeia": "Aquicultura",
+      "valor": 19048.0,
+      "peso": 26050.0
+    },
+    {
+      "codigo": 4104303,
+      "nome": "Campo Mourão",
+      "cadeia": "Avicultura",
+      "valor": 26988161.0,
+      "peso": 17845891.0
+    },
+    {
+      "codigo": 4104303,
+      "nome": "Campo Mourão",
+      "cadeia": "Cafeicultura",
+      "valor": 167416.0,
+      "peso": 35419.0
+    },
+    {
+      "codigo": 4104303,
+      "nome": "Campo Mourão",
+      "cadeia": "Cerealicultura",
+      "valor": 62555667.0,
+      "peso": 334385855.0
+    },
+    {
+      "codigo": 4104303,
+      "nome": "Campo Mourão",
+      "cadeia": "Fertilizantes",
+      "valor": 12432.0,
+      "peso": 444.0
+    },
+    {
+      "codigo": 4104303,
+      "nome": "Campo Mourão",
+      "cadeia": "Oleaginosas",
+      "valor": 2590859.0,
+      "peso": 2508608.0
+    },
+    {
+      "codigo": 4104303,
+      "nome": "Campo Mourão",
+      "cadeia": "Olericultura",
+      "valor": 193412.0,
+      "peso": 192000.0
     },
     {
       "codigo": 4104303,
       "nome": "Campo Mourão",
       "cadeia": "Outros",
-      "valor": 1848338952.0,
-      "peso": 4653627209.0
+      "valor": 83716.0,
+      "peso": 109356.0
+    },
+    {
+      "codigo": 4104303,
+      "nome": "Campo Mourão",
+      "cadeia": "Sojicultura",
+      "valor": 1755463078.0,
+      "peso": 4297876826.0
+    },
+    {
+      "codigo": 4104402,
+      "nome": "Cândido de Abreu",
+      "cadeia": "Cerealicultura",
+      "valor": 934.0,
+      "peso": 3259.0
     },
     {
       "codigo": 4104402,
       "nome": "Cândido de Abreu",
       "cadeia": "Outros",
-      "valor": 188517.0,
-      "peso": 48655.0
+      "valor": 187583.0,
+      "peso": 45396.0
     },
     {
       "codigo": 4104428,
       "nome": "Candói",
-      "cadeia": "Outros",
-      "valor": 881191.0,
-      "peso": 1507032.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 385486.0,
+      "peso": 562420.0
+    },
+    {
+      "codigo": 4104428,
+      "nome": "Candói",
+      "cadeia": "Aquicultura",
+      "valor": 67551.0,
+      "peso": 113794.0
+    },
+    {
+      "codigo": 4104428,
+      "nome": "Candói",
+      "cadeia": "Sojicultura",
+      "valor": 428154.0,
+      "peso": 830818.0
     },
     {
       "codigo": 4104501,
       "nome": "Capanema",
-      "cadeia": "Outros",
-      "valor": 283343247.0,
-      "peso": 141395419.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 71600.0,
+      "peso": 23805.0
+    },
+    {
+      "codigo": 4104501,
+      "nome": "Capanema",
+      "cadeia": "Aquicultura",
+      "valor": 21891.0,
+      "peso": 45560.0
+    },
+    {
+      "codigo": 4104501,
+      "nome": "Capanema",
+      "cadeia": "Avicultura",
+      "valor": 276554177.0,
+      "peso": 135191601.0
+    },
+    {
+      "codigo": 4104501,
+      "nome": "Capanema",
+      "cadeia": "Cafeicultura",
+      "valor": 2215448.0,
+      "peso": 593790.0
+    },
+    {
+      "codigo": 4104501,
+      "nome": "Capanema",
+      "cadeia": "Fruticultura",
+      "valor": 9853.0,
+      "peso": 25965.0
+    },
+    {
+      "codigo": 4104501,
+      "nome": "Capanema",
+      "cadeia": "Oleaginosas",
+      "valor": 135445.0,
+      "peso": 230543.0
+    },
+    {
+      "codigo": 4104501,
+      "nome": "Capanema",
+      "cadeia": "Olericultura",
+      "valor": 40040.0,
+      "peso": 112000.0
+    },
+    {
+      "codigo": 4104501,
+      "nome": "Capanema",
+      "cadeia": "Sojicultura",
+      "valor": 4294793.0,
+      "peso": 5172155.0
+    },
+    {
+      "codigo": 4104659,
+      "nome": "Carambeí",
+      "cadeia": "Agroind. Carnes",
+      "valor": 323823.0,
+      "peso": 355304.0
+    },
+    {
+      "codigo": 4104659,
+      "nome": "Carambeí",
+      "cadeia": "Agroind. Grãos",
+      "valor": 329.0,
+      "peso": 75.0
+    },
+    {
+      "codigo": 4104659,
+      "nome": "Carambeí",
+      "cadeia": "Aquicultura",
+      "valor": 10545775.0,
+      "peso": 21393488.0
+    },
+    {
+      "codigo": 4104659,
+      "nome": "Carambeí",
+      "cadeia": "Avicultura",
+      "valor": 27244634.0,
+      "peso": 6265522.0
+    },
+    {
+      "codigo": 4104659,
+      "nome": "Carambeí",
+      "cadeia": "Bebidas",
+      "valor": 157449.0,
+      "peso": 135690.0
+    },
+    {
+      "codigo": 4104659,
+      "nome": "Carambeí",
+      "cadeia": "Oleaginosas",
+      "valor": 247459.0,
+      "peso": 206950.0
     },
     {
       "codigo": 4104659,
       "nome": "Carambeí",
       "cadeia": "Outros",
-      "valor": 53639015.0,
-      "peso": 37237525.0
+      "valor": 1511713.0,
+      "peso": 2255910.0
+    },
+    {
+      "codigo": 4104659,
+      "nome": "Carambeí",
+      "cadeia": "Suinocultura",
+      "valor": 13607833.0,
+      "peso": 6624586.0
     },
     {
       "codigo": 4104709,
       "nome": "Carlópolis",
-      "cadeia": "Outros",
-      "valor": 603623.0,
-      "peso": 523589.0
+      "cadeia": "Cafeicultura",
+      "valor": 6700.0,
+      "peso": 2320.0
+    },
+    {
+      "codigo": 4104709,
+      "nome": "Carlópolis",
+      "cadeia": "Fruticultura",
+      "valor": 596923.0,
+      "peso": 521269.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Agroind. Carnes",
+      "valor": 298595641.0,
+      "peso": 129911489.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Agroind. Grãos",
+      "valor": 16637470.0,
+      "peso": 6605997.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Avicultura",
+      "valor": 1439477741.0,
+      "peso": 877643695.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Bebidas",
+      "valor": 90916.0,
+      "peso": 162749.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Bovinocultura",
+      "valor": 42266477.0,
+      "peso": 9739240.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Cafeicultura",
+      "valor": 4422.0,
+      "peso": 690.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Cerealicultura",
+      "valor": 91960798.0,
+      "peso": 398036885.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Fertilizantes",
+      "valor": 198811544.0,
+      "peso": 461339180.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Florestal",
+      "valor": 5597811.0,
+      "peso": 3303563.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Floricultura",
+      "valor": 2367.0,
+      "peso": 165.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Fruticultura",
+      "valor": 8808655.0,
+      "peso": 9947736.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Oleaginosas",
+      "valor": 734549.0,
+      "peso": 568854.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Olericultura",
+      "valor": 3760910.0,
+      "peso": 6441378.0
     },
     {
       "codigo": 4104808,
       "nome": "Cascavel",
       "cadeia": "Outros",
-      "valor": 2880503671.0,
-      "peso": 3159947766.0
+      "valor": 13956177.0,
+      "peso": 36165150.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Outros Insumos",
+      "valor": 76398.0,
+      "peso": 8879.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Sojicultura",
+      "valor": 508580087.0,
+      "peso": 1114671584.0
+    },
+    {
+      "codigo": 4104808,
+      "nome": "Cascavel",
+      "cadeia": "Suinocultura",
+      "valor": 251141708.0,
+      "peso": 105400532.0
+    },
+    {
+      "codigo": 4104907,
+      "nome": "Castro",
+      "cadeia": "Agroind. Carnes",
+      "valor": 9594132.0,
+      "peso": 9647964.0
+    },
+    {
+      "codigo": 4104907,
+      "nome": "Castro",
+      "cadeia": "Agroind. Grãos",
+      "valor": 137216980.0,
+      "peso": 216916105.0
+    },
+    {
+      "codigo": 4104907,
+      "nome": "Castro",
+      "cadeia": "Canavicultura",
+      "valor": 42006917.0,
+      "peso": 94347690.0
+    },
+    {
+      "codigo": 4104907,
+      "nome": "Castro",
+      "cadeia": "Cerealicultura",
+      "valor": 238192.0,
+      "peso": 1073661.0
+    },
+    {
+      "codigo": 4104907,
+      "nome": "Castro",
+      "cadeia": "Fruticultura",
+      "valor": 502.0,
+      "peso": 62.0
+    },
+    {
+      "codigo": 4104907,
+      "nome": "Castro",
+      "cadeia": "Laticínios",
+      "valor": 287.0,
+      "peso": 25.0
+    },
+    {
+      "codigo": 4104907,
+      "nome": "Castro",
+      "cadeia": "Oleaginosas",
+      "valor": 39991049.0,
+      "peso": 32861323.0
+    },
+    {
+      "codigo": 4104907,
+      "nome": "Castro",
+      "cadeia": "Olericultura",
+      "valor": 2336313.0,
+      "peso": 1099164.0
     },
     {
       "codigo": 4104907,
       "nome": "Castro",
       "cadeia": "Outros",
-      "valor": 393189719.0,
-      "peso": 430195336.0
+      "valor": 603856.0,
+      "peso": 838780.0
+    },
+    {
+      "codigo": 4104907,
+      "nome": "Castro",
+      "cadeia": "Sojicultura",
+      "valor": 361764.0,
+      "peso": 361480.0
+    },
+    {
+      "codigo": 4104907,
+      "nome": "Castro",
+      "cadeia": "Suinocultura",
+      "valor": 160839727.0,
+      "peso": 73049082.0
     },
     {
       "codigo": 4105003,
       "nome": "Catanduvas",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 132000.0,
       "peso": 120000.0
     },
     {
       "codigo": 4105300,
       "nome": "Céu Azul",
-      "cadeia": "Outros",
-      "valor": 327381293.0,
-      "peso": 638213520.0
+      "cadeia": "Cerealicultura",
+      "valor": 5375433.0,
+      "peso": 23504211.0
+    },
+    {
+      "codigo": 4105300,
+      "nome": "Céu Azul",
+      "cadeia": "Olericultura",
+      "valor": 279867.0,
+      "peso": 507372.0
+    },
+    {
+      "codigo": 4105300,
+      "nome": "Céu Azul",
+      "cadeia": "Sojicultura",
+      "valor": 321725993.0,
+      "peso": 614201937.0
     },
     {
       "codigo": 4105409,
       "nome": "Chopinzinho",
-      "cadeia": "Outros",
-      "valor": 201159.0,
-      "peso": 299413.0
+      "cadeia": "Cafeicultura",
+      "valor": 13037.0,
+      "peso": 196.0
+    },
+    {
+      "codigo": 4105409,
+      "nome": "Chopinzinho",
+      "cadeia": "Cerealicultura",
+      "valor": 175343.0,
+      "peso": 296116.0
+    },
+    {
+      "codigo": 4105409,
+      "nome": "Chopinzinho",
+      "cadeia": "Florestal",
+      "valor": 12779.0,
+      "peso": 3101.0
+    },
+    {
+      "codigo": 4105508,
+      "nome": "Cianorte",
+      "cadeia": "Agroind. Carnes",
+      "valor": 9798543.0,
+      "peso": 8253162.0
+    },
+    {
+      "codigo": 4105508,
+      "nome": "Cianorte",
+      "cadeia": "Agroind. Grãos",
+      "valor": 15898103.0,
+      "peso": 16930365.0
+    },
+    {
+      "codigo": 4105508,
+      "nome": "Cianorte",
+      "cadeia": "Aquicultura",
+      "valor": 2140735.0,
+      "peso": 3126038.0
+    },
+    {
+      "codigo": 4105508,
+      "nome": "Cianorte",
+      "cadeia": "Avicultura",
+      "valor": 243060660.0,
+      "peso": 120926885.0
+    },
+    {
+      "codigo": 4105508,
+      "nome": "Cianorte",
+      "cadeia": "Cafeicultura",
+      "valor": 6451.0,
+      "peso": 1080.0
+    },
+    {
+      "codigo": 4105508,
+      "nome": "Cianorte",
+      "cadeia": "Cerealicultura",
+      "valor": 25320.0,
+      "peso": 20950.0
+    },
+    {
+      "codigo": 4105508,
+      "nome": "Cianorte",
+      "cadeia": "Florestal",
+      "valor": 9438953.0,
+      "peso": 9914618.0
+    },
+    {
+      "codigo": 4105508,
+      "nome": "Cianorte",
+      "cadeia": "Fruticultura",
+      "valor": 11832.0,
+      "peso": 2637.0
+    },
+    {
+      "codigo": 4105508,
+      "nome": "Cianorte",
+      "cadeia": "Oleaginosas",
+      "valor": 52220.0,
+      "peso": 16780.0
+    },
+    {
+      "codigo": 4105508,
+      "nome": "Cianorte",
+      "cadeia": "Olericultura",
+      "valor": 73232.0,
+      "peso": 38635.0
     },
     {
       "codigo": 4105508,
       "nome": "Cianorte",
       "cadeia": "Outros",
-      "valor": 283972469.0,
-      "peso": 162305514.0
+      "valor": 3375392.0,
+      "peso": 3027940.0
+    },
+    {
+      "codigo": 4105508,
+      "nome": "Cianorte",
+      "cadeia": "Sojicultura",
+      "valor": 91028.0,
+      "peso": 46424.0
+    },
+    {
+      "codigo": 4105607,
+      "nome": "Cidade Gaúcha",
+      "cadeia": "Agroind. Carnes",
+      "valor": 87398.0,
+      "peso": 70195.0
+    },
+    {
+      "codigo": 4105607,
+      "nome": "Cidade Gaúcha",
+      "cadeia": "Aquicultura",
+      "valor": 110688.0,
+      "peso": 188751.0
+    },
+    {
+      "codigo": 4105607,
+      "nome": "Cidade Gaúcha",
+      "cadeia": "Avicultura",
+      "valor": 209839198.0,
+      "peso": 173420672.0
     },
     {
       "codigo": 4105607,
       "nome": "Cidade Gaúcha",
       "cadeia": "Outros",
-      "valor": 210193823.0,
-      "peso": 173983218.0
+      "valor": 156539.0,
+      "peso": 303600.0
     },
     {
       "codigo": 4105706,
       "nome": "Clevelândia",
-      "cadeia": "Outros",
-      "valor": 26519312.0,
-      "peso": 43390252.0
+      "cadeia": "Cerealicultura",
+      "valor": 12.0,
+      "peso": 6.0
+    },
+    {
+      "codigo": 4105706,
+      "nome": "Clevelândia",
+      "cadeia": "Oleaginosas",
+      "valor": 267238.0,
+      "peso": 280000.0
+    },
+    {
+      "codigo": 4105706,
+      "nome": "Clevelândia",
+      "cadeia": "Olericultura",
+      "valor": 14579242.0,
+      "peso": 18823787.0
+    },
+    {
+      "codigo": 4105706,
+      "nome": "Clevelândia",
+      "cadeia": "Sojicultura",
+      "valor": 11672820.0,
+      "peso": 24286459.0
+    },
+    {
+      "codigo": 4105805,
+      "nome": "Colombo",
+      "cadeia": "Agroind. Grãos",
+      "valor": 52030861.0,
+      "peso": 23102821.0
+    },
+    {
+      "codigo": 4105805,
+      "nome": "Colombo",
+      "cadeia": "Bebidas",
+      "valor": 64.0,
+      "peso": 11.0
+    },
+    {
+      "codigo": 4105805,
+      "nome": "Colombo",
+      "cadeia": "Cafeicultura",
+      "valor": 491238.0,
+      "peso": 21240.0
+    },
+    {
+      "codigo": 4105805,
+      "nome": "Colombo",
+      "cadeia": "Fertilizantes",
+      "valor": 136363.0,
+      "peso": 1215203.0
+    },
+    {
+      "codigo": 4105805,
+      "nome": "Colombo",
+      "cadeia": "Florestal",
+      "valor": 21001790.0,
+      "peso": 1284759.0
+    },
+    {
+      "codigo": 4105805,
+      "nome": "Colombo",
+      "cadeia": "Fruticultura",
+      "valor": 1230406.0,
+      "peso": 44821.0
+    },
+    {
+      "codigo": 4105805,
+      "nome": "Colombo",
+      "cadeia": "Oleaginosas",
+      "valor": 96.0,
+      "peso": 27.0
+    },
+    {
+      "codigo": 4105805,
+      "nome": "Colombo",
+      "cadeia": "Olericultura",
+      "valor": 11614.0,
+      "peso": 6122.0
     },
     {
       "codigo": 4105805,
       "nome": "Colombo",
       "cadeia": "Outros",
-      "valor": 77362945.0,
-      "peso": 25940558.0
+      "valor": 2408530.0,
+      "peso": 243875.0
+    },
+    {
+      "codigo": 4105805,
+      "nome": "Colombo",
+      "cadeia": "Outros Insumos",
+      "valor": 51807.0,
+      "peso": 21669.0
+    },
+    {
+      "codigo": 4105805,
+      "nome": "Colombo",
+      "cadeia": "Sojicultura",
+      "valor": 176.0,
+      "peso": 10.0
     },
     {
       "codigo": 4105904,
       "nome": "Colorado",
-      "cadeia": "Outros",
-      "valor": 338716413.0,
-      "peso": 704393065.0
+      "cadeia": "Agroind. Carnes",
+      "valor": 236326.0,
+      "peso": 151786.0
+    },
+    {
+      "codigo": 4105904,
+      "nome": "Colorado",
+      "cadeia": "Aquicultura",
+      "valor": 9453.0,
+      "peso": 56370.0
+    },
+    {
+      "codigo": 4105904,
+      "nome": "Colorado",
+      "cadeia": "Bovinocultura",
+      "valor": 14927253.0,
+      "peso": 4187621.0
+    },
+    {
+      "codigo": 4105904,
+      "nome": "Colorado",
+      "cadeia": "Canavicultura",
+      "valor": 323543381.0,
+      "peso": 699997288.0
     },
     {
       "codigo": 4106001,
       "nome": "Congonhinhas",
-      "cadeia": "Outros",
-      "valor": 2416906.0,
-      "peso": 4900509.0
+      "cadeia": "Avicultura",
+      "valor": 436840.0,
+      "peso": 65688.0
+    },
+    {
+      "codigo": 4106001,
+      "nome": "Congonhinhas",
+      "cadeia": "Cafeicultura",
+      "valor": 16821.0,
+      "peso": 3390.0
+    },
+    {
+      "codigo": 4106001,
+      "nome": "Congonhinhas",
+      "cadeia": "Cerealicultura",
+      "valor": 42679.0,
+      "peso": 197590.0
+    },
+    {
+      "codigo": 4106001,
+      "nome": "Congonhinhas",
+      "cadeia": "Sojicultura",
+      "valor": 1920566.0,
+      "peso": 4633841.0
     },
     {
       "codigo": 4106209,
       "nome": "Contenda",
-      "cadeia": "Outros",
-      "valor": 4066150.0,
-      "peso": 6342550.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 8146.0,
+      "peso": 23962.0
+    },
+    {
+      "codigo": 4106209,
+      "nome": "Contenda",
+      "cadeia": "Cerealicultura",
+      "valor": 1016849.0,
+      "peso": 2738167.0
+    },
+    {
+      "codigo": 4106209,
+      "nome": "Contenda",
+      "cadeia": "Oleaginosas",
+      "valor": 1903292.0,
+      "peso": 1827380.0
+    },
+    {
+      "codigo": 4106209,
+      "nome": "Contenda",
+      "cadeia": "Olericultura",
+      "valor": 987062.0,
+      "peso": 1503101.0
+    },
+    {
+      "codigo": 4106209,
+      "nome": "Contenda",
+      "cadeia": "Sojicultura",
+      "valor": 150801.0,
+      "peso": 249940.0
     },
     {
       "codigo": 4106308,
       "nome": "Corbélia",
-      "cadeia": "Outros",
+      "cadeia": "Fertilizantes",
       "valor": 24176.0,
       "peso": 20560.0
     },
     {
       "codigo": 4106407,
       "nome": "Cornélio Procópio",
-      "cadeia": "Outros",
-      "valor": 831248891.0,
-      "peso": 126198493.0
+      "cadeia": "Cafeicultura",
+      "valor": 818580399.0,
+      "peso": 99067811.0
+    },
+    {
+      "codigo": 4106407,
+      "nome": "Cornélio Procópio",
+      "cadeia": "Cerealicultura",
+      "valor": 625000.0,
+      "peso": 2907408.0
+    },
+    {
+      "codigo": 4106407,
+      "nome": "Cornélio Procópio",
+      "cadeia": "Fertilizantes",
+      "valor": 75.0,
+      "peso": 68.0
+    },
+    {
+      "codigo": 4106407,
+      "nome": "Cornélio Procópio",
+      "cadeia": "Oleaginosas",
+      "valor": 1816314.0,
+      "peso": 631172.0
+    },
+    {
+      "codigo": 4106407,
+      "nome": "Cornélio Procópio",
+      "cadeia": "Sojicultura",
+      "valor": 10227103.0,
+      "peso": 23592034.0
     },
     {
       "codigo": 4106456,
       "nome": "Coronel Domingos Soares",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 2574712.0,
       "peso": 4849285.0
     },
     {
       "codigo": 4106506,
       "nome": "Coronel Vivida",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 9367574.0,
       "peso": 18101285.0
     },
     {
       "codigo": 4106605,
       "nome": "Cruzeiro do Oeste",
+      "cadeia": "Agroind. Carnes",
+      "valor": 15819860.0,
+      "peso": 8048013.0
+    },
+    {
+      "codigo": 4106605,
+      "nome": "Cruzeiro do Oeste",
+      "cadeia": "Aquicultura",
+      "valor": 90307.0,
+      "peso": 364627.0
+    },
+    {
+      "codigo": 4106605,
+      "nome": "Cruzeiro do Oeste",
+      "cadeia": "Bovinocultura",
+      "valor": 599611307.0,
+      "peso": 116200133.0
+    },
+    {
+      "codigo": 4106605,
+      "nome": "Cruzeiro do Oeste",
       "cadeia": "Outros",
-      "valor": 622315964.0,
-      "peso": 126896754.0
+      "valor": 6794490.0,
+      "peso": 2283981.0
     },
     {
       "codigo": 4106704,
       "nome": "Cruzeiro do Sul",
-      "cadeia": "Outros",
+      "cadeia": "Florestal",
       "valor": 1795977.0,
       "peso": 412800.0
     },
     {
       "codigo": 4106803,
       "nome": "Cruz Machado",
+      "cadeia": "Florestal",
+      "valor": 7558151.0,
+      "peso": 4923786.0
+    },
+    {
+      "codigo": 4106803,
+      "nome": "Cruz Machado",
       "cadeia": "Outros",
-      "valor": 7573801.0,
-      "peso": 4925286.0
+      "valor": 15650.0,
+      "peso": 1500.0
     },
     {
       "codigo": 4106852,
       "nome": "Cruzmaltina",
-      "cadeia": "Outros",
-      "valor": 221597.0,
-      "peso": 803509.0
+      "cadeia": "Cerealicultura",
+      "valor": 99531.0,
+      "peso": 469653.0
+    },
+    {
+      "codigo": 4106852,
+      "nome": "Cruzmaltina",
+      "cadeia": "Sojicultura",
+      "valor": 122066.0,
+      "peso": 333856.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Agroind. Carnes",
+      "valor": 5742.0,
+      "peso": 1435.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Agroind. Grãos",
+      "valor": 274488651.0,
+      "peso": 86855827.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Aquicultura",
+      "valor": 7666.0,
+      "peso": 3297.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Bebidas",
+      "valor": 3083525.0,
+      "peso": 1783867.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Bovinocultura",
+      "valor": 46550671.0,
+      "peso": 39422836.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Cafeicultura",
+      "valor": 49356500.0,
+      "peso": 16169459.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Canavicultura",
+      "valor": 501423.0,
+      "peso": 611067.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Cerealicultura",
+      "valor": 147306091.0,
+      "peso": 590409672.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Fertilizantes",
+      "valor": 10528702.0,
+      "peso": 6784589.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Florestal",
+      "valor": 7346696.0,
+      "peso": 1541743.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Fruticultura",
+      "valor": 33885235.0,
+      "peso": 29254925.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Laticínios",
+      "valor": 4002945.0,
+      "peso": 913027.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Oleaginosas",
+      "valor": 20736695.0,
+      "peso": 18105440.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Olericultura",
+      "valor": 27852472.0,
+      "peso": 36760374.0
     },
     {
       "codigo": 4106902,
       "nome": "Curitiba",
       "cadeia": "Outros",
-      "valor": 2043856394.0,
-      "peso": 3822575868.0
+      "valor": 38619891.0,
+      "peso": 7115047.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Outros Insumos",
+      "valor": 6388684.0,
+      "peso": 997556.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Sojicultura",
+      "valor": 1372319874.0,
+      "peso": 2985635136.0
+    },
+    {
+      "codigo": 4106902,
+      "nome": "Curitiba",
+      "cadeia": "Suinocultura",
+      "valor": 874931.0,
+      "peso": 210571.0
     },
     {
       "codigo": 4107157,
       "nome": "Diamante d'Oeste",
-      "cadeia": "Outros",
-      "valor": 848422.0,
-      "peso": 847000.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 13532.0,
+      "peso": 37000.0
+    },
+    {
+      "codigo": 4107157,
+      "nome": "Diamante d'Oeste",
+      "cadeia": "Olericultura",
+      "valor": 834890.0,
+      "peso": 810000.0
+    },
+    {
+      "codigo": 4107207,
+      "nome": "Dois Vizinhos",
+      "cadeia": "Avicultura",
+      "valor": 114990715.0,
+      "peso": 27078069.0
     },
     {
       "codigo": 4107207,
       "nome": "Dois Vizinhos",
       "cadeia": "Outros",
-      "valor": 114990752.0,
-      "peso": 27078081.0
+      "valor": 37.0,
+      "peso": 12.0
     },
     {
       "codigo": 4107306,
       "nome": "Doutor Camargo",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 1122.0,
       "peso": 3491.0
     },
     {
       "codigo": 4107405,
       "nome": "Enéas Marques",
-      "cadeia": "Outros",
-      "valor": 12129287.0,
-      "peso": 21146107.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 1913012.0,
+      "peso": 4528210.0
+    },
+    {
+      "codigo": 4107405,
+      "nome": "Enéas Marques",
+      "cadeia": "Aquicultura",
+      "valor": 5630058.0,
+      "peso": 8645170.0
+    },
+    {
+      "codigo": 4107405,
+      "nome": "Enéas Marques",
+      "cadeia": "Oleaginosas",
+      "valor": 27965.0,
+      "peso": 28830.0
+    },
+    {
+      "codigo": 4107405,
+      "nome": "Enéas Marques",
+      "cadeia": "Sojicultura",
+      "valor": 4558252.0,
+      "peso": 7943897.0
     },
     {
       "codigo": 4107504,
       "nome": "Engenheiro Beltrão",
-      "cadeia": "Outros",
-      "valor": 89100.0,
-      "peso": 415574.0
+      "cadeia": "Cerealicultura",
+      "valor": 79520.0,
+      "peso": 386500.0
+    },
+    {
+      "codigo": 4107504,
+      "nome": "Engenheiro Beltrão",
+      "cadeia": "Sojicultura",
+      "valor": 9580.0,
+      "peso": 29074.0
     },
     {
       "codigo": 4107546,
       "nome": "Espigão Alto do Iguaçu",
-      "cadeia": "Outros",
+      "cadeia": "Florestal",
       "valor": 69285.0,
       "peso": 43120.0
     },
     {
       "codigo": 4107553,
       "nome": "Farol",
-      "cadeia": "Outros",
-      "valor": 90267.0,
-      "peso": 187030.0
+      "cadeia": "Cerealicultura",
+      "valor": 14169.0,
+      "peso": 47400.0
+    },
+    {
+      "codigo": 4107553,
+      "nome": "Farol",
+      "cadeia": "Sojicultura",
+      "valor": 76098.0,
+      "peso": 139630.0
     },
     {
       "codigo": 4107603,
       "nome": "Faxinal",
-      "cadeia": "Outros",
-      "valor": 376015.0,
-      "peso": 577700.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 73339.0,
+      "peso": 97700.0
+    },
+    {
+      "codigo": 4107603,
+      "nome": "Faxinal",
+      "cadeia": "Sojicultura",
+      "valor": 302676.0,
+      "peso": 480000.0
+    },
+    {
+      "codigo": 4107652,
+      "nome": "Fazenda Rio Grande",
+      "cadeia": "Agroind. Grãos",
+      "valor": 106463.0,
+      "peso": 1542.0
+    },
+    {
+      "codigo": 4107652,
+      "nome": "Fazenda Rio Grande",
+      "cadeia": "Cafeicultura",
+      "valor": 23096.0,
+      "peso": 423.0
+    },
+    {
+      "codigo": 4107652,
+      "nome": "Fazenda Rio Grande",
+      "cadeia": "Fertilizantes",
+      "valor": 382718.0,
+      "peso": 77800.0
+    },
+    {
+      "codigo": 4107652,
+      "nome": "Fazenda Rio Grande",
+      "cadeia": "Florestal",
+      "valor": 223176.0,
+      "peso": 149960.0
     },
     {
       "codigo": 4107652,
       "nome": "Fazenda Rio Grande",
       "cadeia": "Outros",
-      "valor": 1722080.0,
-      "peso": 584987.0
+      "valor": 867190.0,
+      "peso": 328055.0
+    },
+    {
+      "codigo": 4107652,
+      "nome": "Fazenda Rio Grande",
+      "cadeia": "Outros Insumos",
+      "valor": 119437.0,
+      "peso": 27207.0
     },
     {
       "codigo": 4107702,
       "nome": "Fênix",
-      "cadeia": "Outros",
+      "cadeia": "Cerealicultura",
       "valor": 10643.0,
       "peso": 35092.0
     },
     {
       "codigo": 4107736,
       "nome": "Fernandes Pinheiro",
-      "cadeia": "Outros",
-      "valor": 840736.0,
-      "peso": 608611.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 190.0,
+      "peso": 10.0
+    },
+    {
+      "codigo": 4107736,
+      "nome": "Fernandes Pinheiro",
+      "cadeia": "Cafeicultura",
+      "valor": 947.0,
+      "peso": 300.0
+    },
+    {
+      "codigo": 4107736,
+      "nome": "Fernandes Pinheiro",
+      "cadeia": "Florestal",
+      "valor": 751121.0,
+      "peso": 540755.0
+    },
+    {
+      "codigo": 4107736,
+      "nome": "Fernandes Pinheiro",
+      "cadeia": "Olericultura",
+      "valor": 88478.0,
+      "peso": 67546.0
     },
     {
       "codigo": 4107801,
       "nome": "Floraí",
-      "cadeia": "Outros",
-      "valor": 181208.0,
-      "peso": 452116.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 1869.0,
+      "peso": 224.0
+    },
+    {
+      "codigo": 4107801,
+      "nome": "Floraí",
+      "cadeia": "Fruticultura",
+      "valor": 991.0,
+      "peso": 124.0
+    },
+    {
+      "codigo": 4107801,
+      "nome": "Floraí",
+      "cadeia": "Sojicultura",
+      "valor": 178348.0,
+      "peso": 451768.0
     },
     {
       "codigo": 4107900,
       "nome": "Floresta",
-      "cadeia": "Outros",
-      "valor": 18002855.0,
-      "peso": 46652280.0
+      "cadeia": "Cerealicultura",
+      "valor": 3652015.0,
+      "peso": 13615677.0
+    },
+    {
+      "codigo": 4107900,
+      "nome": "Floresta",
+      "cadeia": "Sojicultura",
+      "valor": 14350840.0,
+      "peso": 33036603.0
     },
     {
       "codigo": 4108007,
       "nome": "Florestópolis",
-      "cadeia": "Outros",
+      "cadeia": "Canavicultura",
       "valor": 498084374.0,
       "peso": 1264905205.0
     },
     {
       "codigo": 4108304,
       "nome": "Foz do Iguaçu",
+      "cadeia": "Agroind. Carnes",
+      "valor": 92937.0,
+      "peso": 40774.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Agroind. Grãos",
+      "valor": 41094961.0,
+      "peso": 21486721.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Aquicultura",
+      "valor": 309797.0,
+      "peso": 138995.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Avicultura",
+      "valor": 20175048.0,
+      "peso": 3966409.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Bebidas",
+      "valor": 11601731.0,
+      "peso": 12577064.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Bovinocultura",
+      "valor": 279.0,
+      "peso": 1.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Cafeicultura",
+      "valor": 93320.0,
+      "peso": 26070.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Canavicultura",
+      "valor": 979384.0,
+      "peso": 1449588.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Cerealicultura",
+      "valor": 4457877.0,
+      "peso": 6438748.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Fertilizantes",
+      "valor": 5152752.0,
+      "peso": 4028919.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Florestal",
+      "valor": 83917.0,
+      "peso": 12051.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Floricultura",
+      "valor": 26518.0,
+      "peso": 14911.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Fruticultura",
+      "valor": 6854307.0,
+      "peso": 4487854.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Laticínios",
+      "valor": 137495.0,
+      "peso": 144194.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Oleaginosas",
+      "valor": 5002656.0,
+      "peso": 4390222.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Olericultura",
+      "valor": 164811542.0,
+      "peso": 158298877.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
       "cadeia": "Outros",
-      "valor": 271411439.0,
-      "peso": 226853199.0
+      "valor": 4248567.0,
+      "peso": 2942798.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Outros Insumos",
+      "valor": 1946258.0,
+      "peso": 803380.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Sojicultura",
+      "valor": 2424539.0,
+      "peso": 3237555.0
+    },
+    {
+      "codigo": 4108304,
+      "nome": "Foz do Iguaçu",
+      "cadeia": "Tabaco",
+      "valor": 1917554.0,
+      "peso": 2368068.0
     },
     {
       "codigo": 4108320,
       "nome": "Francisco Alves",
-      "cadeia": "Outros",
-      "valor": 19968235.0,
-      "peso": 45072156.0
+      "cadeia": "Cerealicultura",
+      "valor": 352392.0,
+      "peso": 1427092.0
+    },
+    {
+      "codigo": 4108320,
+      "nome": "Francisco Alves",
+      "cadeia": "Sojicultura",
+      "valor": 19615843.0,
+      "peso": 43645064.0
+    },
+    {
+      "codigo": 4108403,
+      "nome": "Francisco Beltrão",
+      "cadeia": "Agroind. Grãos",
+      "valor": 572735.0,
+      "peso": 272722.0
+    },
+    {
+      "codigo": 4108403,
+      "nome": "Francisco Beltrão",
+      "cadeia": "Aquicultura",
+      "valor": 520814.0,
+      "peso": 537630.0
+    },
+    {
+      "codigo": 4108403,
+      "nome": "Francisco Beltrão",
+      "cadeia": "Avicultura",
+      "valor": 19067257.0,
+      "peso": 5156864.0
+    },
+    {
+      "codigo": 4108403,
+      "nome": "Francisco Beltrão",
+      "cadeia": "Cafeicultura",
+      "valor": 3411.0,
+      "peso": 740.0
+    },
+    {
+      "codigo": 4108403,
+      "nome": "Francisco Beltrão",
+      "cadeia": "Florestal",
+      "valor": 595400.0,
+      "peso": 471453.0
+    },
+    {
+      "codigo": 4108403,
+      "nome": "Francisco Beltrão",
+      "cadeia": "Fruticultura",
+      "valor": 9619304.0,
+      "peso": 7979300.0
+    },
+    {
+      "codigo": 4108403,
+      "nome": "Francisco Beltrão",
+      "cadeia": "Olericultura",
+      "valor": 1746179.0,
+      "peso": 4450288.0
     },
     {
       "codigo": 4108403,
       "nome": "Francisco Beltrão",
       "cadeia": "Outros",
-      "valor": 34979860.0,
-      "peso": 21798215.0
+      "valor": 2851913.0,
+      "peso": 2924291.0
+    },
+    {
+      "codigo": 4108403,
+      "nome": "Francisco Beltrão",
+      "cadeia": "Outros Insumos",
+      "valor": 2847.0,
+      "peso": 4927.0
     },
     {
       "codigo": 4108601,
       "nome": "Goioerê",
-      "cadeia": "Outros",
-      "valor": 10851837.0,
-      "peso": 21154799.0
+      "cadeia": "Cerealicultura",
+      "valor": 191195.0,
+      "peso": 809620.0
+    },
+    {
+      "codigo": 4108601,
+      "nome": "Goioerê",
+      "cadeia": "Sojicultura",
+      "valor": 10660642.0,
+      "peso": 20345179.0
     },
     {
       "codigo": 4108650,
       "nome": "Goioxim",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 178351.0,
       "peso": 347091.0
     },
     {
       "codigo": 4108809,
       "nome": "Guaíra",
+      "cadeia": "Agroind. Grãos",
+      "valor": 4566191.0,
+      "peso": 5236651.0
+    },
+    {
+      "codigo": 4108809,
+      "nome": "Guaíra",
+      "cadeia": "Bebidas",
+      "valor": 2386690.0,
+      "peso": 6731284.0
+    },
+    {
+      "codigo": 4108809,
+      "nome": "Guaíra",
+      "cadeia": "Canavicultura",
+      "valor": 7464.0,
+      "peso": 7656.0
+    },
+    {
+      "codigo": 4108809,
+      "nome": "Guaíra",
+      "cadeia": "Cerealicultura",
+      "valor": 1696880.0,
+      "peso": 10409616.0
+    },
+    {
+      "codigo": 4108809,
+      "nome": "Guaíra",
+      "cadeia": "Fertilizantes",
+      "valor": 156366.0,
+      "peso": 1855656.0
+    },
+    {
+      "codigo": 4108809,
+      "nome": "Guaíra",
+      "cadeia": "Florestal",
+      "valor": 5113.0,
+      "peso": 3446.0
+    },
+    {
+      "codigo": 4108809,
+      "nome": "Guaíra",
+      "cadeia": "Floricultura",
+      "valor": 1360.0,
+      "peso": 3100.0
+    },
+    {
+      "codigo": 4108809,
+      "nome": "Guaíra",
+      "cadeia": "Fruticultura",
+      "valor": 2419022.0,
+      "peso": 33643164.0
+    },
+    {
+      "codigo": 4108809,
+      "nome": "Guaíra",
+      "cadeia": "Oleaginosas",
+      "valor": 29.0,
+      "peso": 2.0
+    },
+    {
+      "codigo": 4108809,
+      "nome": "Guaíra",
+      "cadeia": "Olericultura",
+      "valor": 11410823.0,
+      "peso": 96437105.0
+    },
+    {
+      "codigo": 4108809,
+      "nome": "Guaíra",
       "cadeia": "Outros",
-      "valor": 23862702.0,
-      "peso": 157054984.0
+      "valor": 63214.0,
+      "peso": 183711.0
+    },
+    {
+      "codigo": 4108809,
+      "nome": "Guaíra",
+      "cadeia": "Outros Insumos",
+      "valor": 31085.0,
+      "peso": 17083.0
+    },
+    {
+      "codigo": 4108809,
+      "nome": "Guaíra",
+      "cadeia": "Sojicultura",
+      "valor": 1080612.0,
+      "peso": 2417450.0
+    },
+    {
+      "codigo": 4108809,
+      "nome": "Guaíra",
+      "cadeia": "Tabaco",
+      "valor": 37853.0,
+      "peso": 109060.0
     },
     {
       "codigo": 4109005,
       "nome": "Guapirama",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 1104.0,
       "peso": 3433.0
     },
     {
       "codigo": 4109203,
       "nome": "Guaraci",
-      "cadeia": "Outros",
-      "valor": 41132.0,
-      "peso": 13720.0
+      "cadeia": "Fruticultura",
+      "valor": 41121.0,
+      "peso": 13717.0
+    },
+    {
+      "codigo": 4109203,
+      "nome": "Guaraci",
+      "cadeia": "Laticínios",
+      "valor": 11.0,
+      "peso": 3.0
     },
     {
       "codigo": 4109302,
       "nome": "Guaraniaçu",
-      "cadeia": "Outros",
+      "cadeia": "Bebidas",
       "valor": 127787.0,
       "peso": 181374.0
     },
     {
       "codigo": 4109401,
       "nome": "Guarapuava",
+      "cadeia": "Agroind. Grãos",
+      "valor": 10106260.0,
+      "peso": 17745450.0
+    },
+    {
+      "codigo": 4109401,
+      "nome": "Guarapuava",
+      "cadeia": "Avicultura",
+      "valor": 4654529.0,
+      "peso": 39162.0
+    },
+    {
+      "codigo": 4109401,
+      "nome": "Guarapuava",
+      "cadeia": "Bebidas",
+      "valor": 3602.0,
+      "peso": 25.0
+    },
+    {
+      "codigo": 4109401,
+      "nome": "Guarapuava",
+      "cadeia": "Cerealicultura",
+      "valor": 176669232.0,
+      "peso": 29558460.0
+    },
+    {
+      "codigo": 4109401,
+      "nome": "Guarapuava",
+      "cadeia": "Florestal",
+      "valor": 1901817.0,
+      "peso": 730815.0
+    },
+    {
+      "codigo": 4109401,
+      "nome": "Guarapuava",
+      "cadeia": "Fruticultura",
+      "valor": 37800.0,
+      "peso": 19361.0
+    },
+    {
+      "codigo": 4109401,
+      "nome": "Guarapuava",
+      "cadeia": "Oleaginosas",
+      "valor": 347.0,
+      "peso": 84.0
+    },
+    {
+      "codigo": 4109401,
+      "nome": "Guarapuava",
+      "cadeia": "Olericultura",
+      "valor": 1252252.0,
+      "peso": 2543435.0
+    },
+    {
+      "codigo": 4109401,
+      "nome": "Guarapuava",
       "cadeia": "Outros",
-      "valor": 701464469.0,
-      "peso": 1113761809.0
+      "valor": 48694.0,
+      "peso": 565.0
+    },
+    {
+      "codigo": 4109401,
+      "nome": "Guarapuava",
+      "cadeia": "Sojicultura",
+      "valor": 504681820.0,
+      "peso": 1062684862.0
+    },
+    {
+      "codigo": 4109401,
+      "nome": "Guarapuava",
+      "cadeia": "Suinocultura",
+      "valor": 2108116.0,
+      "peso": 439590.0
     },
     {
       "codigo": 4109500,
       "nome": "Guaraqueçaba",
-      "cadeia": "Outros",
+      "cadeia": "Fruticultura",
       "valor": 340058.0,
       "peso": 106839.0
     },
     {
       "codigo": 4109658,
       "nome": "Honório Serpa",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 5021161.0,
       "peso": 9604491.0
     },
     {
       "codigo": 4109708,
       "nome": "Ibaiti",
-      "cadeia": "Outros",
-      "valor": 12946739.0,
-      "peso": 37794487.0
+      "cadeia": "Cerealicultura",
+      "valor": 1986394.0,
+      "peso": 11003233.0
+    },
+    {
+      "codigo": 4109708,
+      "nome": "Ibaiti",
+      "cadeia": "Sojicultura",
+      "valor": 10960345.0,
+      "peso": 26791254.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Agroind. Carnes",
+      "valor": 11731842.0,
+      "peso": 8707569.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Agroind. Grãos",
+      "valor": 4131452.0,
+      "peso": 12147247.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Avicultura",
+      "valor": 14750.0,
+      "peso": 25000.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Bovinocultura",
+      "valor": 379862.0,
+      "peso": 87678.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Canavicultura",
+      "valor": 102.0,
+      "peso": 350.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Cerealicultura",
+      "valor": 85464864.0,
+      "peso": 367102757.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Fertilizantes",
+      "valor": 2753047.0,
+      "peso": 450407.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Florestal",
+      "valor": 41.0,
+      "peso": 15.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Fruticultura",
+      "valor": 445671.0,
+      "peso": 148113.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Laticínios",
+      "valor": 255432.0,
+      "peso": 82499.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Oleaginosas",
+      "valor": 44550.0,
+      "peso": 27000.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Olericultura",
+      "valor": 7021267.0,
+      "peso": 1594648.0
     },
     {
       "codigo": 4109807,
       "nome": "Ibiporã",
       "cadeia": "Outros",
-      "valor": 268541582.0,
-      "peso": 513562469.0
+      "valor": 14232109.0,
+      "peso": 14113630.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Outros Insumos",
+      "valor": 8200.0,
+      "peso": 2000.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Sojicultura",
+      "valor": 32099559.0,
+      "peso": 62118189.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Suinocultura",
+      "valor": 109958214.0,
+      "peso": 46954389.0
+    },
+    {
+      "codigo": 4109807,
+      "nome": "Ibiporã",
+      "cadeia": "Tabaco",
+      "valor": 620.0,
+      "peso": 978.0
     },
     {
       "codigo": 4110102,
       "nome": "Imbituva",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 15327.0,
       "peso": 43665.0
     },
     {
       "codigo": 4110508,
       "nome": "Ipiranga",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 43026711.0,
       "peso": 98800219.0
     },
     {
       "codigo": 4110607,
       "nome": "Iporã",
+      "cadeia": "Agroind. Carnes",
+      "valor": 1143318.0,
+      "peso": 1298445.0
+    },
+    {
+      "codigo": 4110607,
+      "nome": "Iporã",
+      "cadeia": "Aquicultura",
+      "valor": 3.0,
+      "peso": 3.0
+    },
+    {
+      "codigo": 4110607,
+      "nome": "Iporã",
+      "cadeia": "Avicultura",
+      "valor": 66835035.0,
+      "peso": 33500858.0
+    },
+    {
+      "codigo": 4110607,
+      "nome": "Iporã",
       "cadeia": "Outros",
-      "valor": 92412564.0,
-      "peso": 44688781.0
+      "valor": 80081.0,
+      "peso": 33427.0
+    },
+    {
+      "codigo": 4110607,
+      "nome": "Iporã",
+      "cadeia": "Suinocultura",
+      "valor": 24354127.0,
+      "peso": 9856048.0
     },
     {
       "codigo": 4110706,
       "nome": "Irati",
-      "cadeia": "Outros",
-      "valor": 155319229.0,
-      "peso": 384057825.0
+      "cadeia": "Cerealicultura",
+      "valor": 10773212.0,
+      "peso": 50727891.0
+    },
+    {
+      "codigo": 4110706,
+      "nome": "Irati",
+      "cadeia": "Florestal",
+      "valor": 7592261.0,
+      "peso": 6029722.0
+    },
+    {
+      "codigo": 4110706,
+      "nome": "Irati",
+      "cadeia": "Floricultura",
+      "valor": 59465.0,
+      "peso": 7935.0
+    },
+    {
+      "codigo": 4110706,
+      "nome": "Irati",
+      "cadeia": "Sojicultura",
+      "valor": 136894291.0,
+      "peso": 327292277.0
+    },
+    {
+      "codigo": 4110953,
+      "nome": "Itaipulândia",
+      "cadeia": "Agroind. Carnes",
+      "valor": 4233900.0,
+      "peso": 3782720.0
     },
     {
       "codigo": 4110953,
       "nome": "Itaipulândia",
       "cadeia": "Outros",
-      "valor": 68455595.0,
-      "peso": 30492232.0
+      "valor": 1996341.0,
+      "peso": 1131882.0
+    },
+    {
+      "codigo": 4110953,
+      "nome": "Itaipulândia",
+      "cadeia": "Suinocultura",
+      "valor": 62225354.0,
+      "peso": 25577630.0
     },
     {
       "codigo": 4111001,
       "nome": "Itambaracá",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 3212745.0,
       "peso": 8039357.0
     },
     {
       "codigo": 4111100,
       "nome": "Itambé",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 1013920.0,
       "peso": 2773479.0
     },
     {
       "codigo": 4111209,
       "nome": "Itapejara d'Oeste",
-      "cadeia": "Outros",
-      "valor": 697997336.0,
-      "peso": 422954528.0
+      "cadeia": "Agroind. Carnes",
+      "valor": 56399833.0,
+      "peso": 39601092.0
+    },
+    {
+      "codigo": 4111209,
+      "nome": "Itapejara d'Oeste",
+      "cadeia": "Agroind. Grãos",
+      "valor": 1942822.0,
+      "peso": 3209758.0
+    },
+    {
+      "codigo": 4111209,
+      "nome": "Itapejara d'Oeste",
+      "cadeia": "Aquicultura",
+      "valor": 16.0,
+      "peso": 1.0
+    },
+    {
+      "codigo": 4111209,
+      "nome": "Itapejara d'Oeste",
+      "cadeia": "Avicultura",
+      "valor": 639594601.0,
+      "peso": 379966927.0
+    },
+    {
+      "codigo": 4111209,
+      "nome": "Itapejara d'Oeste",
+      "cadeia": "Cerealicultura",
+      "valor": 29977.0,
+      "peso": 86750.0
+    },
+    {
+      "codigo": 4111209,
+      "nome": "Itapejara d'Oeste",
+      "cadeia": "Fertilizantes",
+      "valor": 30087.0,
+      "peso": 90000.0
     },
     {
       "codigo": 4111258,
       "nome": "Itaperuçu",
-      "cadeia": "Outros",
+      "cadeia": "Oleaginosas",
       "valor": 13586.0,
       "peso": 21600.0
     },
     {
       "codigo": 4111308,
       "nome": "Itaúna do Sul",
-      "cadeia": "Outros",
+      "cadeia": "Agroind. Grãos",
       "valor": 5300.0,
       "peso": 15000.0
     },
     {
       "codigo": 4111407,
       "nome": "Ivaí",
-      "cadeia": "Outros",
+      "cadeia": "Florestal",
       "valor": 2032499.0,
       "peso": 664926.0
     },
     {
       "codigo": 4111555,
       "nome": "Ivaté",
-      "cadeia": "Outros",
+      "cadeia": "Canavicultura",
       "valor": 2121175.0,
       "peso": 3454351.0
     },
     {
       "codigo": 4111803,
       "nome": "Jacarezinho",
+      "cadeia": "Agroind. Grãos",
+      "valor": 17914.0,
+      "peso": 27910.0
+    },
+    {
+      "codigo": 4111803,
+      "nome": "Jacarezinho",
+      "cadeia": "Aquicultura",
+      "valor": 97909.0,
+      "peso": 346505.0
+    },
+    {
+      "codigo": 4111803,
+      "nome": "Jacarezinho",
+      "cadeia": "Avicultura",
+      "valor": 76448381.0,
+      "peso": 44824666.0
+    },
+    {
+      "codigo": 4111803,
+      "nome": "Jacarezinho",
+      "cadeia": "Cafeicultura",
+      "valor": 1038065.0,
+      "peso": 231400.0
+    },
+    {
+      "codigo": 4111803,
+      "nome": "Jacarezinho",
+      "cadeia": "Canavicultura",
+      "valor": 296723276.0,
+      "peso": 853564381.0
+    },
+    {
+      "codigo": 4111803,
+      "nome": "Jacarezinho",
       "cadeia": "Outros",
-      "valor": 420817326.0,
-      "peso": 944058186.0
+      "valor": 46491781.0,
+      "peso": 45063324.0
+    },
+    {
+      "codigo": 4111902,
+      "nome": "Jaguapitã",
+      "cadeia": "Agroind. Carnes",
+      "valor": 45.0,
+      "peso": 15.0
+    },
+    {
+      "codigo": 4111902,
+      "nome": "Jaguapitã",
+      "cadeia": "Agroind. Grãos",
+      "valor": 295552.0,
+      "peso": 363087.0
+    },
+    {
+      "codigo": 4111902,
+      "nome": "Jaguapitã",
+      "cadeia": "Aquicultura",
+      "valor": 7476099.0,
+      "peso": 8491888.0
+    },
+    {
+      "codigo": 4111902,
+      "nome": "Jaguapitã",
+      "cadeia": "Avicultura",
+      "valor": 915891623.0,
+      "peso": 495823689.0
     },
     {
       "codigo": 4111902,
       "nome": "Jaguapitã",
       "cadeia": "Outros",
-      "valor": 927247535.0,
-      "peso": 509252926.0
+      "valor": 3584216.0,
+      "peso": 4574247.0
     },
     {
       "codigo": 4112108,
       "nome": "Jandaia do Sul",
-      "cadeia": "Outros",
-      "valor": 156546709.0,
-      "peso": 381801238.0
+      "cadeia": "Bebidas",
+      "valor": 2588435.0,
+      "peso": 2561298.0
+    },
+    {
+      "codigo": 4112108,
+      "nome": "Jandaia do Sul",
+      "cadeia": "Canavicultura",
+      "valor": 150911799.0,
+      "peso": 374312627.0
+    },
+    {
+      "codigo": 4112108,
+      "nome": "Jandaia do Sul",
+      "cadeia": "Fertilizantes",
+      "valor": 1232618.0,
+      "peso": 152349.0
+    },
+    {
+      "codigo": 4112108,
+      "nome": "Jandaia do Sul",
+      "cadeia": "Outros Insumos",
+      "valor": 249414.0,
+      "peso": 53809.0
+    },
+    {
+      "codigo": 4112108,
+      "nome": "Jandaia do Sul",
+      "cadeia": "Sojicultura",
+      "valor": 1564443.0,
+      "peso": 4721155.0
     },
     {
       "codigo": 4112207,
       "nome": "Janiópolis",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 7057549.0,
       "peso": 13111738.0
     },
     {
       "codigo": 4112405,
       "nome": "Japurá",
-      "cadeia": "Outros",
+      "cadeia": "Fruticultura",
       "valor": 17706588.0,
       "peso": 6753284.0
     },
     {
       "codigo": 4112504,
       "nome": "Jardim Alegre",
+      "cadeia": "Agroind. Carnes",
+      "valor": 346988.0,
+      "peso": 181064.0
+    },
+    {
+      "codigo": 4112504,
+      "nome": "Jardim Alegre",
+      "cadeia": "Aquicultura",
+      "valor": 19.0,
+      "peso": 7.0
+    },
+    {
+      "codigo": 4112504,
+      "nome": "Jardim Alegre",
+      "cadeia": "Cerealicultura",
+      "valor": 205239.0,
+      "peso": 831620.0
+    },
+    {
+      "codigo": 4112504,
+      "nome": "Jardim Alegre",
       "cadeia": "Outros",
-      "valor": 39528363.0,
-      "peso": 38665401.0
+      "valor": 25742151.0,
+      "peso": 7854368.0
+    },
+    {
+      "codigo": 4112504,
+      "nome": "Jardim Alegre",
+      "cadeia": "Sojicultura",
+      "valor": 13233966.0,
+      "peso": 29798342.0
     },
     {
       "codigo": 4112801,
       "nome": "Joaquim Távora",
-      "cadeia": "Outros",
-      "valor": 289803430.0,
-      "peso": 151018364.0
+      "cadeia": "Agroind. Carnes",
+      "valor": 1641282.0,
+      "peso": 1469398.0
+    },
+    {
+      "codigo": 4112801,
+      "nome": "Joaquim Távora",
+      "cadeia": "Avicultura",
+      "valor": 288162148.0,
+      "peso": 149548966.0
     },
     {
       "codigo": 4112959,
       "nome": "Juranda",
-      "cadeia": "Outros",
+      "cadeia": "Cerealicultura",
       "valor": 22013.0,
       "peso": 72578.0
     },
     {
       "codigo": 4113106,
       "nome": "Kaloré",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 2785.0,
       "peso": 5252.0
     },
     {
       "codigo": 4113205,
       "nome": "Lapa",
+      "cadeia": "Agroind. Carnes",
+      "valor": 2534099.0,
+      "peso": 884568.0
+    },
+    {
+      "codigo": 4113205,
+      "nome": "Lapa",
+      "cadeia": "Agroind. Grãos",
+      "valor": 4664668.0,
+      "peso": 6868022.0
+    },
+    {
+      "codigo": 4113205,
+      "nome": "Lapa",
+      "cadeia": "Aquicultura",
+      "valor": 1685476.0,
+      "peso": 2392208.0
+    },
+    {
+      "codigo": 4113205,
+      "nome": "Lapa",
+      "cadeia": "Avicultura",
+      "valor": 56592890.0,
+      "peso": 43068627.0
+    },
+    {
+      "codigo": 4113205,
+      "nome": "Lapa",
+      "cadeia": "Fertilizantes",
+      "valor": 16.0,
+      "peso": 3.0
+    },
+    {
+      "codigo": 4113205,
+      "nome": "Lapa",
       "cadeia": "Outros",
-      "valor": 89445781.0,
-      "peso": 95950118.0
+      "valor": 23968632.0,
+      "peso": 42736690.0
     },
     {
       "codigo": 4113304,
       "nome": "Laranjeiras do Sul",
-      "cadeia": "Outros",
-      "valor": 69566186.0,
-      "peso": 31797724.0
+      "cadeia": "Agroind. Carnes",
+      "valor": 1188996.0,
+      "peso": 1058620.0
+    },
+    {
+      "codigo": 4113304,
+      "nome": "Laranjeiras do Sul",
+      "cadeia": "Cafeicultura",
+      "valor": 265000.0,
+      "peso": 57525.0
+    },
+    {
+      "codigo": 4113304,
+      "nome": "Laranjeiras do Sul",
+      "cadeia": "Florestal",
+      "valor": 4971036.0,
+      "peso": 4193268.0
+    },
+    {
+      "codigo": 4113304,
+      "nome": "Laranjeiras do Sul",
+      "cadeia": "Suinocultura",
+      "valor": 63141154.0,
+      "peso": 26488311.0
     },
     {
       "codigo": 4113502,
       "nome": "Loanda",
-      "cadeia": "Outros",
+      "cadeia": "Agroind. Grãos",
       "valor": 1022059.0,
       "peso": 1083001.0
     },
     {
       "codigo": 4113700,
       "nome": "Londrina",
+      "cadeia": "Agroind. Carnes",
+      "valor": 1197564.0,
+      "peso": 838967.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Agroind. Grãos",
+      "valor": 3623372.0,
+      "peso": 2006412.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Aquicultura",
+      "valor": 40646.0,
+      "peso": 53165.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Avicultura",
+      "valor": 1017620.0,
+      "peso": 495978.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Bebidas",
+      "valor": 4731172.0,
+      "peso": 8331756.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Bovinocultura",
+      "valor": 802289.0,
+      "peso": 241418.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Cafeicultura",
+      "valor": 1146794530.0,
+      "peso": 160314375.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Canavicultura",
+      "valor": 177369266.0,
+      "peso": 439455722.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Cerealicultura",
+      "valor": 732727970.0,
+      "peso": 3364846155.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Fertilizantes",
+      "valor": 381716.0,
+      "peso": 1777281.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Florestal",
+      "valor": 3015.0,
+      "peso": 79.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Fruticultura",
+      "valor": 27269.0,
+      "peso": 26692.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Oleaginosas",
+      "valor": 5044476.0,
+      "peso": 58386.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Olericultura",
+      "valor": 1757586.0,
+      "peso": 2260941.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
       "cadeia": "Outros",
-      "valor": 3804132535.0,
-      "peso": 7720848731.0
+      "valor": 13418777.0,
+      "peso": 2043858.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Outros Insumos",
+      "valor": 76954682.0,
+      "peso": 9427851.0
+    },
+    {
+      "codigo": 4113700,
+      "nome": "Londrina",
+      "cadeia": "Sojicultura",
+      "valor": 1638240585.0,
+      "peso": 3728669695.0
     },
     {
       "codigo": 4113908,
       "nome": "Mallet",
-      "cadeia": "Outros",
+      "cadeia": "Florestal",
       "valor": 66050.0,
       "peso": 50000.0
     },
     {
       "codigo": 4114005,
       "nome": "Mamborê",
-      "cadeia": "Outros",
-      "valor": 10761798.0,
-      "peso": 24062314.0
+      "cadeia": "Cerealicultura",
+      "valor": 361927.0,
+      "peso": 1268148.0
+    },
+    {
+      "codigo": 4114005,
+      "nome": "Mamborê",
+      "cadeia": "Sojicultura",
+      "valor": 10399871.0,
+      "peso": 22794166.0
     },
     {
       "codigo": 4114104,
       "nome": "Mandaguaçu",
-      "cadeia": "Outros",
-      "valor": 435233.0,
-      "peso": 576366.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 275168.0,
+      "peso": 314740.0
+    },
+    {
+      "codigo": 4114104,
+      "nome": "Mandaguaçu",
+      "cadeia": "Fertilizantes",
+      "valor": 96205.0,
+      "peso": 185002.0
+    },
+    {
+      "codigo": 4114104,
+      "nome": "Mandaguaçu",
+      "cadeia": "Olericultura",
+      "valor": 63780.0,
+      "peso": 76623.0
+    },
+    {
+      "codigo": 4114104,
+      "nome": "Mandaguaçu",
+      "cadeia": "Outros Insumos",
+      "valor": 80.0,
+      "peso": 1.0
+    },
+    {
+      "codigo": 4114203,
+      "nome": "Mandaguari",
+      "cadeia": "Agroind. Carnes",
+      "valor": 73991.0,
+      "peso": 78463.0
+    },
+    {
+      "codigo": 4114203,
+      "nome": "Mandaguari",
+      "cadeia": "Agroind. Grãos",
+      "valor": 243168.0,
+      "peso": 427931.0
+    },
+    {
+      "codigo": 4114203,
+      "nome": "Mandaguari",
+      "cadeia": "Bovinocultura",
+      "valor": 99781.0,
+      "peso": 51567.0
+    },
+    {
+      "codigo": 4114203,
+      "nome": "Mandaguari",
+      "cadeia": "Cafeicultura",
+      "valor": 35030.0,
+      "peso": 9222.0
+    },
+    {
+      "codigo": 4114203,
+      "nome": "Mandaguari",
+      "cadeia": "Fertilizantes",
+      "valor": 2808302.0,
+      "peso": 8375610.0
     },
     {
       "codigo": 4114203,
       "nome": "Mandaguari",
       "cadeia": "Outros",
-      "valor": 33933527.0,
-      "peso": 73066267.0
+      "valor": 15000.0,
+      "peso": 1350.0
+    },
+    {
+      "codigo": 4114203,
+      "nome": "Mandaguari",
+      "cadeia": "Sojicultura",
+      "valor": 30658255.0,
+      "peso": 64122124.0
     },
     {
       "codigo": 4114302,
       "nome": "Mandirituba",
-      "cadeia": "Outros",
+      "cadeia": "Cerealicultura",
       "valor": 60.0,
       "peso": 110.0
     },
     {
       "codigo": 4114401,
       "nome": "Mangueirinha",
-      "cadeia": "Outros",
-      "valor": 106883591.0,
-      "peso": 138707649.0
+      "cadeia": "Oleaginosas",
+      "valor": 295834.0,
+      "peso": 264850.0
+    },
+    {
+      "codigo": 4114401,
+      "nome": "Mangueirinha",
+      "cadeia": "Olericultura",
+      "valor": 82716149.0,
+      "peso": 93209995.0
+    },
+    {
+      "codigo": 4114401,
+      "nome": "Mangueirinha",
+      "cadeia": "Sojicultura",
+      "valor": 23871608.0,
+      "peso": 45232804.0
     },
     {
       "codigo": 4114500,
       "nome": "Manoel Ribas",
-      "cadeia": "Outros",
-      "valor": 17092379.0,
-      "peso": 38473611.0
+      "cadeia": "Cerealicultura",
+      "valor": 51680.0,
+      "peso": 173687.0
+    },
+    {
+      "codigo": 4114500,
+      "nome": "Manoel Ribas",
+      "cadeia": "Sojicultura",
+      "valor": 17040699.0,
+      "peso": 38299924.0
     },
     {
       "codigo": 4114609,
       "nome": "Marechal Cândido Rondon",
-      "cadeia": "Outros",
-      "valor": 697114756.0,
-      "peso": 393513107.0
+      "cadeia": "Agroind. Carnes",
+      "valor": 7547.0,
+      "peso": 8000.0
+    },
+    {
+      "codigo": 4114609,
+      "nome": "Marechal Cândido Rondon",
+      "cadeia": "Agroind. Grãos",
+      "valor": 47895962.0,
+      "peso": 21450893.0
+    },
+    {
+      "codigo": 4114609,
+      "nome": "Marechal Cândido Rondon",
+      "cadeia": "Avicultura",
+      "valor": 513947870.0,
+      "peso": 231914678.0
+    },
+    {
+      "codigo": 4114609,
+      "nome": "Marechal Cândido Rondon",
+      "cadeia": "Bebidas",
+      "valor": 147812.0,
+      "peso": 185952.0
+    },
+    {
+      "codigo": 4114609,
+      "nome": "Marechal Cândido Rondon",
+      "cadeia": "Canavicultura",
+      "valor": 82900.0,
+      "peso": 78155.0
+    },
+    {
+      "codigo": 4114609,
+      "nome": "Marechal Cândido Rondon",
+      "cadeia": "Cerealicultura",
+      "valor": 550000.0,
+      "peso": 2777675.0
+    },
+    {
+      "codigo": 4114609,
+      "nome": "Marechal Cândido Rondon",
+      "cadeia": "Laticínios",
+      "valor": 34661258.0,
+      "peso": 24879026.0
+    },
+    {
+      "codigo": 4114609,
+      "nome": "Marechal Cândido Rondon",
+      "cadeia": "Sojicultura",
+      "valor": 37204992.0,
+      "peso": 87015227.0
+    },
+    {
+      "codigo": 4114609,
+      "nome": "Marechal Cândido Rondon",
+      "cadeia": "Suinocultura",
+      "valor": 62616415.0,
+      "peso": 25203501.0
+    },
+    {
+      "codigo": 4114807,
+      "nome": "Marialva",
+      "cadeia": "Agroind. Grãos",
+      "valor": 438776.0,
+      "peso": 70573.0
+    },
+    {
+      "codigo": 4114807,
+      "nome": "Marialva",
+      "cadeia": "Cafeicultura",
+      "valor": 518.0,
+      "peso": 20.0
+    },
+    {
+      "codigo": 4114807,
+      "nome": "Marialva",
+      "cadeia": "Canavicultura",
+      "valor": 1408837988.0,
+      "peso": 3563839134.0
+    },
+    {
+      "codigo": 4114807,
+      "nome": "Marialva",
+      "cadeia": "Cerealicultura",
+      "valor": 12769010.0,
+      "peso": 51517755.0
+    },
+    {
+      "codigo": 4114807,
+      "nome": "Marialva",
+      "cadeia": "Olericultura",
+      "valor": 608.0,
+      "peso": 191.0
     },
     {
       "codigo": 4114807,
       "nome": "Marialva",
       "cadeia": "Outros",
-      "valor": 1611346678.0,
-      "peso": 4055079194.0
+      "valor": 98230223.0,
+      "peso": 254142408.0
+    },
+    {
+      "codigo": 4114807,
+      "nome": "Marialva",
+      "cadeia": "Sojicultura",
+      "valor": 91069555.0,
+      "peso": 185509113.0
     },
     {
       "codigo": 4114906,
       "nome": "Marilândia do Sul",
-      "cadeia": "Outros",
-      "valor": 279765.0,
-      "peso": 702909.0
+      "cadeia": "Cerealicultura",
+      "valor": 6224.0,
+      "peso": 21715.0
+    },
+    {
+      "codigo": 4114906,
+      "nome": "Marilândia do Sul",
+      "cadeia": "Sojicultura",
+      "valor": 273541.0,
+      "peso": 681194.0
     },
     {
       "codigo": 4115101,
       "nome": "Mariluz",
-      "cadeia": "Outros",
-      "valor": 5952552.0,
-      "peso": 14768713.0
+      "cadeia": "Cerealicultura",
+      "valor": 358983.0,
+      "peso": 1269615.0
+    },
+    {
+      "codigo": 4115101,
+      "nome": "Mariluz",
+      "cadeia": "Sojicultura",
+      "valor": 5593569.0,
+      "peso": 13499098.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Agroind. Carnes",
+      "valor": 17697801.0,
+      "peso": 6670081.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Agroind. Grãos",
+      "valor": 39201550.0,
+      "peso": 77827158.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Apicultura",
+      "valor": 70091586.0,
+      "peso": 25071575.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Aquicultura",
+      "valor": 2821090.0,
+      "peso": 4027746.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Avicultura",
+      "valor": 667455025.0,
+      "peso": 406649842.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Bebidas",
+      "valor": 999751.0,
+      "peso": 1127350.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Cafeicultura",
+      "valor": 62226.0,
+      "peso": 14587.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Canavicultura",
+      "valor": 1738235723.0,
+      "peso": 4672523944.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Cerealicultura",
+      "valor": 2477426202.0,
+      "peso": 10582952630.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Fertilizantes",
+      "valor": 24660338.0,
+      "peso": 6981137.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Florestal",
+      "valor": 840216.0,
+      "peso": 39536.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Floricultura",
+      "valor": 126.0,
+      "peso": 21.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Fruticultura",
+      "valor": 309709.0,
+      "peso": 210828.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Laticínios",
+      "valor": 2875493.0,
+      "peso": 1667435.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Oleaginosas",
+      "valor": 412788.0,
+      "peso": 190459.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Olericultura",
+      "valor": 63.0,
+      "peso": 14.0
     },
     {
       "codigo": 4115200,
       "nome": "Maringá",
       "cadeia": "Outros",
-      "valor": 16296934130.0,
-      "peso": 40567998493.0
+      "valor": 4892820.0,
+      "peso": 8687134.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Outros Insumos",
+      "valor": 25489.0,
+      "peso": 34113.0
+    },
+    {
+      "codigo": 4115200,
+      "nome": "Maringá",
+      "cadeia": "Sojicultura",
+      "valor": 11248926134.0,
+      "peso": 24773322903.0
     },
     {
       "codigo": 4115309,
       "nome": "Mariópolis",
-      "cadeia": "Outros",
-      "valor": 47210.0,
-      "peso": 12470.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 27485.0,
+      "peso": 8954.0
+    },
+    {
+      "codigo": 4115309,
+      "nome": "Mariópolis",
+      "cadeia": "Outros Insumos",
+      "valor": 19725.0,
+      "peso": 3516.0
     },
     {
       "codigo": 4115358,
       "nome": "Maripá",
-      "cadeia": "Outros",
-      "valor": 29786566.0,
-      "peso": 66582481.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 2615821.0,
+      "peso": 3236012.0
+    },
+    {
+      "codigo": 4115358,
+      "nome": "Maripá",
+      "cadeia": "Cerealicultura",
+      "valor": 1690894.0,
+      "peso": 6819074.0
+    },
+    {
+      "codigo": 4115358,
+      "nome": "Maripá",
+      "cadeia": "Laticínios",
+      "valor": 1136593.0,
+      "peso": 143151.0
+    },
+    {
+      "codigo": 4115358,
+      "nome": "Maripá",
+      "cadeia": "Sojicultura",
+      "valor": 24343258.0,
+      "peso": 56384244.0
     },
     {
       "codigo": 4115408,
       "nome": "Marmeleiro",
-      "cadeia": "Outros",
+      "cadeia": "Olericultura",
       "valor": 13592.0,
       "peso": 24192.0
     },
     {
       "codigo": 4115606,
       "nome": "Matelândia",
+      "cadeia": "Agroind. Carnes",
+      "valor": 32296574.0,
+      "peso": 14980042.0
+    },
+    {
+      "codigo": 4115606,
+      "nome": "Matelândia",
+      "cadeia": "Aquicultura",
+      "valor": 131948.0,
+      "peso": 200560.0
+    },
+    {
+      "codigo": 4115606,
+      "nome": "Matelândia",
+      "cadeia": "Avicultura",
+      "valor": 1406834827.0,
+      "peso": 668536958.0
+    },
+    {
+      "codigo": 4115606,
+      "nome": "Matelândia",
+      "cadeia": "Laticínios",
+      "valor": 9281.0,
+      "peso": 5340.0
+    },
+    {
+      "codigo": 4115606,
+      "nome": "Matelândia",
       "cadeia": "Outros",
-      "valor": 1503971941.0,
-      "peso": 730068208.0
+      "valor": 28569893.0,
+      "peso": 31190917.0
+    },
+    {
+      "codigo": 4115606,
+      "nome": "Matelândia",
+      "cadeia": "Suinocultura",
+      "valor": 36129418.0,
+      "peso": 15154391.0
     },
     {
       "codigo": 4115754,
       "nome": "Mauá da Serra",
-      "cadeia": "Outros",
-      "valor": 10696363.0,
-      "peso": 19338116.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 4040555.0,
+      "peso": 3931648.0
+    },
+    {
+      "codigo": 4115754,
+      "nome": "Mauá da Serra",
+      "cadeia": "Oleaginosas",
+      "valor": 26280.0,
+      "peso": 18000.0
+    },
+    {
+      "codigo": 4115754,
+      "nome": "Mauá da Serra",
+      "cadeia": "Sojicultura",
+      "valor": 6629528.0,
+      "peso": 15388468.0
+    },
+    {
+      "codigo": 4115804,
+      "nome": "Medianeira",
+      "cadeia": "Agroind. Carnes",
+      "valor": 53550585.0,
+      "peso": 39886899.0
+    },
+    {
+      "codigo": 4115804,
+      "nome": "Medianeira",
+      "cadeia": "Agroind. Grãos",
+      "valor": 9263392.0,
+      "peso": 7483492.0
+    },
+    {
+      "codigo": 4115804,
+      "nome": "Medianeira",
+      "cadeia": "Avicultura",
+      "valor": 19087.0,
+      "peso": 4821.0
+    },
+    {
+      "codigo": 4115804,
+      "nome": "Medianeira",
+      "cadeia": "Bebidas",
+      "valor": 61803.0,
+      "peso": 86096.0
+    },
+    {
+      "codigo": 4115804,
+      "nome": "Medianeira",
+      "cadeia": "Laticínios",
+      "valor": 2878782.0,
+      "peso": 1705727.0
+    },
+    {
+      "codigo": 4115804,
+      "nome": "Medianeira",
+      "cadeia": "Oleaginosas",
+      "valor": 2118004.0,
+      "peso": 1469217.0
     },
     {
       "codigo": 4115804,
       "nome": "Medianeira",
       "cadeia": "Outros",
-      "valor": 1024874679.0,
-      "peso": 427279336.0
+      "valor": 15952449.0,
+      "peso": 6161469.0
+    },
+    {
+      "codigo": 4115804,
+      "nome": "Medianeira",
+      "cadeia": "Sojicultura",
+      "valor": 10769.0,
+      "peso": 18000.0
+    },
+    {
+      "codigo": 4115804,
+      "nome": "Medianeira",
+      "cadeia": "Suinocultura",
+      "valor": 941019808.0,
+      "peso": 370463615.0
     },
     {
       "codigo": 4115853,
       "nome": "Mercedes",
-      "cadeia": "Outros",
-      "valor": 1947107.0,
-      "peso": 6267000.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 104433.0,
+      "peso": 150800.0
+    },
+    {
+      "codigo": 4115853,
+      "nome": "Mercedes",
+      "cadeia": "Cerealicultura",
+      "valor": 288750.0,
+      "peso": 1303260.0
+    },
+    {
+      "codigo": 4115853,
+      "nome": "Mercedes",
+      "cadeia": "Sojicultura",
+      "valor": 1553924.0,
+      "peso": 4812940.0
+    },
+    {
+      "codigo": 4115903,
+      "nome": "Mirador",
+      "cadeia": "Agroind. Grãos",
+      "valor": 126272.0,
+      "peso": 101735.0
+    },
+    {
+      "codigo": 4115903,
+      "nome": "Mirador",
+      "cadeia": "Canavicultura",
+      "valor": 45387.0,
+      "peso": 25529.0
     },
     {
       "codigo": 4115903,
       "nome": "Mirador",
       "cadeia": "Outros",
-      "valor": 297593.0,
-      "peso": 174115.0
+      "valor": 7852.0,
+      "peso": 25817.0
+    },
+    {
+      "codigo": 4115903,
+      "nome": "Mirador",
+      "cadeia": "Outros Insumos",
+      "valor": 118082.0,
+      "peso": 21034.0
     },
     {
       "codigo": 4116059,
       "nome": "Missal",
-      "cadeia": "Outros",
+      "cadeia": "Agroind. Grãos",
       "valor": 33150.0,
       "peso": 88000.0
     },
     {
       "codigo": 4116109,
       "nome": "Moreira Sales",
-      "cadeia": "Outros",
-      "valor": 507222.0,
-      "peso": 864018.0
+      "cadeia": "Fertilizantes",
+      "valor": 50397.0,
+      "peso": 27820.0
+    },
+    {
+      "codigo": 4116109,
+      "nome": "Moreira Sales",
+      "cadeia": "Outros Insumos",
+      "valor": 9950.0,
+      "peso": 5000.0
+    },
+    {
+      "codigo": 4116109,
+      "nome": "Moreira Sales",
+      "cadeia": "Sojicultura",
+      "valor": 446875.0,
+      "peso": 831198.0
+    },
+    {
+      "codigo": 4116208,
+      "nome": "Morretes",
+      "cadeia": "Bebidas",
+      "valor": 2953852.0,
+      "peso": 734432.0
+    },
+    {
+      "codigo": 4116208,
+      "nome": "Morretes",
+      "cadeia": "Fruticultura",
+      "valor": 78416.0,
+      "peso": 71280.0
     },
     {
       "codigo": 4116208,
       "nome": "Morretes",
       "cadeia": "Outros",
-      "valor": 6091334.0,
-      "peso": 3223496.0
+      "valor": 3059066.0,
+      "peso": 2417784.0
+    },
+    {
+      "codigo": 4116703,
+      "nome": "Nova Aurora",
+      "cadeia": "Aquicultura",
+      "valor": 14503001.0,
+      "peso": 4400436.0
     },
     {
       "codigo": 4116703,
       "nome": "Nova Aurora",
       "cadeia": "Outros",
-      "valor": 18391465.0,
-      "peso": 8927066.0
+      "valor": 3888464.0,
+      "peso": 4526630.0
     },
     {
       "codigo": 4116802,
       "nome": "Nova Cantú",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 591657.0,
       "peso": 1437989.0
     },
     {
       "codigo": 4116901,
       "nome": "Nova Esperança",
+      "cadeia": "Agroind. Grãos",
+      "valor": 1183560.0,
+      "peso": 1538364.0
+    },
+    {
+      "codigo": 4116901,
+      "nome": "Nova Esperança",
+      "cadeia": "Aquicultura",
+      "valor": 291996.0,
+      "peso": 780085.0
+    },
+    {
+      "codigo": 4116901,
+      "nome": "Nova Esperança",
+      "cadeia": "Bovinocultura",
+      "valor": 895947.0,
+      "peso": 238845.0
+    },
+    {
+      "codigo": 4116901,
+      "nome": "Nova Esperança",
+      "cadeia": "Florestal",
+      "valor": 1366673.0,
+      "peso": 752400.0
+    },
+    {
+      "codigo": 4116901,
+      "nome": "Nova Esperança",
+      "cadeia": "Oleaginosas",
+      "valor": 325248.0,
+      "peso": 338624.0
+    },
+    {
+      "codigo": 4116901,
+      "nome": "Nova Esperança",
       "cadeia": "Outros",
-      "valor": 4159379.0,
-      "peso": 3765667.0
+      "valor": 14806.0,
+      "peso": 29605.0
+    },
+    {
+      "codigo": 4116901,
+      "nome": "Nova Esperança",
+      "cadeia": "Outros Insumos",
+      "valor": 2195.0,
+      "peso": 19.0
+    },
+    {
+      "codigo": 4116901,
+      "nome": "Nova Esperança",
+      "cadeia": "Sojicultura",
+      "valor": 78954.0,
+      "peso": 87725.0
     },
     {
       "codigo": 4117008,
       "nome": "Nova Fátima",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 449159.0,
       "peso": 1111226.0
     },
     {
       "codigo": 4117107,
       "nome": "Nova Londrina",
+      "cadeia": "Agroind. Carnes",
+      "valor": 64172.0,
+      "peso": 53964.0
+    },
+    {
+      "codigo": 4117107,
+      "nome": "Nova Londrina",
+      "cadeia": "Agroind. Grãos",
+      "valor": 6165617.0,
+      "peso": 5928997.0
+    },
+    {
+      "codigo": 4117107,
+      "nome": "Nova Londrina",
+      "cadeia": "Bebidas",
+      "valor": 91689.0,
+      "peso": 55162.0
+    },
+    {
+      "codigo": 4117107,
+      "nome": "Nova Londrina",
+      "cadeia": "Cafeicultura",
+      "valor": 33299.0,
+      "peso": 3725.0
+    },
+    {
+      "codigo": 4117107,
+      "nome": "Nova Londrina",
+      "cadeia": "Canavicultura",
+      "valor": 263.0,
+      "peso": 97.0
+    },
+    {
+      "codigo": 4117107,
+      "nome": "Nova Londrina",
+      "cadeia": "Cerealicultura",
+      "valor": 23786.0,
+      "peso": 16670.0
+    },
+    {
+      "codigo": 4117107,
+      "nome": "Nova Londrina",
+      "cadeia": "Florestal",
+      "valor": 15978.0,
+      "peso": 3315.0
+    },
+    {
+      "codigo": 4117107,
+      "nome": "Nova Londrina",
+      "cadeia": "Fruticultura",
+      "valor": 113060.0,
+      "peso": 22098.0
+    },
+    {
+      "codigo": 4117107,
+      "nome": "Nova Londrina",
+      "cadeia": "Oleaginosas",
+      "valor": 3532.0,
+      "peso": 243.0
+    },
+    {
+      "codigo": 4117107,
+      "nome": "Nova Londrina",
+      "cadeia": "Olericultura",
+      "valor": 34054.0,
+      "peso": 15609.0
+    },
+    {
+      "codigo": 4117107,
+      "nome": "Nova Londrina",
       "cadeia": "Outros",
-      "valor": 6575628.0,
-      "peso": 6128251.0
+      "valor": 12746.0,
+      "peso": 293.0
+    },
+    {
+      "codigo": 4117107,
+      "nome": "Nova Londrina",
+      "cadeia": "Outros Insumos",
+      "valor": 732.0,
+      "peso": 288.0
+    },
+    {
+      "codigo": 4117107,
+      "nome": "Nova Londrina",
+      "cadeia": "Suinocultura",
+      "valor": 16700.0,
+      "peso": 27790.0
     },
     {
       "codigo": 4117222,
       "nome": "Nova Santa Rosa",
-      "cadeia": "Outros",
-      "valor": 7799335.0,
-      "peso": 20025588.0
+      "cadeia": "Cerealicultura",
+      "valor": 358266.0,
+      "peso": 1450880.0
+    },
+    {
+      "codigo": 4117222,
+      "nome": "Nova Santa Rosa",
+      "cadeia": "Sojicultura",
+      "valor": 7441069.0,
+      "peso": 18574708.0
     },
     {
       "codigo": 4117255,
       "nome": "Nova Prata do Iguaçu",
-      "cadeia": "Outros",
+      "cadeia": "Agroind. Carnes",
       "valor": 1312691.0,
       "peso": 1014840.0
     },
     {
       "codigo": 4117503,
       "nome": "Paiçandu",
-      "cadeia": "Outros",
-      "valor": 18107420.0,
-      "peso": 3935221.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 1137437.0,
+      "peso": 664060.0
+    },
+    {
+      "codigo": 4117503,
+      "nome": "Paiçandu",
+      "cadeia": "Bovinocultura",
+      "valor": 3176310.0,
+      "peso": 746359.0
+    },
+    {
+      "codigo": 4117503,
+      "nome": "Paiçandu",
+      "cadeia": "Fertilizantes",
+      "valor": 13793668.0,
+      "peso": 2524802.0
+    },
+    {
+      "codigo": 4117503,
+      "nome": "Paiçandu",
+      "cadeia": "Tabaco",
+      "valor": 5.0,
+      "peso": 0.0
     },
     {
       "codigo": 4117602,
       "nome": "Palmas",
-      "cadeia": "Outros",
-      "valor": 203053851.0,
-      "peso": 121535794.0
+      "cadeia": "Agroind. Carnes",
+      "valor": 6742874.0,
+      "peso": 5749825.0
+    },
+    {
+      "codigo": 4117602,
+      "nome": "Palmas",
+      "cadeia": "Fertilizantes",
+      "valor": 315827.0,
+      "peso": 237827.0
+    },
+    {
+      "codigo": 4117602,
+      "nome": "Palmas",
+      "cadeia": "Oleaginosas",
+      "valor": 1823119.0,
+      "peso": 1421548.0
+    },
+    {
+      "codigo": 4117602,
+      "nome": "Palmas",
+      "cadeia": "Sojicultura",
+      "valor": 20275388.0,
+      "peso": 38502899.0
+    },
+    {
+      "codigo": 4117602,
+      "nome": "Palmas",
+      "cadeia": "Suinocultura",
+      "valor": 173896643.0,
+      "peso": 75623695.0
     },
     {
       "codigo": 4117701,
       "nome": "Palmeira",
-      "cadeia": "Outros",
-      "valor": 86018186.0,
-      "peso": 176641946.0
+      "cadeia": "Canavicultura",
+      "valor": 53382.0,
+      "peso": 4957.0
+    },
+    {
+      "codigo": 4117701,
+      "nome": "Palmeira",
+      "cadeia": "Olericultura",
+      "valor": 205297.0,
+      "peso": 304000.0
+    },
+    {
+      "codigo": 4117701,
+      "nome": "Palmeira",
+      "cadeia": "Outros Insumos",
+      "valor": 4964526.0,
+      "peso": 567627.0
+    },
+    {
+      "codigo": 4117701,
+      "nome": "Palmeira",
+      "cadeia": "Sojicultura",
+      "valor": 80794981.0,
+      "peso": 175765362.0
     },
     {
       "codigo": 4117800,
       "nome": "Palmital",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 80933.0,
       "peso": 151008.0
     },
     {
       "codigo": 4117909,
       "nome": "Palotina",
+      "cadeia": "Agroind. Carnes",
+      "valor": 652464915.0,
+      "peso": 188428328.0
+    },
+    {
+      "codigo": 4117909,
+      "nome": "Palotina",
+      "cadeia": "Agroind. Grãos",
+      "valor": 16767521.0,
+      "peso": 46328784.0
+    },
+    {
+      "codigo": 4117909,
+      "nome": "Palotina",
+      "cadeia": "Aquicultura",
+      "valor": 86104439.0,
+      "peso": 23129633.0
+    },
+    {
+      "codigo": 4117909,
+      "nome": "Palotina",
+      "cadeia": "Avicultura",
+      "valor": 1933028897.0,
+      "peso": 1268432666.0
+    },
+    {
+      "codigo": 4117909,
+      "nome": "Palotina",
+      "cadeia": "Cerealicultura",
+      "valor": 2002646.0,
+      "peso": 8516425.0
+    },
+    {
+      "codigo": 4117909,
+      "nome": "Palotina",
+      "cadeia": "Oleaginosas",
+      "valor": 324595.0,
+      "peso": 209150.0
+    },
+    {
+      "codigo": 4117909,
+      "nome": "Palotina",
       "cadeia": "Outros",
-      "valor": 2890973761.0,
-      "peso": 1961666747.0
+      "valor": 26448845.0,
+      "peso": 36282553.0
+    },
+    {
+      "codigo": 4117909,
+      "nome": "Palotina",
+      "cadeia": "Sojicultura",
+      "valor": 172323465.0,
+      "peso": 389108675.0
+    },
+    {
+      "codigo": 4117909,
+      "nome": "Palotina",
+      "cadeia": "Suinocultura",
+      "valor": 1508438.0,
+      "peso": 1230533.0
     },
     {
       "codigo": 4118105,
       "nome": "Paranacity",
-      "cadeia": "Outros",
-      "valor": 12862196.0,
-      "peso": 21802079.0
+      "cadeia": "Aquicultura",
+      "valor": 348451.0,
+      "peso": 362906.0
+    },
+    {
+      "codigo": 4118105,
+      "nome": "Paranacity",
+      "cadeia": "Canavicultura",
+      "valor": 12242175.0,
+      "peso": 21230273.0
+    },
+    {
+      "codigo": 4118105,
+      "nome": "Paranacity",
+      "cadeia": "Oleaginosas",
+      "valor": 271570.0,
+      "peso": 208900.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Agroind. Carnes",
+      "valor": 260313466.0,
+      "peso": 170185075.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Agroind. Grãos",
+      "valor": 21079571.0,
+      "peso": 39419177.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Apicultura",
+      "valor": 42588.0,
+      "peso": 9536.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Aquicultura",
+      "valor": 36270968.0,
+      "peso": 90359001.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Avicultura",
+      "valor": 7464713251.0,
+      "peso": 4179285989.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Bebidas",
+      "valor": 2246705.0,
+      "peso": 5012217.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Bovinocultura",
+      "valor": 589756796.0,
+      "peso": 173625514.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Cafeicultura",
+      "valor": 774029.0,
+      "peso": 180354.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Canavicultura",
+      "valor": 1980619125.0,
+      "peso": 4471254727.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Cerealicultura",
+      "valor": 1714608570.0,
+      "peso": 7185612948.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Fertilizantes",
+      "valor": 295567890.0,
+      "peso": 751816108.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Florestal",
+      "valor": 1345700.0,
+      "peso": 193901.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Fruticultura",
+      "valor": 1608323.0,
+      "peso": 1365772.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Laticínios",
+      "valor": 1258763.0,
+      "peso": 693069.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Oleaginosas",
+      "valor": 81757595.0,
+      "peso": 68148708.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Olericultura",
+      "valor": 3851948.0,
+      "peso": 3627838.0
     },
     {
       "codigo": 4118204,
       "nome": "Paranaguá",
       "cadeia": "Outros",
-      "valor": 36572501071.0,
-      "peso": 69418309715.0
+      "valor": 122449715.0,
+      "peso": 106377874.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Outros Insumos",
+      "valor": 36699.0,
+      "peso": 12389.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Sojicultura",
+      "valor": 23711810481.0,
+      "peso": 52034614062.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Suinocultura",
+      "valor": 281863630.0,
+      "peso": 136501864.0
+    },
+    {
+      "codigo": 4118204,
+      "nome": "Paranaguá",
+      "cadeia": "Tabaco",
+      "valor": 525258.0,
+      "peso": 13592.0
+    },
+    {
+      "codigo": 4118402,
+      "nome": "Paranavaí",
+      "cadeia": "Agroind. Carnes",
+      "valor": 718622.0,
+      "peso": 289949.0
+    },
+    {
+      "codigo": 4118402,
+      "nome": "Paranavaí",
+      "cadeia": "Agroind. Grãos",
+      "valor": 55410956.0,
+      "peso": 61153916.0
+    },
+    {
+      "codigo": 4118402,
+      "nome": "Paranavaí",
+      "cadeia": "Bebidas",
+      "valor": 596.0,
+      "peso": 16.0
+    },
+    {
+      "codigo": 4118402,
+      "nome": "Paranavaí",
+      "cadeia": "Bovinocultura",
+      "valor": 148963.0,
+      "peso": 27586.0
+    },
+    {
+      "codigo": 4118402,
+      "nome": "Paranavaí",
+      "cadeia": "Cafeicultura",
+      "valor": 586.0,
+      "peso": 76.0
+    },
+    {
+      "codigo": 4118402,
+      "nome": "Paranavaí",
+      "cadeia": "Canavicultura",
+      "valor": 1138222.0,
+      "peso": 1723641.0
+    },
+    {
+      "codigo": 4118402,
+      "nome": "Paranavaí",
+      "cadeia": "Florestal",
+      "valor": 636.0,
+      "peso": 4.0
+    },
+    {
+      "codigo": 4118402,
+      "nome": "Paranavaí",
+      "cadeia": "Floricultura",
+      "valor": 330.0,
+      "peso": 0.0
+    },
+    {
+      "codigo": 4118402,
+      "nome": "Paranavaí",
+      "cadeia": "Fruticultura",
+      "valor": 328072086.0,
+      "peso": 107904999.0
+    },
+    {
+      "codigo": 4118402,
+      "nome": "Paranavaí",
+      "cadeia": "Oleaginosas",
+      "valor": 1267259.0,
+      "peso": 1089210.0
     },
     {
       "codigo": 4118402,
       "nome": "Paranavaí",
       "cadeia": "Outros",
-      "valor": 395401393.0,
-      "peso": 180630195.0
+      "valor": 8415305.0,
+      "peso": 8418797.0
+    },
+    {
+      "codigo": 4118402,
+      "nome": "Paranavaí",
+      "cadeia": "Outros Insumos",
+      "valor": 48.0,
+      "peso": 1.0
+    },
+    {
+      "codigo": 4118402,
+      "nome": "Paranavaí",
+      "cadeia": "Suinocultura",
+      "valor": 227784.0,
+      "peso": 22000.0
     },
     {
       "codigo": 4118451,
       "nome": "Pato Bragado",
-      "cadeia": "Outros",
+      "cadeia": "Agroind. Grãos",
       "valor": 89971.0,
       "peso": 42220.0
     },
     {
       "codigo": 4118501,
       "nome": "Pato Branco",
+      "cadeia": "Agroind. Carnes",
+      "valor": 116821109.0,
+      "peso": 43660708.0
+    },
+    {
+      "codigo": 4118501,
+      "nome": "Pato Branco",
+      "cadeia": "Agroind. Grãos",
+      "valor": 4376.0,
+      "peso": 5995.0
+    },
+    {
+      "codigo": 4118501,
+      "nome": "Pato Branco",
+      "cadeia": "Avicultura",
+      "valor": 355435825.0,
+      "peso": 192612040.0
+    },
+    {
+      "codigo": 4118501,
+      "nome": "Pato Branco",
+      "cadeia": "Cerealicultura",
+      "valor": 1794725.0,
+      "peso": 2581940.0
+    },
+    {
+      "codigo": 4118501,
+      "nome": "Pato Branco",
+      "cadeia": "Fertilizantes",
+      "valor": 483653.0,
+      "peso": 2165192.0
+    },
+    {
+      "codigo": 4118501,
+      "nome": "Pato Branco",
+      "cadeia": "Fruticultura",
+      "valor": 9732636.0,
+      "peso": 20763482.0
+    },
+    {
+      "codigo": 4118501,
+      "nome": "Pato Branco",
+      "cadeia": "Oleaginosas",
+      "valor": 526466.0,
+      "peso": 242502.0
+    },
+    {
+      "codigo": 4118501,
+      "nome": "Pato Branco",
+      "cadeia": "Olericultura",
+      "valor": 259000.0,
+      "peso": 503652.0
+    },
+    {
+      "codigo": 4118501,
+      "nome": "Pato Branco",
       "cadeia": "Outros",
-      "valor": 530869481.0,
-      "peso": 371957351.0
+      "valor": 1582953.0,
+      "peso": 2666614.0
+    },
+    {
+      "codigo": 4118501,
+      "nome": "Pato Branco",
+      "cadeia": "Outros Insumos",
+      "valor": 258981.0,
+      "peso": 30980.0
+    },
+    {
+      "codigo": 4118501,
+      "nome": "Pato Branco",
+      "cadeia": "Sojicultura",
+      "valor": 43969729.0,
+      "peso": 106724210.0
+    },
+    {
+      "codigo": 4118501,
+      "nome": "Pato Branco",
+      "cadeia": "Suinocultura",
+      "valor": 28.0,
+      "peso": 36.0
     },
     {
       "codigo": 4118709,
       "nome": "Paulo Frontin",
-      "cadeia": "Outros",
+      "cadeia": "Florestal",
       "valor": 176581.0,
       "peso": 74136.0
     },
     {
       "codigo": 4119152,
       "nome": "Pinhais",
+      "cadeia": "Agroind. Grãos",
+      "valor": 20411334.0,
+      "peso": 9543181.0
+    },
+    {
+      "codigo": 4119152,
+      "nome": "Pinhais",
+      "cadeia": "Bebidas",
+      "valor": 2.0,
+      "peso": 2.0
+    },
+    {
+      "codigo": 4119152,
+      "nome": "Pinhais",
+      "cadeia": "Cafeicultura",
+      "valor": 224563.0,
+      "peso": 4991.0
+    },
+    {
+      "codigo": 4119152,
+      "nome": "Pinhais",
+      "cadeia": "Canavicultura",
+      "valor": 133791.0,
+      "peso": 41229.0
+    },
+    {
+      "codigo": 4119152,
+      "nome": "Pinhais",
+      "cadeia": "Cerealicultura",
+      "valor": 1200.0,
+      "peso": 80.0
+    },
+    {
+      "codigo": 4119152,
+      "nome": "Pinhais",
+      "cadeia": "Florestal",
+      "valor": 114654.0,
+      "peso": 9099.0
+    },
+    {
+      "codigo": 4119152,
+      "nome": "Pinhais",
+      "cadeia": "Fruticultura",
+      "valor": 50439.0,
+      "peso": 8010.0
+    },
+    {
+      "codigo": 4119152,
+      "nome": "Pinhais",
+      "cadeia": "Oleaginosas",
+      "valor": 3563.0,
+      "peso": 803.0
+    },
+    {
+      "codigo": 4119152,
+      "nome": "Pinhais",
       "cadeia": "Outros",
-      "valor": 26266473.0,
-      "peso": 11649765.0
+      "valor": 5309777.0,
+      "peso": 2035380.0
+    },
+    {
+      "codigo": 4119152,
+      "nome": "Pinhais",
+      "cadeia": "Outros Insumos",
+      "valor": 17135.0,
+      "peso": 6990.0
+    },
+    {
+      "codigo": 4119152,
+      "nome": "Pinhais",
+      "cadeia": "Tabaco",
+      "valor": 15.0,
+      "peso": 0.0
     },
     {
       "codigo": 4119202,
       "nome": "Pinhalão",
-      "cadeia": "Outros",
+      "cadeia": "Cafeicultura",
       "valor": 14772023.0,
       "peso": 2028425.0
     },
     {
       "codigo": 4119301,
       "nome": "Pinhão",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 391008.0,
       "peso": 759182.0
     },
     {
       "codigo": 4119400,
       "nome": "Piraí do Sul",
+      "cadeia": "Cerealicultura",
+      "valor": 2998635.0,
+      "peso": 6596105.0
+    },
+    {
+      "codigo": 4119400,
+      "nome": "Piraí do Sul",
+      "cadeia": "Olericultura",
+      "valor": 15754538.0,
+      "peso": 16612305.0
+    },
+    {
+      "codigo": 4119400,
+      "nome": "Piraí do Sul",
       "cadeia": "Outros",
-      "valor": 18753173.0,
-      "peso": 23208412.0
+      "valor": 0.0,
+      "peso": 2.0
     },
     {
       "codigo": 4119608,
       "nome": "Pitanga",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 6695659.0,
       "peso": 14003922.0
     },
     {
       "codigo": 4119707,
       "nome": "Planaltina do Paraná",
-      "cadeia": "Outros",
+      "cadeia": "Agroind. Grãos",
       "valor": 455000.0,
       "peso": 700000.0
     },
     {
       "codigo": 4119806,
       "nome": "Planalto",
-      "cadeia": "Outros",
+      "cadeia": "Laticínios",
       "valor": 292156.0,
       "peso": 286000.0
     },
     {
       "codigo": 4119905,
       "nome": "Ponta Grossa",
+      "cadeia": "Agroind. Grãos",
+      "valor": 19866727.0,
+      "peso": 8109966.0
+    },
+    {
+      "codigo": 4119905,
+      "nome": "Ponta Grossa",
+      "cadeia": "Bebidas",
+      "valor": 25268430.0,
+      "peso": 51776019.0
+    },
+    {
+      "codigo": 4119905,
+      "nome": "Ponta Grossa",
+      "cadeia": "Canavicultura",
+      "valor": 111763474.0,
+      "peso": 349129805.0
+    },
+    {
+      "codigo": 4119905,
+      "nome": "Ponta Grossa",
+      "cadeia": "Cerealicultura",
+      "valor": 20896593.0,
+      "peso": 57030880.0
+    },
+    {
+      "codigo": 4119905,
+      "nome": "Ponta Grossa",
+      "cadeia": "Fertilizantes",
+      "valor": 29833916.0,
+      "peso": 27230357.0
+    },
+    {
+      "codigo": 4119905,
+      "nome": "Ponta Grossa",
+      "cadeia": "Fruticultura",
+      "valor": 737950.0,
+      "peso": 875649.0
+    },
+    {
+      "codigo": 4119905,
+      "nome": "Ponta Grossa",
+      "cadeia": "Olericultura",
+      "valor": 2119520.0,
+      "peso": 2591808.0
+    },
+    {
+      "codigo": 4119905,
+      "nome": "Ponta Grossa",
       "cadeia": "Outros",
-      "valor": 7379990236.0,
-      "peso": 15131778280.0
+      "valor": 62916447.0,
+      "peso": 180550550.0
+    },
+    {
+      "codigo": 4119905,
+      "nome": "Ponta Grossa",
+      "cadeia": "Outros Insumos",
+      "valor": 7249134.0,
+      "peso": 688644.0
+    },
+    {
+      "codigo": 4119905,
+      "nome": "Ponta Grossa",
+      "cadeia": "Sojicultura",
+      "valor": 7099338045.0,
+      "peso": 14453794602.0
     },
     {
       "codigo": 4119954,
       "nome": "Pontal do Paraná",
-      "cadeia": "Outros",
-      "valor": 547.0,
-      "peso": 155.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 20.0,
+      "peso": 20.0
+    },
+    {
+      "codigo": 4119954,
+      "nome": "Pontal do Paraná",
+      "cadeia": "Avicultura",
+      "valor": 85.0,
+      "peso": 50.0
+    },
+    {
+      "codigo": 4119954,
+      "nome": "Pontal do Paraná",
+      "cadeia": "Olericultura",
+      "valor": 60.0,
+      "peso": 60.0
+    },
+    {
+      "codigo": 4119954,
+      "nome": "Pontal do Paraná",
+      "cadeia": "Tabaco",
+      "valor": 382.0,
+      "peso": 25.0
     },
     {
       "codigo": 4120101,
       "nome": "Porto Amazonas",
-      "cadeia": "Outros",
+      "cadeia": "Fruticultura",
       "valor": 945584.0,
       "peso": 415952.0
     },
     {
       "codigo": 4120333,
       "nome": "Prado Ferreira",
-      "cadeia": "Outros",
+      "cadeia": "Outros Insumos",
       "valor": 326189.0,
       "peso": 189869.0
     },
     {
       "codigo": 4120358,
       "nome": "Pranchita",
-      "cadeia": "Outros",
+      "cadeia": "Fruticultura",
       "valor": 89426.0,
       "peso": 219028.0
     },
     {
       "codigo": 4120606,
       "nome": "Prudentópolis",
+      "cadeia": "Fertilizantes",
+      "valor": 27949.0,
+      "peso": 213190.0
+    },
+    {
+      "codigo": 4120606,
+      "nome": "Prudentópolis",
+      "cadeia": "Fruticultura",
+      "valor": 1113535.0,
+      "peso": 997440.0
+    },
+    {
+      "codigo": 4120606,
+      "nome": "Prudentópolis",
+      "cadeia": "Oleaginosas",
+      "valor": 3864.0,
+      "peso": 52.0
+    },
+    {
+      "codigo": 4120606,
+      "nome": "Prudentópolis",
+      "cadeia": "Olericultura",
+      "valor": 2816800.0,
+      "peso": 6550290.0
+    },
+    {
+      "codigo": 4120606,
+      "nome": "Prudentópolis",
       "cadeia": "Outros",
-      "valor": 4640958.0,
-      "peso": 8091117.0
+      "valor": 678810.0,
+      "peso": 330145.0
     },
     {
       "codigo": 4120655,
       "nome": "Quarto Centenário",
-      "cadeia": "Outros",
-      "valor": 478645.0,
-      "peso": 1432621.0
+      "cadeia": "Cerealicultura",
+      "valor": 266073.0,
+      "peso": 941510.0
+    },
+    {
+      "codigo": 4120655,
+      "nome": "Quarto Centenário",
+      "cadeia": "Sojicultura",
+      "valor": 212572.0,
+      "peso": 491111.0
     },
     {
       "codigo": 4120705,
       "nome": "Quatiguá",
-      "cadeia": "Outros",
+      "cadeia": "Olericultura",
       "valor": 387514.0,
       "peso": 409000.0
     },
     {
       "codigo": 4120804,
       "nome": "Quatro Barras",
-      "cadeia": "Outros",
-      "valor": 115181.0,
-      "peso": 100120.0
+      "cadeia": "Cerealicultura",
+      "valor": 17.0,
+      "peso": 60.0
+    },
+    {
+      "codigo": 4120804,
+      "nome": "Quatro Barras",
+      "cadeia": "Fertilizantes",
+      "valor": 115164.0,
+      "peso": 100060.0
     },
     {
       "codigo": 4120853,
       "nome": "Quatro Pontes",
-      "cadeia": "Outros",
-      "valor": 11411017.0,
-      "peso": 7063959.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 7406109.0,
+      "peso": 5454905.0
+    },
+    {
+      "codigo": 4120853,
+      "nome": "Quatro Pontes",
+      "cadeia": "Canavicultura",
+      "valor": 1456280.0,
+      "peso": 898975.0
+    },
+    {
+      "codigo": 4120853,
+      "nome": "Quatro Pontes",
+      "cadeia": "Fertilizantes",
+      "valor": 2548628.0,
+      "peso": 710079.0
     },
     {
       "codigo": 4120903,
       "nome": "Quedas do Iguaçu",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 510945.0,
       "peso": 1500000.0
     },
     {
       "codigo": 4121000,
       "nome": "Querência do Norte",
-      "cadeia": "Outros",
+      "cadeia": "Agroind. Grãos",
       "valor": 1726.0,
       "peso": 7450.0
     },
     {
       "codigo": 4121109,
       "nome": "Quinta do Sol",
-      "cadeia": "Outros",
-      "valor": 11621448.0,
-      "peso": 30580283.0
+      "cadeia": "Cerealicultura",
+      "valor": 1371760.0,
+      "peso": 6670322.0
+    },
+    {
+      "codigo": 4121109,
+      "nome": "Quinta do Sol",
+      "cadeia": "Fertilizantes",
+      "valor": 13200.0,
+      "peso": 60000.0
+    },
+    {
+      "codigo": 4121109,
+      "nome": "Quinta do Sol",
+      "cadeia": "Sojicultura",
+      "valor": 10236488.0,
+      "peso": 23849961.0
     },
     {
       "codigo": 4121208,
       "nome": "Quitandinha",
-      "cadeia": "Outros",
-      "valor": 198347.0,
-      "peso": 108794.0
+      "cadeia": "Agroind. Carnes",
+      "valor": 135384.0,
+      "peso": 29500.0
+    },
+    {
+      "codigo": 4121208,
+      "nome": "Quitandinha",
+      "cadeia": "Agroind. Grãos",
+      "valor": 48240.0,
+      "peso": 56422.0
+    },
+    {
+      "codigo": 4121208,
+      "nome": "Quitandinha",
+      "cadeia": "Floricultura",
+      "valor": 14723.0,
+      "peso": 22872.0
     },
     {
       "codigo": 4121307,
       "nome": "Rancho Alegre",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 2852.0,
       "peso": 8871.0
     },
     {
       "codigo": 4121356,
       "nome": "Rancho Alegre D'Oeste",
-      "cadeia": "Outros",
-      "valor": 1452739.0,
-      "peso": 5133962.0
+      "cadeia": "Cerealicultura",
+      "valor": 990100.0,
+      "peso": 3961980.0
+    },
+    {
+      "codigo": 4121356,
+      "nome": "Rancho Alegre D'Oeste",
+      "cadeia": "Sojicultura",
+      "valor": 462639.0,
+      "peso": 1171982.0
     },
     {
       "codigo": 4121406,
       "nome": "Realeza",
-      "cadeia": "Outros",
-      "valor": 11326932.0,
-      "peso": 11282682.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 6848969.0,
+      "peso": 6400692.0
+    },
+    {
+      "codigo": 4121406,
+      "nome": "Realeza",
+      "cadeia": "Cerealicultura",
+      "valor": 80000.0,
+      "peso": 119510.0
+    },
+    {
+      "codigo": 4121406,
+      "nome": "Realeza",
+      "cadeia": "Laticínios",
+      "valor": 106379.0,
+      "peso": 14674.0
+    },
+    {
+      "codigo": 4121406,
+      "nome": "Realeza",
+      "cadeia": "Olericultura",
+      "valor": 3105634.0,
+      "peso": 3154096.0
+    },
+    {
+      "codigo": 4121406,
+      "nome": "Realeza",
+      "cadeia": "Sojicultura",
+      "valor": 1185950.0,
+      "peso": 1593710.0
     },
     {
       "codigo": 4121505,
@@ -1645,331 +5754,933 @@
     {
       "codigo": 4121802,
       "nome": "Ribeirão Claro",
-      "cadeia": "Outros",
-      "valor": 308552.0,
-      "peso": 238163.0
+      "cadeia": "Bebidas",
+      "valor": 88565.0,
+      "peso": 112530.0
+    },
+    {
+      "codigo": 4121802,
+      "nome": "Ribeirão Claro",
+      "cadeia": "Laticínios",
+      "valor": 219987.0,
+      "peso": 125633.0
     },
     {
       "codigo": 4122008,
       "nome": "Rio Azul",
-      "cadeia": "Outros",
-      "valor": 23992712.0,
-      "peso": 5375086.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 11727411.0,
+      "peso": 2789514.0
+    },
+    {
+      "codigo": 4122008,
+      "nome": "Rio Azul",
+      "cadeia": "Laticínios",
+      "valor": 12265301.0,
+      "peso": 2585572.0
     },
     {
       "codigo": 4122206,
       "nome": "Rio Branco do Sul",
-      "cadeia": "Outros",
+      "cadeia": "Fertilizantes",
       "valor": 545230.0,
       "peso": 3096000.0
     },
     {
       "codigo": 4122305,
       "nome": "Rio Negro",
+      "cadeia": "Florestal",
+      "valor": 94500.0,
+      "peso": 100000.0
+    },
+    {
+      "codigo": 4122305,
+      "nome": "Rio Negro",
       "cadeia": "Outros",
-      "valor": 47695974.0,
-      "peso": 19058281.0
+      "valor": 2654944.0,
+      "peso": 2445.0
+    },
+    {
+      "codigo": 4122305,
+      "nome": "Rio Negro",
+      "cadeia": "Sojicultura",
+      "valor": 2549992.0,
+      "peso": 5625699.0
+    },
+    {
+      "codigo": 4122305,
+      "nome": "Rio Negro",
+      "cadeia": "Tabaco",
+      "valor": 42396538.0,
+      "peso": 13330137.0
+    },
+    {
+      "codigo": 4122404,
+      "nome": "Rolândia",
+      "cadeia": "Agroind. Carnes",
+      "valor": 22323597.0,
+      "peso": 7277537.0
+    },
+    {
+      "codigo": 4122404,
+      "nome": "Rolândia",
+      "cadeia": "Agroind. Grãos",
+      "valor": 30607251.0,
+      "peso": 22222984.0
+    },
+    {
+      "codigo": 4122404,
+      "nome": "Rolândia",
+      "cadeia": "Aquicultura",
+      "valor": 18432701.0,
+      "peso": 29672154.0
+    },
+    {
+      "codigo": 4122404,
+      "nome": "Rolândia",
+      "cadeia": "Avicultura",
+      "valor": 581605933.0,
+      "peso": 317964170.0
+    },
+    {
+      "codigo": 4122404,
+      "nome": "Rolândia",
+      "cadeia": "Cafeicultura",
+      "valor": 249722634.0,
+      "peso": 60499941.0
+    },
+    {
+      "codigo": 4122404,
+      "nome": "Rolândia",
+      "cadeia": "Canavicultura",
+      "valor": 1285711941.0,
+      "peso": 3078737138.0
+    },
+    {
+      "codigo": 4122404,
+      "nome": "Rolândia",
+      "cadeia": "Cerealicultura",
+      "valor": 46908569.0,
+      "peso": 200599358.0
+    },
+    {
+      "codigo": 4122404,
+      "nome": "Rolândia",
+      "cadeia": "Fertilizantes",
+      "valor": 12292.0,
+      "peso": 22955.0
+    },
+    {
+      "codigo": 4122404,
+      "nome": "Rolândia",
+      "cadeia": "Fruticultura",
+      "valor": 83210.0,
+      "peso": 23013.0
+    },
+    {
+      "codigo": 4122404,
+      "nome": "Rolândia",
+      "cadeia": "Oleaginosas",
+      "valor": 84092.0,
+      "peso": 64570.0
     },
     {
       "codigo": 4122404,
       "nome": "Rolândia",
       "cadeia": "Outros",
-      "valor": 2414577363.0,
-      "peso": 4135280114.0
+      "valor": 19962621.0,
+      "peso": 26351328.0
+    },
+    {
+      "codigo": 4122404,
+      "nome": "Rolândia",
+      "cadeia": "Outros Insumos",
+      "valor": 29187.0,
+      "peso": 5375.0
+    },
+    {
+      "codigo": 4122404,
+      "nome": "Rolândia",
+      "cadeia": "Sojicultura",
+      "valor": 159093335.0,
+      "peso": 391839591.0
     },
     {
       "codigo": 4122503,
       "nome": "Roncador",
-      "cadeia": "Outros",
-      "valor": 6351763.0,
-      "peso": 13533602.0
+      "cadeia": "Cerealicultura",
+      "valor": 219164.0,
+      "peso": 736100.0
+    },
+    {
+      "codigo": 4122503,
+      "nome": "Roncador",
+      "cadeia": "Sojicultura",
+      "valor": 6132599.0,
+      "peso": 12797502.0
     },
     {
       "codigo": 4122602,
       "nome": "Rondon",
-      "cadeia": "Outros",
-      "valor": 3829820.0,
-      "peso": 6429922.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 67101.0,
+      "peso": 61751.0
+    },
+    {
+      "codigo": 4122602,
+      "nome": "Rondon",
+      "cadeia": "Canavicultura",
+      "valor": 3762719.0,
+      "peso": 6368171.0
     },
     {
       "codigo": 4122800,
       "nome": "Salgado Filho",
-      "cadeia": "Outros",
+      "cadeia": "Fruticultura",
       "valor": 546458.0,
       "peso": 1551000.0
     },
     {
       "codigo": 4123105,
       "nome": "Santa Amélia",
-      "cadeia": "Outros",
-      "valor": 2818441.0,
-      "peso": 7872103.0
+      "cadeia": "Cerealicultura",
+      "valor": 576777.0,
+      "peso": 2714371.0
+    },
+    {
+      "codigo": 4123105,
+      "nome": "Santa Amélia",
+      "cadeia": "Sojicultura",
+      "valor": 2241664.0,
+      "peso": 5157732.0
     },
     {
       "codigo": 4123204,
       "nome": "Santa Cecília do Pavão",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 2621140.0,
       "peso": 5719385.0
     },
     {
       "codigo": 4123402,
       "nome": "Santa Fé",
-      "cadeia": "Outros",
+      "cadeia": "Avicultura",
       "valor": 3819361.0,
       "peso": 2668903.0
     },
     {
       "codigo": 4123501,
       "nome": "Santa Helena",
-      "cadeia": "Outros",
-      "valor": 619780.0,
-      "peso": 598271.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 577055.0,
+      "peso": 595926.0
+    },
+    {
+      "codigo": 4123501,
+      "nome": "Santa Helena",
+      "cadeia": "Outros Insumos",
+      "valor": 42725.0,
+      "peso": 2345.0
     },
     {
       "codigo": 4123808,
       "nome": "Santa Izabel do Oeste",
-      "cadeia": "Outros",
-      "valor": 7324533.0,
-      "peso": 17396890.0
+      "cadeia": "Cerealicultura",
+      "valor": 145886.0,
+      "peso": 1000001.0
+    },
+    {
+      "codigo": 4123808,
+      "nome": "Santa Izabel do Oeste",
+      "cadeia": "Sojicultura",
+      "valor": 7178647.0,
+      "peso": 16396889.0
     },
     {
       "codigo": 4123857,
       "nome": "Santa Maria do Oeste",
-      "cadeia": "Outros",
-      "valor": 1607434.0,
-      "peso": 2441008.0
+      "cadeia": "Bebidas",
+      "valor": 11817.0,
+      "peso": 1396.0
+    },
+    {
+      "codigo": 4123857,
+      "nome": "Santa Maria do Oeste",
+      "cadeia": "Canavicultura",
+      "valor": 15914.0,
+      "peso": 11710.0
+    },
+    {
+      "codigo": 4123857,
+      "nome": "Santa Maria do Oeste",
+      "cadeia": "Florestal",
+      "valor": 311534.0,
+      "peso": 78645.0
+    },
+    {
+      "codigo": 4123857,
+      "nome": "Santa Maria do Oeste",
+      "cadeia": "Sojicultura",
+      "valor": 1268169.0,
+      "peso": 2349257.0
     },
     {
       "codigo": 4123907,
       "nome": "Santa Mariana",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 5437997.0,
       "peso": 12575698.0
     },
     {
       "codigo": 4123956,
       "nome": "Santa Mônica",
-      "cadeia": "Outros",
-      "valor": 3976785.0,
-      "peso": 2995738.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 3961912.0,
+      "peso": 2982338.0
+    },
+    {
+      "codigo": 4123956,
+      "nome": "Santa Mônica",
+      "cadeia": "Cerealicultura",
+      "valor": 14873.0,
+      "peso": 13400.0
     },
     {
       "codigo": 4124020,
       "nome": "Santa Tereza do Oeste",
-      "cadeia": "Outros",
-      "valor": 4781760.0,
-      "peso": 11980918.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 16827.0,
+      "peso": 12858.0
+    },
+    {
+      "codigo": 4124020,
+      "nome": "Santa Tereza do Oeste",
+      "cadeia": "Fertilizantes",
+      "valor": 727032.0,
+      "peso": 2666240.0
+    },
+    {
+      "codigo": 4124020,
+      "nome": "Santa Tereza do Oeste",
+      "cadeia": "Fruticultura",
+      "valor": 4316.0,
+      "peso": 797.0
+    },
+    {
+      "codigo": 4124020,
+      "nome": "Santa Tereza do Oeste",
+      "cadeia": "Olericultura",
+      "valor": 3189.0,
+      "peso": 856.0
+    },
+    {
+      "codigo": 4124020,
+      "nome": "Santa Tereza do Oeste",
+      "cadeia": "Sojicultura",
+      "valor": 4030396.0,
+      "peso": 9300167.0
+    },
+    {
+      "codigo": 4124053,
+      "nome": "Santa Terezinha de Itaipu",
+      "cadeia": "Agroind. Grãos",
+      "valor": 4858.0,
+      "peso": 14720.0
+    },
+    {
+      "codigo": 4124053,
+      "nome": "Santa Terezinha de Itaipu",
+      "cadeia": "Cerealicultura",
+      "valor": 444860.0,
+      "peso": 2000000.0
+    },
+    {
+      "codigo": 4124053,
+      "nome": "Santa Terezinha de Itaipu",
+      "cadeia": "Oleaginosas",
+      "valor": 138146.0,
+      "peso": 51098.0
     },
     {
       "codigo": 4124053,
       "nome": "Santa Terezinha de Itaipu",
       "cadeia": "Outros",
-      "valor": 44485754.0,
-      "peso": 96190112.0
+      "valor": 1308.0,
+      "peso": 763.0
+    },
+    {
+      "codigo": 4124053,
+      "nome": "Santa Terezinha de Itaipu",
+      "cadeia": "Outros Insumos",
+      "valor": 159811.0,
+      "peso": 56930.0
+    },
+    {
+      "codigo": 4124053,
+      "nome": "Santa Terezinha de Itaipu",
+      "cadeia": "Sojicultura",
+      "valor": 43736771.0,
+      "peso": 94066601.0
+    },
+    {
+      "codigo": 4124103,
+      "nome": "Santo Antônio da Platina",
+      "cadeia": "Cafeicultura",
+      "valor": 2235718.0,
+      "peso": 669917.0
     },
     {
       "codigo": 4124103,
       "nome": "Santo Antônio da Platina",
       "cadeia": "Outros",
-      "valor": 2267256.0,
-      "peso": 689977.0
+      "valor": 31538.0,
+      "peso": 20060.0
     },
     {
       "codigo": 4124301,
       "nome": "Santo Antônio do Paraíso",
-      "cadeia": "Outros",
+      "cadeia": "Fruticultura",
       "valor": 95547.0,
       "peso": 106516.0
     },
     {
       "codigo": 4124400,
       "nome": "Santo Antônio do Sudoeste",
+      "cadeia": "Agroind. Grãos",
+      "valor": 304625.0,
+      "peso": 208561.0
+    },
+    {
+      "codigo": 4124400,
+      "nome": "Santo Antônio do Sudoeste",
+      "cadeia": "Avicultura",
+      "valor": 12930646.0,
+      "peso": 1363766.0
+    },
+    {
+      "codigo": 4124400,
+      "nome": "Santo Antônio do Sudoeste",
+      "cadeia": "Florestal",
+      "valor": 276498.0,
+      "peso": 261908.0
+    },
+    {
+      "codigo": 4124400,
+      "nome": "Santo Antônio do Sudoeste",
+      "cadeia": "Fruticultura",
+      "valor": 320162.0,
+      "peso": 1515124.0
+    },
+    {
+      "codigo": 4124400,
+      "nome": "Santo Antônio do Sudoeste",
+      "cadeia": "Olericultura",
+      "valor": 5815.0,
+      "peso": 61640.0
+    },
+    {
+      "codigo": 4124400,
+      "nome": "Santo Antônio do Sudoeste",
       "cadeia": "Outros",
-      "valor": 14166449.0,
-      "peso": 4053869.0
+      "valor": 328703.0,
+      "peso": 642870.0
+    },
+    {
+      "codigo": 4124509,
+      "nome": "Santo Inácio",
+      "cadeia": "Aquicultura",
+      "valor": 139134.0,
+      "peso": 176980.0
+    },
+    {
+      "codigo": 4124509,
+      "nome": "Santo Inácio",
+      "cadeia": "Avicultura",
+      "valor": 131670756.0,
+      "peso": 69559677.0
+    },
+    {
+      "codigo": 4124509,
+      "nome": "Santo Inácio",
+      "cadeia": "Canavicultura",
+      "valor": 703332937.0,
+      "peso": 1769236591.0
     },
     {
       "codigo": 4124509,
       "nome": "Santo Inácio",
       "cadeia": "Outros",
-      "valor": 835299248.0,
-      "peso": 1839141872.0
+      "valor": 156421.0,
+      "peso": 168624.0
     },
     {
       "codigo": 4124608,
       "nome": "São Carlos do Ivaí",
-      "cadeia": "Outros",
+      "cadeia": "Canavicultura",
       "valor": 424291499.0,
       "peso": 1037447743.0
     },
     {
       "codigo": 4124707,
       "nome": "São Jerônimo da Serra",
-      "cadeia": "Outros",
-      "valor": 319468.0,
-      "peso": 8525.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 304099.0,
+      "peso": 1093.0
+    },
+    {
+      "codigo": 4124707,
+      "nome": "São Jerônimo da Serra",
+      "cadeia": "Cafeicultura",
+      "valor": 15369.0,
+      "peso": 7432.0
+    },
+    {
+      "codigo": 4124806,
+      "nome": "São João",
+      "cadeia": "Agroind. Carnes",
+      "valor": 29484120.0,
+      "peso": 11656260.0
+    },
+    {
+      "codigo": 4124806,
+      "nome": "São João",
+      "cadeia": "Avicultura",
+      "valor": 398739181.0,
+      "peso": 237604315.0
     },
     {
       "codigo": 4124806,
       "nome": "São João",
       "cadeia": "Outros",
-      "valor": 429584658.0,
-      "peso": 251631590.0
+      "valor": 1361357.0,
+      "peso": 2371015.0
     },
     {
       "codigo": 4125001,
       "nome": "São João do Ivaí",
-      "cadeia": "Outros",
-      "valor": 10751210.0,
-      "peso": 24716796.0
+      "cadeia": "Cerealicultura",
+      "valor": 436287.0,
+      "peso": 1660890.0
+    },
+    {
+      "codigo": 4125001,
+      "nome": "São João do Ivaí",
+      "cadeia": "Sojicultura",
+      "valor": 10314923.0,
+      "peso": 23055906.0
+    },
+    {
+      "codigo": 4125100,
+      "nome": "São João do Triunfo",
+      "cadeia": "Cafeicultura",
+      "valor": 4432343.0,
+      "peso": 154529.0
+    },
+    {
+      "codigo": 4125100,
+      "nome": "São João do Triunfo",
+      "cadeia": "Florestal",
+      "valor": 12090699.0,
+      "peso": 2484565.0
     },
     {
       "codigo": 4125100,
       "nome": "São João do Triunfo",
       "cadeia": "Outros",
-      "valor": 16524542.0,
-      "peso": 2639394.0
+      "valor": 1500.0,
+      "peso": 300.0
     },
     {
       "codigo": 4125308,
       "nome": "São Jorge do Ivaí",
-      "cadeia": "Outros",
-      "valor": 6276754.0,
-      "peso": 17382539.0
+      "cadeia": "Aquicultura",
+      "valor": 119548.0,
+      "peso": 247000.0
+    },
+    {
+      "codigo": 4125308,
+      "nome": "São Jorge do Ivaí",
+      "cadeia": "Cerealicultura",
+      "valor": 1481037.0,
+      "peso": 6945517.0
+    },
+    {
+      "codigo": 4125308,
+      "nome": "São Jorge do Ivaí",
+      "cadeia": "Sojicultura",
+      "valor": 4676169.0,
+      "peso": 10190022.0
     },
     {
       "codigo": 4125357,
       "nome": "São Jorge do Patrocínio",
-      "cadeia": "Outros",
+      "cadeia": "Cafeicultura",
       "valor": 54544.0,
       "peso": 18744.0
     },
     {
       "codigo": 4125506,
       "nome": "São José dos Pinhais",
+      "cadeia": "Agroind. Carnes",
+      "valor": 20.0,
+      "peso": 3.0
+    },
+    {
+      "codigo": 4125506,
+      "nome": "São José dos Pinhais",
+      "cadeia": "Agroind. Grãos",
+      "valor": 102211440.0,
+      "peso": 52011609.0
+    },
+    {
+      "codigo": 4125506,
+      "nome": "São José dos Pinhais",
+      "cadeia": "Bebidas",
+      "valor": 2403059.0,
+      "peso": 730136.0
+    },
+    {
+      "codigo": 4125506,
+      "nome": "São José dos Pinhais",
+      "cadeia": "Cafeicultura",
+      "valor": 182286.0,
+      "peso": 35430.0
+    },
+    {
+      "codigo": 4125506,
+      "nome": "São José dos Pinhais",
+      "cadeia": "Cerealicultura",
+      "valor": 61662.0,
+      "peso": 229892.0
+    },
+    {
+      "codigo": 4125506,
+      "nome": "São José dos Pinhais",
+      "cadeia": "Fertilizantes",
+      "valor": 81.0,
+      "peso": 180.0
+    },
+    {
+      "codigo": 4125506,
+      "nome": "São José dos Pinhais",
+      "cadeia": "Florestal",
+      "valor": 216814.0,
+      "peso": 36912.0
+    },
+    {
+      "codigo": 4125506,
+      "nome": "São José dos Pinhais",
+      "cadeia": "Fruticultura",
+      "valor": 2550481.0,
+      "peso": 2951749.0
+    },
+    {
+      "codigo": 4125506,
+      "nome": "São José dos Pinhais",
+      "cadeia": "Laticínios",
+      "valor": 80806.0,
+      "peso": 176464.0
+    },
+    {
+      "codigo": 4125506,
+      "nome": "São José dos Pinhais",
+      "cadeia": "Oleaginosas",
+      "valor": 406133.0,
+      "peso": 398971.0
+    },
+    {
+      "codigo": 4125506,
+      "nome": "São José dos Pinhais",
+      "cadeia": "Olericultura",
+      "valor": 1690134.0,
+      "peso": 1183586.0
+    },
+    {
+      "codigo": 4125506,
+      "nome": "São José dos Pinhais",
       "cadeia": "Outros",
-      "valor": 112680892.0,
-      "peso": 58292894.0
+      "valor": 1921141.0,
+      "peso": 449323.0
+    },
+    {
+      "codigo": 4125506,
+      "nome": "São José dos Pinhais",
+      "cadeia": "Outros Insumos",
+      "valor": 956835.0,
+      "peso": 88639.0
     },
     {
       "codigo": 4125555,
       "nome": "São Manoel do Paraná",
-      "cadeia": "Outros",
+      "cadeia": "Olericultura",
       "valor": 6695.0,
       "peso": 49300.0
     },
     {
       "codigo": 4125605,
       "nome": "São Mateus do Sul",
+      "cadeia": "Fertilizantes",
+      "valor": 11122086.0,
+      "peso": 1825590.0
+    },
+    {
+      "codigo": 4125605,
+      "nome": "São Mateus do Sul",
+      "cadeia": "Florestal",
+      "valor": 19186513.0,
+      "peso": 10102999.0
+    },
+    {
+      "codigo": 4125605,
+      "nome": "São Mateus do Sul",
       "cadeia": "Outros",
-      "valor": 32139340.0,
-      "peso": 12177031.0
+      "valor": 1830741.0,
+      "peso": 248442.0
     },
     {
       "codigo": 4125704,
       "nome": "São Miguel do Iguaçu",
-      "cadeia": "Outros",
-      "valor": 14960688.0,
-      "peso": 35389706.0
+      "cadeia": "Fertilizantes",
+      "valor": 5.0,
+      "peso": 1.0
+    },
+    {
+      "codigo": 4125704,
+      "nome": "São Miguel do Iguaçu",
+      "cadeia": "Fruticultura",
+      "valor": 41926.0,
+      "peso": 4899.0
+    },
+    {
+      "codigo": 4125704,
+      "nome": "São Miguel do Iguaçu",
+      "cadeia": "Outros Insumos",
+      "valor": 215189.0,
+      "peso": 6781.0
+    },
+    {
+      "codigo": 4125704,
+      "nome": "São Miguel do Iguaçu",
+      "cadeia": "Sojicultura",
+      "valor": 14703568.0,
+      "peso": 35378025.0
     },
     {
       "codigo": 4125803,
       "nome": "São Pedro do Ivaí",
-      "cadeia": "Outros",
-      "valor": 231856052.0,
-      "peso": 116232719.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 95968242.0,
+      "peso": 35723651.0
+    },
+    {
+      "codigo": 4125803,
+      "nome": "São Pedro do Ivaí",
+      "cadeia": "Bebidas",
+      "valor": 135885576.0,
+      "peso": 80504855.0
+    },
+    {
+      "codigo": 4125803,
+      "nome": "São Pedro do Ivaí",
+      "cadeia": "Sojicultura",
+      "valor": 2234.0,
+      "peso": 4213.0
     },
     {
       "codigo": 4126108,
       "nome": "São Tomé",
-      "cadeia": "Outros",
-      "valor": 171348.0,
-      "peso": 77491.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 59339.0,
+      "peso": 38109.0
+    },
+    {
+      "codigo": 4126108,
+      "nome": "São Tomé",
+      "cadeia": "Fruticultura",
+      "valor": 112009.0,
+      "peso": 39382.0
     },
     {
       "codigo": 4126306,
       "nome": "Sengés",
-      "cadeia": "Outros",
-      "valor": 137484.0,
-      "peso": 116040.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 16.0,
+      "peso": 40.0
+    },
+    {
+      "codigo": 4126306,
+      "nome": "Sengés",
+      "cadeia": "Florestal",
+      "valor": 137468.0,
+      "peso": 116000.0
     },
     {
       "codigo": 4126405,
       "nome": "Sertaneja",
-      "cadeia": "Outros",
-      "valor": 4467260.0,
-      "peso": 18010983.0
+      "cadeia": "Fertilizantes",
+      "valor": 955910.0,
+      "peso": 9761200.0
+    },
+    {
+      "codigo": 4126405,
+      "nome": "Sertaneja",
+      "cadeia": "Outros Insumos",
+      "valor": 207548.0,
+      "peso": 29780.0
+    },
+    {
+      "codigo": 4126405,
+      "nome": "Sertaneja",
+      "cadeia": "Sojicultura",
+      "valor": 3303802.0,
+      "peso": 8220003.0
     },
     {
       "codigo": 4126504,
       "nome": "Sertanópolis",
-      "cadeia": "Outros",
-      "valor": 1527920283.0,
-      "peso": 4020959917.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 250763.0,
+      "peso": 507337.0
+    },
+    {
+      "codigo": 4126504,
+      "nome": "Sertanópolis",
+      "cadeia": "Bebidas",
+      "valor": 682.0,
+      "peso": 202.0
+    },
+    {
+      "codigo": 4126504,
+      "nome": "Sertanópolis",
+      "cadeia": "Canavicultura",
+      "valor": 9692236.0,
+      "peso": 17605040.0
+    },
+    {
+      "codigo": 4126504,
+      "nome": "Sertanópolis",
+      "cadeia": "Cerealicultura",
+      "valor": 261342619.0,
+      "peso": 1120655572.0
+    },
+    {
+      "codigo": 4126504,
+      "nome": "Sertanópolis",
+      "cadeia": "Sojicultura",
+      "valor": 1256633983.0,
+      "peso": 2882191766.0
     },
     {
       "codigo": 4126603,
       "nome": "Siqueira Campos",
-      "cadeia": "Outros",
-      "valor": 10699104.0,
-      "peso": 19409617.0
+      "cadeia": "Cafeicultura",
+      "valor": 1446345.0,
+      "peso": 382090.0
+    },
+    {
+      "codigo": 4126603,
+      "nome": "Siqueira Campos",
+      "cadeia": "Cerealicultura",
+      "valor": 525189.0,
+      "peso": 2922746.0
+    },
+    {
+      "codigo": 4126603,
+      "nome": "Siqueira Campos",
+      "cadeia": "Sojicultura",
+      "valor": 8727570.0,
+      "peso": 16104781.0
     },
     {
       "codigo": 4126678,
       "nome": "Tamarana",
-      "cadeia": "Outros",
+      "cadeia": "Sojicultura",
       "valor": 2870.0,
       "peso": 8926.0
     },
     {
       "codigo": 4126702,
       "nome": "Tamboara",
-      "cadeia": "Outros",
+      "cadeia": "Agroind. Grãos",
       "valor": 367471.0,
       "peso": 589950.0
     },
     {
       "codigo": 4126801,
       "nome": "Tapejara",
-      "cadeia": "Outros",
+      "cadeia": "Laticínios",
       "valor": 385.0,
       "peso": 99.0
     },
     {
       "codigo": 4127106,
       "nome": "Telêmaco Borba",
+      "cadeia": "Fertilizantes",
+      "valor": 664961.0,
+      "peso": 1939475.0
+    },
+    {
+      "codigo": 4127106,
+      "nome": "Telêmaco Borba",
       "cadeia": "Outros",
-      "valor": 684988.0,
-      "peso": 1950786.0
+      "valor": 20.0,
+      "peso": 1.0
+    },
+    {
+      "codigo": 4127106,
+      "nome": "Telêmaco Borba",
+      "cadeia": "Outros Insumos",
+      "valor": 20007.0,
+      "peso": 11310.0
     },
     {
       "codigo": 4127205,
       "nome": "Terra Boa",
-      "cadeia": "Outros",
-      "valor": 28521639.0,
-      "peso": 72449666.0
+      "cadeia": "Cerealicultura",
+      "valor": 950861.0,
+      "peso": 3383374.0
+    },
+    {
+      "codigo": 4127205,
+      "nome": "Terra Boa",
+      "cadeia": "Sojicultura",
+      "valor": 27570778.0,
+      "peso": 69066292.0
     },
     {
       "codigo": 4127304,
       "nome": "Terra Rica",
-      "cadeia": "Outros",
+      "cadeia": "Agroind. Grãos",
       "valor": 6426.0,
       "peso": 3157.0
     },
     {
       "codigo": 4127403,
       "nome": "Terra Roxa",
-      "cadeia": "Outros",
-      "valor": 30342112.0,
-      "peso": 71702909.0
+      "cadeia": "Cerealicultura",
+      "valor": 432975.0,
+      "peso": 1753594.0
+    },
+    {
+      "codigo": 4127403,
+      "nome": "Terra Roxa",
+      "cadeia": "Sojicultura",
+      "valor": 29909137.0,
+      "peso": 69949315.0
     },
     {
       "codigo": 4127502,
       "nome": "Tibagi",
-      "cadeia": "Outros",
-      "valor": 42758956.0,
-      "peso": 97074146.0
+      "cadeia": "Cerealicultura",
+      "valor": 10372362.0,
+      "peso": 36644606.0
+    },
+    {
+      "codigo": 4127502,
+      "nome": "Tibagi",
+      "cadeia": "Sojicultura",
+      "valor": 32386594.0,
+      "peso": 60429540.0
     },
     {
       "codigo": 4127601,
@@ -1981,70 +6692,385 @@
     {
       "codigo": 4127700,
       "nome": "Toledo",
+      "cadeia": "Agroind. Carnes",
+      "valor": 44924342.0,
+      "peso": 18645441.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "cadeia": "Agroind. Grãos",
+      "valor": 53587994.0,
+      "peso": 26883594.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "cadeia": "Aquicultura",
+      "valor": 108.0,
+      "peso": 33.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "cadeia": "Avicultura",
+      "valor": 55837813.0,
+      "peso": 23957798.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "cadeia": "Bebidas",
+      "valor": 30225426.0,
+      "peso": 48733866.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "cadeia": "Cerealicultura",
+      "valor": 2117393.0,
+      "peso": 10588367.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "cadeia": "Fertilizantes",
+      "valor": 7381792.0,
+      "peso": 4609854.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "cadeia": "Florestal",
+      "valor": 3788.0,
+      "peso": 431.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "cadeia": "Floricultura",
+      "valor": 8058.0,
+      "peso": 3600.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "cadeia": "Fruticultura",
+      "valor": 4464181.0,
+      "peso": 18132127.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "cadeia": "Oleaginosas",
+      "valor": 902600.0,
+      "peso": 870000.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "cadeia": "Olericultura",
+      "valor": 205773.0,
+      "peso": 545325.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
       "cadeia": "Outros",
-      "valor": 260777294.0,
-      "peso": 209680291.0
+      "valor": 20387.0,
+      "peso": 54983.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "cadeia": "Outros Insumos",
+      "valor": 371999.0,
+      "peso": 6984.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "cadeia": "Sojicultura",
+      "valor": 21205363.0,
+      "peso": 42205907.0
+    },
+    {
+      "codigo": 4127700,
+      "nome": "Toledo",
+      "cadeia": "Suinocultura",
+      "valor": 39520277.0,
+      "peso": 14441981.0
     },
     {
       "codigo": 4127957,
       "nome": "Tupãssi",
-      "cadeia": "Outros",
-      "valor": 29667961.0,
-      "peso": 39949317.0
+      "cadeia": "Agroind. Grãos",
+      "valor": 608562.0,
+      "peso": 1597460.0
+    },
+    {
+      "codigo": 4127957,
+      "nome": "Tupãssi",
+      "cadeia": "Aquicultura",
+      "valor": 21855797.0,
+      "peso": 24972314.0
+    },
+    {
+      "codigo": 4127957,
+      "nome": "Tupãssi",
+      "cadeia": "Cerealicultura",
+      "valor": 77411.0,
+      "peso": 260727.0
+    },
+    {
+      "codigo": 4127957,
+      "nome": "Tupãssi",
+      "cadeia": "Fruticultura",
+      "valor": 139124.0,
+      "peso": 26671.0
+    },
+    {
+      "codigo": 4127957,
+      "nome": "Tupãssi",
+      "cadeia": "Oleaginosas",
+      "valor": 265300.0,
+      "peso": 225000.0
+    },
+    {
+      "codigo": 4127957,
+      "nome": "Tupãssi",
+      "cadeia": "Sojicultura",
+      "valor": 6721767.0,
+      "peso": 12867145.0
     },
     {
       "codigo": 4127965,
       "nome": "Turvo",
-      "cadeia": "Outros",
-      "valor": 5781457.0,
-      "peso": 2741297.0
+      "cadeia": "Florestal",
+      "valor": 5679631.0,
+      "peso": 2480917.0
+    },
+    {
+      "codigo": 4127965,
+      "nome": "Turvo",
+      "cadeia": "Sojicultura",
+      "valor": 101826.0,
+      "peso": 260380.0
+    },
+    {
+      "codigo": 4128005,
+      "nome": "Ubiratã",
+      "cadeia": "Agroind. Grãos",
+      "valor": 8227422.0,
+      "peso": 15455511.0
+    },
+    {
+      "codigo": 4128005,
+      "nome": "Ubiratã",
+      "cadeia": "Avicultura",
+      "valor": 1234675291.0,
+      "peso": 779251998.0
+    },
+    {
+      "codigo": 4128005,
+      "nome": "Ubiratã",
+      "cadeia": "Cerealicultura",
+      "valor": 3203205.0,
+      "peso": 14920817.0
     },
     {
       "codigo": 4128005,
       "nome": "Ubiratã",
       "cadeia": "Outros",
-      "valor": 1276564206.0,
-      "peso": 867492316.0
+      "valor": 17285761.0,
+      "peso": 21558034.0
+    },
+    {
+      "codigo": 4128005,
+      "nome": "Ubiratã",
+      "cadeia": "Sojicultura",
+      "valor": 13172527.0,
+      "peso": 36305956.0
+    },
+    {
+      "codigo": 4128104,
+      "nome": "Umuarama",
+      "cadeia": "Agroind. Carnes",
+      "valor": 4433555.0,
+      "peso": 1626379.0
+    },
+    {
+      "codigo": 4128104,
+      "nome": "Umuarama",
+      "cadeia": "Agroind. Grãos",
+      "valor": 9759061.0,
+      "peso": 11043478.0
+    },
+    {
+      "codigo": 4128104,
+      "nome": "Umuarama",
+      "cadeia": "Avicultura",
+      "valor": 188453292.0,
+      "peso": 107229963.0
+    },
+    {
+      "codigo": 4128104,
+      "nome": "Umuarama",
+      "cadeia": "Bebidas",
+      "valor": 48357.0,
+      "peso": 97040.0
+    },
+    {
+      "codigo": 4128104,
+      "nome": "Umuarama",
+      "cadeia": "Bovinocultura",
+      "valor": 1306048.0,
+      "peso": 351807.0
+    },
+    {
+      "codigo": 4128104,
+      "nome": "Umuarama",
+      "cadeia": "Canavicultura",
+      "valor": 12147.0,
+      "peso": 10411.0
+    },
+    {
+      "codigo": 4128104,
+      "nome": "Umuarama",
+      "cadeia": "Cerealicultura",
+      "valor": 1219456.0,
+      "peso": 1616232.0
+    },
+    {
+      "codigo": 4128104,
+      "nome": "Umuarama",
+      "cadeia": "Fruticultura",
+      "valor": 1118641.0,
+      "peso": 475894.0
+    },
+    {
+      "codigo": 4128104,
+      "nome": "Umuarama",
+      "cadeia": "Laticínios",
+      "valor": 785480.0,
+      "peso": 320935.0
+    },
+    {
+      "codigo": 4128104,
+      "nome": "Umuarama",
+      "cadeia": "Oleaginosas",
+      "valor": 306561.0,
+      "peso": 167095.0
+    },
+    {
+      "codigo": 4128104,
+      "nome": "Umuarama",
+      "cadeia": "Olericultura",
+      "valor": 3922553.0,
+      "peso": 2125532.0
     },
     {
       "codigo": 4128104,
       "nome": "Umuarama",
       "cadeia": "Outros",
-      "valor": 225494027.0,
-      "peso": 133913954.0
+      "valor": 11154093.0,
+      "peso": 2851654.0
+    },
+    {
+      "codigo": 4128104,
+      "nome": "Umuarama",
+      "cadeia": "Sojicultura",
+      "valor": 2974783.0,
+      "peso": 5997534.0
+    },
+    {
+      "codigo": 4128203,
+      "nome": "União da Vitória",
+      "cadeia": "Agroind. Grãos",
+      "valor": 3366.0,
+      "peso": 133.0
+    },
+    {
+      "codigo": 4128203,
+      "nome": "União da Vitória",
+      "cadeia": "Apicultura",
+      "valor": 31053919.0,
+      "peso": 10037797.0
+    },
+    {
+      "codigo": 4128203,
+      "nome": "União da Vitória",
+      "cadeia": "Florestal",
+      "valor": 206079.0,
+      "peso": 97247.0
     },
     {
       "codigo": 4128203,
       "nome": "União da Vitória",
       "cadeia": "Outros",
-      "valor": 34679775.0,
-      "peso": 10178312.0
+      "valor": 3416401.0,
+      "peso": 43134.0
+    },
+    {
+      "codigo": 4128203,
+      "nome": "União da Vitória",
+      "cadeia": "Tabaco",
+      "valor": 10.0,
+      "peso": 1.0
     },
     {
       "codigo": 4128401,
       "nome": "Uraí",
-      "cadeia": "Outros",
-      "valor": 50508999.0,
-      "peso": 23004929.0
+      "cadeia": "Fruticultura",
+      "valor": 50489801.0,
+      "peso": 22959364.0
+    },
+    {
+      "codigo": 4128401,
+      "nome": "Uraí",
+      "cadeia": "Sojicultura",
+      "valor": 19198.0,
+      "peso": 45565.0
     },
     {
       "codigo": 4128500,
       "nome": "Wenceslau Braz",
-      "cadeia": "Outros",
-      "valor": 5759360.0,
-      "peso": 18215404.0
+      "cadeia": "Cerealicultura",
+      "valor": 1960022.0,
+      "peso": 9465166.0
+    },
+    {
+      "codigo": 4128500,
+      "nome": "Wenceslau Braz",
+      "cadeia": "Sojicultura",
+      "valor": 3799338.0,
+      "peso": 8750238.0
+    },
+    {
+      "codigo": 4128708,
+      "nome": "Vitorino",
+      "cadeia": "Fruticultura",
+      "valor": 783314.0,
+      "peso": 1835234.0
+    },
+    {
+      "codigo": 4128708,
+      "nome": "Vitorino",
+      "cadeia": "Olericultura",
+      "valor": 464110.0,
+      "peso": 906800.0
     },
     {
       "codigo": 4128708,
       "nome": "Vitorino",
       "cadeia": "Outros",
-      "valor": 1281284.0,
-      "peso": 2792042.0
+      "valor": 33860.0,
+      "peso": 50008.0
     },
     {
       "codigo": 4128807,
       "nome": "Xambrê",
-      "cadeia": "Outros",
+      "cadeia": "Fruticultura",
       "valor": 49272.0,
       "peso": 59166.0
     }

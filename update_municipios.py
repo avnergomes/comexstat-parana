@@ -12,7 +12,9 @@ import io
 
 # Importar mapeamento de cadeia
 try:
-    from ncm_cadeias_map import get_cadeia_from_sh4, CADEIAS, CADEIA_CORES
+    from ncm_cadeias_map import classificar_cadeia_sh4, CADEIAS, CADEIA_CORES
+    def get_cadeia_from_sh4(sh4):
+        return classificar_cadeia_sh4(sh4)
 except ImportError:
     CADEIAS = {}
     CADEIA_CORES = {}

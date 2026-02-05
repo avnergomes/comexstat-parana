@@ -224,19 +224,18 @@ export function useFilteredData(data, filters) {
     let filteredSankeyLinks = null;
 
     if (sankey && cadeiasEfetivas && cadeiasEfetivas.length > 0 && sankey.linksByCadeia) {
-      // Debug: verificar dados
-      console.log('[Sankey Filter] Cadeias selecionadas:', cadeiasEfetivas);
-      console.log('[Sankey Filter] Total linksByCadeia:', sankey.linksByCadeia.length);
-      console.log('[Sankey Filter] Cadeias disponíveis:', [...new Set(sankey.linksByCadeia.map(l => l.cadeia))]);
+      // Verificar se há cadeias válidas nos dados do Sankey
+      const cadeiasDisponiveis = [...new Set(sankey.linksByCadeia.map(l => l.cadeia))];
+      const cadeiasValidas = cadeiasEfetivas.filter(c => cadeiasDisponiveis.includes(c));
 
-      // Filtrar links por cadeias selecionadas
-      const filteredLinks = sankey.linksByCadeia.filter(link =>
-        cadeiasEfetivas.includes(link.cadeia)
-      );
+      // Só filtrar se houver cadeias válidas nos dados
+      if (cadeiasValidas.length > 0) {
+        // Filtrar links por cadeias selecionadas
+        const filteredLinks = sankey.linksByCadeia.filter(link =>
+          cadeiasValidas.includes(link.cadeia)
+        );
 
-      console.log('[Sankey Filter] Links filtrados:', filteredLinks.length);
-
-      if (filteredLinks.length > 0) {
+        if (filteredLinks.length > 0) {
         // Agregar links do mesmo source-target
         const linkMap = {};
         filteredLinks.forEach(link => {
@@ -263,47 +262,57 @@ export function useFilteredData(data, filters) {
           nodes: filteredNodes,
           links: filteredSankeyLinks
         };
+        }
       }
+      // Se não há cadeias válidas, manter dados originais (sem filtro)
     }
 
     // Filtrar dados de municípios por cadeia
     let municipios = data.municipios || null;
 
     if (municipios && cadeiasEfetivas && cadeiasEfetivas.length > 0 && municipios.municipiosByCadeia) {
-      // Filtrar por cadeias selecionadas
-      const filteredMunCadeia = municipios.municipiosByCadeia.filter(item =>
-        cadeiasEfetivas.includes(item.cadeia)
-      );
+      // Verificar se há cadeias válidas nos dados de municípios
+      const cadeiasDisponiveis = [...new Set(municipios.municipiosByCadeia.map(m => m.cadeia))];
+      const cadeiasValidas = cadeiasEfetivas.filter(c => cadeiasDisponiveis.includes(c));
 
-      // Reagregar por município
-      const munByCode = {};
-      filteredMunCadeia.forEach(item => {
-        if (!munByCode[item.codigo]) {
-          munByCode[item.codigo] = { codigo: item.codigo, nome: item.nome, valor: 0, peso: 0 };
-        }
-        munByCode[item.codigo].valor += item.valor || 0;
-        munByCode[item.codigo].peso += item.peso || 0;
-      });
+      // Só filtrar se houver cadeias válidas nos dados
+      if (cadeiasValidas.length > 0) {
+        // Filtrar por cadeias selecionadas
+        const filteredMunCadeia = municipios.municipiosByCadeia.filter(item =>
+          cadeiasValidas.includes(item.cadeia)
+        );
 
-      // Calcular totais e percentuais
-      const filteredMunicipios = Object.values(munByCode)
-        .sort((a, b) => b.valor - a.valor)
-        .slice(0, 50);
+        // Reagregar por município
+        const munByCode = {};
+        filteredMunCadeia.forEach(item => {
+          if (!munByCode[item.codigo]) {
+            munByCode[item.codigo] = { codigo: item.codigo, nome: item.nome, valor: 0, peso: 0 };
+          }
+          munByCode[item.codigo].valor += item.valor || 0;
+          munByCode[item.codigo].peso += item.peso || 0;
+        });
 
-      const totalValor = filteredMunicipios.reduce((sum, m) => sum + m.valor, 0);
-      const totalPeso = filteredMunicipios.reduce((sum, m) => sum + m.peso, 0);
+        // Calcular totais e percentuais
+        const filteredMunicipios = Object.values(munByCode)
+          .sort((a, b) => b.valor - a.valor)
+          .slice(0, 50);
 
-      // Adicionar percentual
-      filteredMunicipios.forEach(m => {
-        m.percentual = totalValor > 0 ? (m.valor / totalValor) * 100 : 0;
-      });
+        const totalValor = filteredMunicipios.reduce((sum, m) => sum + m.valor, 0);
+        const totalPeso = filteredMunicipios.reduce((sum, m) => sum + m.peso, 0);
 
-      municipios = {
-        ...municipios,
-        totalValor,
-        totalPeso,
-        municipios: filteredMunicipios
-      };
+        // Adicionar percentual
+        filteredMunicipios.forEach(m => {
+          m.percentual = totalValor > 0 ? (m.valor / totalValor) * 100 : 0;
+        });
+
+        municipios = {
+          ...municipios,
+          totalValor,
+          totalPeso,
+          municipios: filteredMunicipios
+        };
+      }
+      // Se não há cadeias válidas, manter os dados originais (sem filtro)
     }
 
     return {
