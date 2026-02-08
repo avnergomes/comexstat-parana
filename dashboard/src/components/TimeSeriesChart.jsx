@@ -26,7 +26,7 @@ function CustomTooltip({ active, payload, label }) {
   );
 }
 
-export default function TimeSeriesChart({ data, title, showBalance = true, tipo = 'todos' }) {
+export default function TimeSeriesChart({ data, title, showBalance = true, tipo = 'todos', onAnoClick, selectedAno }) {
   if (!data || data.length === 0) {
     return (
       <div className="chart-container h-80 flex items-center justify-center">
@@ -53,7 +53,16 @@ export default function TimeSeriesChart({ data, title, showBalance = true, tipo 
       )}
       <div className="h-80">
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={chartData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+          <AreaChart
+            data={chartData}
+            margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+            onClick={(event) => {
+              if (event?.activePayload?.[0]?.payload?.ano && onAnoClick) {
+                onAnoClick(event.activePayload[0].payload.ano);
+              }
+            }}
+            style={{ cursor: onAnoClick ? 'pointer' : 'default' }}
+          >
             <defs>
               <linearGradient id="gradientExp" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="#22c55e" stopOpacity={0.3} />
@@ -106,6 +115,16 @@ export default function TimeSeriesChart({ data, title, showBalance = true, tipo 
           </AreaChart>
         </ResponsiveContainer>
       </div>
+      {selectedAno && (
+        <p className="text-xs text-center text-primary-600 mt-2 font-medium">
+          Ano selecionado: {selectedAno}
+        </p>
+      )}
+      {onAnoClick && !selectedAno && (
+        <p className="text-xs text-center text-dark-400 mt-2">
+          Clique no gráfico para filtrar por ano
+        </p>
+      )}
     </div>
   );
 }

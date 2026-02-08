@@ -172,6 +172,8 @@ export default function App() {
                   data={filteredData?.timeseries}
                   title="Evolução das Exportações e Importações"
                   tipo={filters.tipo}
+                  onAnoClick={handleAnoClick}
+                  selectedAno={interactiveFilters.ano}
                 />
                 <BalanceChart
                   data={filteredData?.timeseries}
