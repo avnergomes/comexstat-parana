@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Filters from './components/Filters';
+import ActiveFilters from './components/ActiveFilters';
 import KpiCards from './components/KpiCards';
 import Tabs from './components/Tabs';
 import Loading from './components/Loading';
@@ -15,6 +16,8 @@ import MunicipalityChart from './components/MunicipalityChart';
 import PRMap from './components/PRMap';
 import WorldMap from './components/WorldMap';
 import ForecastChart from './components/ForecastChart';
+import HeatmapChart from './components/HeatmapChart';
+import YoYComparisonChart from './components/YoYComparisonChart';
 import { useData, useFilteredData, useAggregations } from './hooks/useData';
 
 const TABS = [
@@ -35,6 +38,64 @@ export default function App() {
     tipoCategoria: 'todos',  // 'todos', 'produtos', 'insumos'
     cadeias: null,
   });
+
+  // Estado de filtros interativos (clique nos gráficos)
+  const [interactiveFilters, setInteractiveFilters] = useState({
+    categoria: null,
+    pais: null,
+    municipio: null,
+    ano: null,
+  });
+
+  // Handlers para filtros interativos
+  const handleCategoriaClick = useCallback((categoria) => {
+    setInteractiveFilters(prev => ({
+      ...prev,
+      categoria: prev.categoria === categoria ? null : categoria,
+    }));
+  }, []);
+
+  const handlePaisClick = useCallback((pais) => {
+    setInteractiveFilters(prev => ({
+      ...prev,
+      pais: prev.pais === pais ? null : pais,
+    }));
+  }, []);
+
+  const handleMunicipioClick = useCallback((municipio) => {
+    setInteractiveFilters(prev => ({
+      ...prev,
+      municipio: prev.municipio === municipio ? null : municipio,
+    }));
+  }, []);
+
+  const handleAnoClick = useCallback((ano) => {
+    setInteractiveFilters(prev => ({
+      ...prev,
+      ano: prev.ano === ano ? null : ano,
+    }));
+  }, []);
+
+  const handleRemoveInteractiveFilter = useCallback((key) => {
+    setInteractiveFilters(prev => ({
+      ...prev,
+      [key]: null,
+    }));
+  }, []);
+
+  const clearInteractiveFilters = useCallback(() => {
+    setInteractiveFilters({
+      categoria: null,
+      pais: null,
+      municipio: null,
+      ano: null,
+    });
+  }, []);
+
+  // Verifica se há filtros interativos ativos
+  const hasInteractiveFilters = useMemo(() => {
+    return Object.values(interactiveFilters).some(v => v !== null);
+  }, [interactiveFilters]);
 
   // Load data
   const { data, loading, error } = useData();
@@ -84,6 +145,13 @@ export default function App() {
           cadeias={data?.filters?.cadeias}
         />
 
+        {/* Filtros Interativos (clique nos gráficos) */}
+        <ActiveFilters
+          filters={interactiveFilters}
+          onRemove={handleRemoveInteractiveFilter}
+          onClear={clearInteractiveFilters}
+        />
+
         {/* KPI Cards */}
         <KpiCards totals={aggregations?.totals} />
 
@@ -111,6 +179,29 @@ export default function App() {
                 />
               </div>
 
+              {/* Comparativo YoY */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <YoYComparisonChart
+                  data={filteredData?.timeseries}
+                  title="Comparativo Anual - Exportações"
+                  tipo="exportacoes"
+                />
+                <YoYComparisonChart
+                  data={filteredData?.timeseries}
+                  title="Comparativo Anual - Importações"
+                  tipo="importacoes"
+                />
+              </div>
+
+              {/* Heatmap Sazonal */}
+              {filteredData?.detailed && (
+                <HeatmapChart
+                  data={filteredData.detailed}
+                  title="Padrão Sazonal por Cadeia - Exportações"
+                  tipo="exportacoes"
+                />
+              )}
+
               {/* Sankey Chart - Municipality to Country flow */}
               {filters.tipo !== 'importacoes' && (
                 <SankeyChart
@@ -132,11 +223,15 @@ export default function App() {
                     data={filteredData?.byCategoria}
                     title="Exportações por Cadeia"
                     tipo="exportacoes"
+                    onCategoriaClick={handleCategoriaClick}
+                    selectedCategoria={interactiveFilters.categoria}
                   />
                   <CategoryChart
                     data={filteredData?.byCategoria}
                     title="Importações por Cadeia"
                     tipo="importacoes"
+                    onCategoriaClick={handleCategoriaClick}
+                    selectedCategoria={interactiveFilters.categoria}
                   />
                 </div>
               ) : (
@@ -144,6 +239,8 @@ export default function App() {
                   data={filteredData?.byCategoria}
                   title={filters.tipo === 'exportacoes' ? 'Exportações por Cadeia' : 'Importações por Cadeia'}
                   tipo={filters.tipo}
+                  onCategoriaClick={handleCategoriaClick}
+                  selectedCategoria={interactiveFilters.categoria}
                 />
               )}
             </div>
@@ -157,6 +254,8 @@ export default function App() {
                 data={filteredData?.byPais}
                 title={filters.tipo === 'importacoes' ? 'Mapa de Origens das Importações' : 'Mapa de Destinos das Exportações'}
                 tipo={filters.tipo === 'importacoes' ? 'importacoes' : 'exportacoes'}
+                onPaisClick={handlePaisClick}
+                selectedPais={interactiveFilters.pais}
               />
 
               {filters.tipo === 'todos' ? (
@@ -165,11 +264,15 @@ export default function App() {
                     data={filteredData?.byPais}
                     title="Principais Destinos (Exportações)"
                     tipo="exportacoes"
+                    onPaisClick={handlePaisClick}
+                    selectedPais={interactiveFilters.pais}
                   />
                   <CountryChart
                     data={filteredData?.byPais}
                     title="Principais Origens (Importações)"
                     tipo="importacoes"
+                    onPaisClick={handlePaisClick}
+                    selectedPais={interactiveFilters.pais}
                   />
                 </div>
               ) : (
@@ -177,6 +280,8 @@ export default function App() {
                   data={filteredData?.byPais}
                   title={filters.tipo === 'exportacoes' ? 'Principais Destinos (Exportações)' : 'Principais Origens (Importações)'}
                   tipo={filters.tipo}
+                  onPaisClick={handlePaisClick}
+                  selectedPais={interactiveFilters.pais}
                 />
               )}
             </div>
@@ -190,12 +295,16 @@ export default function App() {
                 data={filteredData?.municipios || data?.municipios}
                 title="Mapa dos Municípios Exportadores do Paraná"
                 filterNote={filters.cadeias?.length > 0 ? `Filtrado por: ${filters.cadeias.join(', ')}` : null}
+                onMunicipioClick={handleMunicipioClick}
+                selectedMunicipio={interactiveFilters.municipio}
               />
 
               <MunicipalityChart
                 data={filteredData?.municipios || data?.municipios}
                 title="Ranking dos Municípios Exportadores"
                 limit={20}
+                onMunicipioClick={handleMunicipioClick}
+                selectedMunicipio={interactiveFilters.municipio}
               />
             </div>
           )}

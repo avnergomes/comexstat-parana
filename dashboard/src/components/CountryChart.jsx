@@ -24,7 +24,7 @@ function CustomTooltip({ active, payload }) {
   );
 }
 
-export default function CountryChart({ data, title, tipo = 'exportacoes', limit = 15 }) {
+export default function CountryChart({ data, title, tipo = 'exportacoes', limit = 15, onPaisClick, selectedPais }) {
   const [sortBy, setSortBy] = useState('valor');
 
   if (!data) return null;
@@ -39,6 +39,12 @@ export default function CountryChart({ data, title, tipo = 'exportacoes', limit 
       ...item,
       fill: stringToColor(item.pais),
     }));
+
+  // Função para obter opacidade baseada na seleção
+  const getOpacity = (pais) => {
+    if (!selectedPais) return 1;
+    return pais === selectedPais ? 1 : 0.4;
+  };
 
   if (chartData.length === 0) {
     return (
@@ -70,6 +76,7 @@ export default function CountryChart({ data, title, tipo = 'exportacoes', limit 
             data={chartData}
             layout="vertical"
             margin={{ top: 5, right: 30, left: 80, bottom: 5 }}
+            style={{ cursor: onPaisClick ? 'pointer' : 'default' }}
           >
             <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
             <XAxis
@@ -84,14 +91,30 @@ export default function CountryChart({ data, title, tipo = 'exportacoes', limit 
               width={75}
             />
             <Tooltip content={<CustomTooltip />} />
-            <Bar dataKey="valor" radius={[0, 4, 4, 0]}>
+            <Bar
+              dataKey="valor"
+              radius={[0, 4, 4, 0]}
+              onClick={(data) => onPaisClick?.(data.pais)}
+            >
               {chartData.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={entry.fill} />
+                <Cell
+                  key={`cell-${index}`}
+                  fill={entry.fill}
+                  opacity={getOpacity(entry.pais)}
+                  stroke={entry.pais === selectedPais ? '#1f2937' : 'none'}
+                  strokeWidth={entry.pais === selectedPais ? 2 : 0}
+                />
               ))}
             </Bar>
           </BarChart>
         </ResponsiveContainer>
       </div>
+
+      {onPaisClick && (
+        <p className="text-xs text-center text-dark-400 mt-2">
+          Clique para filtrar
+        </p>
+      )}
 
       {/* Top 5 summary */}
       <div className="mt-4 pt-4 border-t border-dark-100">

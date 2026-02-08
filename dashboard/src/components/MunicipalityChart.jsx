@@ -22,7 +22,7 @@ function CustomTooltip({ active, payload }) {
   );
 }
 
-export default function MunicipalityChart({ data, title, limit = 15 }) {
+export default function MunicipalityChart({ data, title, limit = 15, onMunicipioClick, selectedMunicipio }) {
   const [sortBy, setSortBy] = useState('valor');
 
   if (!data || !data.municipios || data.municipios.length === 0) {
@@ -40,6 +40,12 @@ export default function MunicipalityChart({ data, title, limit = 15 }) {
       ...item,
       fill: stringToColor(item.nome),
     }));
+
+  // Função para obter opacidade baseada na seleção
+  const getOpacity = (nome) => {
+    if (!selectedMunicipio) return 1;
+    return nome === selectedMunicipio ? 1 : 0.4;
+  };
 
   return (
     <div className="chart-container">
@@ -63,6 +69,7 @@ export default function MunicipalityChart({ data, title, limit = 15 }) {
             data={chartData}
             layout="vertical"
             margin={{ top: 5, right: 30, left: 100, bottom: 5 }}
+            style={{ cursor: onMunicipioClick ? 'pointer' : 'default' }}
           >
             <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
             <XAxis
@@ -77,14 +84,30 @@ export default function MunicipalityChart({ data, title, limit = 15 }) {
               width={95}
             />
             <Tooltip content={<CustomTooltip />} />
-            <Bar dataKey="valor" radius={[0, 4, 4, 0]}>
+            <Bar
+              dataKey="valor"
+              radius={[0, 4, 4, 0]}
+              onClick={(data) => onMunicipioClick?.(data.nome)}
+            >
               {chartData.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={entry.fill} />
+                <Cell
+                  key={`cell-${index}`}
+                  fill={entry.fill}
+                  opacity={getOpacity(entry.nome)}
+                  stroke={entry.nome === selectedMunicipio ? '#1f2937' : 'none'}
+                  strokeWidth={entry.nome === selectedMunicipio ? 2 : 0}
+                />
               ))}
             </Bar>
           </BarChart>
         </ResponsiveContainer>
       </div>
+
+      {onMunicipioClick && (
+        <p className="text-xs text-center text-dark-400 mt-2">
+          Clique para filtrar
+        </p>
+      )}
 
       {/* Summary */}
       <div className="mt-4 pt-4 border-t border-dark-100">

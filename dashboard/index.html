@@ -79,210 +79,81 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
 
-    <!-- Analytics Tracking Script -->
+    <!-- Tracking LGPD-compliant (19 campos anonimos) -->
     <script>
-    (function() {
-      // TODO: Replace with your deployed Google Apps Script URL from google-apps-script-comexstat.gs
-      const TRACKING_URL = 'https://script.google.com/macros/s/AKfycbyk8VzLygqFmid0cSB5Qge8yRKRV-hJNvWlCSZBPrOCnyJyTd21d-6mNRjyJ7NIr_-36Q/exec';
-      const TRACKING_DEBUG = false;
-
-      function getSessionId() {
-        let sessionId = sessionStorage.getItem('comex_session_id');
-        if (!sessionId) {
-          sessionId = 'sess_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-          sessionStorage.setItem('comex_session_id', sessionId);
-          sessionStorage.setItem('comex_session_start', new Date().toISOString());
-          sessionStorage.setItem('comex_page_views', '0');
+      (function() {
+        function getDeviceType() {
+          var ua = navigator.userAgent;
+          if (/tablet|ipad|playbook|silk/i.test(ua)) return 'Tablet';
+          if (/Mobile|Android|iPhone|iPod|webOS|BlackBerry|Opera Mini|IEMobile/i.test(ua)) return 'Mobile';
+          return 'Desktop';
         }
-        return sessionId;
-      }
 
-      function isReturningVisitor() {
-        const hasVisited = localStorage.getItem('comex_has_visited');
-        if (!hasVisited) {
-          localStorage.setItem('comex_has_visited', 'true');
-          localStorage.setItem('comex_first_visit', new Date().toISOString());
-          return false;
-        }
-        return true;
-      }
-
-      function getPerformanceData() {
-        const perf = {};
-        try {
-          const timing = performance.timing || {};
-          const navStart = timing.navigationStart || 0;
-
-          perf.loadTime = timing.loadEventEnd ? timing.loadEventEnd - navStart : 0;
-          perf.dnsLookupTime = timing.domainLookupEnd - timing.domainLookupStart;
-          perf.tcpConnectionTime = timing.connectEnd - timing.connectStart;
-          perf.serverResponseTime = timing.responseEnd - timing.requestStart;
-          perf.domContentLoadedTime = timing.domContentLoadedEventEnd - navStart;
-          perf.domInteractiveTime = timing.domInteractive - navStart;
-
-          const paintEntries = performance.getEntriesByType('paint');
-          paintEntries.forEach(entry => {
-            if (entry.name === 'first-paint') perf.firstPaint = entry.startTime;
-            if (entry.name === 'first-contentful-paint') perf.firstContentfulPaint = entry.startTime;
-          });
-
-          const navEntries = performance.getEntriesByType('navigation');
-          if (navEntries.length > 0) {
-            perf.transferSize = navEntries[0].transferSize;
-            perf.encodedBodySize = navEntries[0].encodedBodySize;
-            perf.decodedBodySize = navEntries[0].decodedBodySize;
+        function getConnectionType() {
+          if (navigator.connection) {
+            return navigator.connection.effectiveType || 'unknown';
           }
-        } catch (e) {}
-        return perf;
-      }
-
-      function getConnectionInfo() {
-        const conn = {};
-        try {
-          const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-          if (connection) {
-            conn.connectionType = connection.effectiveType;
-            conn.connectionSpeed = connection.downlink;
-            conn.saveDataMode = connection.saveData;
-            conn.connectionRTT = connection.rtt;
-            conn.connectionDownlinkMax = connection.downlinkMax;
-          }
-        } catch (e) {}
-        return conn;
-      }
-
-      function getDeviceInfo() {
-        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        const isTablet = /iPad|Android(?!.*Mobile)/i.test(navigator.userAgent);
-
-        return {
-          isMobile: isMobile && !isTablet,
-          isTablet: isTablet,
-          isDesktop: !isMobile && !isTablet,
-          touchSupport: 'ontouchstart' in window || navigator.maxTouchPoints > 0,
-          maxTouchPoints: navigator.maxTouchPoints || 0,
-          cpuCores: navigator.hardwareConcurrency || 0,
-          deviceMemory: navigator.deviceMemory || 0,
-          screenOrientation: screen.orientation ? screen.orientation.type : 'unknown'
-        };
-      }
-
-      function getUTMParams() {
-        const params = new URLSearchParams(window.location.search);
-        return {
-          utmSource: params.get('utm_source') || '',
-          utmMedium: params.get('utm_medium') || '',
-          utmCampaign: params.get('utm_campaign') || '',
-          utmTerm: params.get('utm_term') || '',
-          utmContent: params.get('utm_content') || ''
-        };
-      }
-
-      function getUserPreferences() {
-        return {
-          prefersColorScheme: window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' :
-                             window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'no-preference',
-          prefersReducedMotion: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
-          displayMode: window.matchMedia('(display-mode: standalone)').matches ? 'standalone' :
-                      window.matchMedia('(display-mode: fullscreen)').matches ? 'fullscreen' : 'browser'
-        };
-      }
-
-      function trackVisit() {
-        const pageViews = parseInt(sessionStorage.getItem('comex_page_views') || '0') + 1;
-        sessionStorage.setItem('comex_page_views', pageViews.toString());
-
-        const visitData = {
-          // Session
-          sessionId: getSessionId(),
-          timestamp: new Date().toISOString(),
-          returningVisitor: isReturningVisitor(),
-          sessionStartTime: sessionStorage.getItem('comex_session_start'),
-          pageViewsInSession: pageViews,
-
-          // Page
-          origin: window.location.origin,
-          page: window.location.href,
-          pathname: window.location.pathname,
-          queryString: window.location.search,
-          referrer: document.referrer,
-          pageTitle: document.title,
-
-          // Browser
-          userAgent: navigator.userAgent,
-          language: navigator.language,
-          languages: navigator.languages ? navigator.languages.join(',') : navigator.language,
-          platform: navigator.platform,
-          vendor: navigator.vendor,
-          cookiesEnabled: navigator.cookieEnabled,
-          doNotTrack: navigator.doNotTrack,
-          onlineStatus: navigator.onLine,
-
-          // Screen
-          screenWidth: screen.width,
-          screenHeight: screen.height,
-          availScreenWidth: screen.availWidth,
-          availScreenHeight: screen.availHeight,
-          colorDepth: screen.colorDepth,
-          pixelRatio: window.devicePixelRatio,
-          viewportWidth: window.innerWidth,
-          viewportHeight: window.innerHeight,
-
-          // Timezone
-          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-          timezoneOffset: new Date().getTimezoneOffset(),
-
-          // Context
-          historyLength: history.length,
-          isIframe: window.self !== window.top,
-          secureContext: window.isSecureContext,
-
-          // Device & Connection
-          ...getDeviceInfo(),
-          ...getConnectionInfo(),
-          ...getPerformanceData(),
-          ...getUTMParams(),
-          ...getUserPreferences()
-        };
-
-        if (TRACKING_DEBUG) {
-          console.log('[ComexStat Tracking]', visitData);
+          return 'unknown';
         }
 
-        fetch(TRACKING_URL, {
-          method: 'POST',
-          mode: 'no-cors',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(visitData),
-          keepalive: true
-        }).catch(() => {});
-      }
+        function getUTMParams() {
+          var params = new URLSearchParams(window.location.search);
+          return {
+            utmSource: params.get('utm_source') || '',
+            utmMedium: params.get('utm_medium') || '',
+            utmCampaign: params.get('utm_campaign') || '',
+            utmTerm: params.get('utm_term') || '',
+            utmContent: params.get('utm_content') || ''
+          };
+        }
 
-      // Track initial visit
-      if (document.readyState === 'complete') {
-        trackVisit();
-      } else {
-        window.addEventListener('load', trackVisit);
-      }
+        window.addEventListener('load', function() {
+          setTimeout(function() {
+            var loadTime = 0;
+            if (window.performance && window.performance.timing) {
+              var timing = window.performance.timing;
+              loadTime = timing.loadEventEnd - timing.navigationStart;
+            }
 
-      // Track SPA navigation
-      window.addEventListener('hashchange', trackVisit);
-      window.addEventListener('popstate', function() {
-        setTimeout(trackVisit, 100);
-      });
+            var utmParams = getUTMParams();
 
-      const originalPushState = history.pushState;
-      history.pushState = function() {
-        originalPushState.apply(this, arguments);
-        setTimeout(trackVisit, 100);
-      };
+            var data = {
+              origin: window.location.origin,
+              timestamp: new Date().toISOString(),
+              timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+              timezoneOffset: new Date().getTimezoneOffset(),
+              page: window.location.href,
+              pathname: window.location.pathname,
+              referrer: document.referrer || '',
+              pageTitle: document.title,
+              language: navigator.language,
+              deviceType: getDeviceType(),
+              screenOrientation: screen.orientation ? screen.orientation.type : 'unknown',
+              connectionType: getConnectionType(),
+              loadTime: loadTime > 0 ? loadTime : '',
+              utmSource: utmParams.utmSource,
+              utmMedium: utmParams.utmMedium,
+              utmCampaign: utmParams.utmCampaign,
+              utmTerm: utmParams.utmTerm,
+              utmContent: utmParams.utmContent,
+              prefersColorScheme: window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+            };
 
-      const originalReplaceState = history.replaceState;
-      history.replaceState = function() {
-        originalReplaceState.apply(this, arguments);
-        setTimeout(trackVisit, 100);
-      };
-    })();
+            var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyk8VzLygqFmid0cSB5Qge8yRKRV-hJNvWlCSZBPrOCnyJyTd21d-6mNRjyJ7NIr_-36Q/exec';
+
+            fetch(SCRIPT_URL, {
+              method: 'POST',
+              mode: 'no-cors',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(data)
+            }).then(function() {
+              console.log('[Tracking] Data sent');
+            }).catch(function(err) {
+              console.log('[Tracking] Error:', err);
+            });
+          }, 100);
+        });
+      })();
     </script>
   </body>
 </html>

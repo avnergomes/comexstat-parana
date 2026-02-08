@@ -25,18 +25,24 @@ function CustomTooltip({ active, payload }) {
   );
 }
 
-function TreemapContent({ root, depth, x, y, width, height, name, value, index, fill }) {
+function TreemapContent({ root, depth, x, y, width, height, name, value, index, fill, selectedCategoria, onCategoriaClick }) {
   if (depth === 1 && width > 50 && height > 30) {
+    const opacity = !selectedCategoria ? 1 : (name === selectedCategoria ? 1 : 0.4);
+    const isSelected = name === selectedCategoria;
     return (
-      <g>
+      <g
+        style={{ cursor: onCategoriaClick ? 'pointer' : 'default' }}
+        onClick={() => onCategoriaClick?.(name)}
+      >
         <rect
           x={x}
           y={y}
           width={width}
           height={height}
           fill={fill || getRainbowColor(index)}
-          stroke="#fff"
-          strokeWidth={2}
+          stroke={isSelected ? '#1f2937' : '#fff'}
+          strokeWidth={isSelected ? 3 : 2}
+          opacity={opacity}
         />
         <text
           x={x + width / 2}
@@ -46,6 +52,7 @@ function TreemapContent({ root, depth, x, y, width, height, name, value, index, 
           fill="#fff"
           fontSize={width > 80 ? 11 : 9}
           fontWeight="500"
+          opacity={opacity}
         >
           {width > 80 ? name : name.substring(0, 8)}
         </text>
@@ -55,7 +62,7 @@ function TreemapContent({ root, depth, x, y, width, height, name, value, index, 
   return null;
 }
 
-export default function CategoryChart({ data, title, tipo = 'exportacoes' }) {
+export default function CategoryChart({ data, title, tipo = 'exportacoes', onCategoriaClick, selectedCategoria }) {
   const [viewType, setViewType] = useState('bar');
 
   if (!data) return null;
@@ -67,6 +74,12 @@ export default function CategoryChart({ data, title, tipo = 'exportacoes' }) {
     fill: item.cor || getRainbowColor(idx),
     index: idx,
   }));
+
+  // Função para obter opacidade baseada na seleção
+  const getOpacity = (categoria) => {
+    if (!selectedCategoria) return 1;
+    return categoria === selectedCategoria ? 1 : 0.4;
+  };
 
   if (chartData.length === 0) {
     return (
@@ -108,7 +121,12 @@ export default function CategoryChart({ data, title, tipo = 'exportacoes' }) {
       <div className="h-80">
         <ResponsiveContainer width="100%" height="100%">
           {viewType === 'bar' ? (
-            <BarChart data={chartData} layout="vertical" margin={{ top: 5, right: 30, left: 10, bottom: 5 }}>
+            <BarChart
+              data={chartData}
+              layout="vertical"
+              margin={{ top: 5, right: 30, left: 10, bottom: 5 }}
+              style={{ cursor: onCategoriaClick ? 'pointer' : 'default' }}
+            >
               <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
               <XAxis
                 type="number"
@@ -123,14 +141,24 @@ export default function CategoryChart({ data, title, tipo = 'exportacoes' }) {
                 interval={0}
               />
               <Tooltip content={<CustomTooltip />} />
-              <Bar dataKey="value" radius={[0, 4, 4, 0]}>
+              <Bar
+                dataKey="value"
+                radius={[0, 4, 4, 0]}
+                onClick={(data) => onCategoriaClick?.(data.name)}
+              >
                 {chartData.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={entry.fill} />
+                  <Cell
+                    key={`cell-${index}`}
+                    fill={entry.fill}
+                    opacity={getOpacity(entry.name)}
+                    stroke={entry.name === selectedCategoria ? '#1f2937' : 'none'}
+                    strokeWidth={entry.name === selectedCategoria ? 2 : 0}
+                  />
                 ))}
               </Bar>
             </BarChart>
           ) : viewType === 'pie' ? (
-            <PieChart>
+            <PieChart style={{ cursor: onCategoriaClick ? 'pointer' : 'default' }}>
               <Pie
                 data={chartData}
                 cx="50%"
@@ -141,9 +169,16 @@ export default function CategoryChart({ data, title, tipo = 'exportacoes' }) {
                 dataKey="value"
                 label={({ name, percent }) => `${name.substring(0, 10)} (${(percent * 100).toFixed(0)}%)`}
                 labelLine={false}
+                onClick={(data) => onCategoriaClick?.(data.name)}
               >
                 {chartData.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={entry.fill} />
+                  <Cell
+                    key={`cell-${index}`}
+                    fill={entry.fill}
+                    opacity={getOpacity(entry.name)}
+                    stroke={entry.name === selectedCategoria ? '#1f2937' : 'none'}
+                    strokeWidth={entry.name === selectedCategoria ? 2 : 0}
+                  />
                 ))}
               </Pie>
               <Tooltip content={<CustomTooltip />} />
@@ -154,13 +189,19 @@ export default function CategoryChart({ data, title, tipo = 'exportacoes' }) {
               dataKey="value"
               aspectRatio={4 / 3}
               stroke="#fff"
-              content={<TreemapContent />}
+              content={<TreemapContent selectedCategoria={selectedCategoria} onCategoriaClick={onCategoriaClick} />}
             >
               <Tooltip content={<CustomTooltip />} />
             </Treemap>
           )}
         </ResponsiveContainer>
       </div>
+
+      {onCategoriaClick && (
+        <p className="text-xs text-center text-dark-400 mt-2">
+          Clique para filtrar
+        </p>
+      )}
     </div>
   );
 }
