@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 
-const BASE_URL = './';
+const BASE_URL = import.meta.env.BASE_URL || '/comexstat-parana/';
 
 /**
  * Hook para carregar todos os dados do dashboard
