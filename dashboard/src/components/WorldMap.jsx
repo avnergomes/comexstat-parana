@@ -179,7 +179,6 @@ export default function WorldMap({ data, title, tipo = 'exportacoes' }) {
         geojsonLayerRef.current = geojsonLayer;
         setIsLoading(false);
       } catch (error) {
-        console.error('Error loading GeoJSON:', error);
         setIsLoading(false);
       }
     };

@@ -139,7 +139,7 @@ export default function PRMap({ data, title }) {
         legend.addTo(map);
 
       } catch (error) {
-        console.error('Error loading GeoJSON:', error);
+        // GeoJSON load error - map will show empty
       }
 
       setLoading(false);

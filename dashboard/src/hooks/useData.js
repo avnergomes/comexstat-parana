@@ -53,7 +53,6 @@ export function useData() {
         });
 
       } catch (err) {
-        console.error('Erro ao carregar dados:', err);
         setError(err.message);
       } finally {
         setLoading(false);
@@ -102,9 +101,6 @@ export function useFilteredData(data, filters) {
         cadeiasEfetivas = cadeiasDoTipo;
       }
     }
-
-    // Debug log
-    console.log('[useFilteredData] tipoCategoria:', tipoCategoria, 'cadeiasEfetivas:', cadeiasEfetivas?.length || 'null');
 
     // Filtrar série temporal por ano e cadeia
     let timeseries = data.timeseries || [];
@@ -369,9 +365,6 @@ export function useAggregations(data, filters = {}) {
       }
     }
 
-    // Debug log
-    console.log('[useAggregations] tipoCategoria:', tipoCategoria, 'cadeiasEfetivas:', cadeiasEfetivas?.length || 'null');
-
     // Calcular timeseries filtrado
     let timeseries = data.timeseries || [];
 
@@ -380,8 +373,6 @@ export function useAggregations(data, filters = {}) {
       const filteredByCadeia = data.timeseriesByCadeia.filter(item =>
         cadeiasEfetivas.includes(item.cadeia)
       );
-
-      console.log('[useAggregations] filteredByCadeia:', filteredByCadeia.length, 'records');
 
       const byYear = {};
       filteredByCadeia.forEach(item => {
