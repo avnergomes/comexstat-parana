@@ -62,3 +62,7 @@ temp/
 # Cache
 .cache/
 .parcel-cache/
+
+# Google Apps Script (secrets)
+*.gs
+google-apps-script*.js
