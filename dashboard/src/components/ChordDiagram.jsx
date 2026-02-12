@@ -60,7 +60,7 @@ export default function ChordDiagram({
     // Create matrix
     const matrix = Array(n).fill(null).map(() => Array(n).fill(0))
 
-    // Fill matrix with link values
+    // Fill matrix with link values - bidirectional for proper chord visualization
     data.links.forEach(l => {
       const sourceId = l.source.replace('mun_', '')
       const targetId = l.target.replace('pais_', '')
@@ -71,9 +71,10 @@ export default function ChordDiagram({
       if (sourceIdx !== -1 && targetIdx !== -1) {
         const matrixSourceIdx = sourceIdx
         const matrixTargetIdx = topMunicipalities.length + targetIdx
-        matrix[matrixSourceIdx][matrixTargetIdx] = l.value
-        // For chord diagram, we can make it bidirectional or not
-        // Here we keep it unidirectional (exports only)
+        // Add values in both directions for proper chord diagram display
+        // This ensures both municipalities and countries have visible arcs
+        matrix[matrixSourceIdx][matrixTargetIdx] += l.value
+        matrix[matrixTargetIdx][matrixSourceIdx] += l.value
       }
     })
 
