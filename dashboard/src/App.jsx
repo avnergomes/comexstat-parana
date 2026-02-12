@@ -12,6 +12,7 @@ import CategoryChart from './components/CategoryChart';
 import CountryChart from './components/CountryChart';
 import ProductTable from './components/ProductTable';
 import SankeyChart from './components/SankeyChart';
+import ChordDiagram from './components/ChordDiagram';
 import MunicipalityChart from './components/MunicipalityChart';
 import PRMap from './components/PRMap';
 import WorldMap from './components/WorldMap';
@@ -209,8 +210,19 @@ export default function App() {
                 <SankeyChart
                   data={filteredData?.sankey || data?.sankey}
                   filteredLinks={filteredData?.filteredSankeyLinks}
-                  title="Fluxo de Exportações: Município → País de Destino"
+                  title="Fluxo de Exportacoes: Municipio > Pais de Destino"
                   filterNote={filters.cadeias?.length > 0 ? `Filtrado por: ${filters.cadeias.join(', ')}` : null}
+                />
+              )}
+
+              {/* Chord Diagram - Trade relationships */}
+              {filters.tipo !== 'importacoes' && (
+                <ChordDiagram
+                  data={filteredData?.sankey || data?.sankey}
+                  title="Relacoes Comerciais: Municipios x Paises (Visao Circular)"
+                  width={650}
+                  height={650}
+                  topN={10}
                 />
               )}
             </div>
