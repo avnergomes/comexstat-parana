@@ -104,6 +104,43 @@ export default function App() {
   // Apply filters
   const filteredData = useFilteredData(data, filters);
 
+  // Aplica filtros interativos aos dados filtrados
+  const interactiveFilteredData = useMemo(() => {
+    if (!filteredData) return filteredData;
+
+    const result = { ...filteredData };
+
+    // Filtrar byCategoria
+    if (interactiveFilters.categoria && result.byCategoria) {
+      result.byCategoria = result.byCategoria.filter(item =>
+        item.cadeia === interactiveFilters.categoria
+      );
+    }
+
+    // Filtrar byPais
+    if (interactiveFilters.pais && result.byPais) {
+      result.byPais = result.byPais.filter(item =>
+        item.pais === interactiveFilters.pais
+      );
+    }
+
+    // Filtrar timeseries por ano
+    if (interactiveFilters.ano && result.timeseries) {
+      result.timeseries = result.timeseries.filter(item =>
+        item.ano === interactiveFilters.ano
+      );
+    }
+
+    // Filtrar municipios
+    if (interactiveFilters.municipio && result.municipios) {
+      result.municipios = result.municipios.filter(item =>
+        item.municipio === interactiveFilters.municipio
+      );
+    }
+
+    return result;
+  }, [filteredData, interactiveFilters]);
+
   // Calculate aggregations (uses main data + filters, not filteredData)
   const aggregations = useAggregations(data, filters);
 
@@ -170,14 +207,14 @@ export default function App() {
             <div className="space-y-6">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <TimeSeriesChart
-                  data={filteredData?.timeseries}
+                  data={interactiveFilteredData?.timeseries}
                   title="Evolução das Exportações e Importações"
                   tipo={filters.tipo}
                   onAnoClick={handleAnoClick}
                   selectedAno={interactiveFilters.ano}
                 />
                 <BalanceChart
-                  data={filteredData?.timeseries}
+                  data={interactiveFilteredData?.timeseries}
                   title="Balança Comercial Agrícola"
                 />
               </div>
@@ -185,19 +222,19 @@ export default function App() {
               {/* Comparativo YoY */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <YoYComparisonChart
-                  data={filteredData?.timeseries}
+                  data={interactiveFilteredData?.timeseries}
                   title="Comparativo Anual - Exportações"
                   tipo="exportacoes"
                 />
                 <YoYComparisonChart
-                  data={filteredData?.timeseries}
+                  data={interactiveFilteredData?.timeseries}
                   title="Comparativo Anual - Importações"
                   tipo="importacoes"
                 />
               </div>
 
               {/* Heatmap Sazonal */}
-              {filteredData?.detailed && (
+              {interactiveFilteredData?.detailed && (
                 <HeatmapChart
                   data={filteredData.detailed}
                   title="Padrão Sazonal por Cadeia - Exportações"
@@ -208,8 +245,8 @@ export default function App() {
               {/* Sankey Chart - Municipality to Country flow */}
               {filters.tipo !== 'importacoes' && (
                 <SankeyChart
-                  data={filteredData?.sankey || data?.sankey}
-                  filteredLinks={filteredData?.filteredSankeyLinks}
+                  data={interactiveFilteredData?.sankey || data?.sankey}
+                  filteredLinks={interactiveFilteredData?.filteredSankeyLinks}
                   title="Fluxo de Exportacoes: Municipio > Pais de Destino"
                   filterNote={filters.cadeias?.length > 0 ? `Filtrado por: ${filters.cadeias.join(', ')}` : null}
                 />
@@ -218,7 +255,7 @@ export default function App() {
               {/* Chord Diagram - Trade relationships */}
               {filters.tipo !== 'importacoes' && (
                 <ChordDiagram
-                  data={filteredData?.sankey || data?.sankey}
+                  data={interactiveFilteredData?.sankey || data?.sankey}
                   title="Relacoes Comerciais: Municipios x Paises (Visao Circular)"
                   width={650}
                   height={650}
@@ -234,14 +271,14 @@ export default function App() {
               {filters.tipo === 'todos' ? (
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   <CategoryChart
-                    data={filteredData?.byCategoria}
+                    data={interactiveFilteredData?.byCategoria}
                     title="Exportações por Cadeia"
                     tipo="exportacoes"
                     onCategoriaClick={handleCategoriaClick}
                     selectedCategoria={interactiveFilters.categoria}
                   />
                   <CategoryChart
-                    data={filteredData?.byCategoria}
+                    data={interactiveFilteredData?.byCategoria}
                     title="Importações por Cadeia"
                     tipo="importacoes"
                     onCategoriaClick={handleCategoriaClick}
@@ -250,7 +287,7 @@ export default function App() {
                 </div>
               ) : (
                 <CategoryChart
-                  data={filteredData?.byCategoria}
+                  data={interactiveFilteredData?.byCategoria}
                   title={filters.tipo === 'exportacoes' ? 'Exportações por Cadeia' : 'Importações por Cadeia'}
                   tipo={filters.tipo}
                   onCategoriaClick={handleCategoriaClick}
@@ -265,7 +302,7 @@ export default function App() {
             <div className="space-y-6">
               {/* World Map */}
               <WorldMap
-                data={filteredData?.byPais}
+                data={interactiveFilteredData?.byPais}
                 title={filters.tipo === 'importacoes' ? 'Mapa de Origens das Importações' : 'Mapa de Destinos das Exportações'}
                 tipo={filters.tipo === 'importacoes' ? 'importacoes' : 'exportacoes'}
                 onPaisClick={handlePaisClick}
@@ -275,14 +312,14 @@ export default function App() {
               {filters.tipo === 'todos' ? (
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   <CountryChart
-                    data={filteredData?.byPais}
+                    data={interactiveFilteredData?.byPais}
                     title="Principais Destinos (Exportações)"
                     tipo="exportacoes"
                     onPaisClick={handlePaisClick}
                     selectedPais={interactiveFilters.pais}
                   />
                   <CountryChart
-                    data={filteredData?.byPais}
+                    data={interactiveFilteredData?.byPais}
                     title="Principais Origens (Importações)"
                     tipo="importacoes"
                     onPaisClick={handlePaisClick}
@@ -291,7 +328,7 @@ export default function App() {
                 </div>
               ) : (
                 <CountryChart
-                  data={filteredData?.byPais}
+                  data={interactiveFilteredData?.byPais}
                   title={filters.tipo === 'exportacoes' ? 'Principais Destinos (Exportações)' : 'Principais Origens (Importações)'}
                   tipo={filters.tipo}
                   onPaisClick={handlePaisClick}
@@ -306,7 +343,7 @@ export default function App() {
             <div className="space-y-6">
               {/* PR Map */}
               <PRMap
-                data={filteredData?.municipios || data?.municipios}
+                data={interactiveFilteredData?.municipios || data?.municipios}
                 title="Mapa dos Municípios Exportadores do Paraná"
                 filterNote={filters.cadeias?.length > 0 ? `Filtrado por: ${filters.cadeias.join(', ')}` : null}
                 onMunicipioClick={handleMunicipioClick}
@@ -314,7 +351,7 @@ export default function App() {
               />
 
               <MunicipalityChart
-                data={filteredData?.municipios || data?.municipios}
+                data={interactiveFilteredData?.municipios || data?.municipios}
                 title="Ranking dos Municípios Exportadores"
                 limit={20}
                 onMunicipioClick={handleMunicipioClick}
@@ -333,7 +370,7 @@ export default function App() {
                       Top Produtos Exportados
                     </h3>
                     <ProductTable
-                      data={{ topProdutos: filteredData?.topProdutos }}
+                      data={{ topProdutos: interactiveFilteredData?.topProdutos }}
                       tipo="exportacoes"
                       limit={30}
                     />
@@ -343,7 +380,7 @@ export default function App() {
                       Top Produtos Importados
                     </h3>
                     <ProductTable
-                      data={{ topProdutos: filteredData?.topProdutos }}
+                      data={{ topProdutos: interactiveFilteredData?.topProdutos }}
                       tipo="importacoes"
                       limit={30}
                     />
@@ -355,7 +392,7 @@ export default function App() {
                     {filters.tipo === 'exportacoes' ? 'Top Produtos Exportados' : 'Top Produtos Importados'}
                   </h3>
                   <ProductTable
-                    data={{ topProdutos: filteredData?.topProdutos }}
+                    data={{ topProdutos: interactiveFilteredData?.topProdutos }}
                     tipo={filters.tipo}
                     limit={50}
                   />
