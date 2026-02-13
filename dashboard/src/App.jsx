@@ -12,7 +12,7 @@ import CategoryChart from './components/CategoryChart';
 import CountryChart from './components/CountryChart';
 import ProductTable from './components/ProductTable';
 import SankeyChart from './components/SankeyChart';
-import ChordDiagram from './components/ChordDiagram';
+import ConnectionMap from './components/ConnectionMap';
 import MunicipalityChart from './components/MunicipalityChart';
 import PRMap from './components/PRMap';
 import WorldMap from './components/WorldMap';
@@ -252,14 +252,11 @@ export default function App() {
                 />
               )}
 
-              {/* Chord Diagram - Trade relationships */}
+              {/* Connection Map - Geographic trade flows */}
               {filters.tipo !== 'importacoes' && (
-                <ChordDiagram
+                <ConnectionMap
                   data={interactiveFilteredData?.sankey || data?.sankey}
-                  title="Relacoes Comerciais: Municipios x Paises (Visao Circular)"
-                  width={650}
-                  height={650}
-                  topN={10}
+                  title="Mapa de Conexoes Comerciais - Exportacoes do Parana"
                 />
               )}
             </div>
