@@ -202,12 +202,18 @@ const COUNTRY_COORDS = {
 // Centro do Parana (origem dos arcos)
 const PARANA_CENTER = [-51.5, -24.5]
 
-// Cores
-const ARC_COLOR = '#22c55e'
-const ARC_HOVER_COLOR = '#f59e0b'
-const COUNTRY_DEST_COLOR = '#dcfce7'
-const COUNTRY_DEFAULT_COLOR = '#f1f5f9'
-const COUNTRY_HOVER_COLOR = '#fef3c7'
+// Cores melhoradas para melhor contraste
+const OCEAN_COLOR = '#e0f2fe' // Azul claro para oceano
+const COUNTRY_DEFAULT_COLOR = '#f8fafc' // Cinza muito claro
+const COUNTRY_BORDER_COLOR = '#94a3b8' // Borda mais visivel
+const COUNTRY_HOVER_COLOR = '#fef3c7' // Amarelo hover
+
+// Gradiente de cores para destinos (do mais claro ao mais escuro baseado no valor)
+const DEST_COLORS = ['#bbf7d0', '#86efac', '#4ade80', '#22c55e', '#16a34a', '#15803d']
+
+// Cores dos arcos
+const ARC_COLOR = '#059669' // Verde esmeralda
+const ARC_HOVER_COLOR = '#f59e0b' // Amarelo/laranja
 
 export default function ConnectionMap({
   data,
@@ -242,12 +248,16 @@ export default function ConnectionMap({
     return totals
   }, [data])
 
-  // Top paises ordenados por valor
-  const topCountries = useMemo(() => {
+  // Todos os paises ordenados por valor (sem limite)
+  const allCountries = useMemo(() => {
     return Object.entries(exportsByCountry)
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 25)
   }, [exportsByCountry])
+
+  // Top 10 para lista lateral
+  const topCountries = useMemo(() => {
+    return allCountries.slice(0, 10)
+  }, [allCountries])
 
   // Valores para escala
   const { minValue, maxValue } = useMemo(() => {
@@ -283,9 +293,17 @@ export default function ConnectionMap({
   const opacityScale = useMemo(() => {
     return d3.scaleLog()
       .domain([minValue, maxValue])
-      .range([0.3, 0.85])
+      .range([0.4, 0.9])
       .clamp(true)
   }, [minValue, maxValue])
+
+  // Funcao para obter cor do pais destino baseado no valor
+  const getDestinationColor = (value) => {
+    if (!value || value === 0) return COUNTRY_DEFAULT_COLOR
+    const ratio = Math.log(value) / Math.log(maxValue)
+    const index = Math.min(Math.floor(ratio * DEST_COLORS.length), DEST_COLORS.length - 1)
+    return DEST_COLORS[Math.max(0, index)]
+  }
 
   // Formatar valor
   const formatValue = (v) => {
@@ -334,35 +352,55 @@ export default function ConnectionMap({
             className="mx-auto"
             style={{ maxWidth: '100%', height: 'auto' }}
           >
-            {/* Fundo */}
-            <rect width={width} height={height} fill="#f8fafc" />
+            {/* Fundo oceano */}
+            <rect width={width} height={height} fill={OCEAN_COLOR} />
 
             {/* Paises */}
             <g>
               {geoData.features.map((feature, i) => {
                 const countryName = feature.properties?.ADMIN || feature.properties?.name || ''
-                const isDestination = Object.keys(exportsByCountry).some(
-                  c => countryName.toLowerCase().includes(c.toLowerCase()) ||
-                       c.toLowerCase().includes(countryName.toLowerCase())
-                )
-                const isHovered = hoveredCountry === countryName
+
+                // Verificar se é destino de exportacao (match exato ou parcial)
+                const matchedCountry = Object.keys(exportsByCountry).find(c => {
+                  const cLower = c.toLowerCase()
+                  const nameLower = countryName.toLowerCase()
+                  return cLower === nameLower ||
+                         nameLower.includes(cLower) ||
+                         cLower.includes(nameLower) ||
+                         // Casos especiais
+                         (c === 'Países Baixos (Holanda)' && nameLower.includes('netherlands')) ||
+                         (c === 'Reino Unido' && nameLower.includes('united kingdom')) ||
+                         (c === 'Estados Unidos' && nameLower.includes('united states')) ||
+                         (c === 'Coreia do Sul' && nameLower.includes('south korea')) ||
+                         (c === 'Emirados Árabes Unidos' && nameLower.includes('united arab'))
+                })
+
+                const exportValue = matchedCountry ? exportsByCountry[matchedCountry] : 0
+                const isHovered = hoveredCountry === matchedCountry
+
+                let fillColor = COUNTRY_DEFAULT_COLOR
+                if (isHovered) {
+                  fillColor = COUNTRY_HOVER_COLOR
+                } else if (exportValue > 0) {
+                  fillColor = getDestinationColor(exportValue)
+                }
 
                 return (
                   <path
                     key={`country-${i}`}
                     d={pathGenerator(feature)}
-                    fill={isHovered ? COUNTRY_HOVER_COLOR : (isDestination ? COUNTRY_DEST_COLOR : COUNTRY_DEFAULT_COLOR)}
-                    stroke="#cbd5e1"
-                    strokeWidth={0.5}
+                    fill={fillColor}
+                    stroke={COUNTRY_BORDER_COLOR}
+                    strokeWidth={exportValue > 0 ? 0.8 : 0.4}
                     className="transition-colors duration-150"
                   />
                 )
               })}
             </g>
 
-            {/* Arcos de conexao */}
+            {/* Arcos de conexao - todos os paises */}
             <g>
-              {topCountries.map(([country, value]) => {
+              {allCountries.map(([country, value]) => {
                 const coords = COUNTRY_COORDS[country]
                 if (!coords) return null
 
@@ -379,7 +417,7 @@ export default function ConnectionMap({
                     d={arcPath}
                     fill="none"
                     stroke={isHovered ? ARC_HOVER_COLOR : ARC_COLOR}
-                    strokeWidth={isHovered ? strokeWidth + 1 : strokeWidth}
+                    strokeWidth={isHovered ? strokeWidth + 1.5 : strokeWidth}
                     strokeLinecap="round"
                     opacity={opacity}
                     className="cursor-pointer transition-all duration-150"
@@ -392,9 +430,9 @@ export default function ConnectionMap({
               })}
             </g>
 
-            {/* Pontos de destino */}
+            {/* Pontos de destino - todos os paises */}
             <g>
-              {topCountries.map(([country, value]) => {
+              {allCountries.map(([country, value]) => {
                 const coords = COUNTRY_COORDS[country]
                 if (!coords) return null
 
@@ -402,7 +440,7 @@ export default function ConnectionMap({
                 if (!point) return null
 
                 const isHovered = hoveredCountry === country
-                const radius = Math.max(3, Math.min(8, strokeScale(value)))
+                const radius = Math.max(2, Math.min(10, strokeScale(value) + 1))
 
                 return (
                   <circle
@@ -458,11 +496,23 @@ export default function ConnectionMap({
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 rounded-full" style={{ backgroundColor: ARC_COLOR }} />
-                <span className="text-dark-600">Destino</span>
+                <span className="text-dark-600">Destino ({allCountries.length})</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-8 h-1 rounded" style={{ backgroundColor: ARC_COLOR }} />
                 <span className="text-dark-600">Fluxo de exportacao</span>
+              </div>
+              <div className="mt-2 pt-2 border-t border-dark-200">
+                <span className="text-dark-500 text-[10px]">Intensidade por valor:</span>
+                <div className="flex items-center gap-0.5 mt-1">
+                  {DEST_COLORS.map((color, i) => (
+                    <div key={i} className="w-4 h-3 rounded-sm" style={{ backgroundColor: color }} />
+                  ))}
+                </div>
+                <div className="flex justify-between text-[9px] text-dark-400 mt-0.5">
+                  <span>Menor</span>
+                  <span>Maior</span>
+                </div>
               </div>
             </div>
           </div>
@@ -508,8 +558,8 @@ export default function ConnectionMap({
 
       {/* Rodape */}
       <div className="mt-4 pt-4 border-t text-xs text-dark-500">
-        <p>Mapa mostra os {topCountries.length} principais destinos das exportacoes do Parana.</p>
-        <p className="mt-1">Arcos representam great circles (rotas geodesicas). Espessura proporcional ao valor.</p>
+        <p>Mapa mostra todos os {allCountries.length} destinos das exportacoes do Parana.</p>
+        <p className="mt-1">Arcos representam great circles (rotas geodesicas). Espessura e cor proporcionais ao valor.</p>
       </div>
     </div>
   )
