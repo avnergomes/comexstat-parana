@@ -359,21 +359,62 @@ export default function ConnectionMap({
             <g>
               {geoData.features.map((feature, i) => {
                 const countryName = feature.properties?.ADMIN || feature.properties?.name || ''
+                const nameLower = countryName.toLowerCase().trim()
 
-                // Verificar se é destino de exportacao (match exato ou parcial)
-                const matchedCountry = Object.keys(exportsByCountry).find(c => {
-                  const cLower = c.toLowerCase()
-                  const nameLower = countryName.toLowerCase()
-                  return cLower === nameLower ||
-                         nameLower.includes(cLower) ||
-                         cLower.includes(nameLower) ||
-                         // Casos especiais
-                         (c === 'Países Baixos (Holanda)' && nameLower.includes('netherlands')) ||
-                         (c === 'Reino Unido' && nameLower.includes('united kingdom')) ||
-                         (c === 'Estados Unidos' && nameLower.includes('united states')) ||
-                         (c === 'Coreia do Sul' && nameLower.includes('south korea')) ||
-                         (c === 'Emirados Árabes Unidos' && nameLower.includes('united arab'))
-                })
+                // Mapeamento explicito de nomes GeoJSON para nomes do dataset
+                const NAME_MAP = {
+                  'china': 'China',
+                  'germany': 'Alemanha',
+                  'japan': 'Japão',
+                  'south korea': 'Coreia do Sul',
+                  'republic of korea': 'Coreia do Sul',
+                  'india': 'Índia',
+                  'iran': 'Irã',
+                  'islamic republic of iran': 'Irã',
+                  'netherlands': 'Países Baixos (Holanda)',
+                  'bangladesh': 'Bangladesh',
+                  'vietnam': 'Vietnã',
+                  'viet nam': 'Vietnã',
+                  'saudi arabia': 'Arábia Saudita',
+                  'united arab emirates': 'Emirados Árabes Unidos',
+                  'algeria': 'Argélia',
+                  'united states of america': 'Estados Unidos',
+                  'united states': 'Estados Unidos',
+                  'united kingdom': 'Reino Unido',
+                  'argentina': 'Argentina',
+                  'spain': 'Espanha',
+                  'italy': 'Itália',
+                  'france': 'França',
+                  'belgium': 'Bélgica',
+                  'russia': 'Rússia',
+                  'russian federation': 'Rússia',
+                  'thailand': 'Tailândia',
+                  'indonesia': 'Indonésia',
+                  'malaysia': 'Malásia',
+                  'philippines': 'Filipinas',
+                  'singapore': 'Singapura',
+                  'australia': 'Austrália',
+                  'mexico': 'México',
+                  'turkey': 'Turquia',
+                  'egypt': 'Egito',
+                  'south africa': 'África do Sul',
+                  'nigeria': 'Nigéria',
+                  'pakistan': 'Paquistão',
+                  'chile': 'Chile',
+                  'colombia': 'Colômbia',
+                  'peru': 'Peru',
+                  'canada': 'Canadá',
+                  'poland': 'Polônia',
+                  'morocco': 'Marrocos',
+                  'taiwan': 'Taiwan (Formosa)',
+                  'hong kong': 'Hong Kong',
+                }
+
+                // Buscar nome mapeado ou tentar match direto
+                const mappedName = NAME_MAP[nameLower]
+                const matchedCountry = mappedName && exportsByCountry[mappedName]
+                  ? mappedName
+                  : Object.keys(exportsByCountry).find(c => c.toLowerCase() === nameLower)
 
                 const exportValue = matchedCountry ? exportsByCountry[matchedCountry] : 0
                 const isHovered = hoveredCountry === matchedCountry
@@ -391,7 +432,7 @@ export default function ConnectionMap({
                     d={pathGenerator(feature)}
                     fill={fillColor}
                     stroke={COUNTRY_BORDER_COLOR}
-                    strokeWidth={exportValue > 0 ? 0.8 : 0.4}
+                    strokeWidth={0.5}
                     className="transition-colors duration-150"
                   />
                 )
