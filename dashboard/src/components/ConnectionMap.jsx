@@ -235,16 +235,30 @@ export default function ConnectionMap({
   }, [])
 
   // Processar dados de exportacao por pais
+  // Aceita formato byPais {pais, valor} ou sankey {links: [{target, value}]}
   const exportsByCountry = useMemo(() => {
-    if (!data?.links) return {}
+    if (!data) return {}
 
     const totals = {}
-    data.links.forEach(link => {
-      if (link.target?.startsWith('pais_')) {
-        const country = link.target.replace('pais_', '')
-        totals[country] = (totals[country] || 0) + link.value
-      }
-    })
+
+    // Formato byPais (array de {pais, valor})
+    if (Array.isArray(data)) {
+      data.forEach(item => {
+        if (item.pais && item.valor > 0) {
+          totals[item.pais] = item.valor
+        }
+      })
+    }
+    // Formato sankey (objeto com links)
+    else if (data?.links) {
+      data.links.forEach(link => {
+        if (link.target?.startsWith('pais_')) {
+          const country = link.target.replace('pais_', '')
+          totals[country] = (totals[country] || 0) + link.value
+        }
+      })
+    }
+
     return totals
   }, [data])
 

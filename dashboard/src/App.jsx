@@ -255,7 +255,7 @@ export default function App() {
               {/* Connection Map - Geographic trade flows */}
               {filters.tipo !== 'importacoes' && (
                 <ConnectionMap
-                  data={interactiveFilteredData?.sankey || data?.sankey}
+                  data={interactiveFilteredData?.byPais?.exportacoes || filteredData?.byPais?.exportacoes}
                   title="Mapa de Conexoes Comerciais - Exportacoes do Parana"
                 />
               )}
