@@ -225,10 +225,10 @@ export default function ConnectionMap({
   const [geoData, setGeoData] = useState(null)
   const [hoveredCountry, setHoveredCountry] = useState(null)
 
-  // Carregar GeoJSON
+  // Carregar GeoJSON (world-countries.geojson com poligonos corretos)
   useEffect(() => {
     const BASE_URL = import.meta.env.BASE_URL || '/'
-    fetch(`${BASE_URL}data/countries_merged.geojson`)
+    fetch(`${BASE_URL}data/world-countries.geojson`)
       .then(res => res.json())
       .then(data => setGeoData(data))
       .catch(err => console.error('Erro ao carregar GeoJSON:', err))
@@ -358,7 +358,7 @@ export default function ConnectionMap({
             {/* Paises */}
             <g>
               {geoData.features.map((feature, i) => {
-                const countryName = feature.properties?.ADMIN || feature.properties?.name || ''
+                const countryName = feature.properties?.name || feature.properties?.ADMIN || ''
                 const nameLower = countryName.toLowerCase().trim()
 
                 // Mapeamento explicito de nomes GeoJSON para nomes do dataset
