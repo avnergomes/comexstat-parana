@@ -1,8 +1,38 @@
 {
   "nodes": [
     {
+      "id": "mun_Apucarana",
+      "name": "Apucarana",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Araucária",
+      "name": "Araucária",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Balsa Nova",
+      "name": "Balsa Nova",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Barracão",
+      "name": "Barracão",
+      "type": "municipio"
+    },
+    {
       "id": "mun_Cafelândia",
       "name": "Cafelândia",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Cambé",
+      "name": "Cambé",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Campo Magro",
+      "name": "Campo Magro",
       "type": "municipio"
     },
     {
@@ -16,13 +46,68 @@
       "type": "municipio"
     },
     {
+      "id": "mun_Castro",
+      "name": "Castro",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Cianorte",
+      "name": "Cianorte",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Colombo",
+      "name": "Colombo",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Cornélio Procópio",
+      "name": "Cornélio Procópio",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Cruzeiro do Oeste",
+      "name": "Cruzeiro do Oeste",
+      "type": "municipio"
+    },
+    {
       "id": "mun_Curitiba",
       "name": "Curitiba",
       "type": "municipio"
     },
     {
+      "id": "mun_Foz do Iguaçu",
+      "name": "Foz do Iguaçu",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Irati",
+      "name": "Irati",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Jacarezinho",
+      "name": "Jacarezinho",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Japurá",
+      "name": "Japurá",
+      "type": "municipio"
+    },
+    {
       "id": "mun_Londrina",
       "name": "Londrina",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Mangueirinha",
+      "name": "Mangueirinha",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Marechal Cândido Rondon",
+      "name": "Marechal Cândido Rondon",
       "type": "municipio"
     },
     {
@@ -36,6 +121,26 @@
       "type": "municipio"
     },
     {
+      "id": "mun_Matelândia",
+      "name": "Matelândia",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Medianeira",
+      "name": "Medianeira",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Nova Aurora",
+      "name": "Nova Aurora",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Palmas",
+      "name": "Palmas",
+      "type": "municipio"
+    },
+    {
       "id": "mun_Palotina",
       "name": "Palotina",
       "type": "municipio"
@@ -46,8 +151,38 @@
       "type": "municipio"
     },
     {
+      "id": "mun_Paranavaí",
+      "name": "Paranavaí",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Pato Branco",
+      "name": "Pato Branco",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Piraí do Sul",
+      "name": "Piraí do Sul",
+      "type": "municipio"
+    },
+    {
       "id": "mun_Ponta Grossa",
       "name": "Ponta Grossa",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Quitandinha",
+      "name": "Quitandinha",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Rio Azul",
+      "name": "Rio Azul",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Rio Negro",
+      "name": "Rio Negro",
       "type": "municipio"
     },
     {
@@ -61,13 +196,93 @@
       "type": "municipio"
     },
     {
+      "id": "mun_São José dos Pinhais",
+      "name": "São José dos Pinhais",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_São João do Triunfo",
+      "name": "São João do Triunfo",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_São Mateus do Sul",
+      "name": "São Mateus do Sul",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_São Pedro do Ivaí",
+      "name": "São Pedro do Ivaí",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Toledo",
+      "name": "Toledo",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Tupãssi",
+      "name": "Tupãssi",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_União da Vitória",
+      "name": "União da Vitória",
+      "type": "municipio"
+    },
+    {
+      "id": "mun_Uraí",
+      "name": "Uraí",
+      "type": "municipio"
+    },
+    {
       "id": "pais_Alemanha",
       "name": "Alemanha",
       "type": "pais"
     },
     {
+      "id": "pais_Argentina",
+      "name": "Argentina",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Argélia",
+      "name": "Argélia",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Arábia Saudita",
+      "name": "Arábia Saudita",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Austrália",
+      "name": "Austrália",
+      "type": "pais"
+    },
+    {
       "id": "pais_Bangladesh",
       "name": "Bangladesh",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Bolívia",
+      "name": "Bolívia",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Bélgica",
+      "name": "Bélgica",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Canadá",
+      "name": "Canadá",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Chile",
+      "name": "Chile",
       "type": "pais"
     },
     {
@@ -86,28 +301,28 @@
       "type": "pais"
     },
     {
-      "id": "pais_Japão",
-      "name": "Japão",
+      "id": "pais_Estados Unidos",
+      "name": "Estados Unidos",
       "type": "pais"
     },
     {
-      "id": "pais_Países Baixos (Holanda)",
-      "name": "Países Baixos (Holanda)",
+      "id": "pais_França",
+      "name": "França",
       "type": "pais"
     },
     {
-      "id": "pais_Vietnã",
-      "name": "Vietnã",
+      "id": "pais_Hong Kong",
+      "name": "Hong Kong",
       "type": "pais"
     },
     {
-      "id": "pais_Índia",
-      "name": "Índia",
+      "id": "pais_Indonésia",
+      "name": "Indonésia",
       "type": "pais"
     },
     {
-      "id": "pais_Arábia Saudita",
-      "name": "Arábia Saudita",
+      "id": "pais_Irlanda",
+      "name": "Irlanda",
       "type": "pais"
     },
     {
@@ -116,8 +331,103 @@
       "type": "pais"
     },
     {
-      "id": "pais_Argélia",
-      "name": "Argélia",
+      "id": "pais_Israel",
+      "name": "Israel",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Itália",
+      "name": "Itália",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Japão",
+      "name": "Japão",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Malásia",
+      "name": "Malásia",
+      "type": "pais"
+    },
+    {
+      "id": "pais_México",
+      "name": "México",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Paraguai",
+      "name": "Paraguai",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Países Baixos (Holanda)",
+      "name": "Países Baixos (Holanda)",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Polônia",
+      "name": "Polônia",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Portugal",
+      "name": "Portugal",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Reino Unido",
+      "name": "Reino Unido",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Rússia",
+      "name": "Rússia",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Singapura",
+      "name": "Singapura",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Taiwan (Formosa)",
+      "name": "Taiwan (Formosa)",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Tunísia",
+      "name": "Tunísia",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Turquia",
+      "name": "Turquia",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Uruguai",
+      "name": "Uruguai",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Vietnã",
+      "name": "Vietnã",
+      "type": "pais"
+    },
+    {
+      "id": "pais_África do Sul",
+      "name": "África do Sul",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Áustria",
+      "name": "Áustria",
+      "type": "pais"
+    },
+    {
+      "id": "pais_Índia",
+      "name": "Índia",
       "type": "pais"
     }
   ],
@@ -125,7 +435,7 @@
     {
       "source": "mun_Paranaguá",
       "target": "pais_China",
-      "value": 17010185438.0
+      "value": 17010185233.0
     },
     {
       "source": "mun_Maringá",
@@ -140,7 +450,7 @@
     {
       "source": "mun_Londrina",
       "target": "pais_China",
-      "value": 1584767410.0
+      "value": 1584383241.0
     },
     {
       "source": "mun_Paranaguá",
@@ -165,12 +475,12 @@
     {
       "source": "mun_Paranaguá",
       "target": "pais_Japão",
-      "value": 1142581495.0
+      "value": 1142581477.0
     },
     {
       "source": "mun_Paranaguá",
       "target": "pais_Arábia Saudita",
-      "value": 1060599262.0
+      "value": 1060590588.0
     },
     {
       "source": "mun_Ponta Grossa",
@@ -180,7 +490,7 @@
     {
       "source": "mun_Paranaguá",
       "target": "pais_Índia",
-      "value": 980590593.0
+      "value": 980590502.0
     },
     {
       "source": "mun_Maringá",
@@ -210,7 +520,7 @@
     {
       "source": "mun_Paranaguá",
       "target": "pais_Países Baixos (Holanda)",
-      "value": 690232581.0
+      "value": 690232497.0
     },
     {
       "source": "mun_Ponta Grossa",
@@ -220,7 +530,7 @@
     {
       "source": "mun_Paranaguá",
       "target": "pais_Bangladesh",
-      "value": 647138106.0
+      "value": 647137855.0
     },
     {
       "source": "mun_Maringá",
@@ -235,7 +545,7 @@
     {
       "source": "mun_Paranaguá",
       "target": "pais_Vietnã",
-      "value": 469113169.0
+      "value": 469113161.0
     },
     {
       "source": "mun_Maringá",
@@ -421,890 +731,138 @@
       "source": "mun_Cascavel",
       "target": "pais_Japão",
       "value": 69337693.0
+    },
+    {
+      "source": "mun_Curitiba",
+      "target": "pais_Japão",
+      "value": 67868875.0
+    },
+    {
+      "source": "mun_Curitiba",
+      "target": "pais_Coreia do Sul",
+      "value": 67664874.0
+    },
+    {
+      "source": "mun_Cascavel",
+      "target": "pais_Emirados Árabes Unidos",
+      "value": 67537004.0
+    },
+    {
+      "source": "mun_Londrina",
+      "target": "pais_Argélia",
+      "value": 66822767.0
+    },
+    {
+      "source": "mun_Rolândia",
+      "target": "pais_Emirados Árabes Unidos",
+      "value": 65810130.0
+    },
+    {
+      "source": "mun_Londrina",
+      "target": "pais_Japão",
+      "value": 65764205.0
+    },
+    {
+      "source": "mun_Rolândia",
+      "target": "pais_Bangladesh",
+      "value": 65306035.0
+    },
+    {
+      "source": "mun_Cafelândia",
+      "target": "pais_Países Baixos (Holanda)",
+      "value": 63962542.0
+    },
+    {
+      "source": "mun_Londrina",
+      "target": "pais_Bangladesh",
+      "value": 60511235.0
+    },
+    {
+      "source": "mun_Londrina",
+      "target": "pais_Vietnã",
+      "value": 55409269.0
+    },
+    {
+      "source": "mun_Cafelândia",
+      "target": "pais_Coreia do Sul",
+      "value": 54239300.0
+    },
+    {
+      "source": "mun_Cafelândia",
+      "target": "pais_Alemanha",
+      "value": 53835226.0
+    },
+    {
+      "source": "mun_Londrina",
+      "target": "pais_Coreia do Sul",
+      "value": 48242125.0
+    },
+    {
+      "source": "mun_Campo Mourão",
+      "target": "pais_Índia",
+      "value": 47011506.0
+    },
+    {
+      "source": "mun_Sertanópolis",
+      "target": "pais_Japão",
+      "value": 46765932.0
+    },
+    {
+      "source": "mun_Cascavel",
+      "target": "pais_Países Baixos (Holanda)",
+      "value": 43224667.0
+    },
+    {
+      "source": "mun_Ponta Grossa",
+      "target": "pais_Arábia Saudita",
+      "value": 38900004.0
+    },
+    {
+      "source": "mun_Sertanópolis",
+      "target": "pais_Irã",
+      "value": 38401312.0
+    },
+    {
+      "source": "mun_Cafelândia",
+      "target": "pais_Índia",
+      "value": 36296423.0
+    },
+    {
+      "source": "mun_Cascavel",
+      "target": "pais_Vietnã",
+      "value": 34225196.0
     }
   ],
   "linksByCadeia": [
     {
-      "source": "mun_Cafelândia",
-      "target": "pais_Alemanha",
-      "value": 50639357.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Cafelândia",
-      "target": "pais_Alemanha",
-      "value": 3195869.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Cafelândia",
-      "target": "pais_Bangladesh",
-      "value": 18019000.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Cafelândia",
-      "target": "pais_China",
-      "value": 426873118.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Cafelândia",
-      "target": "pais_China",
-      "value": 13956140.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Cafelândia",
-      "target": "pais_Coreia do Sul",
-      "value": 31238489.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Cafelândia",
-      "target": "pais_Coreia do Sul",
-      "value": 23000811.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Cafelândia",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 16763189.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Cafelândia",
-      "target": "pais_Japão",
-      "value": 4613.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Cafelândia",
-      "target": "pais_Japão",
-      "value": 125945263.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Cafelândia",
-      "target": "pais_Japão",
-      "value": 117.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Cafelândia",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 55101400.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Cafelândia",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 64772.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Cafelândia",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 8796370.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Cafelândia",
-      "target": "pais_Vietnã",
-      "value": 345042.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Cafelândia",
+      "source": "mun_Foz do Iguaçu",
       "target": "pais_Índia",
-      "value": 36296423.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_Alemanha",
-      "value": 316047593.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_Arábia Saudita",
-      "value": 217590.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_Arábia Saudita",
-      "value": 1904372.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_Bangladesh",
-      "value": 22796762.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_China",
-      "value": 397968666.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_Coreia do Sul",
-      "value": 397497.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_Coreia do Sul",
-      "value": 17782367.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 4505189.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_Irã",
-      "value": 1667243.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_Japão",
-      "value": 3083192.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_Japão",
-      "value": 18769004.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_Japão",
-      "value": 2655273.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 434582456.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_Vietnã",
-      "value": 4886413.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_Vietnã",
-      "value": 202152015.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Campo Mourão",
-      "target": "pais_Índia",
-      "value": 47011506.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Alemanha",
-      "value": 158358102.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Alemanha",
-      "value": 14859507.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Arábia Saudita",
-      "value": 63300.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Arábia Saudita",
-      "value": 15065028.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Arábia Saudita",
-      "value": 1215201.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Arábia Saudita",
-      "value": 2524648.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Arábia Saudita",
-      "value": 64377.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Bangladesh",
-      "value": 11243950.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Bangladesh",
-      "value": 5683382.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_China",
-      "value": 510949205.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_China",
-      "value": 675041.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_China",
-      "value": 19152066.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_China",
-      "value": 7867719.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_China",
-      "value": 427965635.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Coreia do Sul",
-      "value": 4229.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Coreia do Sul",
-      "value": 80218061.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Coreia do Sul",
-      "value": 4778046.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Coreia do Sul",
-      "value": 9744960.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Coreia do Sul",
-      "value": 1041863.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 6213.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 51791077.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 6816683.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 115464.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 3511.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 369735.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 8434321.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Irã",
-      "value": 0.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Irã",
-      "value": 9576119.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Irã",
-      "value": 1635123.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Japão",
-      "value": 53750868.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Japão",
-      "value": 15586825.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 12750084.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 21220039.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 1806581.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 4427075.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 1145.0,
+      "value": 74256837.0,
       "cadeia": "Olericultura"
     },
     {
-      "source": "mun_Cascavel",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 2990292.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 29451.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Vietnã",
-      "value": 7164319.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Vietnã",
-      "value": 75080.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Vietnã",
-      "value": 6227812.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Vietnã",
-      "value": 829890.0,
-      "cadeia": "Florestal"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Vietnã",
-      "value": 3716325.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Cascavel",
-      "target": "pais_Vietnã",
-      "value": 16211770.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Alemanha",
-      "value": 12027445.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Alemanha",
-      "value": 7666.0,
-      "cadeia": "Aquicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Alemanha",
-      "value": 11269143.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Alemanha",
-      "value": 100.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Alemanha",
-      "value": 276505.0,
-      "cadeia": "Florestal"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Alemanha",
-      "value": 717562.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Alemanha",
-      "value": 1.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Alemanha",
-      "value": 103486.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Argélia",
-      "value": 403000.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Argélia",
-      "value": 397584.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Argélia",
-      "value": 1001359.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Argélia",
-      "value": 1093358.0,
-      "cadeia": "Olericultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Argélia",
-      "value": 318000.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Arábia Saudita",
-      "value": 1945804.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Arábia Saudita",
-      "value": 1042998.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Arábia Saudita",
-      "value": 163330.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Arábia Saudita",
-      "value": 1001410.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Arábia Saudita",
-      "value": 224.0,
-      "cadeia": "Outros Insumos"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Bangladesh",
-      "value": 842319.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Bangladesh",
-      "value": 1931500.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Bangladesh",
-      "value": 29529.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Bangladesh",
-      "value": 22610911.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_China",
-      "value": 1783273.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_China",
-      "value": 15139811.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_China",
-      "value": 22811.0,
-      "cadeia": "Florestal"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_China",
-      "value": 1084.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_China",
-      "value": 2026975.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_China",
-      "value": 26672.0,
-      "cadeia": "Olericultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_China",
-      "value": 1141113173.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Coreia do Sul",
-      "value": 19802.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Coreia do Sul",
-      "value": 77956.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Coreia do Sul",
-      "value": 2520519.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Coreia do Sul",
-      "value": 135850.0,
-      "cadeia": "Florestal"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Coreia do Sul",
-      "value": 88660.0,
-      "cadeia": "Olericultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Coreia do Sul",
-      "value": 64822087.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 9907.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 2107877.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 212835.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 1774.0,
-      "cadeia": "Florestal"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 233732.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 170667.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 825764.0,
-      "cadeia": "Olericultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 81058.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 3118.0,
-      "cadeia": "Outros Insumos"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 665996.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Irã",
-      "value": 15409187.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Japão",
-      "value": 1479318.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Japão",
-      "value": 62409455.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Japão",
-      "value": 4723.0,
-      "cadeia": "Florestal"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Japão",
-      "value": 899.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Japão",
-      "value": 91416.0,
-      "cadeia": "Olericultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Japão",
-      "value": 15649.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Japão",
-      "value": 3867415.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 24150.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 21266.0,
-      "cadeia": "Bebidas"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 215749.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 269251.0,
-      "cadeia": "Florestal"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 24909735.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 746661.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 35962.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 51978.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Vietnã",
-      "value": 4889808.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Vietnã",
-      "value": 7947205.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Vietnã",
-      "value": 262852.0,
-      "cadeia": "Olericultura"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Vietnã",
-      "value": 208835.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Vietnã",
-      "value": 7987828.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Curitiba",
+      "source": "mun_Mangueirinha",
       "target": "pais_Índia",
-      "value": 4481197.0,
-      "cadeia": "Agroind. Grãos"
+      "value": 26668353.0,
+      "cadeia": "Olericultura"
     },
     {
-      "source": "mun_Curitiba",
-      "target": "pais_Índia",
-      "value": 88395.0,
-      "cadeia": "Cerealicultura"
+      "source": "mun_Foz do Iguaçu",
+      "target": "pais_México",
+      "value": 19071427.0,
+      "cadeia": "Olericultura"
     },
     {
-      "source": "mun_Curitiba",
-      "target": "pais_Índia",
-      "value": 1000.0,
-      "cadeia": "Fertilizantes"
+      "source": "mun_Foz do Iguaçu",
+      "target": "pais_Vietnã",
+      "value": 16068689.0,
+      "cadeia": "Olericultura"
     },
     {
-      "source": "mun_Curitiba",
-      "target": "pais_Índia",
-      "value": 2500.0,
-      "cadeia": "Florestal"
-    },
-    {
-      "source": "mun_Curitiba",
-      "target": "pais_Índia",
-      "value": 12305800.0,
-      "cadeia": "Oleaginosas"
+      "source": "mun_Foz do Iguaçu",
+      "target": "pais_África do Sul",
+      "value": 13231041.0,
+      "cadeia": "Olericultura"
     },
     {
       "source": "mun_Curitiba",
@@ -1313,208 +871,250 @@
       "cadeia": "Olericultura"
     },
     {
-      "source": "mun_Curitiba",
+      "source": "mun_Balsa Nova",
       "target": "pais_Índia",
-      "value": 104.0,
+      "value": 8002732.0,
+      "cadeia": "Olericultura"
+    },
+    {
+      "source": "mun_Mangueirinha",
+      "target": "pais_México",
+      "value": 7834853.0,
+      "cadeia": "Olericultura"
+    },
+    {
+      "source": "mun_Mangueirinha",
+      "target": "pais_Vietnã",
+      "value": 5437771.0,
+      "cadeia": "Olericultura"
+    },
+    {
+      "source": "mun_Piraí do Sul",
+      "target": "pais_Índia",
+      "value": 5181536.0,
+      "cadeia": "Olericultura"
+    },
+    {
+      "source": "mun_Marialva",
+      "target": "pais_China",
+      "value": 96063540.0,
+      "cadeia": "Outros"
+    },
+    {
+      "source": "mun_Ponta Grossa",
+      "target": "pais_China",
+      "value": 46336065.0,
+      "cadeia": "Outros"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_Paraguai",
+      "value": 34063195.0,
+      "cadeia": "Outros"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_Hong Kong",
+      "value": 32855457.0,
+      "cadeia": "Outros"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_China",
+      "value": 13835308.0,
+      "cadeia": "Outros"
+    },
+    {
+      "source": "mun_Jacarezinho",
+      "target": "pais_Alemanha",
+      "value": 8987053.0,
+      "cadeia": "Outros"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_Alemanha",
+      "value": 6491393.0,
+      "cadeia": "Outros"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_Países Baixos (Holanda)",
+      "value": 1674613.0,
       "cadeia": "Outros"
     },
     {
       "source": "mun_Curitiba",
-      "target": "pais_Índia",
-      "value": 151498.0,
-      "cadeia": "Sojicultura"
+      "target": "pais_Países Baixos (Holanda)",
+      "value": 746661.0,
+      "cadeia": "Outros"
     },
     {
-      "source": "mun_Londrina",
-      "target": "pais_Alemanha",
-      "value": 510831.0,
+      "source": "mun_Ponta Grossa",
+      "target": "pais_Paraguai",
+      "value": 255844.0,
+      "cadeia": "Outros"
+    },
+    {
+      "source": "mun_Curitiba",
+      "target": "pais_Argentina",
+      "value": 96335174.0,
       "cadeia": "Agroind. Grãos"
     },
     {
-      "source": "mun_Londrina",
-      "target": "pais_Alemanha",
-      "value": 19288959.0,
-      "cadeia": "Cafeicultura"
+      "source": "mun_Curitiba",
+      "target": "pais_Paraguai",
+      "value": 50483070.0,
+      "cadeia": "Agroind. Grãos"
     },
     {
-      "source": "mun_Londrina",
-      "target": "pais_Alemanha",
-      "value": 547361.0,
-      "cadeia": "Oleaginosas"
+      "source": "mun_Paranavaí",
+      "target": "pais_Estados Unidos",
+      "value": 45440177.0,
+      "cadeia": "Agroind. Grãos"
     },
     {
-      "source": "mun_Londrina",
-      "target": "pais_Alemanha",
-      "value": 738195.0,
-      "cadeia": "Outros"
+      "source": "mun_Castro",
+      "target": "pais_Argentina",
+      "value": 32718531.0,
+      "cadeia": "Agroind. Grãos"
     },
     {
-      "source": "mun_Londrina",
-      "target": "pais_Alemanha",
-      "value": 0.0,
-      "cadeia": "Outros Insumos"
+      "source": "mun_São Pedro do Ivaí",
+      "target": "pais_Chile",
+      "value": 23380567.0,
+      "cadeia": "Agroind. Grãos"
     },
     {
-      "source": "mun_Londrina",
-      "target": "pais_Argélia",
-      "value": 498641.0,
-      "cadeia": "Cafeicultura"
+      "source": "mun_Curitiba",
+      "target": "pais_Chile",
+      "value": 15719091.0,
+      "cadeia": "Agroind. Grãos"
     },
     {
-      "source": "mun_Londrina",
-      "target": "pais_Argélia",
-      "value": 56617291.0,
-      "cadeia": "Canavicultura"
+      "source": "mun_São Pedro do Ivaí",
+      "target": "pais_Argentina",
+      "value": 8675101.0,
+      "cadeia": "Agroind. Grãos"
     },
     {
-      "source": "mun_Londrina",
-      "target": "pais_Argélia",
-      "value": 9706835.0,
-      "cadeia": "Cerealicultura"
+      "source": "mun_São Pedro do Ivaí",
+      "target": "pais_Estados Unidos",
+      "value": 7306007.0,
+      "cadeia": "Agroind. Grãos"
     },
     {
-      "source": "mun_Londrina",
-      "target": "pais_Arábia Saudita",
-      "value": 464668.0,
-      "cadeia": "Cafeicultura"
+      "source": "mun_São Pedro do Ivaí",
+      "target": "pais_Paraguai",
+      "value": 7047352.0,
+      "cadeia": "Agroind. Grãos"
     },
     {
-      "source": "mun_Londrina",
-      "target": "pais_Arábia Saudita",
-      "value": 3571909.0,
-      "cadeia": "Canavicultura"
+      "source": "mun_São José dos Pinhais",
+      "target": "pais_Paraguai",
+      "value": 6112266.0,
+      "cadeia": "Agroind. Grãos"
     },
     {
-      "source": "mun_Londrina",
-      "target": "pais_Arábia Saudita",
-      "value": 3255270.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Bangladesh",
-      "value": 6090878.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Bangladesh",
-      "value": 18508706.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Bangladesh",
-      "value": 35911651.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_China",
-      "value": 1162678.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_China",
-      "value": 1559054.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_China",
-      "value": 171088309.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_China",
-      "value": 12784.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_China",
-      "value": 384169.0,
-      "cadeia": "Outros Insumos"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_China",
-      "value": 1410560416.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Coreia do Sul",
-      "value": 7549473.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Coreia do Sul",
-      "value": 18647108.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Coreia do Sul",
-      "value": 4.0,
-      "cadeia": "Outros Insumos"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Coreia do Sul",
-      "value": 22045544.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 549821.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 802289.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 3356031.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 1979450.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 597.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Londrina",
+      "source": "mun_Rolândia",
       "target": "pais_Irã",
-      "value": 299953565.0,
-      "cadeia": "Cerealicultura"
+      "value": 486345455.0,
+      "cadeia": "Canavicultura"
     },
     {
-      "source": "mun_Londrina",
+      "source": "mun_Maringá",
+      "target": "pais_Argélia",
+      "value": 310331311.0,
+      "cadeia": "Canavicultura"
+    },
+    {
+      "source": "mun_Marialva",
+      "target": "pais_Argélia",
+      "value": 291574828.0,
+      "cadeia": "Canavicultura"
+    },
+    {
+      "source": "mun_Maringá",
+      "target": "pais_Malásia",
+      "value": 246124476.0,
+      "cadeia": "Canavicultura"
+    },
+    {
+      "source": "mun_Paranaguá",
       "target": "pais_Irã",
-      "value": 45683692.0,
-      "cadeia": "Sojicultura"
+      "value": 228613635.0,
+      "cadeia": "Canavicultura"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_Argélia",
+      "value": 200611549.0,
+      "cadeia": "Canavicultura"
+    },
+    {
+      "source": "mun_Rolândia",
+      "target": "pais_Argélia",
+      "value": 175172805.0,
+      "cadeia": "Canavicultura"
+    },
+    {
+      "source": "mun_Marialva",
+      "target": "pais_Malásia",
+      "value": 136643299.0,
+      "cadeia": "Canavicultura"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_Malásia",
+      "value": 129995225.0,
+      "cadeia": "Canavicultura"
+    },
+    {
+      "source": "mun_Maringá",
+      "target": "pais_Indonésia",
+      "value": 117346693.0,
+      "cadeia": "Canavicultura"
     },
     {
       "source": "mun_Londrina",
+      "target": "pais_Estados Unidos",
+      "value": 216321879.0,
+      "cadeia": "Cafeicultura"
+    },
+    {
+      "source": "mun_Londrina",
+      "target": "pais_Rússia",
+      "value": 169682976.0,
+      "cadeia": "Cafeicultura"
+    },
+    {
+      "source": "mun_Cornélio Procópio",
+      "target": "pais_Estados Unidos",
+      "value": 160667525.0,
+      "cadeia": "Cafeicultura"
+    },
+    {
+      "source": "mun_Londrina",
+      "target": "pais_Polônia",
+      "value": 120837079.0,
+      "cadeia": "Cafeicultura"
+    },
+    {
+      "source": "mun_Cornélio Procópio",
       "target": "pais_Japão",
-      "value": 1032.0,
-      "cadeia": "Agroind. Grãos"
+      "value": 98006190.0,
+      "cadeia": "Cafeicultura"
+    },
+    {
+      "source": "mun_Cornélio Procópio",
+      "target": "pais_Alemanha",
+      "value": 71393521.0,
+      "cadeia": "Cafeicultura"
+    },
+    {
+      "source": "mun_Cornélio Procópio",
+      "target": "pais_Rússia",
+      "value": 47522829.0,
+      "cadeia": "Cafeicultura"
     },
     {
       "source": "mun_Londrina",
@@ -1524,303 +1124,81 @@
     },
     {
       "source": "mun_Londrina",
-      "target": "pais_Japão",
-      "value": 34165426.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Japão",
-      "value": 230.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Japão",
-      "value": 234.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Japão",
-      "value": 1381996.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Japão",
-      "value": 6885093.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 13584753.0,
+      "target": "pais_Alemanha",
+      "value": 19288959.0,
       "cadeia": "Cafeicultura"
     },
     {
-      "source": "mun_Londrina",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 2089187.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Vietnã",
-      "value": 8962282.0,
+      "source": "mun_Cornélio Procópio",
+      "target": "pais_Polônia",
+      "value": 15759766.0,
       "cadeia": "Cafeicultura"
     },
     {
-      "source": "mun_Londrina",
-      "target": "pais_Vietnã",
-      "value": 40647081.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Vietnã",
-      "value": 28813.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Vietnã",
-      "value": 25.0,
-      "cadeia": "Outros Insumos"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Vietnã",
-      "value": 5771093.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Índia",
-      "value": 10382420.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Índia",
-      "value": 1183.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Índia",
-      "value": 3161.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Londrina",
-      "target": "pais_Índia",
-      "value": 9814424.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Marialva",
-      "target": "pais_Argélia",
-      "value": 291574828.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Marialva",
-      "target": "pais_Argélia",
-      "value": 12293880.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Marialva",
-      "target": "pais_Argélia",
-      "value": 32642.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Marialva",
-      "target": "pais_Arábia Saudita",
-      "value": 27216528.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Marialva",
-      "target": "pais_Bangladesh",
-      "value": 89545506.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Marialva",
-      "target": "pais_Bangladesh",
-      "value": 6202183.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Marialva",
-      "target": "pais_China",
-      "value": 35433436.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Marialva",
-      "target": "pais_China",
-      "value": 96063540.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Marialva",
-      "target": "pais_China",
-      "value": 10533748.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Marialva",
+      "source": "mun_Paranaguá",
       "target": "pais_Emirados Árabes Unidos",
-      "value": 10563764.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Marialva",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 498608.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Marialva",
-      "target": "pais_Vietnã",
-      "value": 3929358.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Marialva",
-      "target": "pais_Índia",
-      "value": 4870.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Marialva",
-      "target": "pais_Índia",
-      "value": 79004930.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Marialva",
-      "target": "pais_Índia",
-      "value": 2325437.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Alemanha",
-      "value": 111942.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Alemanha",
-      "value": 1426767.0,
-      "cadeia": "Apicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Alemanha",
-      "value": 91354.0,
+      "value": 1218062234.0,
       "cadeia": "Avicultura"
     },
     {
-      "source": "mun_Maringá",
-      "target": "pais_Alemanha",
-      "value": 51872.0,
-      "cadeia": "Fertilizantes"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Alemanha",
-      "value": 49.0,
-      "cadeia": "Floricultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Alemanha",
-      "value": 18469.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Alemanha",
-      "value": 589084.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Argélia",
-      "value": 310331311.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Argélia",
-      "value": 16794324.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Argélia",
-      "value": 5019992.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Arábia Saudita",
-      "value": 44772.0,
+      "source": "mun_Palotina",
+      "target": "pais_China",
+      "value": 857303120.0,
       "cadeia": "Avicultura"
     },
     {
-      "source": "mun_Maringá",
+      "source": "mun_Paranaguá",
       "target": "pais_Arábia Saudita",
-      "value": 38067403.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Arábia Saudita",
-      "value": 53414054.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Bangladesh",
-      "value": 100736619.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Bangladesh",
-      "value": 104737014.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Bangladesh",
-      "value": 243341795.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_China",
-      "value": 281077787.0,
+      "value": 827933983.0,
       "cadeia": "Avicultura"
     },
     {
-      "source": "mun_Maringá",
-      "target": "pais_China",
-      "value": 94137422.0,
-      "cadeia": "Canavicultura"
+      "source": "mun_Paranaguá",
+      "target": "pais_Japão",
+      "value": 781670713.0,
+      "cadeia": "Avicultura"
     },
     {
-      "source": "mun_Maringá",
+      "source": "mun_Paranaguá",
       "target": "pais_China",
-      "value": 214728167.0,
-      "cadeia": "Cerealicultura"
+      "value": 526631272.0,
+      "cadeia": "Avicultura"
+    },
+    {
+      "source": "mun_Matelândia",
+      "target": "pais_China",
+      "value": 524787629.0,
+      "cadeia": "Avicultura"
+    },
+    {
+      "source": "mun_Cascavel",
+      "target": "pais_China",
+      "value": 510949205.0,
+      "cadeia": "Avicultura"
+    },
+    {
+      "source": "mun_Cafelândia",
+      "target": "pais_China",
+      "value": 426873118.0,
+      "cadeia": "Avicultura"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_México",
+      "value": 232457074.0,
+      "cadeia": "Avicultura"
+    },
+    {
+      "source": "mun_Cafelândia",
+      "target": "pais_Japão",
+      "value": 125945263.0,
+      "cadeia": "Avicultura"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_China",
+      "value": 16236216954.0,
+      "cadeia": "Sojicultura"
     },
     {
       "source": "mun_Maringá",
@@ -1829,69 +1207,51 @@
       "cadeia": "Sojicultura"
     },
     {
-      "source": "mun_Maringá",
-      "target": "pais_Coreia do Sul",
-      "value": 34404160.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Coreia do Sul",
-      "value": 9123596.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Coreia do Sul",
-      "value": 132054045.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Coreia do Sul",
-      "value": 226947865.0,
+      "source": "mun_Londrina",
+      "target": "pais_China",
+      "value": 1410560416.0,
       "cadeia": "Sojicultura"
     },
     {
-      "source": "mun_Maringá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 1318.0,
-      "cadeia": "Agroind. Grãos"
+      "source": "mun_Paranaguá",
+      "target": "pais_Irã",
+      "value": 1045033716.0,
+      "cadeia": "Sojicultura"
     },
     {
-      "source": "mun_Maringá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 61262613.0,
-      "cadeia": "Avicultura"
+      "source": "mun_Ponta Grossa",
+      "target": "pais_Índia",
+      "value": 1008276292.0,
+      "cadeia": "Sojicultura"
     },
     {
-      "source": "mun_Maringá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 80711720.0,
-      "cadeia": "Canavicultura"
+      "source": "mun_Ponta Grossa",
+      "target": "pais_Coreia do Sul",
+      "value": 927967197.0,
+      "cadeia": "Sojicultura"
     },
     {
-      "source": "mun_Maringá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 3681770.0,
-      "cadeia": "Cerealicultura"
+      "source": "mun_Paranaguá",
+      "target": "pais_Índia",
+      "value": 909196102.0,
+      "cadeia": "Sojicultura"
     },
     {
-      "source": "mun_Maringá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 151188.0,
-      "cadeia": "Fruticultura"
+      "source": "mun_Paranaguá",
+      "target": "pais_Coreia do Sul",
+      "value": 780970595.0,
+      "cadeia": "Sojicultura"
     },
     {
-      "source": "mun_Maringá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 8.0,
-      "cadeia": "Laticínios"
+      "source": "mun_Paranaguá",
+      "target": "pais_Países Baixos (Holanda)",
+      "value": 614431894.0,
+      "cadeia": "Sojicultura"
     },
     {
-      "source": "mun_Maringá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 2316064.0,
+      "source": "mun_Ponta Grossa",
+      "target": "pais_China",
+      "value": 603126590.0,
       "cadeia": "Sojicultura"
     },
     {
@@ -1902,975 +1262,9 @@
     },
     {
       "source": "mun_Maringá",
-      "target": "pais_Irã",
-      "value": 164297429.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Japão",
-      "value": 22099.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Japão",
-      "value": 69714139.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Japão",
-      "value": 911723.0,
-      "cadeia": "Bebidas"
-    },
-    {
-      "source": "mun_Maringá",
       "target": "pais_Japão",
       "value": 485608227.0,
       "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Japão",
-      "value": 1290522.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 3791344.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 10690.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 8435463.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 2998423.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 192052239.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Vietnã",
-      "value": 205540.0,
-      "cadeia": "Aquicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Vietnã",
-      "value": 342502.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Vietnã",
-      "value": 4579347.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Vietnã",
-      "value": 174890371.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Vietnã",
-      "value": 168572221.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Índia",
-      "value": 9761.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Índia",
-      "value": 47014462.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Maringá",
-      "target": "pais_Índia",
-      "value": 142126123.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Alemanha",
-      "value": 42237480.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Alemanha",
-      "value": 16208760.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Alemanha",
-      "value": 11759763.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Bangladesh",
-      "value": 1400000.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_China",
-      "value": 9607.0,
-      "cadeia": "Aquicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_China",
-      "value": 857303120.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_China",
-      "value": 124663.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_China",
-      "value": 324595.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_China",
-      "value": 584253.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_China",
-      "value": 98019417.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Coreia do Sul",
-      "value": 9138.0,
-      "cadeia": "Aquicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Coreia do Sul",
-      "value": 66036463.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Coreia do Sul",
-      "value": 540002.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Coreia do Sul",
-      "value": 29322242.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 19342311.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Japão",
-      "value": 1124.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Japão",
-      "value": 391131.0,
-      "cadeia": "Aquicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Japão",
-      "value": 68735151.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Japão",
-      "value": 81300.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Japão",
-      "value": 378440.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 17198829.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 71840113.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 634522.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 11458328.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Vietnã",
-      "value": 16135538.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Vietnã",
-      "value": 1230000.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Vietnã",
-      "value": 1623228.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Vietnã",
-      "value": 9000.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Palotina",
-      "target": "pais_Índia",
-      "value": 5538352.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Alemanha",
-      "value": 13405108.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Alemanha",
-      "value": 744750.0,
-      "cadeia": "Florestal"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Alemanha",
-      "value": 6491393.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Alemanha",
-      "value": 742837143.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Alemanha",
-      "value": 61740.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Argélia",
-      "value": 8226769.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Argélia",
-      "value": 5232562.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Argélia",
-      "value": 200611549.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Argélia",
-      "value": 7781743.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Argélia",
-      "value": 53652884.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 898327.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 10157.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 359.0,
-      "cadeia": "Apicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 8172.0,
-      "cadeia": "Aquicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 827933983.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 4876.0,
-      "cadeia": "Bebidas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 73432495.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 2629.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 15230744.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 47497030.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 8674.0,
-      "cadeia": "Fertilizantes"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 11.0,
-      "cadeia": "Florestal"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 8111.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 6444.0,
-      "cadeia": "Laticínios"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 2008.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 14356.0,
-      "cadeia": "Olericultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 127157.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 95405628.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 3647.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Arábia Saudita",
-      "value": 4454.0,
-      "cadeia": "Tabaco"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 812.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 3705.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 124.0,
-      "cadeia": "Apicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 3904.0,
-      "cadeia": "Aquicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 5030.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 3044.0,
-      "cadeia": "Bebidas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 1575.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 270.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 44024256.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 39110437.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 2741.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 3249.0,
-      "cadeia": "Laticínios"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 309.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 5302.0,
-      "cadeia": "Olericultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 1257.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 251.0,
-      "cadeia": "Outros Insumos"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 563971187.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 163.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Bangladesh",
-      "value": 490.0,
-      "cadeia": "Tabaco"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 506482.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 11119.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 670.0,
-      "cadeia": "Apicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 5551.0,
-      "cadeia": "Aquicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 526631272.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 24213.0,
-      "cadeia": "Bebidas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 20321.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 914.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 79745263.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 77488605.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 114.0,
-      "cadeia": "Florestal"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 20306.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 5984.0,
-      "cadeia": "Laticínios"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 1817.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 40300.0,
-      "cadeia": "Olericultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 13835308.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 205.0,
-      "cadeia": "Outros Insumos"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 16236216954.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 75618603.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_China",
-      "value": 11437.0,
-      "cadeia": "Tabaco"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 1561.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 1263.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 15.0,
-      "cadeia": "Apicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 1533.0,
-      "cadeia": "Aquicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 389114838.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 2677.0,
-      "cadeia": "Bebidas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 1997.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 96.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 22.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 138035639.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 14.0,
-      "cadeia": "Florestal"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 2140.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 764.0,
-      "cadeia": "Laticínios"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 542.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 2785.0,
-      "cadeia": "Olericultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 99495.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 780970595.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 876.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Coreia do Sul",
-      "value": 2164.0,
-      "cadeia": "Tabaco"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 6510341.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 2159.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 20.0,
-      "cadeia": "Apicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 1477.0,
-      "cadeia": "Aquicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 1218062234.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 258.0,
-      "cadeia": "Bebidas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 13343393.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 648.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 32018887.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 1061.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 2890.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 1872.0,
-      "cadeia": "Laticínios"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 250.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 3885.0,
-      "cadeia": "Olericultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 1903878.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 17255889.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 152.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 3715.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 14725.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 546.0,
-      "cadeia": "Apicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 4875.0,
-      "cadeia": "Aquicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 66521.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 7734.0,
-      "cadeia": "Bebidas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 7162.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 4763.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 228613635.0,
-      "cadeia": "Canavicultura"
     },
     {
       "source": "mun_Paranaguá",
@@ -2880,321 +1274,33 @@
     },
     {
       "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 13358.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 7991.0,
-      "cadeia": "Laticínios"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 2526.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 14708.0,
-      "cadeia": "Olericultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 17825.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 1045033716.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 949.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Irã",
-      "value": 448.0,
-      "cadeia": "Tabaco"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 31835278.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 974.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 1186.0,
-      "cadeia": "Aquicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 781670713.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 1148.0,
-      "cadeia": "Bebidas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 466.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 10.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 60.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
       "target": "pais_Japão",
       "value": 301016666.0,
       "cadeia": "Cerealicultura"
     },
     {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 576.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 430.0,
-      "cadeia": "Laticínios"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 366402.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 868.0,
-      "cadeia": "Olericultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 403979.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 18.0,
-      "cadeia": "Outros Insumos"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 26758215.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Japão",
-      "value": 524506.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 4700781.0,
-      "cadeia": "Agroind. Carnes"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 1307.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 40.0,
-      "cadeia": "Apicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 1502.0,
-      "cadeia": "Aquicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 105129.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 2824.0,
-      "cadeia": "Bebidas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 50435971.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 369.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 18870016.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 661.0,
+      "source": "mun_Londrina",
+      "target": "pais_Irã",
+      "value": 299953565.0,
       "cadeia": "Cerealicultura"
     },
     {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 1287.0,
-      "cadeia": "Fruticultura"
+      "source": "mun_Maringá",
+      "target": "pais_China",
+      "value": 214728167.0,
+      "cadeia": "Cerealicultura"
     },
     {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 2394.0,
-      "cadeia": "Laticínios"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 200.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 1774.0,
-      "cadeia": "Olericultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 1674613.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 84.0,
-      "cadeia": "Outros Insumos"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 614431894.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 1447.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 288.0,
-      "cadeia": "Tabaco"
-    },
-    {
-      "source": "mun_Paranaguá",
+      "source": "mun_Maringá",
       "target": "pais_Vietnã",
-      "value": 165940.0,
-      "cadeia": "Agroind. Carnes"
+      "value": 174890371.0,
+      "cadeia": "Cerealicultura"
     },
     {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 3146028.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 100.0,
-      "cadeia": "Apicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 25303158.0,
-      "cadeia": "Aquicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 7128043.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 12306.0,
-      "cadeia": "Bebidas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 4616.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 144.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 179.0,
-      "cadeia": "Canavicultura"
+      "source": "mun_Londrina",
+      "target": "pais_China",
+      "value": 171088309.0,
+      "cadeia": "Cerealicultura"
     },
     {
       "source": "mun_Paranaguá",
@@ -3204,567 +1310,117 @@
     },
     {
       "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 42.0,
-      "cadeia": "Florestal"
+      "target": "pais_Coreia do Sul",
+      "value": 138035639.0,
+      "cadeia": "Cerealicultura"
     },
     {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 5753.0,
+      "source": "mun_Paranavaí",
+      "target": "pais_Bélgica",
+      "value": 211975504.0,
       "cadeia": "Fruticultura"
     },
     {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 2488.0,
-      "cadeia": "Laticínios"
+      "source": "mun_Paranavaí",
+      "target": "pais_Países Baixos (Holanda)",
+      "value": 49954941.0,
+      "cadeia": "Fruticultura"
     },
     {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 726.0,
-      "cadeia": "Oleaginosas"
+      "source": "mun_Curitiba",
+      "target": "pais_Países Baixos (Holanda)",
+      "value": 24909735.0,
+      "cadeia": "Fruticultura"
     },
     {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 8347.0,
-      "cadeia": "Olericultura"
+      "source": "mun_Paranavaí",
+      "target": "pais_Estados Unidos",
+      "value": 24489385.0,
+      "cadeia": "Fruticultura"
     },
     {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 218179.0,
-      "cadeia": "Outros"
+      "source": "mun_Barracão",
+      "target": "pais_Argentina",
+      "value": 14717730.0,
+      "cadeia": "Fruticultura"
     },
     {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 8.0,
-      "cadeia": "Outros Insumos"
+      "source": "mun_Uraí",
+      "target": "pais_Países Baixos (Holanda)",
+      "value": 13683032.0,
+      "cadeia": "Fruticultura"
     },
     {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 228684453.0,
-      "cadeia": "Sojicultura"
+      "source": "mun_Paranavaí",
+      "target": "pais_Israel",
+      "value": 12617617.0,
+      "cadeia": "Fruticultura"
     },
     {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 37965748.0,
-      "cadeia": "Suinocultura"
+      "source": "mun_Uraí",
+      "target": "pais_Israel",
+      "value": 9796160.0,
+      "cadeia": "Fruticultura"
     },
     {
-      "source": "mun_Paranaguá",
-      "target": "pais_Vietnã",
-      "value": 742.0,
-      "cadeia": "Tabaco"
+      "source": "mun_Curitiba",
+      "target": "pais_Argentina",
+      "value": 1456568.0,
+      "cadeia": "Fruticultura"
     },
     {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 846.0,
-      "cadeia": "Agroind. Carnes"
+      "source": "mun_Japurá",
+      "target": "pais_Estados Unidos",
+      "value": 785903.0,
+      "cadeia": "Fruticultura"
     },
     {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 9676.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 170.0,
-      "cadeia": "Apicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 5088.0,
+      "source": "mun_Palotina",
+      "target": "pais_Estados Unidos",
+      "value": 82536669.0,
       "cadeia": "Aquicultura"
     },
     {
       "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 53022.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 8392.0,
-      "cadeia": "Bebidas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 168.0,
-      "cadeia": "Bovinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 464.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 70406767.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 1600.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 330.0,
-      "cadeia": "Florestal"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 7371.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 8299.0,
-      "cadeia": "Laticínios"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 2297.0,
-      "cadeia": "Oleaginosas"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 885642.0,
-      "cadeia": "Olericultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 3004.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 91.0,
-      "cadeia": "Outros Insumos"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 909196102.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 125.0,
-      "cadeia": "Suinocultura"
-    },
-    {
-      "source": "mun_Paranaguá",
-      "target": "pais_Índia",
-      "value": 1139.0,
-      "cadeia": "Tabaco"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Alemanha",
-      "value": 189359.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Alemanha",
-      "value": 6.0,
-      "cadeia": "Bebidas"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Alemanha",
-      "value": 2.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Alemanha",
-      "value": 120016562.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Argélia",
-      "value": 15669928.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Argélia",
-      "value": 9163931.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Arábia Saudita",
-      "value": 38900004.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Bangladesh",
-      "value": 21138.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Bangladesh",
-      "value": 2744863.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Bangladesh",
-      "value": 266036520.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_China",
-      "value": 9180603.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_China",
-      "value": 25289.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_China",
-      "value": 46336065.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_China",
-      "value": 603126590.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Coreia do Sul",
-      "value": 22604.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Coreia do Sul",
-      "value": 2532839.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Coreia do Sul",
-      "value": 17420.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Coreia do Sul",
-      "value": 927967197.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 1.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 71396.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 8966005.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Irã",
-      "value": 167832980.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Japão",
-      "value": 344.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Japão",
-      "value": 11887306.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Japão",
-      "value": 129223.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Japão",
-      "value": 104640854.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 309574.0,
-      "cadeia": "Fruticultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 243515.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 288165952.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
       "target": "pais_Vietnã",
-      "value": 546336.0,
-      "cadeia": "Cerealicultura"
+      "value": 25303158.0,
+      "cadeia": "Aquicultura"
     },
     {
-      "source": "mun_Ponta Grossa",
+      "source": "mun_Tupãssi",
+      "target": "pais_Estados Unidos",
+      "value": 13250671.0,
+      "cadeia": "Aquicultura"
+    },
+    {
+      "source": "mun_Nova Aurora",
+      "target": "pais_Estados Unidos",
+      "value": 12044674.0,
+      "cadeia": "Aquicultura"
+    },
+    {
+      "source": "mun_Rolândia",
+      "target": "pais_Chile",
+      "value": 8055865.0,
+      "cadeia": "Aquicultura"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_Chile",
+      "value": 7191608.0,
+      "cadeia": "Aquicultura"
+    },
+    {
+      "source": "mun_Rolândia",
+      "target": "pais_Estados Unidos",
+      "value": 5973517.0,
+      "cadeia": "Aquicultura"
+    },
+    {
+      "source": "mun_Tupãssi",
       "target": "pais_Vietnã",
-      "value": 133448899.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Índia",
-      "value": 94942.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Ponta Grossa",
-      "target": "pais_Índia",
-      "value": 1008276292.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Alemanha",
-      "value": 65.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Alemanha",
-      "value": 11005829.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Alemanha",
-      "value": 313816.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Argélia",
-      "value": 20738167.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Argélia",
-      "value": 175172805.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Argélia",
-      "value": 177085.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Argélia",
-      "value": 928998.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Arábia Saudita",
-      "value": 20662029.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Arábia Saudita",
-      "value": 8028184.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Arábia Saudita",
-      "value": 579206.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Bangladesh",
-      "value": 56989523.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Bangladesh",
-      "value": 5632602.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Bangladesh",
-      "value": 2683910.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_China",
-      "value": 225748683.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_China",
-      "value": 19350202.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_China",
-      "value": 137032786.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Coreia do Sul",
-      "value": 7895542.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Coreia do Sul",
-      "value": 511399.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Coreia do Sul",
-      "value": 8328357.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 91088.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 32794225.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 31666857.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Emirados Árabes Unidos",
-      "value": 1257960.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Irã",
-      "value": 486345455.0,
-      "cadeia": "Canavicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Japão",
-      "value": 10412522.0,
-      "cadeia": "Avicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Japão",
-      "value": 8762276.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Japão",
-      "value": 168749.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 191730.0,
-      "cadeia": "Agroind. Grãos"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 1238556.0,
-      "cadeia": "Cafeicultura"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Países Baixos (Holanda)",
-      "value": 145128.0,
-      "cadeia": "Outros"
-    },
-    {
-      "source": "mun_Rolândia",
-      "target": "pais_Vietnã",
-      "value": 243199.0,
-      "cadeia": "Agroind. Grãos"
+      "value": 2793856.0,
+      "cadeia": "Aquicultura"
     },
     {
       "source": "mun_Rolândia",
@@ -3773,112 +1429,584 @@
       "cadeia": "Aquicultura"
     },
     {
-      "source": "mun_Rolândia",
-      "target": "pais_Vietnã",
-      "value": 127712.0,
-      "cadeia": "Avicultura"
+      "source": "mun_Tupãssi",
+      "target": "pais_Taiwan (Formosa)",
+      "value": 1800765.0,
+      "cadeia": "Aquicultura"
     },
     {
-      "source": "mun_Rolândia",
-      "target": "pais_Vietnã",
-      "value": 3701320.0,
-      "cadeia": "Cerealicultura"
+      "source": "mun_São Pedro do Ivaí",
+      "target": "pais_Estados Unidos",
+      "value": 109170196.0,
+      "cadeia": "Bebidas"
     },
     {
-      "source": "mun_Rolândia",
-      "target": "pais_Vietnã",
-      "value": 814225.0,
-      "cadeia": "Outros"
+      "source": "mun_Ponta Grossa",
+      "target": "pais_Paraguai",
+      "value": 14638597.0,
+      "cadeia": "Bebidas"
     },
     {
-      "source": "mun_Rolândia",
-      "target": "pais_Vietnã",
-      "value": 1224047.0,
-      "cadeia": "Sojicultura"
+      "source": "mun_Toledo",
+      "target": "pais_Paraguai",
+      "value": 12438970.0,
+      "cadeia": "Bebidas"
     },
     {
-      "source": "mun_Rolândia",
+      "source": "mun_Foz do Iguaçu",
+      "target": "pais_Paraguai",
+      "value": 10453949.0,
+      "cadeia": "Bebidas"
+    },
+    {
+      "source": "mun_São Pedro do Ivaí",
+      "target": "pais_África do Sul",
+      "value": 10101861.0,
+      "cadeia": "Bebidas"
+    },
+    {
+      "source": "mun_Ponta Grossa",
+      "target": "pais_Chile",
+      "value": 9404853.0,
+      "cadeia": "Bebidas"
+    },
+    {
+      "source": "mun_Toledo",
+      "target": "pais_Uruguai",
+      "value": 7114475.0,
+      "cadeia": "Bebidas"
+    },
+    {
+      "source": "mun_Araucária",
+      "target": "pais_Paraguai",
+      "value": 1826889.0,
+      "cadeia": "Bebidas"
+    },
+    {
+      "source": "mun_Araucária",
+      "target": "pais_Estados Unidos",
+      "value": 1327703.0,
+      "cadeia": "Bebidas"
+    },
+    {
+      "source": "mun_Foz do Iguaçu",
+      "target": "pais_Uruguai",
+      "value": 1132108.0,
+      "cadeia": "Bebidas"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_Chile",
+      "value": 60758383.0,
+      "cadeia": "Oleaginosas"
+    },
+    {
+      "source": "mun_Castro",
+      "target": "pais_Tunísia",
+      "value": 32555943.0,
+      "cadeia": "Oleaginosas"
+    },
+    {
+      "source": "mun_Curitiba",
       "target": "pais_Índia",
-      "value": 89510905.0,
-      "cadeia": "Canavicultura"
+      "value": 12305800.0,
+      "cadeia": "Oleaginosas"
     },
     {
-      "source": "mun_Sertanópolis",
+      "source": "mun_Paranaguá",
+      "target": "pais_Estados Unidos",
+      "value": 6899631.0,
+      "cadeia": "Oleaginosas"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_Uruguai",
+      "value": 6787377.0,
+      "cadeia": "Oleaginosas"
+    },
+    {
+      "source": "mun_Castro",
+      "target": "pais_Uruguai",
+      "value": 2634843.0,
+      "cadeia": "Oleaginosas"
+    },
+    {
+      "source": "mun_Apucarana",
+      "target": "pais_Tunísia",
+      "value": 2057466.0,
+      "cadeia": "Oleaginosas"
+    },
+    {
+      "source": "mun_Londrina",
+      "target": "pais_Estados Unidos",
+      "value": 1153725.0,
+      "cadeia": "Oleaginosas"
+    },
+    {
+      "source": "mun_Curitiba",
+      "target": "pais_Estados Unidos",
+      "value": 178266.0,
+      "cadeia": "Oleaginosas"
+    },
+    {
+      "source": "mun_Curitiba",
+      "target": "pais_Uruguai",
+      "value": 50511.0,
+      "cadeia": "Oleaginosas"
+    },
+    {
+      "source": "mun_Palotina",
+      "target": "pais_Reino Unido",
+      "value": 459002221.0,
+      "cadeia": "Agroind. Carnes"
+    },
+    {
+      "source": "mun_Cascavel",
       "target": "pais_Alemanha",
-      "value": 182057.0,
-      "cadeia": "Sojicultura"
+      "value": 158358102.0,
+      "cadeia": "Agroind. Carnes"
     },
     {
-      "source": "mun_Sertanópolis",
-      "target": "pais_Argélia",
-      "value": 2012250.0,
-      "cadeia": "Cerealicultura"
+      "source": "mun_Cascavel",
+      "target": "pais_Reino Unido",
+      "value": 105670928.0,
+      "cadeia": "Agroind. Carnes"
     },
     {
-      "source": "mun_Sertanópolis",
-      "target": "pais_Bangladesh",
-      "value": 13466798.0,
-      "cadeia": "Cerealicultura"
+      "source": "mun_Palotina",
+      "target": "pais_Irlanda",
+      "value": 104620325.0,
+      "cadeia": "Agroind. Carnes"
     },
     {
-      "source": "mun_Sertanópolis",
-      "target": "pais_Bangladesh",
-      "value": 12248326.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Sertanópolis",
-      "target": "pais_China",
-      "value": 10774557.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Sertanópolis",
-      "target": "pais_China",
-      "value": 1183493051.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Sertanópolis",
-      "target": "pais_Coreia do Sul",
-      "value": 41167104.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Sertanópolis",
-      "target": "pais_Coreia do Sul",
-      "value": 36235210.0,
-      "cadeia": "Sojicultura"
-    },
-    {
-      "source": "mun_Sertanópolis",
-      "target": "pais_Irã",
-      "value": 38401312.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Sertanópolis",
-      "target": "pais_Japão",
-      "value": 46765932.0,
-      "cadeia": "Cerealicultura"
-    },
-    {
-      "source": "mun_Sertanópolis",
+      "source": "mun_Pato Branco",
       "target": "pais_Países Baixos (Holanda)",
-      "value": 21022.0,
-      "cadeia": "Canavicultura"
+      "value": 81101385.0,
+      "cadeia": "Agroind. Carnes"
     },
     {
-      "source": "mun_Sertanópolis",
-      "target": "pais_Vietnã",
-      "value": 16181347.0,
-      "cadeia": "Cerealicultura"
+      "source": "mun_Paranaguá",
+      "target": "pais_Hong Kong",
+      "value": 42295573.0,
+      "cadeia": "Agroind. Carnes"
     },
     {
-      "source": "mun_Sertanópolis",
+      "source": "mun_Palotina",
+      "target": "pais_Alemanha",
+      "value": 42237480.0,
+      "cadeia": "Agroind. Carnes"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_Reino Unido",
+      "value": 31254918.0,
+      "cadeia": "Agroind. Carnes"
+    },
+    {
+      "source": "mun_Pato Branco",
+      "target": "pais_Reino Unido",
+      "value": 26983458.0,
+      "cadeia": "Agroind. Carnes"
+    },
+    {
+      "source": "mun_Palotina",
+      "target": "pais_Países Baixos (Holanda)",
+      "value": 17198829.0,
+      "cadeia": "Agroind. Carnes"
+    },
+    {
+      "source": "mun_Marechal Cândido Rondon",
+      "target": "pais_Uruguai",
+      "value": 9035408.0,
+      "cadeia": "Laticínios"
+    },
+    {
+      "source": "mun_Marechal Cândido Rondon",
+      "target": "pais_Argentina",
+      "value": 7205446.0,
+      "cadeia": "Laticínios"
+    },
+    {
+      "source": "mun_Marechal Cândido Rondon",
+      "target": "pais_China",
+      "value": 7141367.0,
+      "cadeia": "Laticínios"
+    },
+    {
+      "source": "mun_Marechal Cândido Rondon",
+      "target": "pais_Paraguai",
+      "value": 5068020.0,
+      "cadeia": "Laticínios"
+    },
+    {
+      "source": "mun_Rio Azul",
+      "target": "pais_Chile",
+      "value": 3321280.0,
+      "cadeia": "Laticínios"
+    },
+    {
+      "source": "mun_Rio Azul",
+      "target": "pais_Argentina",
+      "value": 3069917.0,
+      "cadeia": "Laticínios"
+    },
+    {
+      "source": "mun_Medianeira",
+      "target": "pais_Paraguai",
+      "value": 2869859.0,
+      "cadeia": "Laticínios"
+    },
+    {
+      "source": "mun_Maringá",
+      "target": "pais_Paraguai",
+      "value": 2447273.0,
+      "cadeia": "Laticínios"
+    },
+    {
+      "source": "mun_Rio Azul",
+      "target": "pais_Uruguai",
+      "value": 1868833.0,
+      "cadeia": "Laticínios"
+    },
+    {
+      "source": "mun_Curitiba",
+      "target": "pais_Uruguai",
+      "value": 1840620.0,
+      "cadeia": "Laticínios"
+    },
+    {
+      "source": "mun_Maringá",
+      "target": "pais_Estados Unidos",
+      "value": 55757301.0,
+      "cadeia": "Apicultura"
+    },
+    {
+      "source": "mun_União da Vitória",
+      "target": "pais_Estados Unidos",
+      "value": 20500420.0,
+      "cadeia": "Apicultura"
+    },
+    {
+      "source": "mun_Maringá",
+      "target": "pais_Austrália",
+      "value": 9051302.0,
+      "cadeia": "Apicultura"
+    },
+    {
+      "source": "mun_União da Vitória",
+      "target": "pais_Canadá",
+      "value": 6838974.0,
+      "cadeia": "Apicultura"
+    },
+    {
+      "source": "mun_Maringá",
+      "target": "pais_Canadá",
+      "value": 2841010.0,
+      "cadeia": "Apicultura"
+    },
+    {
+      "source": "mun_União da Vitória",
+      "target": "pais_Alemanha",
+      "value": 1852531.0,
+      "cadeia": "Apicultura"
+    },
+    {
+      "source": "mun_Maringá",
+      "target": "pais_Alemanha",
+      "value": 1426767.0,
+      "cadeia": "Apicultura"
+    },
+    {
+      "source": "mun_União da Vitória",
+      "target": "pais_Áustria",
+      "value": 600403.0,
+      "cadeia": "Apicultura"
+    },
+    {
+      "source": "mun_Maringá",
+      "target": "pais_Áustria",
+      "value": 147978.0,
+      "cadeia": "Apicultura"
+    },
+    {
+      "source": "mun_Cruzeiro do Oeste",
+      "target": "pais_China",
+      "value": 248848816.0,
+      "cadeia": "Bovinocultura"
+    },
+    {
+      "source": "mun_Cruzeiro do Oeste",
+      "target": "pais_Israel",
+      "value": 131764804.0,
+      "cadeia": "Bovinocultura"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_Estados Unidos",
+      "value": 94632238.0,
+      "cadeia": "Bovinocultura"
+    },
+    {
+      "source": "mun_Cambé",
+      "target": "pais_China",
+      "value": 88249246.0,
+      "cadeia": "Bovinocultura"
+    },
+    {
+      "source": "mun_Cruzeiro do Oeste",
+      "target": "pais_Chile",
+      "value": 69516005.0,
+      "cadeia": "Bovinocultura"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_Hong Kong",
+      "value": 67918460.0,
+      "cadeia": "Bovinocultura"
+    },
+    {
+      "source": "mun_Curitiba",
+      "target": "pais_Estados Unidos",
+      "value": 46480637.0,
+      "cadeia": "Bovinocultura"
+    },
+    {
+      "source": "mun_Cascavel",
+      "target": "pais_Chile",
+      "value": 16418999.0,
+      "cadeia": "Bovinocultura"
+    },
+    {
+      "source": "mun_Cruzeiro do Oeste",
+      "target": "pais_Estados Unidos",
+      "value": 12940916.0,
+      "cadeia": "Bovinocultura"
+    },
+    {
+      "source": "mun_Cruzeiro do Oeste",
+      "target": "pais_Hong Kong",
+      "value": 8705053.0,
+      "cadeia": "Bovinocultura"
+    },
+    {
+      "source": "mun_Colombo",
+      "target": "pais_Estados Unidos",
+      "value": 10371649.0,
+      "cadeia": "Florestal"
+    },
+    {
+      "source": "mun_Cianorte",
+      "target": "pais_Itália",
+      "value": 8204592.0,
+      "cadeia": "Florestal"
+    },
+    {
+      "source": "mun_Irati",
+      "target": "pais_Argentina",
+      "value": 7592261.0,
+      "cadeia": "Florestal"
+    },
+    {
+      "source": "mun_São Mateus do Sul",
+      "target": "pais_Alemanha",
+      "value": 6214611.0,
+      "cadeia": "Florestal"
+    },
+    {
+      "source": "mun_São João do Triunfo",
+      "target": "pais_Alemanha",
+      "value": 4294283.0,
+      "cadeia": "Florestal"
+    },
+    {
+      "source": "mun_Colombo",
+      "target": "pais_Alemanha",
+      "value": 4099870.0,
+      "cadeia": "Florestal"
+    },
+    {
+      "source": "mun_São João do Triunfo",
+      "target": "pais_Estados Unidos",
+      "value": 3311443.0,
+      "cadeia": "Florestal"
+    },
+    {
+      "source": "mun_Cianorte",
+      "target": "pais_Estados Unidos",
+      "value": 546186.0,
+      "cadeia": "Florestal"
+    },
+    {
+      "source": "mun_São Mateus do Sul",
+      "target": "pais_Argentina",
+      "value": 232099.0,
+      "cadeia": "Florestal"
+    },
+    {
+      "source": "mun_São Mateus do Sul",
+      "target": "pais_Itália",
+      "value": 171822.0,
+      "cadeia": "Florestal"
+    },
+    {
+      "source": "mun_Medianeira",
+      "target": "pais_Hong Kong",
+      "value": 322367482.0,
+      "cadeia": "Suinocultura"
+    },
+    {
+      "source": "mun_Medianeira",
+      "target": "pais_Singapura",
+      "value": 264878276.0,
+      "cadeia": "Suinocultura"
+    },
+    {
+      "source": "mun_Medianeira",
+      "target": "pais_Uruguai",
+      "value": 138550791.0,
+      "cadeia": "Suinocultura"
+    },
+    {
+      "source": "mun_Medianeira",
       "target": "pais_Vietnã",
-      "value": 2960726.0,
-      "cadeia": "Sojicultura"
+      "value": 130806691.0,
+      "cadeia": "Suinocultura"
+    },
+    {
+      "source": "mun_Cascavel",
+      "target": "pais_Uruguai",
+      "value": 104883636.0,
+      "cadeia": "Suinocultura"
+    },
+    {
+      "source": "mun_Castro",
+      "target": "pais_Hong Kong",
+      "value": 61624475.0,
+      "cadeia": "Suinocultura"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_Singapura",
+      "value": 55583542.0,
+      "cadeia": "Suinocultura"
+    },
+    {
+      "source": "mun_Palmas",
+      "target": "pais_Hong Kong",
+      "value": 53458934.0,
+      "cadeia": "Suinocultura"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_Vietnã",
+      "value": 37965748.0,
+      "cadeia": "Suinocultura"
+    },
+    {
+      "source": "mun_Medianeira",
+      "target": "pais_Argentina",
+      "value": 35295705.0,
+      "cadeia": "Suinocultura"
+    },
+    {
+      "source": "mun_Rio Negro",
+      "target": "pais_Bélgica",
+      "value": 8011494.0,
+      "cadeia": "Tabaco"
+    },
+    {
+      "source": "mun_Rio Negro",
+      "target": "pais_Turquia",
+      "value": 5429082.0,
+      "cadeia": "Tabaco"
+    },
+    {
+      "source": "mun_Rio Negro",
+      "target": "pais_Estados Unidos",
+      "value": 4113495.0,
+      "cadeia": "Tabaco"
+    },
+    {
+      "source": "mun_Rio Negro",
+      "target": "pais_França",
+      "value": 3850710.0,
+      "cadeia": "Tabaco"
+    },
+    {
+      "source": "mun_Campo Magro",
+      "target": "pais_Estados Unidos",
+      "value": 3622198.0,
+      "cadeia": "Tabaco"
+    },
+    {
+      "source": "mun_Rio Negro",
+      "target": "pais_Polônia",
+      "value": 2933520.0,
+      "cadeia": "Tabaco"
+    },
+    {
+      "source": "mun_Paranaguá",
+      "target": "pais_Turquia",
+      "value": 16860.0,
+      "cadeia": "Tabaco"
+    },
+    {
+      "source": "mun_Campo Magro",
+      "target": "pais_Bélgica",
+      "value": 330.0,
+      "cadeia": "Tabaco"
+    },
+    {
+      "source": "mun_Irati",
+      "target": "pais_Uruguai",
+      "value": 59465.0,
+      "cadeia": "Floricultura"
+    },
+    {
+      "source": "mun_Foz do Iguaçu",
+      "target": "pais_Paraguai",
+      "value": 26518.0,
+      "cadeia": "Floricultura"
+    },
+    {
+      "source": "mun_Quitandinha",
+      "target": "pais_Portugal",
+      "value": 14723.0,
+      "cadeia": "Floricultura"
+    },
+    {
+      "source": "mun_Toledo",
+      "target": "pais_Bolívia",
+      "value": 8058.0,
+      "cadeia": "Floricultura"
+    },
+    {
+      "source": "mun_Cascavel",
+      "target": "pais_Uruguai",
+      "value": 2367.0,
+      "cadeia": "Floricultura"
     }
+  ],
+  "cadeias": [
+    "Agroind. Carnes",
+    "Agroind. Grãos",
+    "Apicultura",
+    "Aquicultura",
+    "Avicultura",
+    "Bebidas",
+    "Bovinocultura",
+    "Cafeicultura",
+    "Canavicultura",
+    "Cerealicultura",
+    "Florestal",
+    "Floricultura",
+    "Fruticultura",
+    "Laticínios",
+    "Oleaginosas",
+    "Olericultura",
+    "Outros",
+    "Sojicultura",
+    "Suinocultura",
+    "Tabaco"
   ]
 }
