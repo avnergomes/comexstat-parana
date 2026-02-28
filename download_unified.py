@@ -12,15 +12,12 @@ Arquivos: EXP_YYYY_MUN.csv, IMP_YYYY_MUN.csv
 """
 
 import requests
+import certifi
 import pandas as pd
 from pathlib import Path
 import sys
 import io
 import time
-import urllib3
-
-# Desabilitar avisos de SSL para sites governamentais com certificados problemáticos
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Configurar encoding UTF-8 para Windows
 if sys.platform == 'win32':
@@ -34,12 +31,11 @@ OUTPUT_DIR = Path("data/raw")
 CAPITULOS_AGRO = list(range(1, 25))  # Capítulos 01-24 são agrícolas
 
 def download_file(url, output_path, max_retries=3):
-    """Download de arquivo com retry."""
+    """Download de arquivo com retry e SSL verificado via certifi."""
     for attempt in range(max_retries):
         try:
             print(f"  Baixando: {url}")
-            # verify=False para lidar com certificados SSL problemáticos do governo
-            response = requests.get(url, timeout=120, verify=False)
+            response = requests.get(url, timeout=120, verify=certifi.where())
             response.raise_for_status()
 
             with open(output_path, 'wb') as f:

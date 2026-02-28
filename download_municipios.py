@@ -7,12 +7,9 @@ import os
 import sys
 import io
 import requests
+import certifi
 import pandas as pd
 from pathlib import Path
-import urllib3
-
-# Desabilitar avisos de SSL
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Configurar encoding UTF-8 para Windows
 if sys.platform == 'win32':
@@ -66,10 +63,10 @@ COLUNAS_IMP_MUN = [
 
 
 def download_file(url, filepath):
-    """Baixa arquivo com bypass de SSL"""
+    """Baixa arquivo com SSL verificado via certifi"""
     print(f"  Baixando: {url}")
     try:
-        response = requests.get(url, verify=False, timeout=120)
+        response = requests.get(url, verify=certifi.where(), timeout=120)
         response.raise_for_status()
         with open(filepath, 'wb') as f:
             f.write(response.content)

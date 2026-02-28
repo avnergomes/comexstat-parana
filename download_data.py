@@ -8,6 +8,7 @@ import os
 import sys
 import io
 import requests
+import certifi
 from pathlib import Path
 from tqdm import tqdm
 import config
@@ -43,11 +44,8 @@ def download_arquivo(url: str, destino: str, descricao: str = None) -> bool:
     Returns:
         True se o download foi bem sucedido, False caso contrário
     """
-    import urllib3
-    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
     try:
-        response = requests.get(url, stream=True, timeout=300, verify=False)
+        response = requests.get(url, stream=True, timeout=300, verify=certifi.where())
         response.raise_for_status()
 
         total_size = int(response.headers.get('content-length', 0))
