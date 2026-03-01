@@ -236,7 +236,7 @@ export default function App() {
               {/* Heatmap Sazonal */}
               {interactiveFilteredData?.detailed && (
                 <HeatmapChart
-                  data={filteredData.detailed}
+                  data={interactiveFilteredData.detailed}
                   title="Padrão Sazonal por Cadeia - Exportações"
                   tipo="exportacoes"
                 />
