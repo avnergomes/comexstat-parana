@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { Globe } from 'lucide-react';
 import { formatCurrency } from '../utils/format';
 
@@ -78,20 +78,22 @@ export default function WorldMap({ data, title, tipo = 'exportacoes' }) {
   const [isLoading, setIsLoading] = useState(true);
 
   const countries = data?.[tipo] || [];
-  const total = countries.reduce((sum, c) => sum + (c.valor || 0), 0);
-  const maxValue = countries[0]?.valor || 1;
 
-  // Create lookup by ISO code
-  const dataByIso = {};
-  countries.forEach(c => {
-    const iso = COUNTRY_TO_ISO[c.pais];
-    if (iso) {
-      dataByIso[iso] = {
-        ...c,
-        percentual: total > 0 ? (c.valor / total) * 100 : 0,
-      };
-    }
-  });
+  const { dataByIso, total, maxValue } = useMemo(() => {
+    const t = countries.reduce((sum, c) => sum + (c.valor || 0), 0);
+    const mv = countries[0]?.valor || 1;
+    const lookup = {};
+    countries.forEach(c => {
+      const iso = COUNTRY_TO_ISO[c.pais];
+      if (iso) {
+        lookup[iso] = {
+          ...c,
+          percentual: t > 0 ? (c.valor / t) * 100 : 0,
+        };
+      }
+    });
+    return { dataByIso: lookup, total: t, maxValue: mv };
+  }, [countries]);
 
   // Store current data in ref for event handlers
   const dataRef = useRef({ dataByIso, maxValue });
@@ -209,7 +211,7 @@ export default function WorldMap({ data, title, tipo = 'exportacoes' }) {
         });
       }
     });
-  }, [data, tipo, dataByIso, maxValue]);
+  }, [data, tipo]);  // dataByIso e maxValue derivam de data+tipo via useMemo
 
   const topCountries = countries.slice(0, 10);
 

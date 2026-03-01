@@ -11,6 +11,9 @@ export function useData() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    const controller = new AbortController();
+    const { signal } = controller;
+
     async function loadData() {
       try {
         setLoading(true);
@@ -18,13 +21,15 @@ export function useData() {
 
         // Carregar dados em paralelo
         const [aggRes, detRes, foreRes, mapRes, sankeyRes, munRes] = await Promise.all([
-          fetch(`${BASE_URL}data/aggregated.json`),
-          fetch(`${BASE_URL}data/detailed.json`).catch(() => null),
-          fetch(`${BASE_URL}data/forecasts.json`).catch(() => null),
-          fetch(`${BASE_URL}data/map_data.json`).catch(() => null),
-          fetch(`${BASE_URL}data/sankey_data.json`).catch(() => null),
-          fetch(`${BASE_URL}data/municipios_data.json`).catch(() => null),
+          fetch(`${BASE_URL}data/aggregated.json`, { signal }),
+          fetch(`${BASE_URL}data/detailed.json`, { signal }).catch(() => null),
+          fetch(`${BASE_URL}data/forecasts.json`, { signal }).catch(() => null),
+          fetch(`${BASE_URL}data/map_data.json`, { signal }).catch(() => null),
+          fetch(`${BASE_URL}data/sankey_data.json`, { signal }).catch(() => null),
+          fetch(`${BASE_URL}data/municipios_data.json`, { signal }).catch(() => null),
         ]);
+
+        if (signal.aborted) return;
 
         if (!aggRes.ok) throw new Error('Erro ao carregar dados agregados');
 
@@ -35,31 +40,38 @@ export function useData() {
         const sankey = sankeyRes?.ok ? await sankeyRes.json() : null;
         const municipios = munRes?.ok ? await munRes.json() : null;
 
-        // Combinar todos os dados
-        setData({
-          metadata: aggregated.metadata,
-          filters: aggregated.filters,
-          timeseries: aggregated.timeseries,
-          timeseriesByCadeia: aggregated.timeseriesByCadeia || [],
-          byCategoria: aggregated.byCategoria,
-          byPais: aggregated.byPais,
-          byPaisByCadeia: aggregated.byPaisByCadeia || null,
-          topProdutos: aggregated.topProdutos,
-          detailed,
-          forecasts: forecasts?.previsoes || null,
-          mapData,
-          sankey,
-          municipios
-        });
+        if (!signal.aborted) {
+          // Combinar todos os dados
+          setData({
+            metadata: aggregated.metadata,
+            filters: aggregated.filters,
+            timeseries: aggregated.timeseries,
+            timeseriesByCadeia: aggregated.timeseriesByCadeia || [],
+            byCategoria: aggregated.byCategoria,
+            byPais: aggregated.byPais,
+            byPaisByCadeia: aggregated.byPaisByCadeia || null,
+            topProdutos: aggregated.topProdutos,
+            detailed,
+            forecasts: forecasts?.previsoes || null,
+            mapData,
+            sankey,
+            municipios
+          });
+        }
 
       } catch (err) {
-        setError(err.message);
+        if (err.name !== 'AbortError' && !signal.aborted) {
+          setError(err.message);
+        }
       } finally {
-        setLoading(false);
+        if (!signal.aborted) {
+          setLoading(false);
+        }
       }
     }
 
     loadData();
+    return () => controller.abort();
   }, []);
 
   return { data, loading, error };
