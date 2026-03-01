@@ -227,11 +227,15 @@ export default function ConnectionMap({
 
   // Carregar GeoJSON (world-countries.geojson com poligonos corretos)
   useEffect(() => {
+    const controller = new AbortController()
     const BASE_URL = import.meta.env.BASE_URL || '/'
-    fetch(`${BASE_URL}data/world-countries.geojson`)
+    fetch(`${BASE_URL}data/world-countries.geojson`, { signal: controller.signal })
       .then(res => res.json())
       .then(data => setGeoData(data))
-      .catch(err => console.error('Erro ao carregar GeoJSON:', err))
+      .catch(err => {
+        if (err.name !== 'AbortError') console.error('Erro ao carregar GeoJSON:', err)
+      })
+    return () => controller.abort()
   }, [])
 
   // Processar dados de exportacao por pais
