@@ -1,24 +1,33 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import { MapPin } from 'lucide-react';
 import { formatCurrency } from '../utils/format';
 
 export default function PRMap({ data, title }) {
   const mapRef = useRef(null);
   const mapInstanceRef = useRef(null);
+  const geojsonLayerRef = useRef(null);
+  const geojsonDataRef = useRef(null);
   const [loading, setLoading] = useState(true);
 
+  // Color scale function
+  const getColor = useCallback((value, maxValue) => {
+    if (!value) return '#e2e8f0';
+    const ratio = Math.log(value + 1) / Math.log(maxValue + 1);
+    const colors = ['#f0fdf4', '#bbf7d0', '#86efac', '#4ade80', '#22c55e', '#16a34a', '#15803d', '#166534', '#14532d'];
+    const index = Math.min(Math.floor(ratio * colors.length), colors.length - 1);
+    return colors[index];
+  }, []);
+
+  // Initialize map once
   useEffect(() => {
     if (!mapRef.current || mapInstanceRef.current) return;
 
-    // Import Leaflet dynamically
     const initMap = async () => {
       const L = await import('leaflet');
       await import('leaflet/dist/leaflet.css');
 
-      // Initialize map centered on Paraná
       const map = L.map(mapRef.current).setView([-24.5, -51.5], 7);
 
-      // Add tile layer
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap'
       }).addTo(map);
@@ -29,91 +38,7 @@ export default function PRMap({ data, title }) {
       try {
         const response = await fetch(`${import.meta.env.BASE_URL}data/mun_PR.geojson`);
         const geojson = await response.json();
-
-        // Create value lookup from data
-        const valueLookup = {};
-        if (data?.municipios) {
-          data.municipios.forEach(m => {
-            valueLookup[m.codigo] = m;
-          });
-        }
-
-        // Calculate max value for color scale
-        const maxValue = data?.municipios?.[0]?.valor || 1;
-
-        // Color scale function
-        const getColor = (value) => {
-          if (!value) return '#e2e8f0';
-          const ratio = Math.log(value + 1) / Math.log(maxValue + 1);
-          // Green scale
-          const colors = ['#f0fdf4', '#bbf7d0', '#86efac', '#4ade80', '#22c55e', '#16a34a', '#15803d', '#166534', '#14532d'];
-          const index = Math.min(Math.floor(ratio * colors.length), colors.length - 1);
-          return colors[index];
-        };
-
-        // Style function
-        const style = (feature) => {
-          const codigo = parseInt(feature.properties.CodIbge);
-          const munData = valueLookup[codigo];
-          return {
-            fillColor: getColor(munData?.valor),
-            weight: 1,
-            opacity: 1,
-            color: '#94a3b8',
-            fillOpacity: 0.8
-          };
-        };
-
-        // Highlight style
-        const highlightStyle = {
-          weight: 3,
-          color: '#22c55e',
-          fillOpacity: 0.9
-        };
-
-        // Add GeoJSON layer
-        const geojsonLayer = L.geoJSON(geojson, {
-          style: style,
-          onEachFeature: (feature, layer) => {
-            const codigo = parseInt(feature.properties.CodIbge);
-            const nome = feature.properties.Municipio;
-            const munData = valueLookup[codigo];
-
-            // Create popup content
-            let popupContent = `<div class="p-2">
-              <p class="font-semibold text-dark-800">${nome}</p>`;
-
-            if (munData) {
-              popupContent += `
-                <p class="text-sm text-dark-600">Valor: ${formatCurrency(munData.valor, 1)}</p>
-                <p class="text-sm text-dark-600">Participação: ${munData.percentual.toFixed(1)}%</p>`;
-            } else {
-              popupContent += `<p class="text-sm text-dark-400">Sem dados de exportação</p>`;
-            }
-
-            popupContent += `</div>`;
-
-            layer.bindPopup(popupContent);
-
-            // Hover effects
-            layer.on({
-              mouseover: (e) => {
-                const layer = e.target;
-                layer.setStyle(highlightStyle);
-                layer.bringToFront();
-              },
-              mouseout: (e) => {
-                geojsonLayer.resetStyle(e.target);
-              },
-              click: (e) => {
-                map.fitBounds(e.target.getBounds());
-              }
-            });
-          }
-        }).addTo(map);
-
-        // Fit bounds to Paraná
-        map.fitBounds(geojsonLayer.getBounds());
+        geojsonDataRef.current = geojson;
 
         // Add legend
         const legend = L.control({ position: 'bottomright' });
@@ -137,9 +62,8 @@ export default function PRMap({ data, title }) {
           return div;
         };
         legend.addTo(map);
-
       } catch (error) {
-        // GeoJSON load error - map will show empty
+        console.error('GeoJSON load error:', error);
       }
 
       setLoading(false);
@@ -153,7 +77,90 @@ export default function PRMap({ data, title }) {
         mapInstanceRef.current = null;
       }
     };
-  }, [data]);
+  }, []);
+
+  // Update GeoJSON layer when data changes
+  useEffect(() => {
+    const map = mapInstanceRef.current;
+    const geojson = geojsonDataRef.current;
+    if (!map || !geojson) return;
+
+    // Remove existing layer
+    if (geojsonLayerRef.current) {
+      map.removeLayer(geojsonLayerRef.current);
+    }
+
+    // Create value lookup from data
+    const valueLookup = {};
+    if (data?.municipios) {
+      data.municipios.forEach(m => {
+        valueLookup[m.codigo] = m;
+      });
+    }
+
+    const maxValue = data?.municipios?.[0]?.valor || 1;
+
+    // Style function
+    const style = (feature) => {
+      const codigo = parseInt(feature.properties.CodIbge);
+      const munData = valueLookup[codigo];
+      return {
+        fillColor: getColor(munData?.valor, maxValue),
+        weight: 1,
+        opacity: 1,
+        color: '#94a3b8',
+        fillOpacity: 0.8
+      };
+    };
+
+    const highlightStyle = {
+      weight: 3,
+      color: '#22c55e',
+      fillOpacity: 0.9
+    };
+
+    // Import Leaflet and create layer
+    import('leaflet').then(L => {
+      const geojsonLayer = L.geoJSON(geojson, {
+        style: style,
+        onEachFeature: (feature, layer) => {
+          const codigo = parseInt(feature.properties.CodIbge);
+          const nome = feature.properties.Municipio;
+          const munData = valueLookup[codigo];
+
+          let popupContent = `<div class="p-2">
+            <p class="font-semibold text-dark-800">${nome}</p>`;
+
+          if (munData) {
+            popupContent += `
+              <p class="text-sm text-dark-600">Valor: ${formatCurrency(munData.valor, 1)}</p>
+              <p class="text-sm text-dark-600">Participação: ${munData.percentual.toFixed(1)}%</p>`;
+          } else {
+            popupContent += `<p class="text-sm text-dark-400">Sem dados de exportação</p>`;
+          }
+
+          popupContent += `</div>`;
+          layer.bindPopup(popupContent);
+
+          layer.on({
+            mouseover: (e) => {
+              e.target.setStyle(highlightStyle);
+              e.target.bringToFront();
+            },
+            mouseout: (e) => {
+              geojsonLayer.resetStyle(e.target);
+            },
+            click: (e) => {
+              map.fitBounds(e.target.getBounds());
+            }
+          });
+        }
+      }).addTo(map);
+
+      geojsonLayerRef.current = geojsonLayer;
+      map.fitBounds(geojsonLayer.getBounds());
+    });
+  }, [data, getColor]);
 
   return (
     <div className="chart-container">
