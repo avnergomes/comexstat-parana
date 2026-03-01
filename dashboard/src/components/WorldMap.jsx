@@ -126,7 +126,7 @@ export default function WorldMap({ data, title, tipo = 'exportacoes' }) {
 
       // Load GeoJSON
       try {
-        const response = await fetch('./data/countries_merged.geojson');
+        const response = await fetch(`${import.meta.env.BASE_URL}data/countries_merged.geojson`);
         const geojson = await response.json();
 
         // Style function - uses dataRef for current values

@@ -27,7 +27,7 @@ export default function PRMap({ data, title }) {
 
       // Load GeoJSON
       try {
-        const response = await fetch('./data/mun_PR.geojson');
+        const response = await fetch(`${import.meta.env.BASE_URL}data/mun_PR.geojson`);
         const geojson = await response.json();
 
         // Create value lookup from data
