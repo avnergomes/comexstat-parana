@@ -435,12 +435,12 @@
     {
       "source": "mun_Paranaguá",
       "target": "pais_China",
-      "value": 17010185233.0
+      "value": 17020182435.0
     },
     {
       "source": "mun_Maringá",
       "target": "pais_China",
-      "value": 9925970974.0
+      "value": 9925685548.0
     },
     {
       "source": "mun_Paranaguá",
@@ -460,7 +460,7 @@
     {
       "source": "mun_Paranaguá",
       "target": "pais_Emirados Árabes Unidos",
-      "value": 1289109294.0
+      "value": 1289000998.0
     },
     {
       "source": "mun_Sertanópolis",
@@ -475,7 +475,7 @@
     {
       "source": "mun_Paranaguá",
       "target": "pais_Japão",
-      "value": 1142581477.0
+      "value": 1142521851.0
     },
     {
       "source": "mun_Paranaguá",
@@ -500,7 +500,7 @@
     {
       "source": "mun_Cascavel",
       "target": "pais_China",
-      "value": 966609666.0
+      "value": 966528266.0
     },
     {
       "source": "mun_Palotina",
@@ -610,7 +610,7 @@
     {
       "source": "mun_Paranaguá",
       "target": "pais_Argélia",
-      "value": 275505507.0
+      "value": 277474241.0
     },
     {
       "source": "mun_Ponta Grossa",
@@ -685,7 +685,7 @@
     {
       "source": "mun_Palotina",
       "target": "pais_Coreia do Sul",
-      "value": 95907845.0
+      "value": 95857473.0
     },
     {
       "source": "mun_Cascavel",
@@ -710,7 +710,7 @@
     {
       "source": "mun_Marialva",
       "target": "pais_Índia",
-      "value": 81335237.0
+      "value": 81511166.0
     },
     {
       "source": "mun_Sertanópolis",
@@ -750,7 +750,7 @@
     {
       "source": "mun_Londrina",
       "target": "pais_Argélia",
-      "value": 66822767.0
+      "value": 67112155.0
     },
     {
       "source": "mun_Rolândia",
@@ -867,7 +867,7 @@
     {
       "source": "mun_Curitiba",
       "target": "pais_Índia",
-      "value": 12201008.0,
+      "value": 12217383.0,
       "cadeia": "Olericultura"
     },
     {
@@ -1047,7 +1047,7 @@
     {
       "source": "mun_Paranaguá",
       "target": "pais_Argélia",
-      "value": 200611549.0,
+      "value": 202580283.0,
       "cadeia": "Canavicultura"
     },
     {
@@ -1137,7 +1137,7 @@
     {
       "source": "mun_Paranaguá",
       "target": "pais_Emirados Árabes Unidos",
-      "value": 1218062234.0,
+      "value": 1217953938.0,
       "cadeia": "Avicultura"
     },
     {
@@ -1155,7 +1155,7 @@
     {
       "source": "mun_Paranaguá",
       "target": "pais_Japão",
-      "value": 781670713.0,
+      "value": 781611087.0,
       "cadeia": "Avicultura"
     },
     {
@@ -1173,7 +1173,7 @@
     {
       "source": "mun_Cascavel",
       "target": "pais_China",
-      "value": 510949205.0,
+      "value": 510867805.0,
       "cadeia": "Avicultura"
     },
     {
@@ -1197,13 +1197,13 @@
     {
       "source": "mun_Paranaguá",
       "target": "pais_China",
-      "value": 16236216954.0,
+      "value": 16246214156.0,
       "cadeia": "Sojicultura"
     },
     {
       "source": "mun_Maringá",
       "target": "pais_China",
-      "value": 9336027598.0,
+      "value": 9334848009.0,
       "cadeia": "Sojicultura"
     },
     {
@@ -1329,7 +1329,7 @@
     {
       "source": "mun_Curitiba",
       "target": "pais_Países Baixos (Holanda)",
-      "value": 24909735.0,
+      "value": 24913653.0,
       "cadeia": "Fruticultura"
     },
     {
