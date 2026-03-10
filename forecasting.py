@@ -57,9 +57,9 @@ def load_timeseries():
     imp_path = INPUT_DIR / "unified_imp_pr.parquet"
 
     if not exp_path.exists():
-        # Fallback para dados originais
-        exp_path = INPUT_DIR / "exportacoes_pr_agro.parquet"
-        imp_path = INPUT_DIR / "importacoes_pr_agro.parquet"
+        # Fallback para dados intermediarios da pipeline atual
+        exp_path = INPUT_DIR / "exp_mun_agro.parquet"
+        imp_path = INPUT_DIR / "imp_mun_agro.parquet"
 
     if not exp_path.exists():
         print(f"ERRO: Arquivo {exp_path} não encontrado")

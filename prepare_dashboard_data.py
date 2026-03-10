@@ -96,9 +96,9 @@ def carregar_dados():
     unified_exp_path = os.path.join(DATA_DIR, "unified_exp_pr.parquet")
     unified_imp_path = os.path.join(DATA_DIR, "unified_imp_pr.parquet")
 
-    # Fallback para dados originais
-    exp_path = os.path.join(DATA_DIR, "exportacoes_pr_agro.parquet")
-    imp_path = os.path.join(DATA_DIR, "importacoes_pr_agro.parquet")
+    # Fallback para dados intermediarios da pipeline atual
+    exp_path = os.path.join(DATA_DIR, "exp_mun_agro.parquet")
+    imp_path = os.path.join(DATA_DIR, "imp_mun_agro.parquet")
 
     # Verificar qual fonte de dados usar
     if os.path.exists(unified_exp_path):
