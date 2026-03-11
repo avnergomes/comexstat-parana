@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Filter, RotateCcw, ChevronDown, ChevronUp, X, TrendingUp, TrendingDown, ArrowLeftRight, Leaf, FlaskConical } from 'lucide-react';
+import { Filter, RotateCcw, ChevronDown, X, TrendingUp, TrendingDown, ArrowLeftRight, Leaf, FlaskConical } from 'lucide-react';
 
 export default function Filters({ filters, onChange, metadata, cadeias }) {
   const [expanded, setExpanded] = useState(false);
@@ -153,25 +153,23 @@ export default function Filters({ filters, onChange, metadata, cadeias }) {
           )}
           <button
             onClick={() => setExpanded(!expanded)}
+            aria-label={expanded ? 'Recolher filtros' : 'Expandir filtros'}
+            aria-expanded={expanded}
             className="flex items-center gap-1 text-sm text-dark-600 hover:text-primary-600 transition-colors px-2 py-1 rounded-lg hover:bg-dark-50"
           >
-            {expanded ? (
-              <>
-                <ChevronUp className="w-4 h-4" />
-                <span className="hidden sm:inline">Menos</span>
-              </>
-            ) : (
-              <>
-                <ChevronDown className="w-4 h-4" />
-                <span className="hidden sm:inline">Mais filtros</span>
-              </>
+            <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${expanded ? 'rotate-180' : ''}`} />
+            <span className="hidden sm:inline">{expanded ? 'Menos' : 'Mais filtros'}</span>
+            {!expanded && activeFiltersCount > 0 && (
+              <span className="ml-1 w-5 h-5 flex items-center justify-center bg-primary-600 text-white text-[10px] font-bold rounded-full">
+                {activeFiltersCount}
+              </span>
             )}
           </button>
         </div>
       </div>
 
       {/* Filtros expandidos */}
-      {expanded && (
+      <div className={`filter-panel ${expanded ? '' : 'collapsed'}`}>
         <div className="px-4 pb-4 border-t border-dark-100 pt-4 space-y-4">
           {/* Tipo - versão mobile */}
           <div className="sm:hidden">
@@ -334,7 +332,7 @@ export default function Filters({ filters, onChange, metadata, cadeias }) {
             </div>
           )}
         </div>
-      )}
+      </div>
 
       {/* Chips de filtros ativos (quando colapsado) */}
       {!expanded && hasActiveFilters && (

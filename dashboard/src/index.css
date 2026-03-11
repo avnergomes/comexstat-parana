@@ -117,6 +117,53 @@
   .chart-container {
     @apply bg-white rounded-xl p-4 border border-dark-100;
   }
+
+  .chart-container-title {
+    @apply text-base font-display font-semibold text-dark-800 mb-3 flex items-center gap-2;
+  }
+
+  /* Filter panel collapse animation */
+  .filter-panel {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.3s ease, opacity 0.2s ease;
+    opacity: 1;
+  }
+
+  .filter-panel.collapsed {
+    grid-template-rows: 0fr;
+    opacity: 0;
+  }
+
+  .filter-panel > div {
+    overflow: hidden;
+  }
+
+  /* Skeleton loading shimmer */
+  .skeleton {
+    position: relative;
+    overflow: hidden;
+    background-color: theme('colors.neutral.200');
+    border-radius: theme('borderRadius.lg');
+  }
+
+  .skeleton::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    animation: shimmer 1.5s infinite;
+  }
+
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  /* Active filter badge */
+  .active-filter-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium border transition-all duration-200;
+  }
 }
 
 @layer utilities {
