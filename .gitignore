@@ -74,3 +74,4 @@ temp/
 .parcel-cache/
 *.gs
 google-apps-script*.js
+dashboard/public/data/mun_PR.geojson

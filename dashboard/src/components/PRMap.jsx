@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
+import { feature } from 'topojson-client';
 import { MapPin } from 'lucide-react';
 import { formatCurrency } from '../utils/format';
 
@@ -35,9 +36,11 @@ export default function PRMap({ data, title }) {
       mapInstanceRef.current = map;
 
       // Load GeoJSON
+      const TOPO_URL = 'https://cdn.jsdelivr.net/gh/datageoparana/datageoparana.github.io@main/assets/parana-municipalities.topojson';
       try {
-        const response = await fetch(`${import.meta.env.BASE_URL}data/mun_PR.geojson`);
-        const geojson = await response.json();
+        const response = await fetch(TOPO_URL);
+        const topo = await response.json();
+        const geojson = feature(topo, topo.objects.municipalities);
         geojsonDataRef.current = geojson;
 
         // Add legend
