@@ -66,3 +66,9 @@ temp/
 # Google Apps Script (secrets)
 *.gs
 google-apps-script*.js
+
+# Claude Code
+.claude/
+CLAUDE.md
+.claudeignore
+
