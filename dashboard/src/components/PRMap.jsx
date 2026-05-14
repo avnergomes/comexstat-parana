@@ -1,3 +1,4 @@
+// ATLAS-A11Y-HEX-SWEPT
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { feature } from 'topojson-client';
 import { MapPin } from 'lucide-react';
@@ -14,7 +15,7 @@ export default function PRMap({ data, title }) {
   const getColor = useCallback((value, maxValue) => {
     if (!value) return '#e2e8f0';
     const ratio = Math.log(value + 1) / Math.log(maxValue + 1);
-    const colors = ['#f0fdf4', '#bbf7d0', '#86efac', '#4ade80', '#22c55e', '#16a34a', '#15803d', '#166534', '#14532d'];
+    const colors = ['#f0fdf4', '#bbf7d0', '#87afcd', '#4ade80', '#0072B2', '#005c8e', '#004a72', '#166534', '#003356'];
     const index = Math.min(Math.floor(ratio * colors.length), colors.length - 1);
     return colors[index];
   }, []);
@@ -111,14 +112,14 @@ export default function PRMap({ data, title }) {
         fillColor: getColor(munData?.valor, maxValue),
         weight: 1,
         opacity: 1,
-        color: '#94a3b8',
+        color: '#918058',
         fillOpacity: 0.8
       };
     };
 
     const highlightStyle = {
       weight: 3,
-      color: '#22c55e',
+      color: '#0072B2',
       fillOpacity: 0.9
     };
 

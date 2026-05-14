@@ -1,3 +1,4 @@
+// ATLAS-A11Y-HEX-SWEPT
 import { useState } from 'react';
 import { Filter, RotateCcw, ChevronDown, X, TrendingUp, TrendingDown, ArrowLeftRight, Leaf, FlaskConical } from 'lucide-react';
 
@@ -357,7 +358,7 @@ export default function Filters({ filters, onChange, metadata, cadeias }) {
               <span
                 key={cadeia}
                 className="inline-flex items-center gap-1 px-2 py-1 text-white text-xs rounded-full"
-                style={{ backgroundColor: cadeiaInfo?.cor || '#64748b' }}
+                style={{ backgroundColor: cadeiaInfo?.cor || '#6e6453' }}
               >
                 {cadeia}
                 <button

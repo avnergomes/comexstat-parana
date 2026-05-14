@@ -1,3 +1,4 @@
+// ATLAS-A11Y-HEX-SWEPT
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { Globe } from 'lucide-react';
 import { formatCurrency } from '../utils/format';
@@ -54,7 +55,7 @@ const COUNTRY_TO_ISO = {
 };
 
 // Color scale - 5 levels like VBP (MAP_GRADIENTS.green)
-const MAP_COLORS = ['#dcfce7', '#86efac', '#22c55e', '#15803d', '#14532d'];
+const MAP_COLORS = ['#d9e6f0', '#87afcd', '#0072B2', '#004a72', '#003356'];
 
 const getColor = (value, maxValue) => {
   if (!value || value === 0) return '#f3f4f6'; // gray-100 for no data
@@ -253,11 +254,11 @@ export default function WorldMap({ data, title, tipo = 'exportacoes' }) {
           <p className="text-xs font-medium text-dark-700 mb-1">Participação</p>
           <div className="flex items-center gap-0.5">
             <div className="w-6 h-3 rounded-sm" style={{ backgroundColor: '#f3f4f6' }}></div>
-            <div className="w-6 h-3 rounded-sm" style={{ backgroundColor: '#dcfce7' }}></div>
-            <div className="w-6 h-3 rounded-sm" style={{ backgroundColor: '#86efac' }}></div>
-            <div className="w-6 h-3 rounded-sm" style={{ backgroundColor: '#22c55e' }}></div>
-            <div className="w-6 h-3 rounded-sm" style={{ backgroundColor: '#15803d' }}></div>
-            <div className="w-6 h-3 rounded-sm" style={{ backgroundColor: '#14532d' }}></div>
+            <div className="w-6 h-3 rounded-sm" style={{ backgroundColor: '#d9e6f0' }}></div>
+            <div className="w-6 h-3 rounded-sm" style={{ backgroundColor: '#87afcd' }}></div>
+            <div className="w-6 h-3 rounded-sm" style={{ backgroundColor: '#0072B2' }}></div>
+            <div className="w-6 h-3 rounded-sm" style={{ backgroundColor: '#004a72' }}></div>
+            <div className="w-6 h-3 rounded-sm" style={{ backgroundColor: '#003356' }}></div>
           </div>
           <div className="flex justify-between text-[9px] text-dark-500 mt-0.5 px-0.5">
             <span>0</span>

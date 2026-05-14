@@ -1,3 +1,4 @@
+// ATLAS-A11Y-HEX-SWEPT
 import { useState } from 'react';
 import {
   BarChart, Bar, PieChart, Pie, Cell, Treemap,
@@ -130,13 +131,13 @@ export default function CategoryChart({ data, title, tipo = 'exportacoes', onCat
               <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
               <XAxis
                 type="number"
-                tick={{ fill: '#64748b', fontSize: 11 }}
+                tick={{ fill: '#6e6453', fontSize: 11 }}
                 tickFormatter={(value) => formatLargeNumber(value, 0)}
               />
               <YAxis
                 type="category"
                 dataKey="name"
-                tick={{ fill: '#64748b', fontSize: 10 }}
+                tick={{ fill: '#6e6453', fontSize: 10 }}
                 width={110}
                 interval={0}
               />

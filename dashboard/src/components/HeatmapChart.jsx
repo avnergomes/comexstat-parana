@@ -1,3 +1,4 @@
+// ATLAS-A11Y-HEX-SWEPT
 import { useMemo } from 'react';
 import { Tooltip, ResponsiveContainer } from 'recharts';
 import { formatCurrency } from '../utils/format';
@@ -7,15 +8,15 @@ const MONTHS = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', '
 // Paleta de cores para o heatmap (verde)
 const COLOR_SCALE = [
   '#f0fdf4', // 0-10% - muito claro
-  '#dcfce7', // 10-20%
+  '#d9e6f0', // 10-20%
   '#bbf7d0', // 20-30%
-  '#86efac', // 30-40%
+  '#87afcd', // 30-40%
   '#4ade80', // 40-50%
-  '#22c55e', // 50-60%
-  '#16a34a', // 60-70%
-  '#15803d', // 70-80%
+  '#0072B2', // 50-60%
+  '#005c8e', // 60-70%
+  '#004a72', // 70-80%
   '#166534', // 80-90%
-  '#14532d', // 90-100% - muito escuro
+  '#003356', // 90-100% - muito escuro
 ];
 
 function getColor(value, maxValue) {

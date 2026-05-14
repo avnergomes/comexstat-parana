@@ -1,3 +1,4 @@
+// ATLAS-A11Y-HEX-SWEPT
 /**
  * Utilitarios de formatacao para o dashboard ComexStat
  */
@@ -149,7 +150,7 @@ export function getVariationBadge(value) {
  * Gera cor baseada em string (hash)
  */
 export function stringToColor(str) {
-  if (!str) return '#64748b';
+  if (!str) return '#6e6453';
 
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
@@ -157,11 +158,11 @@ export function stringToColor(str) {
   }
 
   const colors = [
-    '#22c55e', '#16a34a', '#15803d', // Greens
+    '#0072B2', '#005c8e', '#004a72', // Greens
     '#eab308', '#ca8a04', '#a16207', // Yellows
     '#3b82f6', '#2563eb', '#1d4ed8', // Blues
-    '#f59e0b', '#d97706', '#b45309', // Oranges
-    '#8b5cf6', '#7c3aed', '#6d28d9', // Purples
+    '#c89b3c', '#a87f2d', '#b45309', // Oranges
+    '#CC79A7', '#7c3aed', '#6d28d9', // Purples
     '#ec4899', '#db2777', '#be185d', // Pinks
   ];
 
@@ -171,53 +172,36 @@ export function stringToColor(str) {
 /**
  * Cores para graficos (padrao VBP)
  */
-export const CHART_COLORS = {
-  primary: ['#22c55e', '#16a34a', '#15803d', '#166534', '#14532d'],
-  secondary: ['#0ea5e9', '#0284c7', '#0369a1', '#075985', '#0c4a6e'],
-  accent: ['#f59e0b', '#d97706', '#b45309', '#92400e', '#78350f'],
-  rainbow: [
-    '#22c55e', '#0ea5e9', '#f59e0b', '#ef4444', '#8b5cf6',
-    '#ec4899', '#14b8a6', '#f97316', '#6366f1', '#84cc16',
-    '#06b6d4', '#a855f7', '#10b981', '#eab308', '#64748b'
-  ],
-};
-
 /**
  * Gradientes para mapas (padrao VBP)
  */
-export const MAP_GRADIENTS = {
-  green: ['#dcfce7', '#86efac', '#22c55e', '#15803d', '#14532d'],
-  blue: ['#e0f2fe', '#7dd3fc', '#0ea5e9', '#0369a1', '#0c4a6e'],
-  yellow: ['#fef3c7', '#fcd34d', '#f59e0b', '#b45309', '#78350f'],
-};
-
 /**
  * Cores para categorias NCM (mapeamento especifico)
  */
 export const CATEGORY_COLORS = {
-  'Animais vivos': '#22c55e',
-  'Carnes e miudezas': '#ef4444',
-  'Peixes e crustaceos': '#0ea5e9',
-  'Laticinios e ovos': '#f59e0b',
+  'Animais vivos': '#0072B2',
+  'Carnes e miudezas': '#D55E00',
+  'Peixes e crustaceos': '#3d729c',
+  'Laticinios e ovos': '#c89b3c',
   'Outros prod. animais': '#84cc16',
   'Plantas e floricultura': '#10b981',
   'Horticolas e raizes': '#14b8a6',
   'Frutas': '#f97316',
   'Cafe, cha e especiarias': '#92400e',
   'Cereais': '#eab308',
-  'Produtos de moagem': '#d97706',
-  'Sementes oleaginosas': '#16a34a',
+  'Produtos de moagem': '#a87f2d',
+  'Sementes oleaginosas': '#005c8e',
   'Gomas e resinas': '#6b7280',
   'Mat. para entrancar': '#a3a3a3',
-  'Gorduras e oleos': '#fbbf24',
-  'Prep. carne/peixe': '#dc2626',
+  'Gorduras e oleos': '#e0b850',
+  'Prep. carne/peixe': '#a8482c',
   'Acucares': '#ec4899',
   'Cacau e preparacoes': '#78350f',
   'Prep. de cereais': '#ca8a04',
   'Prep. de horticolas': '#059669',
-  'Prep. alimenticias': '#8b5cf6',
-  'Bebidas e vinagres': '#6366f1',
-  'Residuos alimentares': '#64748b',
+  'Prep. alimenticias': '#CC79A7',
+  'Bebidas e vinagres': '#7a4e88',
+  'Residuos alimentares': '#6e6453',
   'Tabaco': '#78716c',
 };
 
@@ -237,3 +221,7 @@ export function getCategoryColor(categoria, index = null) {
 export function getRainbowColor(index) {
   return CHART_COLORS.rainbow[index % CHART_COLORS.rainbow.length];
 }
+
+// ATLAS-PALETTE-V1
+// Re-export the shared Atlas Editorial palette (daltonic-safe).
+export { CHART_COLORS, MAP_GRADIENTS, ATLAS_CATEGORICAL, ATLAS_FOREST, ATLAS_WATER, ATLAS_CLAY, ATLAS_EARTH, ATLAS_HARVEST, ATLAS_DIVERGING, ATLAS_CHROME, categoricalColor, sequentialColor } from './chart-palette.js';

@@ -1,3 +1,4 @@
+// ATLAS-A11Y-HEX-SWEPT
 import {
   ComposedChart, Line, Area, XAxis, YAxis, CartesianGrid,
   Tooltip, Legend, ResponsiveContainer, ReferenceLine
@@ -127,11 +128,11 @@ export default function ForecastChart({ historicalData, forecastData, title }) {
             <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
             <XAxis
               dataKey="ano"
-              tick={{ fill: '#64748b', fontSize: 12 }}
+              tick={{ fill: '#6e6453', fontSize: 12 }}
               tickLine={{ stroke: '#cbd5e1' }}
             />
             <YAxis
-              tick={{ fill: '#64748b', fontSize: 12 }}
+              tick={{ fill: '#6e6453', fontSize: 12 }}
               tickLine={{ stroke: '#cbd5e1' }}
               tickFormatter={(value) => formatLargeNumber(value, 0)}
             />
@@ -156,9 +157,9 @@ export default function ForecastChart({ historicalData, forecastData, title }) {
               type="monotone"
               dataKey="exportacoes"
               name="Exportações"
-              stroke="#22c55e"
+              stroke="#0072B2"
               strokeWidth={2}
-              dot={{ fill: '#22c55e', r: 4 }}
+              dot={{ fill: '#0072B2', r: 4 }}
               connectNulls
             />
             <Line
@@ -176,10 +177,10 @@ export default function ForecastChart({ historicalData, forecastData, title }) {
               type="monotone"
               dataKey="exportacoesProj"
               name="Exp. Projetada"
-              stroke="#22c55e"
+              stroke="#0072B2"
               strokeWidth={2}
               strokeDasharray="5 5"
-              dot={{ fill: '#22c55e', r: 4, strokeDasharray: 'none' }}
+              dot={{ fill: '#0072B2', r: 4, strokeDasharray: 'none' }}
             />
             <Line
               type="monotone"
@@ -191,7 +192,7 @@ export default function ForecastChart({ historicalData, forecastData, title }) {
               dot={{ fill: '#3b82f6', r: 4, strokeDasharray: 'none' }}
             />
 
-            <ReferenceLine y={0} stroke="#94a3b8" />
+            <ReferenceLine y={0} stroke="#918058" />
           </ComposedChart>
         </ResponsiveContainer>
       </div>

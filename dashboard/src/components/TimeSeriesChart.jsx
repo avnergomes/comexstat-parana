@@ -1,3 +1,4 @@
+// ATLAS-A11Y-HEX-SWEPT
 import {
   LineChart, Line, AreaChart, Area, XAxis, YAxis, CartesianGrid,
   Tooltip, Legend, ResponsiveContainer, ReferenceLine
@@ -65,8 +66,8 @@ export default function TimeSeriesChart({ data, title, showBalance = true, tipo 
           >
             <defs>
               <linearGradient id="gradientExp" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#22c55e" stopOpacity={0.3} />
-                <stop offset="95%" stopColor="#22c55e" stopOpacity={0} />
+                <stop offset="5%" stopColor="#0072B2" stopOpacity={0.3} />
+                <stop offset="95%" stopColor="#0072B2" stopOpacity={0} />
               </linearGradient>
               <linearGradient id="gradientImp" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.3} />
@@ -76,11 +77,11 @@ export default function TimeSeriesChart({ data, title, showBalance = true, tipo 
             <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
             <XAxis
               dataKey="ano"
-              tick={{ fill: '#64748b', fontSize: 12 }}
+              tick={{ fill: '#6e6453', fontSize: 12 }}
               tickLine={{ stroke: '#cbd5e1' }}
             />
             <YAxis
-              tick={{ fill: '#64748b', fontSize: 12 }}
+              tick={{ fill: '#6e6453', fontSize: 12 }}
               tickLine={{ stroke: '#cbd5e1' }}
               tickFormatter={(value) => formatLargeNumber(value, 0)}
             />
@@ -94,7 +95,7 @@ export default function TimeSeriesChart({ data, title, showBalance = true, tipo 
                 type="monotone"
                 dataKey="exportacoes"
                 name="Exportações"
-                stroke="#22c55e"
+                stroke="#0072B2"
                 strokeWidth={2}
                 fill="url(#gradientExp)"
               />
@@ -110,7 +111,7 @@ export default function TimeSeriesChart({ data, title, showBalance = true, tipo 
               />
             )}
             {showBalance && tipo === 'todos' && (
-              <ReferenceLine y={0} stroke="#94a3b8" strokeDasharray="3 3" />
+              <ReferenceLine y={0} stroke="#918058" strokeDasharray="3 3" />
             )}
           </AreaChart>
         </ResponsiveContainer>

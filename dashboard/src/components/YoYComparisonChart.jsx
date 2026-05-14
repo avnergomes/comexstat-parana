@@ -1,3 +1,4 @@
+// ATLAS-A11Y-HEX-SWEPT
 import { useMemo } from 'react';
 import {
   ComposedChart, Bar, Line, XAxis, YAxis, CartesianGrid,
@@ -126,29 +127,29 @@ export default function YoYComparisonChart({ data, title = 'Comparativo Anual', 
             <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
             <XAxis
               dataKey="ano"
-              tick={{ fill: '#64748b', fontSize: 12 }}
+              tick={{ fill: '#6e6453', fontSize: 12 }}
             />
             <YAxis
               yAxisId="left"
               orientation="left"
-              tick={{ fill: '#64748b', fontSize: 11 }}
+              tick={{ fill: '#6e6453', fontSize: 11 }}
               tickFormatter={(value) => formatLargeNumber(value, 0)}
             />
             <YAxis
               yAxisId="right"
               orientation="right"
-              tick={{ fill: '#64748b', fontSize: 11 }}
+              tick={{ fill: '#6e6453', fontSize: 11 }}
               tickFormatter={(value) => `${value.toFixed(0)}%`}
               domain={['auto', 'auto']}
             />
             <Tooltip content={<CustomTooltip />} />
             <Legend wrapperStyle={{ fontSize: 12 }} />
-            <ReferenceLine yAxisId="right" y={0} stroke="#94a3b8" strokeDasharray="3 3" />
+            <ReferenceLine yAxisId="right" y={0} stroke="#918058" strokeDasharray="3 3" />
             <Bar
               yAxisId="left"
               dataKey="valor"
               name={tipo === 'exportacoes' ? 'Exportações' : 'Importações'}
-              fill="#22c55e"
+              fill="#0072B2"
               radius={[4, 4, 0, 0]}
             />
             <Line
@@ -156,9 +157,9 @@ export default function YoYComparisonChart({ data, title = 'Comparativo Anual', 
               type="monotone"
               dataKey="variacao"
               name="Variação YoY (%)"
-              stroke="#0ea5e9"
+              stroke="#3d729c"
               strokeWidth={2}
-              dot={{ fill: '#0ea5e9', r: 4 }}
+              dot={{ fill: '#3d729c', r: 4 }}
               connectNulls
             />
           </ComposedChart>

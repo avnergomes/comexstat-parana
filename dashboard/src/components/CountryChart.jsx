@@ -1,3 +1,4 @@
+// ATLAS-A11Y-HEX-SWEPT
 import { useState } from 'react';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell
@@ -81,13 +82,13 @@ export default function CountryChart({ data, title, tipo = 'exportacoes', limit 
             <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
             <XAxis
               type="number"
-              tick={{ fill: '#64748b', fontSize: 11 }}
+              tick={{ fill: '#6e6453', fontSize: 11 }}
               tickFormatter={(value) => formatLargeNumber(value, 0)}
             />
             <YAxis
               type="category"
               dataKey="pais"
-              tick={{ fill: '#64748b', fontSize: 10 }}
+              tick={{ fill: '#6e6453', fontSize: 10 }}
               width={75}
             />
             <Tooltip content={<CustomTooltip />} />

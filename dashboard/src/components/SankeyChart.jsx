@@ -1,3 +1,4 @@
+// ATLAS-A11Y-HEX-SWEPT
 import { ResponsiveSankey } from '@nivo/sankey';
 import { formatCurrency } from '../utils/format';
 
@@ -53,7 +54,7 @@ export default function SankeyChart({ data, title, filterNote, filteredLinks }) 
   const sankeyData = {
     nodes: filteredNodes.map(n => ({
       id: n.id,
-      nodeColor: n.type === 'municipio' ? '#22c55e' : '#3b82f6'
+      nodeColor: n.type === 'municipio' ? '#0072B2' : '#3b82f6'
     })),
     links: links.map(l => ({
       source: l.source,
@@ -92,7 +93,7 @@ export default function SankeyChart({ data, title, filterNote, filteredLinks }) 
           data={sankeyData}
           margin={{ top: 20, right: 160, bottom: 20, left: 160 }}
           align="justify"
-          colors={(node) => node.nodeColor || '#64748b'}
+          colors={(node) => node.nodeColor || '#6e6453'}
           nodeOpacity={1}
           nodeHoverOpacity={1}
           nodeHoverOthersOpacity={0.35}

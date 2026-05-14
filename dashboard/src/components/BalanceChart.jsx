@@ -1,3 +1,4 @@
+// ATLAS-A11Y-HEX-SWEPT
 import {
   ComposedChart, Bar, Line, XAxis, YAxis, CartesianGrid,
   Tooltip, Legend, ResponsiveContainer, ReferenceLine
@@ -54,11 +55,11 @@ export default function BalanceChart({ data, title }) {
             <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
             <XAxis
               dataKey="ano"
-              tick={{ fill: '#64748b', fontSize: 12 }}
+              tick={{ fill: '#6e6453', fontSize: 12 }}
               tickLine={{ stroke: '#cbd5e1' }}
             />
             <YAxis
-              tick={{ fill: '#64748b', fontSize: 12 }}
+              tick={{ fill: '#6e6453', fontSize: 12 }}
               tickLine={{ stroke: '#cbd5e1' }}
               tickFormatter={(value) => formatLargeNumber(Math.abs(value), 0)}
             />
@@ -67,8 +68,8 @@ export default function BalanceChart({ data, title }) {
               wrapperStyle={{ paddingTop: '10px' }}
               formatter={(value) => <span className="text-sm text-dark-600">{value}</span>}
             />
-            <ReferenceLine y={0} stroke="#94a3b8" />
-            <Bar dataKey="exportacoes" name="Exportacoes" fill="#22c55e" radius={[4, 4, 0, 0]} />
+            <ReferenceLine y={0} stroke="#918058" />
+            <Bar dataKey="exportacoes" name="Exportacoes" fill="#0072B2" radius={[4, 4, 0, 0]} />
             <Bar dataKey="importacoes" name="Importacoes" fill="#3b82f6" radius={[0, 0, 4, 4]} />
             <Line
               type="monotone"

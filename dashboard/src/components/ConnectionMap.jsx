@@ -1,3 +1,4 @@
+// ATLAS-A11Y-HEX-SWEPT
 import { useEffect, useRef, useMemo, useState } from 'react'
 import * as d3 from 'd3'
 
@@ -205,15 +206,15 @@ const PARANA_CENTER = [-51.5, -24.5]
 // Cores melhoradas para melhor contraste
 const OCEAN_COLOR = '#e0f2fe' // Azul claro para oceano
 const COUNTRY_DEFAULT_COLOR = '#f8fafc' // Cinza muito claro
-const COUNTRY_BORDER_COLOR = '#94a3b8' // Borda mais visivel
+const COUNTRY_BORDER_COLOR = '#918058' // Borda mais visivel
 const COUNTRY_HOVER_COLOR = '#fef3c7' // Amarelo hover
 
 // Gradiente de cores para destinos (do mais claro ao mais escuro baseado no valor)
-const DEST_COLORS = ['#bbf7d0', '#86efac', '#4ade80', '#22c55e', '#16a34a', '#15803d']
+const DEST_COLORS = ['#bbf7d0', '#87afcd', '#4ade80', '#0072B2', '#005c8e', '#004a72']
 
 // Cores dos arcos
 const ARC_COLOR = '#059669' // Verde esmeralda
-const ARC_HOVER_COLOR = '#f59e0b' // Amarelo/laranja
+const ARC_HOVER_COLOR = '#c89b3c' // Amarelo/laranja
 
 export default function ConnectionMap({
   data,
@@ -526,7 +527,7 @@ export default function ConnectionMap({
                 cx={paranaPoint[0]}
                 cy={paranaPoint[1]}
                 r={8}
-                fill="#ef4444"
+                fill="#D55E00"
                 stroke="white"
                 strokeWidth={2}
               />
