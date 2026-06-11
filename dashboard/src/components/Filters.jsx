@@ -21,6 +21,12 @@ export default function Filters({ filters, onChange, metadata, cadeias }) {
     onChange({ ...filters, [key]: value });
   };
 
+  // Aplica várias chaves de uma vez — duas chamadas seguidas de handleChange
+  // perdem a primeira atualização (prop filters fica stale entre elas).
+  const handleChangeMany = (patch) => {
+    onChange({ ...filters, ...patch });
+  };
+
   const handleCadeiaToggle = (cadeia) => {
     const current = filters.cadeias || [];
     const updated = current.includes(cadeia)
@@ -231,8 +237,7 @@ export default function Filters({ filters, onChange, metadata, cadeias }) {
                       // Se não tem seleção, define como início
                       // Se tem início mas não fim, define como fim
                       if (!filters.anoMin || (filters.anoMin === ano && filters.anoMax === ano)) {
-                        handleChange('anoMin', ano);
-                        handleChange('anoMax', ano);
+                        handleChangeMany({ anoMin: ano, anoMax: ano });
                       } else if (ano < filters.anoMin) {
                         handleChange('anoMin', ano);
                       } else if (ano > filters.anoMax) {
@@ -263,8 +268,7 @@ export default function Filters({ filters, onChange, metadata, cadeias }) {
               {(filters.anoMin !== metadata.anoMin || filters.anoMax !== metadata.anoMax) && (
                 <button
                   onClick={() => {
-                    handleChange('anoMin', metadata.anoMin);
-                    handleChange('anoMax', metadata.anoMax);
+                    handleChangeMany({ anoMin: metadata.anoMin, anoMax: metadata.anoMax });
                   }}
                   className="px-2 py-1.5 text-xs text-dark-400 hover:text-dark-600 transition-colors"
                 >

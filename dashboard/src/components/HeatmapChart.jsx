@@ -5,18 +5,19 @@ import { formatCurrency } from '../utils/format';
 
 const MONTHS = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
 
-// Paleta de cores para o heatmap (verde)
+// Sequencial de matiz único (azul/water) — luminância monotônica,
+// segura para daltônicos. Antes intercalava verdes e azuis.
 const COLOR_SCALE = [
-  '#f0fdf4', // 0-10% - muito claro
+  '#eff6fc', // 0-10% - muito claro
   '#d9e6f0', // 10-20%
-  '#bbf7d0', // 20-30%
-  '#87afcd', // 30-40%
-  '#4ade80', // 40-50%
-  '#0072B2', // 50-60%
-  '#005c8e', // 60-70%
-  '#004a72', // 70-80%
-  '#166534', // 80-90%
-  '#003356', // 90-100% - muito escuro
+  '#b4cce0', // 20-30%
+  '#9bbdd7', // 30-40%
+  '#87afcd', // 40-50%
+  '#5d8fb5', // 50-60%
+  '#3d729c', // 60-70%
+  '#2d5f82', // 70-80%
+  '#254e69', // 80-90%
+  '#1a3445', // 90-100% - muito escuro
 ];
 
 function getColor(value, maxValue) {

@@ -551,7 +551,7 @@ export default function ConnectionMap({
             <h4 className="text-sm font-semibold text-dark-600 mb-2">Legenda</h4>
             <div className="space-y-2 text-xs">
               <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-red-500" />
+                <div className="w-3 h-3 rounded-full" style={{ backgroundColor: '#D55E00' }} />
                 <span className="text-dark-600">Origem (Parana)</span>
               </div>
               <div className="flex items-center gap-2">

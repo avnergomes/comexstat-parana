@@ -682,34 +682,36 @@ def classificar_cadeia_sh4(sh4_code):
         return "outros", CADEIAS["outros"]
 
 
-# Cores para cadeias (seguindo padrão rainbow do VBP)
+# Cores para cadeias — paleta categórica Okabe-Ito (daltônico-segura) com
+# variações de luminosidade para as categorias além da 8ª.
+# Regra do ecossistema: nunca combinar verde e vermelho puros no mesmo gráfico.
 CADEIA_CORES = {
-    "Sojicultura": "#22c55e",      # Green
-    "Avicultura": "#0ea5e9",        # Sky blue
-    "Bovinocultura": "#f59e0b",     # Amber
-    "Suinocultura": "#ef4444",      # Red
-    "Cafeicultura": "#78350f",      # Brown
-    "Cerealicultura": "#eab308",    # Yellow
-    "Canavicultura": "#84cc16",     # Lime
-    "Fruticultura": "#f97316",      # Orange
-    "Olericultura": "#14b8a6",      # Teal
-    "Aquicultura": "#06b6d4",       # Cyan
-    "Florestal": "#15803d",         # Dark green
-    "Floricultura": "#ec4899",      # Pink
-    "Apicultura": "#fbbf24",        # Amber light
-    "Laticínios": "#e0f2fe",        # Light blue
-    "Oleaginosas": "#fcd34d",       # Yellow light
-    "Agroind. Carnes": "#dc2626",   # Red dark
-    "Agroind. Grãos": "#ca8a04",    # Yellow dark
-    "Bebidas": "#8b5cf6",           # Purple
-    "Tabaco": "#78716c",            # Gray
-    "Outros": "#64748b",            # Slate
+    "Sojicultura": "#0072B2",       # azul
+    "Avicultura": "#56B4E9",        # azul-céu
+    "Bovinocultura": "#E69F00",     # laranja
+    "Suinocultura": "#CC79A7",      # rosa
+    "Cafeicultura": "#2a2419",      # tinta
+    "Cerealicultura": "#F0E442",    # amarelo
+    "Canavicultura": "#b8ad32",     # amarelo escuro
+    "Fruticultura": "#D55E00",      # vermelho-alaranjado
+    "Olericultura": "#009E73",      # verde-azulado
+    "Aquicultura": "#2f88c4",       # azul médio
+    "Florestal": "#006b4e",         # verde-azulado escuro
+    "Floricultura": "#9c5b80",      # rosa escuro
+    "Apicultura": "#7a5200",        # laranja escuro
+    "Laticínios": "#8fb6d4",        # azul claro
+    "Oleaginosas": "#c89b3c",       # dourado
+    "Agroind. Carnes": "#a8482c",   # barro
+    "Agroind. Grãos": "#876522",    # dourado escuro
+    "Bebidas": "#6a4a73",           # roxo apagado
+    "Tabaco": "#6b675f",            # cinza escuro
+    "Outros": "#8a8273",            # cinza quente
     # Insumos agrícolas
-    "Fertilizantes": "#10b981",     # Emerald (verde)
-    "Herbicidas": "#f59e0b",        # Amber (laranja)
-    "Fungicidas": "#6366f1",        # Indigo (roxo)
-    "Inseticidas": "#ef4444",       # Red (vermelho)
-    "Outros Insumos": "#6b7280",    # Gray (cinza)
+    "Fertilizantes": "#1d5c8a",     # azul petróleo
+    "Herbicidas": "#e0b850",        # dourado claro
+    "Fungicidas": "#54391d",        # marrom
+    "Inseticidas": "#893824",       # barro escuro
+    "Outros Insumos": "#b6a682",    # neutro
 }
 
 # Mapeamento SH4 para descrições de produtos (português)

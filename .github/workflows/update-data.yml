@@ -49,8 +49,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install pandas pyarrow requests numpy
-          pip install statsmodels || echo "statsmodels optional, continuing..."
+          pip install -r requirements.txt
 
       - name: Cache data files
         id: cache-data
@@ -87,7 +86,8 @@ jobs:
       - name: Check for data changes
         id: check_changes
         run: |
-          if git diff --quiet dashboard/public/data/; then
+          # git status --porcelain cobre também arquivos novos (git diff não)
+          if [ -z "$(git status --porcelain dashboard/public/data/)" ]; then
             echo "No data changes detected"
             echo "changed=false" >> $GITHUB_OUTPUT
           else
@@ -100,8 +100,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add dashboard/public/data/
-          git commit -m "chore: update data $(date +'%Y-%m-%d')" || exit 0
+          git add -A dashboard/public/data/
+          git commit -m "chore: update data $(date +'%Y-%m-%d')"
           git push
 
   build-deploy:
@@ -115,7 +115,7 @@ jobs:
           ref: ${{ github.ref }}
 
       - name: Pull latest changes
-        run: git pull origin ${{ github.ref_name }} || true
+        run: git pull origin ${{ github.ref_name }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

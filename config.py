@@ -64,9 +64,11 @@ INCLUIR_INSUMOS = True
 # Todos os capítulos relevantes (agricultura + insumos)
 CAPITULOS_TODOS = CAPITULOS_AGRICULTURA + CAPITULOS_INSUMOS
 
-# Anos para download (ajuste conforme necessário)
+# Anos para download — ANO_FIM dinâmico para o pipeline não congelar na virada do ano
+from datetime import date as _date
+
 ANO_INICIO = 2020
-ANO_FIM = 2025
+ANO_FIM = _date.today().year
 
 # Colunas dos arquivos de exportação
 COLUNAS_EXPORTACAO = [

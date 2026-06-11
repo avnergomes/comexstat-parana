@@ -249,7 +249,7 @@ export default function ForecastChart({ historicalData, forecastData, title }) {
           <span>Dados Históricos</span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-8 h-0.5 bg-primary-500" style={{ backgroundImage: 'repeating-linear-gradient(90deg, #22c55e, #22c55e 5px, transparent 5px, transparent 10px)' }} />
+          <div className="w-8 h-0.5 bg-primary-500" style={{ backgroundImage: 'repeating-linear-gradient(90deg, #0072B2, #0072B2 5px, transparent 5px, transparent 10px)' }} />
           <span>Projeção</span>
         </div>
       </div>

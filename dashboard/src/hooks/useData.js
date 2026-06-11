@@ -19,12 +19,11 @@ export function useData() {
         setLoading(true);
         setError(null);
 
-        // Carregar dados em paralelo
-        const [aggRes, detRes, foreRes, mapRes, sankeyRes, munRes] = await Promise.all([
+        // Carregar dados em paralelo (map_data.json removido: não tinha consumidor)
+        const [aggRes, detRes, foreRes, sankeyRes, munRes] = await Promise.all([
           fetch(`${BASE_URL}data/aggregated.json`, { signal }),
           fetch(`${BASE_URL}data/detailed.json`, { signal }).catch(() => null),
           fetch(`${BASE_URL}data/forecasts.json`, { signal }).catch(() => null),
-          fetch(`${BASE_URL}data/map_data.json`, { signal }).catch(() => null),
           fetch(`${BASE_URL}data/sankey_data.json`, { signal }).catch(() => null),
           fetch(`${BASE_URL}data/municipios_data.json`, { signal }).catch(() => null),
         ]);
@@ -36,9 +35,32 @@ export function useData() {
         const aggregated = await aggRes.json();
         const detailed = detRes?.ok ? await detRes.json() : null;
         const forecasts = foreRes?.ok ? await foreRes.json() : null;
-        const mapData = mapRes?.ok ? await mapRes.json() : null;
         const sankey = sankeyRes?.ok ? await sankeyRes.json() : null;
         const municipios = munRes?.ok ? await munRes.json() : null;
+
+        // forecasts.json tem {exportacoes:[{ano,valor,valorMin,valorMax,tipo}], importacoes:[...]};
+        // o ForecastChart consome [{ano, valorExp, valorImp, lowerBound, upperBound}] só com previsões.
+        let forecastSeries = null;
+        if (Array.isArray(forecasts?.previsoes)) {
+          forecastSeries = forecasts.previsoes;
+        } else if (forecasts && (Array.isArray(forecasts.exportacoes) || Array.isArray(forecasts.importacoes))) {
+          const byAno = {};
+          (forecasts.exportacoes || []).forEach((item) => {
+            if (item.tipo !== 'previsao') return;
+            byAno[item.ano] = {
+              ...(byAno[item.ano] || { ano: item.ano }),
+              valorExp: item.valor,
+              lowerBound: item.valorMin,
+              upperBound: item.valorMax,
+            };
+          });
+          (forecasts.importacoes || []).forEach((item) => {
+            if (item.tipo !== 'previsao') return;
+            byAno[item.ano] = { ...(byAno[item.ano] || { ano: item.ano }), valorImp: item.valor };
+          });
+          const series = Object.values(byAno).sort((a, b) => a.ano - b.ano);
+          forecastSeries = series.length > 0 ? series : null;
+        }
 
         if (!signal.aborted) {
           // Combinar todos os dados
@@ -52,8 +74,7 @@ export function useData() {
             byPaisByCadeia: aggregated.byPaisByCadeia || null,
             topProdutos: aggregated.topProdutos,
             detailed,
-            forecasts: forecasts?.previsoes || null,
-            mapData,
+            forecasts: forecastSeries,
             sankey,
             municipios
           });

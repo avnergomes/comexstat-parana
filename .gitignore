@@ -75,3 +75,6 @@ temp/
 *.gs
 google-apps-script*.js
 dashboard/public/data/mun_PR.geojson
+
+# Artefatos locais do understand-anything
+.understand-anything/

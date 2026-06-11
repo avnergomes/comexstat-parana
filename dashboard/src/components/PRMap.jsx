@@ -4,6 +4,9 @@ import { feature } from 'topojson-client';
 import { MapPin } from 'lucide-react';
 import { formatCurrency } from '../utils/format';
 
+// Sequencial de matiz único (azul/water) — fonte única para fill e legenda
+const MAP_COLORS = ['#eff6fc', '#d9e6f0', '#b4cce0', '#87afcd', '#5d8fb5', '#3d729c', '#2d5f82', '#254e69', '#1a3445'];
+
 export default function PRMap({ data, title }) {
   const mapRef = useRef(null);
   const mapInstanceRef = useRef(null);
@@ -15,9 +18,8 @@ export default function PRMap({ data, title }) {
   const getColor = useCallback((value, maxValue) => {
     if (!value) return '#e2e8f0';
     const ratio = Math.log(value + 1) / Math.log(maxValue + 1);
-    const colors = ['#f0fdf4', '#bbf7d0', '#87afcd', '#4ade80', '#0072B2', '#005c8e', '#004a72', '#166534', '#003356'];
-    const index = Math.min(Math.floor(ratio * colors.length), colors.length - 1);
-    return colors[index];
+    const index = Math.min(Math.floor(ratio * MAP_COLORS.length), MAP_COLORS.length - 1);
+    return MAP_COLORS[index];
   }, []);
 
   // Initialize map once
@@ -51,15 +53,15 @@ export default function PRMap({ data, title }) {
           div.innerHTML = `
             <p class="text-xs font-semibold text-dark-700 mb-2">Valor Exportado</p>
             <div class="flex items-center gap-1">
-              <div class="w-4 h-4 rounded" style="background: #f0fdf4"></div>
+              <div class="w-4 h-4 rounded" style="background: ${MAP_COLORS[0]}"></div>
               <span class="text-xs">Baixo</span>
             </div>
             <div class="flex items-center gap-1">
-              <div class="w-4 h-4 rounded" style="background: #22c55e"></div>
+              <div class="w-4 h-4 rounded" style="background: ${MAP_COLORS[Math.floor(MAP_COLORS.length / 2)]}"></div>
               <span class="text-xs">Médio</span>
             </div>
             <div class="flex items-center gap-1">
-              <div class="w-4 h-4 rounded" style="background: #14532d"></div>
+              <div class="w-4 h-4 rounded" style="background: ${MAP_COLORS[MAP_COLORS.length - 1]}"></div>
               <span class="text-xs">Alto</span>
             </div>
           `;

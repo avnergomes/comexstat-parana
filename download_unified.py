@@ -8,6 +8,7 @@ Os arquivos MUN contem tanto CO_MUN quanto SH4, permitindo:
 - agregacao por pais de destino (via CO_PAIS)
 """
 
+from datetime import date
 from pathlib import Path
 import io
 import sys
@@ -16,7 +17,6 @@ import time
 import certifi
 import pandas as pd
 import requests
-import urllib3
 
 # Configurar encoding UTF-8 para Windows
 if sys.platform == "win32":
@@ -24,7 +24,12 @@ if sys.platform == "win32":
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
 BASE_URL = "https://balanca.economia.gov.br/balanca/bd/comexstat-bd/mun"
-ANOS = [2020, 2021, 2022, 2023, 2024, 2025]
+# Anos dinâmicos: antes era uma lista hardcoded até 2025, que congelava o
+# pipeline silenciosamente quando o ano virava.
+ANOS = list(range(2020, date.today().year + 1))
+# O ComexStat revisa dados retroativamente: o ano corrente e o anterior são
+# sempre re-baixados, ignorando o skip-if-exists.
+ANOS_SEMPRE_ATUALIZAR = set(ANOS[-2:])
 OUTPUT_DIR = Path("data/raw")
 PROCESSED_DIR = Path("data/processed")
 AUX_DIR = Path("data/auxiliary")
@@ -33,11 +38,9 @@ REQUEST_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; GitHubActions/1.0; +https://github.com/avnergomes/comexstat-parana)"
 }
 
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
 
 def download_file(url, output_path, max_retries=3):
-    """Baixa um arquivo com retry e fallback para SSL sem verificacao."""
+    """Baixa um arquivo com retry (verificacao SSL sempre ativa)."""
     verify = certifi.where()
 
     for attempt in range(max_retries):
@@ -57,13 +60,6 @@ def download_file(url, output_path, max_retries=3):
             size_mb = len(response.content) / 1024 / 1024
             print(f"  Salvo: {output_path} ({size_mb:.1f} MB)")
             return True
-        except requests.exceptions.SSLError as e:
-            print(f"  Tentativa {attempt + 1}/{max_retries} falhou por SSL: {e}")
-            if verify is not False:
-                print("  Repetindo download sem verificacao SSL...")
-                verify = False
-            if attempt < max_retries - 1:
-                time.sleep(5)
         except requests.exceptions.RequestException as e:
             print(f"  Tentativa {attempt + 1}/{max_retries} falhou: {e}")
             if attempt < max_retries - 1:
@@ -82,7 +78,7 @@ def download_exp_mun():
         url = f"{BASE_URL}/{filename}"
         output_path = OUTPUT_DIR / f"exp_mun_{ano}.csv"
 
-        if output_path.exists():
+        if output_path.exists() and ano not in ANOS_SEMPRE_ATUALIZAR:
             print(f"Arquivo {output_path} ja existe, pulando...")
             continue
 
@@ -103,7 +99,7 @@ def download_imp_mun():
         url = f"{BASE_URL}/{filename}"
         output_path = OUTPUT_DIR / f"imp_mun_{ano}.csv"
 
-        if output_path.exists():
+        if output_path.exists() and ano not in ANOS_SEMPRE_ATUALIZAR:
             print(f"Arquivo {output_path} ja existe, pulando...")
             continue
 

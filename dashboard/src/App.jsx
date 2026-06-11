@@ -110,18 +110,24 @@ export default function App() {
 
     const result = { ...filteredData };
 
-    // Filtrar byCategoria
+    // Filtrar byCategoria — shape: { exportacoes: [{categoria,...}], importacoes: [...] }
     if (interactiveFilters.categoria && result.byCategoria) {
-      result.byCategoria = result.byCategoria.filter(item =>
-        item.cadeia === interactiveFilters.categoria
-      );
+      const matchCategoria = (item) => item.categoria === interactiveFilters.categoria;
+      result.byCategoria = {
+        ...result.byCategoria,
+        exportacoes: (result.byCategoria.exportacoes || []).filter(matchCategoria),
+        importacoes: (result.byCategoria.importacoes || []).filter(matchCategoria),
+      };
     }
 
-    // Filtrar byPais
+    // Filtrar byPais — shape: { exportacoes: [{pais,...}], importacoes: [...] }
     if (interactiveFilters.pais && result.byPais) {
-      result.byPais = result.byPais.filter(item =>
-        item.pais === interactiveFilters.pais
-      );
+      const matchPais = (item) => item.pais === interactiveFilters.pais;
+      result.byPais = {
+        ...result.byPais,
+        exportacoes: (result.byPais.exportacoes || []).filter(matchPais),
+        importacoes: (result.byPais.importacoes || []).filter(matchPais),
+      };
     }
 
     // Filtrar timeseries por ano
@@ -131,11 +137,14 @@ export default function App() {
       );
     }
 
-    // Filtrar municipios
-    if (interactiveFilters.municipio && result.municipios) {
-      result.municipios = result.municipios.filter(item =>
-        item.municipio === interactiveFilters.municipio
-      );
+    // Filtrar municipios — shape: { municipios: [{codigo,nome,...}], ... }
+    if (interactiveFilters.municipio && result.municipios?.municipios) {
+      result.municipios = {
+        ...result.municipios,
+        municipios: result.municipios.municipios.filter(item =>
+          item.nome === interactiveFilters.municipio
+        ),
+      };
     }
 
     return result;
@@ -237,7 +246,7 @@ export default function App() {
               {interactiveFilteredData?.detailed && (
                 <HeatmapChart
                   data={interactiveFilteredData.detailed}
-                  title="Padrão Sazonal por Cadeia - Exportações"
+                  title="Padrão Sazonal Agregado - Exportações"
                   tipo="exportacoes"
                 />
               )}
