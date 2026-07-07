@@ -31,7 +31,7 @@ function KpiCard({ title, value, subtitle, variation, icon: Icon, type = 'export
           {variation >= 0 ? (
             <ArrowUpRight className="w-4 h-4 text-primary-600" />
           ) : (
-            <ArrowDownRight className="w-4 h-4 text-red-600" />
+            <ArrowDownRight className="w-4 h-4 text-accent-600" />
           )}
           <span className={`text-sm font-medium ${getVariationColor(variation)}`}>
             {formatPercent(variation)}

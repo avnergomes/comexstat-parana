@@ -4,6 +4,13 @@
  */
 
 /**
+ * toFixed com virgula decimal (padrao pt-BR)
+ */
+function toFixedPtBr(value, decimals) {
+  return value.toFixed(decimals).replace('.', ',');
+}
+
+/**
  * Formata valor como moeda USD
  */
 export function formatCurrency(value, decimals = 0) {
@@ -13,15 +20,15 @@ export function formatCurrency(value, decimals = 0) {
   let formatted;
 
   if (absValue >= 1e12) {
-    formatted = (value / 1e12).toFixed(decimals) + ' tri';
+    formatted = toFixedPtBr(value / 1e12, decimals) + ' tri';
   } else if (absValue >= 1e9) {
-    formatted = (value / 1e9).toFixed(decimals) + ' bi';
+    formatted = toFixedPtBr(value / 1e9, decimals) + ' bi';
   } else if (absValue >= 1e6) {
-    formatted = (value / 1e6).toFixed(decimals) + ' mi';
+    formatted = toFixedPtBr(value / 1e6, decimals) + ' mi';
   } else if (absValue >= 1e3) {
-    formatted = (value / 1e3).toFixed(decimals) + ' mil';
+    formatted = toFixedPtBr(value / 1e3, decimals) + ' mil';
   } else {
-    formatted = value.toFixed(decimals);
+    formatted = toFixedPtBr(value, decimals);
   }
 
   return 'US$ ' + formatted;
@@ -62,16 +69,16 @@ export function formatLargeNumber(value, decimals = 1) {
   const absValue = Math.abs(value);
 
   if (absValue >= 1e12) {
-    return (value / 1e12).toFixed(decimals) + ' tri';
+    return toFixedPtBr(value / 1e12, decimals) + ' tri';
   } else if (absValue >= 1e9) {
-    return (value / 1e9).toFixed(decimals) + ' bi';
+    return toFixedPtBr(value / 1e9, decimals) + ' bi';
   } else if (absValue >= 1e6) {
-    return (value / 1e6).toFixed(decimals) + ' mi';
+    return toFixedPtBr(value / 1e6, decimals) + ' mi';
   } else if (absValue >= 1e3) {
-    return (value / 1e3).toFixed(decimals) + ' mil';
+    return toFixedPtBr(value / 1e3, decimals) + ' mil';
   }
 
-  return value.toFixed(decimals);
+  return toFixedPtBr(value, decimals);
 }
 
 /**
@@ -83,14 +90,14 @@ export function formatWeight(kg, decimals = 1) {
   const tons = kg / 1000;
 
   if (tons >= 1e9) {
-    return (tons / 1e9).toFixed(decimals) + ' Gt';
+    return toFixedPtBr(tons / 1e9, decimals) + ' Gt';
   } else if (tons >= 1e6) {
-    return (tons / 1e6).toFixed(decimals) + ' Mt';
+    return toFixedPtBr(tons / 1e6, decimals) + ' Mt';
   } else if (tons >= 1e3) {
-    return (tons / 1e3).toFixed(decimals) + ' kt';
+    return toFixedPtBr(tons / 1e3, decimals) + ' kt';
   }
 
-  return tons.toFixed(decimals) + ' t';
+  return toFixedPtBr(tons, decimals) + ' t';
 }
 
 /**
@@ -100,7 +107,7 @@ export function formatPercent(value, decimals = 1) {
   if (value === null || value === undefined || isNaN(value)) return '-';
 
   const sign = value > 0 ? '+' : '';
-  return sign + value.toFixed(decimals) + '%';
+  return sign + toFixedPtBr(value, decimals) + '%';
 }
 
 /**
@@ -132,8 +139,9 @@ export function formatPeriodFull(periodo) {
  * Retorna cor baseada na variacao
  */
 export function getVariationColor(value) {
+  // Par verde/clay (nunca verde+vermelho): daltonic-safe, com setas como redundancia
   if (value > 0) return 'text-primary-600';
-  if (value < 0) return 'text-red-600';
+  if (value < 0) return 'text-accent-600';
   return 'text-dark-500';
 }
 
@@ -142,7 +150,7 @@ export function getVariationColor(value) {
  */
 export function getVariationBadge(value) {
   if (value > 0) return 'badge-green';
-  if (value < 0) return 'badge-red';
+  if (value < 0) return 'badge-clay';
   return 'badge-yellow';
 }
 

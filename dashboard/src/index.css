@@ -146,6 +146,7 @@
   .badge-green  { @apply bg-primary-100 text-primary-900 border border-primary-900/20; }
   .badge-yellow { @apply bg-harvest-100 text-harvest-900 border border-harvest-900/25; }
   .badge-blue   { @apply bg-secondary-100 text-secondary-900 border border-secondary-900/20; }
+  .badge-clay   { @apply bg-accent-100 text-accent-900 border border-accent-900/25; }
 
   .active-filter-badge {
     @apply inline-flex items-center gap-1.5 px-3 py-1 text-xs
@@ -311,6 +312,7 @@ a:focus-visible {
 .badge-yellow::before { content: '●'; }
 .badge-blue::before   { content: '◆'; }
 .badge-red::before    { content: '■'; }
+.badge-clay::before   { content: '▼'; }
 
 /* Reduced motion — disable shimmer for users who request it. */
 @media (prefers-reduced-motion: reduce) {

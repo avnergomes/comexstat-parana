@@ -55,7 +55,7 @@ function TrendIndicator({ value, previousValue }) {
   }
 
   return (
-    <div className={`flex items-center gap-1 ${isPositive ? 'text-primary-600' : 'text-red-500'}`}>
+    <div className={`flex items-center gap-1 ${isPositive ? 'text-primary-600' : 'text-accent-600'}`}>
       {isPositive ? <TrendingUp className="w-4 h-4" /> : <TrendingDown className="w-4 h-4" />}
       <span className="text-sm font-medium">{isPositive ? '+' : ''}{change.toFixed(1)}%</span>
     </div>
@@ -226,7 +226,7 @@ export default function ForecastChart({ historicalData, forecastData, title }) {
 
               <div className="text-center">
                 <p className="text-xs text-dark-500">Saldo Projetado</p>
-                <p className={`font-semibold ${lastForecast.saldo >= 0 ? 'text-primary-600' : 'text-red-500'}`}>
+                <p className={`font-semibold ${lastForecast.saldo >= 0 ? 'text-primary-600' : 'text-accent-600'}`}>
                   {formatCurrency(lastForecast.saldo, 1)}
                 </p>
               </div>

@@ -69,15 +69,16 @@ export default function BalanceChart({ data, title }) {
               formatter={(value) => <span className="text-sm text-dark-600">{value}</span>}
             />
             <ReferenceLine y={0} stroke="#918058" />
-            <Bar dataKey="exportacoes" name="Exportacoes" fill="#0072B2" radius={[4, 4, 0, 0]} />
-            <Bar dataKey="importacoes" name="Importacoes" fill="#3b82f6" radius={[0, 0, 4, 4]} />
+            {/* Okabe-Ito: azul vs vermillion (daltonic-safe); saldo em harvest escuro (contraste >3:1 sobre papel) */}
+            <Bar dataKey="exportacoes" name="Exportações" fill="#0072B2" radius={[4, 4, 0, 0]} />
+            <Bar dataKey="importacoes" name="Importações" fill="#D55E00" radius={[0, 0, 4, 4]} />
             <Line
               type="monotone"
               dataKey="saldo"
               name="Saldo"
-              stroke="#eab308"
+              stroke="#876522"
               strokeWidth={3}
-              dot={{ fill: '#eab308', strokeWidth: 2, r: 4 }}
+              dot={{ fill: '#876522', strokeWidth: 2, r: 4 }}
             />
           </ComposedChart>
         </ResponsiveContainer>

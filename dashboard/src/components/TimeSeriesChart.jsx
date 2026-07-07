@@ -69,9 +69,10 @@ export default function TimeSeriesChart({ data, title, showBalance = true, tipo 
                 <stop offset="5%" stopColor="#0072B2" stopOpacity={0.3} />
                 <stop offset="95%" stopColor="#0072B2" stopOpacity={0} />
               </linearGradient>
+              {/* Okabe-Ito vermillion: contraste real com o azul das exportações */}
               <linearGradient id="gradientImp" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.3} />
-                <stop offset="95%" stopColor="#3b82f6" stopOpacity={0} />
+                <stop offset="5%" stopColor="#D55E00" stopOpacity={0.3} />
+                <stop offset="95%" stopColor="#D55E00" stopOpacity={0} />
               </linearGradient>
             </defs>
             <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
@@ -105,7 +106,7 @@ export default function TimeSeriesChart({ data, title, showBalance = true, tipo 
                 type="monotone"
                 dataKey="importacoes"
                 name="Importações"
-                stroke="#3b82f6"
+                stroke="#D55E00"
                 strokeWidth={2}
                 fill="url(#gradientImp)"
               />

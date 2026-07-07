@@ -32,7 +32,7 @@ function TrendIndicator({ value }) {
   if (value > 0) {
     return <TrendingUp className="w-4 h-4 text-primary-600" />;
   }
-  return <TrendingDown className="w-4 h-4 text-red-500" />;
+  return <TrendingDown className="w-4 h-4 text-accent-600" />;
 }
 
 export default function YoYComparisonChart({ data, title = 'Comparativo Anual', tipo = 'exportacoes' }) {
@@ -93,7 +93,7 @@ export default function YoYComparisonChart({ data, title = 'Comparativo Anual', 
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1">
               <TrendIndicator value={stats.ultimaVariacao} />
-              <span className={`text-sm font-medium ${stats.ultimaVariacao >= 0 ? 'text-primary-600' : 'text-red-500'}`}>
+              <span className={`text-sm font-medium ${stats.ultimaVariacao >= 0 ? 'text-primary-600' : 'text-accent-600'}`}>
                 {formatPercent(stats.ultimaVariacao, 1)} último ano
               </span>
             </div>
@@ -114,7 +114,7 @@ export default function YoYComparisonChart({ data, title = 'Comparativo Anual', 
           </div>
           <div className="bg-dark-50 rounded-lg p-3 text-center">
             <p className="text-xs text-dark-500">Variação Média</p>
-            <p className={`text-lg font-bold ${stats.mediaVariacao >= 0 ? 'text-primary-600' : 'text-red-500'}`}>
+            <p className={`text-lg font-bold ${stats.mediaVariacao >= 0 ? 'text-primary-600' : 'text-accent-600'}`}>
               {formatPercent(stats.mediaVariacao, 1)}
             </p>
           </div>

@@ -19,6 +19,7 @@ import WorldMap from './components/WorldMap';
 import ForecastChart from './components/ForecastChart';
 import HeatmapChart from './components/HeatmapChart';
 import YoYComparisonChart from './components/YoYComparisonChart';
+import DataLoadError from './components/DataLoadError';
 import { useData, useFilteredData, useAggregations } from './hooks/useData';
 
 const TABS = [
@@ -99,7 +100,11 @@ export default function App() {
   }, [interactiveFilters]);
 
   // Load data
-  const { data, loading, error } = useData();
+  const { data, loading, error, retry } = useData();
+
+  // Datasets opcionais que falharam ao carregar (404, rede): a UI mostra
+  // estado de erro explicito em vez de secao vazia com cara de dado real
+  const loadFailures = data?.loadFailures;
 
   // Apply filters
   const filteredData = useFilteredData(data, filters);
@@ -174,6 +179,13 @@ export default function App() {
         <div className="text-center">
           <p className="text-red-500 text-lg mb-2">Erro ao carregar dados</p>
           <p className="text-dark-500">{error}</p>
+          <button
+            type="button"
+            onClick={retry}
+            className="mt-4 inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 rounded-lg transition-colors"
+          >
+            Tentar novamente
+          </button>
         </div>
       </div>
     );
@@ -250,15 +262,28 @@ export default function App() {
                   tipo="exportacoes"
                 />
               )}
+              {!interactiveFilteredData?.detailed && loadFailures?.detailed && (
+                <DataLoadError
+                  message="Não foi possível carregar os dados mensais do padrão sazonal."
+                  onRetry={retry}
+                />
+              )}
 
               {/* Sankey Chart - Municipality to Country flow */}
               {filters.tipo !== 'importacoes' && (
-                <SankeyChart
-                  data={interactiveFilteredData?.sankey || data?.sankey}
-                  filteredLinks={interactiveFilteredData?.filteredSankeyLinks}
-                  title="Fluxo de Exportacoes: Municipio > Pais de Destino"
-                  filterNote={filters.cadeias?.length > 0 ? `Filtrado por: ${filters.cadeias.join(', ')}` : null}
-                />
+                loadFailures?.sankey ? (
+                  <DataLoadError
+                    message="Não foi possível carregar o fluxo de exportações por município."
+                    onRetry={retry}
+                  />
+                ) : (
+                  <SankeyChart
+                    data={interactiveFilteredData?.sankey || data?.sankey}
+                    filteredLinks={interactiveFilteredData?.filteredSankeyLinks}
+                    title="Fluxo de Exportacoes: Municipio > Pais de Destino"
+                    filterNote={filters.cadeias?.length > 0 ? `Filtrado por: ${filters.cadeias.join(', ')}` : null}
+                  />
+                )
               )}
 
               {/* Connection Map - Geographic trade flows */}
@@ -347,22 +372,31 @@ export default function App() {
           {/* Por Município */}
           {activeTab === 'municipios' && (
             <div className="space-y-6">
-              {/* PR Map */}
-              <PRMap
-                data={interactiveFilteredData?.municipios || data?.municipios}
-                title="Mapa dos Municípios Exportadores do Paraná"
-                filterNote={filters.cadeias?.length > 0 ? `Filtrado por: ${filters.cadeias.join(', ')}` : null}
-                onMunicipioClick={handleMunicipioClick}
-                selectedMunicipio={interactiveFilters.municipio}
-              />
+              {loadFailures?.municipios ? (
+                <DataLoadError
+                  message="Não foi possível carregar os dados por município."
+                  onRetry={retry}
+                />
+              ) : (
+                <>
+                  {/* PR Map */}
+                  <PRMap
+                    data={interactiveFilteredData?.municipios || data?.municipios}
+                    title="Mapa dos Municípios Exportadores do Paraná"
+                    filterNote={filters.cadeias?.length > 0 ? `Filtrado por: ${filters.cadeias.join(', ')}` : null}
+                    onMunicipioClick={handleMunicipioClick}
+                    selectedMunicipio={interactiveFilters.municipio}
+                  />
 
-              <MunicipalityChart
-                data={interactiveFilteredData?.municipios || data?.municipios}
-                title="Ranking dos Municípios Exportadores"
-                limit={20}
-                onMunicipioClick={handleMunicipioClick}
-                selectedMunicipio={interactiveFilters.municipio}
-              />
+                  <MunicipalityChart
+                    data={interactiveFilteredData?.municipios || data?.municipios}
+                    title="Ranking dos Municípios Exportadores"
+                    limit={20}
+                    onMunicipioClick={handleMunicipioClick}
+                    selectedMunicipio={interactiveFilters.municipio}
+                  />
+                </>
+              )}
             </div>
           )}
 
@@ -410,11 +444,18 @@ export default function App() {
           {/* Previsões */}
           {activeTab === 'previsoes' && (
             <div className="space-y-6">
-              <ForecastChart
-                historicalData={data?.timeseries}
-                forecastData={data?.forecasts}
-                title="Projeções de Comércio Exterior Agrícola"
-              />
+              {loadFailures?.forecasts ? (
+                <DataLoadError
+                  message="Não foi possível carregar as previsões."
+                  onRetry={retry}
+                />
+              ) : (
+                <ForecastChart
+                  historicalData={data?.timeseries}
+                  forecastData={data?.forecasts}
+                  title="Projeções de Comércio Exterior Agrícola"
+                />
+              )}
 
               <div className="chart-container">
                 <h3 className="text-lg font-semibold text-dark-800 mb-4">

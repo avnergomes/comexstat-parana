@@ -31,14 +31,25 @@
           btn.setAttribute('aria-label', 'Fechar');
           btn.textContent = '\u00d7';
           btn.style.cssText = 'background:none;border:0;color:#f1e9d6;font-size:20px;line-height:1;cursor:pointer;padding:0 4px';
+          // Empilha o aviso LGPD acima deste banner: os dois ficam visiveis
+          // e clicaveis (o botao Entendi nunca fica coberto).
+          function syncLgpdOffset() {
+            var lgpd = document.getElementById('lgpd-banner');
+            if (!lgpd) return;
+            var mounted = bar.parentNode && lgpd.style.display !== 'none';
+            lgpd.style.bottom = mounted ? bar.offsetHeight + 'px' : '0px';
+          }
           btn.onclick = function () {
             try { localStorage.setItem(KEY, '1'); } catch (e) {}
             bar.parentNode && bar.parentNode.removeChild(bar);
+            syncLgpdOffset();
           };
           bar.appendChild(span);
           bar.appendChild(a);
           bar.appendChild(btn);
           document.body.appendChild(bar);
+          syncLgpdOffset();
+          window.addEventListener('resize', syncLgpdOffset);
         }
         if (document.readyState === 'loading') {
           document.addEventListener('DOMContentLoaded', mount);
@@ -160,7 +171,12 @@
   <body class="antialiased">
     <div class="lang-fixed" data-i18n-switcher></div>
 
-    <div id="root"></div>
+    <div id="root">
+      <!-- Placeholder estatico: elimina a tela branca antes do parse do JS -->
+      <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f5efde;color:#574e3f;font:16px/1.5 'IBM Plex Sans',system-ui,sans-serif;">
+        Carregando ComexStat Paraná...
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
 
     <!-- Analytics Tracking Script - Dados anonimizados (Art. 12 LGPD) -->

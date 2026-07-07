@@ -77,6 +77,8 @@ export default function Tabs({ tabs, activeTab, onChange }) {
               key={tab.id}
               role="tab"
               aria-selected={isActive}
+              aria-label={tab.label}
+              title={tab.label}
               onClick={() => onChange(tab.id)}
               className={`
                 flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all whitespace-nowrap shrink-0

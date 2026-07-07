@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 
 const BASE_URL = import.meta.env.BASE_URL || '/comexstat-parana/';
 
@@ -9,6 +9,10 @@ export function useData() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  // Incrementado por retry() para reexecutar o carregamento sem recarregar a pagina
+  const [reloadKey, setReloadKey] = useState(0);
+
+  const retry = useCallback(() => setReloadKey((k) => k + 1), []);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -33,10 +37,19 @@ export function useData() {
         if (!aggRes.ok) throw new Error('Erro ao carregar dados agregados');
 
         const aggregated = await aggRes.json();
-        const detailed = detRes?.ok ? await detRes.json() : null;
-        const forecasts = foreRes?.ok ? await foreRes.json() : null;
-        const sankey = sankeyRes?.ok ? await sankeyRes.json() : null;
-        const municipios = munRes?.ok ? await munRes.json() : null;
+        const detailed = detRes?.ok ? await detRes.json().catch(() => null) : null;
+        const forecasts = foreRes?.ok ? await foreRes.json().catch(() => null) : null;
+        const sankey = sankeyRes?.ok ? await sankeyRes.json().catch(() => null) : null;
+        const municipios = munRes?.ok ? await munRes.json().catch(() => null) : null;
+
+        // Falhas de datasets opcionais nao podem virar "painel zerado" silencioso:
+        // registra o que falhou para a UI exibir estado de erro explicito.
+        const loadFailures = {
+          detailed: detailed === null,
+          forecasts: forecasts === null,
+          sankey: sankey === null,
+          municipios: municipios === null,
+        };
 
         // forecasts.json tem {exportacoes:[{ano,valor,valorMin,valorMax,tipo}], importacoes:[...]};
         // o ForecastChart consome [{ano, valorExp, valorImp, lowerBound, upperBound}] só com previsões.
@@ -76,7 +89,8 @@ export function useData() {
             detailed,
             forecasts: forecastSeries,
             sankey,
-            municipios
+            municipios,
+            loadFailures
           });
         }
 
@@ -93,9 +107,9 @@ export function useData() {
 
     loadData();
     return () => controller.abort();
-  }, []);
+  }, [reloadKey]);
 
-  return { data, loading, error };
+  return { data, loading, error, retry };
 }
 
 /**

@@ -347,8 +347,7 @@ export default function Filters({ filters, onChange, metadata, cadeias }) {
               {filters.anoMin === filters.anoMax ? filters.anoMin : `${filters.anoMin}-${filters.anoMax}`}
               <button
                 onClick={() => {
-                  handleChange('anoMin', metadata.anoMin);
-                  handleChange('anoMax', metadata.anoMax);
+                  handleChangeMany({ anoMin: metadata.anoMin, anoMax: metadata.anoMax });
                 }}
                 className="hover:text-red-500"
               >
