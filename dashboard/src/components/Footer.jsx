@@ -1,7 +1,27 @@
+import { useState, useEffect } from 'react';
 import { Database, ExternalLink } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [dataAtualizacao, setDataAtualizacao] = useState(null);
+
+  // Data de geração dos dados (generatedAt em data/meta.json), com falha silenciosa
+  useEffect(() => {
+    let ativo = true;
+    fetch(`${import.meta.env.BASE_URL}data/meta.json`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((meta) => {
+        if (!ativo || !meta?.generatedAt) return;
+        const d = new Date(meta.generatedAt);
+        if (!Number.isNaN(d.getTime())) {
+          setDataAtualizacao(d.toLocaleDateString('pt-BR'));
+        }
+      })
+      .catch(() => {});
+    return () => {
+      ativo = false;
+    };
+  }, []);
 
   return (
     <footer className="bg-dark-900 text-dark-300 mt-12">
@@ -139,8 +159,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-6 pt-4 border-t border-dark-700 flex items-center justify-between text-[10px] text-dark-500">
+        <div className="mt-6 pt-4 border-t border-dark-700 flex flex-wrap items-center justify-between gap-2 text-[10px] text-dark-500">
           <p>&copy; {currentYear} ComexStat Paraná. Dados públicos.</p>
+          {dataAtualizacao && (
+            <p>Dados atualizados em {dataAtualizacao}</p>
+          )}
         </div>
       </div>
     </footer>

@@ -11,6 +11,7 @@ import json
 import pandas as pd
 import numpy as np
 from pathlib import Path
+from datetime import datetime, timezone
 
 # Fix encoding for Windows
 if sys.stdout.encoding != 'utf-8':
@@ -179,6 +180,7 @@ def preparar_aggregated(df_exp, df_imp):
 
     # Metadados
     metadata = {
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
         "anoMin": int(min(df_exp['CO_ANO'].min(), df_imp['CO_ANO'].min())),
         "anoMax": int(max(df_exp['CO_ANO'].max(), df_imp['CO_ANO'].max())),
         "anos": sorted(list(set(df_exp['CO_ANO'].unique()) | set(df_imp['CO_ANO'].unique()))),
@@ -648,6 +650,9 @@ def main():
 
     aggregated = preparar_aggregated(df_exp, df_imp)
     salvar_json(aggregated, "aggregated.json")
+
+    # Data de geração dos dados para exibição no dashboard
+    salvar_json({"generatedAt": datetime.now(timezone.utc).isoformat()}, "meta.json")
 
     detailed = preparar_detailed(df_exp, df_imp)
     salvar_json(detailed, "detailed.json")

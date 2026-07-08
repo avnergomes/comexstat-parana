@@ -662,6 +662,7 @@ window.__I18N_TEXT_MAP__ = (function () {
     ["Recarregar página", "Reload page", "Recargar página"],
     ["Fonte de Dados", "Data Sources", "Fuentes de Datos"],
     ["Fontes de Dados", "Data Sources", "Fuentes de Datos"],
+    ["Dados atualizados em", "Data updated on", "Datos actualizados el"],
     ["Limpar todos", "Clear all", "Limpiar todo"],
     ["Limpar seleção", "Clear selection", "Limpiar selección"],
     ["Limpar selecao", "Clear selection", "Limpiar selección"],
