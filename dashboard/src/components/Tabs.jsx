@@ -49,7 +49,7 @@ export default function Tabs({ tabs, activeTab, onChange }) {
       {canScrollLeft && (
         <button
           onClick={() => scroll(-1)}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 flex items-center justify-center bg-white/90 shadow-md rounded-full text-dark-600 hover:text-primary-600 sm:hidden transition-colors"
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-11 h-11 flex items-center justify-center bg-white/90 shadow-md rounded-full text-dark-600 hover:text-primary-600 sm:hidden transition-colors"
           aria-label="Rolar para esquerda"
         >
           <ChevronLeft className="w-4 h-4" />
@@ -58,7 +58,7 @@ export default function Tabs({ tabs, activeTab, onChange }) {
       {canScrollRight && (
         <button
           onClick={() => scroll(1)}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 flex items-center justify-center bg-white/90 shadow-md rounded-full text-dark-600 hover:text-primary-600 sm:hidden transition-colors"
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-11 h-11 flex items-center justify-center bg-white/90 shadow-md rounded-full text-dark-600 hover:text-primary-600 sm:hidden transition-colors"
           aria-label="Rolar para direita"
         >
           <ChevronRight className="w-4 h-4" />
@@ -81,7 +81,7 @@ export default function Tabs({ tabs, activeTab, onChange }) {
               title={tab.label}
               onClick={() => onChange(tab.id)}
               className={`
-                flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all whitespace-nowrap shrink-0
+                flex items-center gap-2 px-4 py-2.5 min-h-[44px] rounded-xl text-sm font-medium transition-all whitespace-nowrap shrink-0
                 ${isActive
                   ? 'bg-primary-500 text-white shadow-lg shadow-primary-500/25 scale-[1.02]'
                   : 'text-dark-600 hover:bg-dark-100 hover:text-dark-800'
@@ -89,7 +89,7 @@ export default function Tabs({ tabs, activeTab, onChange }) {
               `}
             >
               <Icon className="w-4 h-4" />
-              <span className="hidden sm:inline">{tab.label}</span>
+              <span>{tab.label}</span>
             </button>
           );
         })}

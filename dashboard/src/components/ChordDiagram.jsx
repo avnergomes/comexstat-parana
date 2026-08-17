@@ -172,7 +172,9 @@ export default function ChordDiagram({
       <h3 className="text-lg font-semibold text-dark-700 mb-4">{title}</h3>
 
       <div className="flex flex-col lg:flex-row gap-6">
-        <svg width={width} height={height} className="mx-auto">
+        {/* viewBox + width 100% torna o diagrama verdadeiramente responsivo */}
+        <div className="overflow-x-auto -mx-1 px-1">
+        <svg viewBox={`0 0 ${width} ${height}`} className="mx-auto block" style={{ width: '100%', height: 'auto', minWidth: '280px' }}>
           <g transform={`translate(${centerX}, ${centerY})`}>
             {/* Groups (arcs) */}
             {chords.groups.map((group, i) => {
@@ -243,6 +245,7 @@ export default function ChordDiagram({
             })}
           </g>
         </svg>
+        </div>
 
         {/* Legend */}
         <div className="flex flex-col gap-4 min-w-[180px]">

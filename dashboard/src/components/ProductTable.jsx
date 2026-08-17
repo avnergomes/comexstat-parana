@@ -69,7 +69,7 @@ export default function ProductTable({ data, tipo = 'exportacoes', limit = 50 })
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Buscar por NCM, produto ou categoria..."
-            className="w-full pl-10 pr-4 py-2 bg-dark-50 border border-dark-200 rounded-xl text-sm
+            className="w-full pl-10 pr-4 py-2 bg-dark-50 border border-dark-200 rounded-xl text-[16px] sm:text-sm
                      focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all"
           />
         </div>

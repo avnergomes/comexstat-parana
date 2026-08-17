@@ -314,6 +314,16 @@ a:focus-visible {
 .badge-red::before    { content: '■'; }
 .badge-clay::before   { content: '▼'; }
 
+/* Mobile: font-size >= 16px em selects/inputs para evitar auto-zoom do iOS. */
+@media (max-width: 639px) {
+  .filter-select,
+  input[type="text"],
+  input[type="search"],
+  select {
+    font-size: 1rem !important; /* 16px — abaixo disso o iOS/Safari faz zoom */
+  }
+}
+
 /* Reduced motion — disable shimmer for users who request it. */
 @media (prefers-reduced-motion: reduce) {
   .skeleton::after { animation: none !important; }
