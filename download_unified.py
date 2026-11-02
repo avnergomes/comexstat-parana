@@ -13,6 +13,7 @@ from pathlib import Path
 import io
 import sys
 import time
+from urllib.parse import urlparse
 
 import certifi
 import pandas as pd
@@ -34,14 +35,20 @@ OUTPUT_DIR = Path("data/raw")
 PROCESSED_DIR = Path("data/processed")
 AUX_DIR = Path("data/auxiliary")
 CAPITULOS_AGRO = list(range(1, 25))
+# Autorizado pelo usuario em 2026-11-02: o certificado do SERPRO expirou em
+# 2026-10-03 e o servidor nao envia a cadeia intermediaria. Fallback sem
+# verificacao SO para este host (CSVs publicos, somente leitura).
+# ponytail: REMOVER quando o certificado for renovado.
+INSECURE_SSL_HOSTS = {"balanca.economia.gov.br"}
 REQUEST_HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; GitHubActions/1.0; +https://github.com/avnergomes/comexstat-parana)"
 }
 
 
 def download_file(url, output_path, max_retries=3):
-    """Baixa um arquivo com retry (verificacao SSL sempre ativa)."""
+    """Baixa um arquivo com retry. SSL verificado, exceto fallback de INSECURE_SSL_HOSTS."""
     verify = certifi.where()
+    host = urlparse(url).hostname
 
     for attempt in range(max_retries):
         try:
@@ -60,6 +67,12 @@ def download_file(url, output_path, max_retries=3):
             size_mb = len(response.content) / 1024 / 1024
             print(f"  Salvo: {output_path} ({size_mb:.1f} MB)")
             return True
+        except requests.exceptions.SSLError as e:
+            if host in INSECURE_SSL_HOSTS and verify is not False:
+                print(f"  AVISO: certificado invalido em {host}; repetindo SEM verificacao SSL ({e})")
+                verify = False
+                continue
+            print(f"  Tentativa {attempt + 1}/{max_retries} falhou: {e}")
         except requests.exceptions.RequestException as e:
             print(f"  Tentativa {attempt + 1}/{max_retries} falhou: {e}")
             if attempt < max_retries - 1:
