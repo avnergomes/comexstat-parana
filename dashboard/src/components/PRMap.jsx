@@ -32,8 +32,9 @@ export default function PRMap({ data, title }) {
 
       const map = L.map(mapRef.current).setView([-24.5, -51.5], 7);
 
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap'
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> colaboradores',
+        maxZoom: 19
       }).addTo(map);
 
       mapInstanceRef.current = map;
@@ -166,7 +167,7 @@ export default function PRMap({ data, title }) {
       geojsonLayerRef.current = geojsonLayer;
       map.fitBounds(geojsonLayer.getBounds());
     });
-  }, [data, getColor]);
+  }, [data, getColor, loading]);
 
   return (
     <div className="chart-container">
